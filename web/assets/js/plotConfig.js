@@ -12,6 +12,9 @@ const plotOptions = {
         hoverable: true,
         clickable: true
     },
+    lines: {
+        fill: true
+    },
     crosshair: {
         mode: "x"
     },
@@ -59,6 +62,51 @@ var AllEnergyInfo = {
     }
 };
 
+const timeXaisItemInitPos = [0, 55, 114, 174, 233, 292, 351, 410, 470, 529, 588];
+const ntimeXais = 10;
+const timeXaisInterval = 10;
+const movePerTick = [1, 5.5, 5.9, 6, 5.9, 5.9, 5.9, 5.9, 6, 5.9, 5.9];
+var timeXais = [];
+var nowPosXaisItem = [];
+
+var initTimeXais = function() {
+    var tmp = 100;
+    for (var i = ntimeXais; i >= 0; i--) {
+        timeXais[i] = tmp;
+        tmp -= 10;
+    }
+    nowPosXaisItem = timeXaisItemInitPos.slice(0);
+};
+
+var initTimeXaisBar = function() {
+    $("#plotxais").empty();
+    initTimeXais();
+    $.each(timeXais, function(key, val) {
+        var showable = (val>=0?1:0);
+       $("#plotxais").append("<label class='plotXaisItem' id='plotXaisItem" + key
+           + "' style='opacity:" + showable + ";left:"+ timeXaisItemInitPos[key] + "'>" + val + "</label>")
+    });
+};
+
+var updateTimeXaisBar = function() {
+    var i;
+    for (i = 0; i < ntimeXais + 1; i++) {
+        nowPosXaisItem[i] -= movePerTick[i];
+    }
+    if (nowPosXaisItem[0] == -10) {
+        timeXais = timeXais.slice(1);
+        timeXais.push(timeXais[timeXais.length - 1] + timeXaisInterval);
+        nowPosXaisItem = timeXaisItemInitPos.slice(0);
+    }
+    for (i = 0; i < ntimeXais + 1; i++) {
+        var id = "#plotXaisItem" + i;
+        $(id).css("left", nowPosXaisItem[i]);
+        var showable = nowPosXaisItem[i] >= 0 && nowPosXaisItem[i] < timeXaisItemInitPos[ntimeXais];
+        $(id).css("opacity", showable?1:0);
+        $(id).text(timeXais[i]);
+    }
+};
+
 // 节点提示
 function showTooltip(x, y, contents) {
     /*
@@ -75,14 +123,6 @@ function showTooltip(x, y, contents) {
     */
     
 }
-
-var deepCopy = function(source) {
-    var result = {};
-    for (var key in source) {
-        result[key] = typeof source[key]==='object'?deepCopy(source[key]): source[key];
-    }
-    return result;
-};
 
 var dataWhenPause;
 

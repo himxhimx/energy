@@ -15,6 +15,7 @@ public class adb {
     public String logcatInfo = "";
     private boolean isLogcatExecuted = false;
 
+    @Override
     protected void finalize() {
         try {
             super.finalize();
@@ -25,6 +26,7 @@ public class adb {
             if (logcatThread != null) logcatThread.interrupt();
         }
     }
+
     public void logcat() {
         if (isLogcatExecuted) return;
 
@@ -111,12 +113,23 @@ public class adb {
 
     private int index = 0;
     public String getEnergyInfo() {
-        if (index >= EnergyCPU.size()) {
-            return "{\"status\": \"-1\"}";
-        }
-
+        logcat();
+        System.out.println(index);
         Map<String, String> map = new HashMap<>();
-        map.put("status", "0");
+        if (index >= EnergyCPU.size()) {
+            map.put("status", "-1");
+            if (index == 0) {
+                map.put("CPU", "0");
+                map.put("Screen", "0");
+                map.put("3G", "0");
+                map.put("Wifi", "0");
+                return JSON.toJSONstr(map);
+            }
+            index = EnergyCPU.size() - 1;
+        }
+        else {
+            map.put("status", "0");
+        }
         map.put("CPU", "" + EnergyCPU.get(index));
         map.put("Screen", "" + EnergyScreen.get(index));
         map.put("3G", "" + Energy3G.get(index));

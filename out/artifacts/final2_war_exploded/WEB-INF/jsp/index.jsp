@@ -79,6 +79,7 @@
       </div>
       <div id="p-container" class="p-container col-md-6">
         <div id="placeholder" class="placeholder"></div>
+        <div id="plotxais" style="position: absolute;top:440px;left:50px"></div>
       </div>
       <div id="container-right" class="col-md-3">
         <div class="panel panel-primary" style="height: 100px">
@@ -139,15 +140,32 @@
     }
 
     var getEnergyInfo = function () {
-      console.log("getEnergyInfo");
+      //console.log("getEnergyInfo");
       $.ajax({
         type: "GET",
         url: "/getEnergyInfo.do",
         success: function(data) {
-          console.log(data);
+          //console.log(data);
+          if (!data) return;
           data = JSON.parse(data);
           let totalEnergy = 0;
-          if (data.status == -1) disconnectHandler();
+
+          if (data.status == -1) {
+            $.ajax({
+              method: 'GET',
+              url: 'getDevices.do',
+              success: function (data) {
+                var jData = JSON.parse(data);
+                if (jData.deviceName === "") {
+                  disconnectHandler();
+                }
+              },
+              error: function(err) {
+                console.error(err);
+              }
+            });
+          }
+
           $.each(data, function(key){
             if (key === 'status') return;
             AllEnergyInfo[key].data = AllEnergyInfo[key].data.slice(1);
@@ -221,11 +239,17 @@
     function update() {
       if (!connected) return;
       getEnergyInfo();
-      getLogcat();
+      updateTimeXaisBar();
       timer = setTimeout(update, updateInterval);
     }
 
     connectHandler = function() {
+      console.log("connect");
+      $.each(AllEnergyInfo, function (key, val) {
+        for (let i = 0; i < totalPoints; i++) {
+          val.data[i][1] = 0;
+        }
+      });
       $.ajax({
         type: "GET",
         url: "/getDevices.do",
@@ -240,13 +264,15 @@
             $("#deviceInfoBriefStatus").text(jData.status === "device" ? "Online" : "Offline");
             connected = true;
             isPlaying = true;
-            $(this).click(disconnectHandler);
+            $("#controlConnect").unbind("click", connectHandler);
+            $("#controlConnect").click(disconnectHandler);
             $("#connectSpan").css("color", "white");
             $("#controlPlay").removeAttr("disabled");
             $("#download").removeAttr("disabled");
             $("#playSpan").attr("class", "glyphicon glyphicon-pause");
             $("#plotChoices").show();
             $(".infoChoose").removeAttr("disabled");
+            initTimeXaisBar();
             update();
           }
         },
@@ -268,15 +294,14 @@
     };
 
     disconnectHandler = function () {
+      console.log("disconnect");
       connected = false;
       isPlaying = false;
       clearTimeout(timer);
-      $.each(AllEnergyInfo, function (key, val) {
-        for (let i = 0; i < totalPoints; i++) {
-          val.data[i][1] = 0;
-        }
-      });
-      $(this).click(connectHandler);
+      $("#controlConnect").unbind("click", disconnectHandler);
+      $("#controlConnect").click(connectHandler);
+      $("#deviceName").text("No Device Connected");
+      $(".deviceInfoBriefVal").text("Unknown");
       $("#connectSpan").css("color", "#9d9d9d");
       $("#controlPlay").attr("disabled", true);
       $("#playSpan").attr("class", "glyphicon glyphicon-play");
@@ -322,6 +347,8 @@
     $("#getData").click(function () {
       document.location.href = AllEnergyInfo.toString();
     });
+    initTimeXaisBar();
+    setInterval(updateTimeXaisBar, 500);
   </script>
   </body>
 </html>
