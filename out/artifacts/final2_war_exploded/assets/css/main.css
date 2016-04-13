@@ -1,0 +1,187 @@
+body {
+    background: url("../img/background.png") repeat-x;
+    font-family: Helvetica, Helvetica Neue, Arial;
+}
+
+@-webkit-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+#header{
+    width: 100%;
+    margin-bottom: 10px;
+    background-color: #337ab7;
+    color: white;
+    -webkit-animation-name: fadeIn; /*动画名称*/
+    -webkit-animation-duration: 2s; /*动画持续时间*/
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-delay: 0s;
+    -webkit-animation-iteration-count: 1; /*动画次数*/
+}
+
+#header>h1 {
+    -webkit-animation-name: fadeIn; /*动画名称*/
+    -webkit-animation-duration: 3s; /*动画持续时间*/
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-delay: 0s;
+    -webkit-animation-iteration-count: 1; /*动画次数*/
+}
+
+#header>p {
+    -webkit-animation-name: fadeIn; /*动画名称*/
+    -webkit-animation-duration: 5s; /*动画持续时间*/
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-delay: 0s;
+    -webkit-animation-iteration-count: 1; /*动画次数*/
+}
+
+#container{
+    -webkit-animation-name: fadeIn; /*动画名称*/
+    -webkit-animation-duration: 2s; /*动画持续时间*/
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-delay: 0s;
+    -webkit-animation-iteration-count: 1; /*动画次数*/
+
+    height: 620px;
+    width: 100%;
+    padding-top: 20px;
+}
+
+#footer{
+    margin-top: 20px;
+    width: 100%;
+    color: #dddddd;
+}
+#deviceInfo{
+    width: 23%;
+    height: 450px;
+    padding-bottom: 15px;
+    margin-bottom: 30px;
+}
+
+.p-container {
+    box-sizing: border-box;
+    width: 50%;
+    height: 450px;
+    padding: 0 15px 15px 15px;
+    margin: 0 auto 30px auto;
+    border: 1px solid #ddd;
+    background: #fff;
+    background: linear-gradient(#f6f6f6 0, #fff 50px);
+    background: -o-linear-gradient(#f6f6f6 0, #fff 50px);
+    background: -ms-linear-gradient(#f6f6f6 0, #fff 50px);
+    background: -moz-linear-gradient(#f6f6f6 0, #fff 50px);
+    background: -webkit-linear-gradient(#f6f6f6 0, #fff 50px);
+    box-shadow: 0 3px 10px rgba(0,0,0,0.15);
+    -o-box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    -ms-box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    -moz-box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    -webkit-box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+#placeholder {
+    width: 100%;
+    height: 100%;
+    font-size: 18px;
+    line-height: 1.2em;
+    float: left;
+    margin-top: 10px;
+}
+
+#plotChoices {
+    height: 100%;
+    font-size: 16px;
+    line-height: 1.2em;
+}
+
+#deviceName{
+    font-weight: bold;
+    font-size: larger;
+}
+
+#deviceImg{
+    height: 100%;
+}
+
+.deviceStatus{
+    margin-top: 20px;
+    margin-right: 3%;
+}
+
+.deviceInfoBriefKey{
+    padding-top: 2.5px;
+    padding-bottom: 2.5px;
+}
+
+.controlBox{
+    width: 32%;
+    height: 85px;
+    border: 0;
+    color: white;
+    font-size: 2.1em;
+}
+
+.controlBox[disabled]{
+    background-color: #9d9d9d;
+}
+
+.button {
+    display: inline-block;
+    position: relative;
+    line-height: 32px;
+    border-radius: 2px;
+}
+.blue {
+    background-color: #337ab7;
+}
+
+.button.blue:hover {
+    background-color: #2aabd2;
+}
+
+.button.blue:hover[disabled] {
+    background-color: #9d9d9d;
+}
+.button.raised {
+    transition: box-shadow 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    transition-delay: 0.2s;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+}
+
+.button.raised:active {
+    box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2);
+    transition-delay: 0s;
+}
+
+.pie-container {
+    box-sizing: border-box;
+    width: 100%;
+    height: 300px;
+    padding: 0 0 15px 0;
+    margin: 0 auto 0 auto;
+    background: #fff;
+}
+
+#pie-placeholder {
+    width: 100%;
+    height: 88%;
+    font-size: 18px;
+}
+
+#currentInfoBox {
+    height: 200px;
+    width: 100%;
+}
+
+.downloadMenuItem{
+    cursor: pointer;
+}
+
