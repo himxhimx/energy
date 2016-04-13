@@ -4,6 +4,7 @@ package test.SpringMVC.util;
  * Created by shenpeng on 2016/4/12.
  */
 public class EnergyModelUtils {
+    //set path
     private static final String CONFIG_FILE_PATH = "C:\\Users\\Himx\\IdeaProjects\\final2\\energy_model.ini";
 
     private static double CPU_A, CPU_B, SCREEN_A, SCREEN_B, WIFI_A, MOBILE_A, GPU_A, GPU_B, GPS_A, CAMERA_A;
