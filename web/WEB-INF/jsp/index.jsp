@@ -147,9 +147,9 @@
           console.log(data);
           data = JSON.parse(data);
           let totalEnergy = 0;
+          if (data.status == -1) disconnectHandler();
           $.each(data, function(key){
             if (key === 'status') return;
-            console.log(key);
             AllEnergyInfo[key].data = AllEnergyInfo[key].data.slice(1);
             totalEnergy += data[key];
             $.each(AllEnergyInfo[key].data, function(key2){

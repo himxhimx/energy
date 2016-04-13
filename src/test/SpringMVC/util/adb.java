@@ -112,13 +112,13 @@ public class adb {
     private int index = 0;
     public String getEnergyInfo() {
         if (index >= EnergyCPU.size()) {
-            return "{status: -1}";
+            return "{\"status\": \"-1\"}";
         }
 
         Map<String, String> map = new HashMap<>();
         map.put("status", "0");
         map.put("CPU", "" + EnergyCPU.get(index));
-        //map.put("Screen", "" + EnergyScreen.get(index));
+        map.put("Screen", "" + EnergyScreen.get(index));
         map.put("3G", "" + Energy3G.get(index));
         map.put("Wifi", "" + EnergyWiFi.get(index));
         index ++;

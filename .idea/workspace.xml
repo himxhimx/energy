@@ -1,7 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c25ad7f5-cddb-49c6-96fb-f8f9098b004a" name="Default" comment="" />
+    <list default="true" id="c25ad7f5-cddb-49c6-96fb-f8f9098b004a" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/final2_war_exploded/WEB-INF/classes/test/SpringMVC/util/adb.class" afterPath="$PROJECT_DIR$/out/artifacts/final2_war_exploded/WEB-INF/classes/test/SpringMVC/util/adb.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/final2/test/SpringMVC/util/adb.class" afterPath="$PROJECT_DIR$/out/production/final2/test/SpringMVC/util/adb.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/final2_war_exploded/WEB-INF/jsp/index.jsp" afterPath="$PROJECT_DIR$/out/artifacts/final2_war_exploded/WEB-INF/jsp/index.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/final2_war_exploded/assets/js/plotConfig.js" afterPath="$PROJECT_DIR$/out/artifacts/final2_war_exploded/assets/js/plotConfig.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/SpringMVC/util/adb.java" afterPath="$PROJECT_DIR$/src/test/SpringMVC/util/adb.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/jsp/index.jsp" afterPath="$PROJECT_DIR$/web/WEB-INF/jsp/index.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/js/plotConfig.js" afterPath="$PROJECT_DIR$/web/assets/js/plotConfig.js" />
+    </list>
     <ignored path="final2.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/out/" />
@@ -38,10 +48,10 @@
       <file leaf-file-name="index.jsp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/index.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="178">
-              <caret line="150" column="21" selection-start-line="150" selection-start-column="21" selection-end-line="150" selection-end-column="21" />
+            <state relative-caret-position="-126">
+              <caret line="149" column="53" selection-start-line="149" selection-start-column="53" selection-end-line="149" selection-end-column="53" />
               <folding>
-                <marker date="1460510631565" expanded="true" signature="5723:5758" placeholder="..." />
+                <marker date="1460514185696" expanded="true" signature="5723:5758" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -50,7 +60,7 @@
       <file leaf-file-name="EnergyModelUtils.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/SpringMVC/util/EnergyModelUtils.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="71">
+            <state relative-caret-position="114">
               <caret line="6" column="90" selection-start-line="6" selection-start-column="90" selection-end-line="6" selection-end-column="90" />
               <folding />
             </state>
@@ -60,8 +70,8 @@
       <file leaf-file-name="plotConfig.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/assets/js/plotConfig.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="839">
-              <caret line="53" column="6" selection-start-line="53" selection-start-column="6" selection-end-line="53" selection-end-column="6" />
+            <state relative-caret-position="285">
+              <caret line="54" column="6" selection-start-line="54" selection-start-column="6" selection-end-line="54" selection-end-column="6" />
               <folding />
             </state>
           </provider>
@@ -90,8 +100,8 @@
       <file leaf-file-name="adb.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/SpringMVC/util/adb.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="174">
-              <caret line="120" column="10" selection-start-line="120" selection-start-column="10" selection-end-line="120" selection-end-column="10" />
+            <state relative-caret-position="133">
+              <caret line="113" column="40" selection-start-line="113" selection-start-column="40" selection-end-line="113" selection-end-column="40" />
               <folding />
             </state>
           </provider>
@@ -109,6 +119,9 @@
         <option value="JavaScript File" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GradleLocalSettings">
     <option name="externalProjectsViewState">
@@ -138,8 +151,8 @@
         <option value="$PROJECT_DIR$/web/assets/css/main.css" />
         <option value="$PROJECT_DIR$/src/test/SpringMVC/util/EnergyModelUtils.java" />
         <option value="$PROJECT_DIR$/web/assets/js/plotConfig.js" />
-        <option value="$PROJECT_DIR$/src/test/SpringMVC/util/adb.java" />
         <option value="$PROJECT_DIR$/web/WEB-INF/jsp/index.jsp" />
+        <option value="$PROJECT_DIR$/src/test/SpringMVC/util/adb.java" />
       </list>
     </option>
   </component>
@@ -161,7 +174,7 @@
     <option name="width" value="1382" />
     <option name="height" value="744" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
     <OptionsSetting value="true" id="Remove" />
     <OptionsSetting value="true" id="Checkout" />
@@ -404,7 +417,9 @@
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="last_opened_file_path" value="D:/apache-tomcat-7.0.68-windows-x64/apache-tomcat-7.0.68/lib/websocket-api.jar!/" />
+    <property name="last_opened_file_path" value="D:/Git/bin/git.exe" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+    <property name="settings.editor.splitter.proportion" value="0.2" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -938,20 +953,20 @@
       <workItem from="1460035440024" duration="5176000" />
       <workItem from="1460044033112" duration="18115000" />
       <workItem from="1460170079875" duration="4449000" />
-      <workItem from="1460219005826" duration="61182000" />
+      <workItem from="1460219005826" duration="63555000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="133904000" />
+    <option name="totallyTimeSpent" value="136277000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32913387" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -959,7 +974,7 @@
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32913387" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32125986" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32125986" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -990,6 +1005,9 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="LAST_COMMIT_MESSAGE" value="" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1025,7 +1043,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1460510631565" expanded="true" signature="5723:5758" placeholder="..." />
+            <marker date="1460514185696" expanded="true" signature="5723:5758" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -1087,7 +1105,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1460510631565" expanded="true" signature="5723:5758" placeholder="..." />
+            <marker date="1460514185696" expanded="true" signature="5723:5758" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -1149,7 +1167,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1460510631565" expanded="true" signature="5723:5758" placeholder="..." />
+            <marker date="1460514185696" expanded="true" signature="5723:5758" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -1205,7 +1223,7 @@
         <state relative-caret-position="380">
           <caret line="20" column="2" selection-start-line="20" selection-start-column="2" selection-end-line="20" selection-end-column="2" />
           <folding>
-            <marker date="1460510631565" expanded="true" signature="5723:5758" placeholder="..." />
+            <marker date="1460514185696" expanded="true" signature="5723:5758" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -1288,14 +1306,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/assets/css/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="103" column="0" selection-start-line="103" selection-start-column="0" selection-end-line="103" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/SpringMVC/mvcController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="231">
@@ -1303,6 +1313,14 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/assets/css/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="103" column="0" selection-start-line="103" selection-start-column="0" selection-end-line="103" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1314,36 +1332,36 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/SpringMVC/util/EnergyModelUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="71">
-          <caret line="6" column="90" selection-start-line="6" selection-start-column="90" selection-end-line="6" selection-end-column="90" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/SpringMVC/util/adb.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="174">
-          <caret line="120" column="10" selection-start-line="120" selection-start-column="10" selection-end-line="120" selection-end-column="10" />
+        <state relative-caret-position="133">
+          <caret line="113" column="40" selection-start-line="113" selection-start-column="40" selection-end-line="113" selection-end-column="40" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/assets/js/plotConfig.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="839">
-          <caret line="53" column="6" selection-start-line="53" selection-start-column="6" selection-end-line="53" selection-end-column="6" />
+        <state relative-caret-position="285">
+          <caret line="54" column="6" selection-start-line="54" selection-start-column="6" selection-end-line="54" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/SpringMVC/util/EnergyModelUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="6" column="90" selection-start-line="6" selection-start-column="90" selection-end-line="6" selection-end-column="90" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/index.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="178">
-          <caret line="150" column="21" selection-start-line="150" selection-start-column="21" selection-end-line="150" selection-end-column="21" />
+        <state relative-caret-position="-126">
+          <caret line="149" column="53" selection-start-line="149" selection-start-column="53" selection-end-line="149" selection-end-column="53" />
           <folding>
-            <marker date="1460510631565" expanded="true" signature="5723:5758" placeholder="..." />
+            <marker date="1460514185696" expanded="true" signature="5723:5758" placeholder="..." />
           </folding>
         </state>
       </provider>

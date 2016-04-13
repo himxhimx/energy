@@ -18,9 +18,6 @@ const plotOptions = {
     yaxis: {
         min: 0,
         max: 1000
-    },
-    xaxis: {
-        show: false
     }
 };
 
@@ -50,6 +47,10 @@ var AllEnergyInfo = {
     },
     "Wifi": {
         label: "Wifi",
+        data: [[]]
+    },
+    "Screen": {
+        label: "Screen",
         data: [[]]
     },
     "Total": {
