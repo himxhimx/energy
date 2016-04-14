@@ -11,10 +11,11 @@
     <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
     <link href="assets/css/bootstrap-theme.min.css" rel="stylesheet" type="text/css" />
     <link href="assets/css/main.css" rel="stylesheet" type="text/css" />
+    <link rel="shortcut icon" href="assets/img/favicon.png" />
     <title>$Title$</title>
   </head>
   <body>
-    <div class="alert alert-danger alert-dismissible" role="alert" hidden id="non-connectBox">
+    <div class="alert alert-danger alert-dismissible" role="alert" hidden id="non-connectBox" style="position: absolute">
       <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
       <strong>Warning!</strong> Better check yourself, you're not looking too good.
     </div>
@@ -81,7 +82,7 @@
             <div class="panel-body" id="currentInfoBoxBody">
             </div>
           </div>
-          <div id="pie-container" class="pie-container panel panel-primary ">
+          <div id="pie-container" class="pie-container panel panel-primary">
             <div id="pie-placeholder"></div>
             <div class="panel-footer" style="width: 100%;text-align: center;font-size: 20px;background-color: #337ab7;color: white;">
               Percentage of Energy Used
@@ -95,12 +96,11 @@
         &copy; Copyright 2016 Himx - All rights reserved.
       </h6>
     </div>
-  
-    <script language="javascript" type="text/javascript" src="assets/js/jquery-2.2.2.min.js"></script>
-    <script language="javascript" type="text/javascript" src="assets/js/jquery.flot.js"></script>
+
+    <script language="Javascript" type="text/javascript" src="assets/js/jquery-2.2.2.min.js"></script>
+    <script language="Javascript" type="text/javascript" src="assets/js/jquery.flot.js"></script>
     <script language="JavaScript" type="text/javascript" src="assets/js/jquery.flot.pie.js"></script>
     <script language="JavaScript" type="text/javascript" src="assets/js/jquery.flot.crosshair.js"></script>
-
     <script language="javascript" type="text/javascript" src="assets/js/excanvas.min.js"></script>
     <script language="javascript" type="text/javascript" src="assets/js/bootstrap.min.js"></script>
 

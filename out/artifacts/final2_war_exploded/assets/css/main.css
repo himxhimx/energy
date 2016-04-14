@@ -20,19 +20,19 @@ body {
     margin-bottom: 10px;
     background-color: #337ab7;
     color: white;
-    -webkit-animation-name: fadeIn; /*动画名称*/
-    -webkit-animation-duration: 2s; /*动画持续时间*/
+    -webkit-animation-name: fadeIn;
+    -webkit-animation-duration: 2s;
     -webkit-animation-timing-function: linear;
     -webkit-animation-delay: 0s;
-    -webkit-animation-iteration-count: 1; /*动画次数*/
+    -webkit-animation-iteration-count: 1;
 }
 
 #header>h1 {
-    -webkit-animation-name: fadeIn; /*动画名称*/
-    -webkit-animation-duration: 3s; /*动画持续时间*/
+    -webkit-animation-name: fadeIn;
+    -webkit-animation-duration: 3s;
     -webkit-animation-timing-function: linear;
     -webkit-animation-delay: 0s;
-    -webkit-animation-iteration-count: 1; /*动画次数*/
+    -webkit-animation-iteration-count: 1;
 }
 
 #header>p {

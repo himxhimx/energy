@@ -84,5 +84,5 @@ linePlot.bindHover = function() {
 linePlot.init = function() {
     this.bindClick();
     this.bindHover();
-}
+};
 
