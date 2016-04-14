@@ -18,6 +18,8 @@
 
     <script language="JavaScript" type="text/javascript" src="assets/js/getInfoFromBackend.js"></script>
     <script language="JavaScript" type="text/javascript" src="assets/js/plotConfig.js"></script>
+    <!--<script language="JavaScript" type="text/javascript" src="assets/js/linePlot.js"></script>-->
+    <script language="JavaScript" type="text/javascript" src="assets/js/timeXaisBar.js"></script>
 
     <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
     <link href="assets/css/bootstrap-theme.min.css" rel="stylesheet" type="text/css" />
@@ -112,7 +114,7 @@
     //generate Choice boxes
     var choiceContainer = $("#plotChoices");
     $.each(AllEnergyInfo, function(key, val){
-      if (AllEnergyInfo[key].label !== "Total") {
+      if (AllEnergyInfo[key].label !== "Total" && AllEnergyInfo[key].label !== "Time") {
         choiceContainer.append("<input type='checkbox' class='infoChoose' name='" + key +
                 "' checked='checked' id='id" + key + "' disabled />" +
                 "<label for='id" + key + "'>"
@@ -148,6 +150,9 @@
           //console.log(data);
           if (!data) return;
           data = JSON.parse(data);
+
+          updateTimeXaisBar();
+
           let totalEnergy = 0;
 
           if (data.status == -1) {
@@ -175,12 +180,17 @@
             });
             AllEnergyInfo[key].data.push([totalPoints - 1, data[key]]);
           });
-
+          //Calculate the total energy
           AllEnergyInfo.Total.data = AllEnergyInfo.Total.data.slice(1);
           $.each(AllEnergyInfo.Total.data, function(key2){
             AllEnergyInfo.Total.data[key2][0]--;
           });
           AllEnergyInfo.Total.data.push([totalPoints - 1, totalEnergy]);
+
+          //update the time sequence
+          AllEnergyInfo.Time.data = AllEnergyInfo.Time.data.slice(1);
+          AllEnergyInfo.Total.data.push([totalPoints - 1, AllEnergyInfo.Time.data[AllEnergyInfo.Time.data.length - 1][1] + updateInterval / 1000]);
+
           plotAccordingToChoices();
         },
         error: function (err) {
@@ -198,7 +208,7 @@
       }
       let dataset = plot.getData();
       let piePlotData = [];
-      $.each(dataset, function(key, val){
+      let updateToCurrentInfoBox = function (key, val, notAddToPie) {
         let j;
         // Find the nearest points, x-wise
         for (j = 0; j < val.data.length; ++j) {
@@ -215,8 +225,10 @@
           y = parseFloat(p1[1]) + parseFloat((p2[1] - p1[1]) * (pos.x - p1[0]) / (p2[0] - p1[0]));
         }
         $("#currentInfoBoxBody").append("<h6>" + val.label + ":" + y.toFixed(2) + "</h6>");
-        piePlotData.push({label: val.label, data: y});
-      });
+        if (!notAddToPie) piePlotData.push({label: val.label, data: y});
+      };
+      updateToCurrentInfoBox("Time", AllEnergyInfo.Time, true);
+      $.each(dataset, updateToCurrentInfoBox);
       piePlot = $.plot("#pie-placeholder", piePlotData, pieplotOption);
     });
 
@@ -236,10 +248,10 @@
         previousPoint = null;
       }
     });
+
     function update() {
       if (!connected) return;
       getEnergyInfo();
-      updateTimeXaisBar();
       timer = setTimeout(update, updateInterval);
     }
 
@@ -280,17 +292,6 @@
           console.error(err);
         }
       });
-      /*
-      connected = true;
-      isPlaying = true;
-      $(this).click(disconnectHandler);
-      $("#connectSpan").css("color", "white");
-      $("#controlPlay").removeAttr("disabled");
-      $("#download").removeAttr("disabled");
-      $("#playSpan").attr("class", "glyphicon glyphicon-pause");
-      $("#plotChoices").show();
-      $(".infoChoose").removeAttr("disabled");
-      update();*/
     };
 
     disconnectHandler = function () {
@@ -347,8 +348,8 @@
     $("#getData").click(function () {
       document.location.href = AllEnergyInfo.toString();
     });
-    initTimeXaisBar();
-    setInterval(updateTimeXaisBar, 500);
+    //initTimeXaisBar();
+    //setInterval(updateTimeXaisBar, 500);
   </script>
   </body>
 </html>
