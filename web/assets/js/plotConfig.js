@@ -4,28 +4,6 @@
  */
 const updateInterval = 500;
 const totalPoints = 100;
-const plotOptions = {
-    series: {
-        shadowSize: 0	// Drawing is faster without shadows
-    },
-    grid: {
-        hoverable: true,
-        clickable: true
-    },
-    lines: {
-        fill: true
-    },
-    crosshair: {
-        mode: "x"
-    },
-    yaxis: {
-        min: 0,
-        max: 1000
-    },
-    xaxis: {
-        show: false
-    }
-};
 
 const pieplotOption = {
     series: {
@@ -69,6 +47,17 @@ var AllEnergyInfo = {
     }
 };
 
+var initEnergyInfo = function() {
+    $.each(AllEnergyInfo, function(key, val) {
+       while (val.data.length < totalPoints) {
+           val.data.push([-1, 0]);
+       }
+        $.each(val.data, function(idx, val2) {
+            val2[0] = idx;
+            val2[1] = 0;
+        });
+    });
+};
 
 // 节点提示
 function showTooltip(x, y, contents) {
@@ -94,10 +83,5 @@ var piePlot = null;
 
 var isPlaying = true;
 var connected = false;
-
-var connectHandler;
-var disconnectHandler;
-var playHandler;
-var stopHandler;
 
 var timer;

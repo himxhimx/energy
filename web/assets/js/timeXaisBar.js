@@ -1,6 +1,7 @@
 /**
  * Created by Himx on 14/4/2016.
  *
+ * <div id="plotxais" style="position: absolute;top:440px;left:50px"></div>
  */
 const timeXaisItemInitPos = [0, 55, 114, 174, 233, 292, 351, 410, 470, 529, 588];
 const ntimeXais = 10;
@@ -8,6 +9,7 @@ const timeXaisInterval = 5;
 const movePerTick = [1, 5.5, 5.9, 6, 5.9, 5.9, 5.9, 5.9, 6, 5.9, 5.9];
 var timeXais = [];
 var nowPosXaisItem = [];
+var timeXaisBar = {};
 
 var initTimeXais = function() {
     var tmp = 0;
@@ -18,7 +20,7 @@ var initTimeXais = function() {
     nowPosXaisItem = timeXaisItemInitPos.slice(0);
 };
 
-var initTimeXaisBar = function() {
+timeXaisBar.init = function() {
     $("#plotxais").empty();
     initTimeXais();
     $.each(timeXais, function(key, val) {
@@ -28,7 +30,7 @@ var initTimeXaisBar = function() {
     });
 };
 
-var updateTimeXaisBar = function() {
+timeXaisBar.update = function() {
     var i;
     for (i = 0; i < ntimeXais + 1; i++) {
         nowPosXaisItem[i] -= movePerTick[i];
