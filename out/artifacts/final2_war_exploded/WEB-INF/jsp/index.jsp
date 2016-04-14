@@ -15,7 +15,7 @@
     <title>$Title$</title>
   </head>
   <body>
-    <div class="alert alert-danger alert-dismissible" role="alert" hidden id="non-connectBox" style="position: absolute">
+    <div class="alert alert-danger alert-dismissible" role="alert" hidden id="alertBar" style="position: absolute; width: 100%;">
       <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
       <strong>Warning!</strong> Better check yourself, you're not looking too good.
     </div>
@@ -71,7 +71,7 @@
           <div id="plotxais" style="position: absolute;top:440px;left:50px"></div>
         </div>
         <div id="container-right" class="col-md-3">
-          <div class="panel panel-primary" style="height: 100px">
+          <div class="panel panel-primary" style="height: 100px" id="selectChartBox">
             <div class="panel-heading" style="font-size: 20px">Chart selected</div>
             <div class="panel-body">
               <p id="plotChoices"></p>

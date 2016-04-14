@@ -7,13 +7,20 @@ body {
     0% {
         opacity: 0;
     }
-    50% {
-        opacity: 0;
-    }
     100% {
         opacity: 1;
     }
 }
+
+#controlBoxes, #deviceStatus, #p-container, #currentInfoBox, #pie-container, #selectChartBox{
+    opacity: 0;
+    -webkit-animation-name: fadeIn;
+    -webkit-animation-duration: 1.5s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-fill-mode: forwards;
+}
+
 
 #header{
     width: 100%;
@@ -28,28 +35,26 @@ body {
 }
 
 #header>h1 {
+    opacity: 0;
     -webkit-animation-name: fadeIn;
-    -webkit-animation-duration: 3s;
+    -webkit-animation-duration: 1s;
     -webkit-animation-timing-function: linear;
-    -webkit-animation-delay: 0s;
+    -webkit-animation-delay: 2s;
     -webkit-animation-iteration-count: 1;
+    -webkit-animation-fill-mode: forwards;
 }
 
 #header>p {
+    opacity: 0;
     -webkit-animation-name: fadeIn; /*动画名称*/
-    -webkit-animation-duration: 5s; /*动画持续时间*/
+    -webkit-animation-duration: 1s; /*动画持续时间*/
+    -webkit-animation-delay: 3s;
     -webkit-animation-timing-function: linear;
-    -webkit-animation-delay: 0s;
     -webkit-animation-iteration-count: 1; /*动画次数*/
+    -webkit-animation-fill-mode: forwards;
 }
 
 #container{
-    -webkit-animation-name: fadeIn; /*动画名称*/
-    -webkit-animation-duration: 2s; /*动画持续时间*/
-    -webkit-animation-timing-function: linear;
-    -webkit-animation-delay: 0s;
-    -webkit-animation-iteration-count: 1; /*动画次数*/
-
     height: 620px;
     width: 100%;
     padding-top: 20px;
@@ -85,6 +90,9 @@ body {
     -ms-box-shadow: 0 3px 10px rgba(0,0,0,0.1);
     -moz-box-shadow: 0 3px 10px rgba(0,0,0,0.1);
     -webkit-box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+
+    -webkit-animation-delay: 0.2s;
+
 }
 
 #placeholder {
@@ -114,6 +122,7 @@ body {
 .deviceStatus{
     margin-top: 20px;
     margin-right: 3%;
+    -webkit-animation-delay: 0.3s;
 }
 
 .deviceInfoBriefKey{
@@ -161,13 +170,15 @@ body {
     transition-delay: 0s;
 }
 
-.pie-container {
+#pie-container {
     box-sizing: border-box;
     width: 100%;
     height: 300px;
     padding: 0 0 15px 0;
     margin: 0 auto 0 auto;
     background: #fff;
+
+    -webkit-animation-delay: 0.4s;
 }
 
 #pie-placeholder {
@@ -179,6 +190,7 @@ body {
 #currentInfoBox {
     height: 200px;
     width: 100%;
+    -webkit-animation-delay: 0.6s;
 }
 
 .downloadMenuItem{
@@ -189,4 +201,8 @@ body {
     font-size: 15px;
     font-weight: 500;
     position: absolute;
+}
+
+#controlBoxes {
+    -webkit-animation-delay: 0.5s;
 }

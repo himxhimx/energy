@@ -33,7 +33,7 @@ controlBox.connectHandler = function() {
             if (jData["deviceName"] === "") {
                 $("#deviceName").text("No Device Connected");
                 $(".deviceInfoBriefVal").text("Unknown");
-                $("#non-connectBox").show();
+                $("#alertBar").show();
             } else {
                 $("#deviceName").text(jData["deviceName"]);
                 $("#deviceInfoBriefStatus").text(jData.status === "device" ? "Online" : "Offline");
