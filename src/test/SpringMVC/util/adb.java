@@ -114,7 +114,6 @@ public class adb {
     private int index = 0;
     public String getEnergyInfo() {
         logcat();
-        System.out.println(index);
         Map<String, String> map = new HashMap<>();
         if (index >= EnergyCPU.size()) {
             map.put("status", "-1");

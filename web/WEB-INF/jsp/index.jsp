@@ -111,6 +111,5 @@
     <script language="JavaScript" type="text/javascript" src="assets/js/controlBox.js"></script>
     <script language="JavaScript" type="text/javascript" src="assets/js/timeXaisBar.js"></script>
     <script language="JavaScript" type="text/javascript" src="assets/js/main.js"></script>
-
   </body>
 </html>

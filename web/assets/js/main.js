@@ -10,7 +10,6 @@ var getEnergyInfo = function () {
         success: function(data) {
             if (!data) return;
             data = JSON.parse(data);
-            timeXaisBar.update();
             var totalEnergy = 0;
 
             if (data.status == -1) {
@@ -52,7 +51,12 @@ var getEnergyInfo = function () {
             });
             AllEnergyInfo.Time.data.push([totalPoints - 1, AllEnergyInfo.Time.data[AllEnergyInfo.Time.data.length - 1][1] + updateInterval / 1000.0]);
 
-            choiceBox.plotAccordingToChoices();
+            timeXaisBar.update(true);
+            if (isPlaying) 
+            {
+                choiceBox.plotAccordingToChoices();
+                timeXaisBar.draw();
+            }
         },
         error: function (err) {
             console.error(err);

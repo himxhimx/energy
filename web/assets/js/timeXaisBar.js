@@ -5,47 +5,53 @@
  */
 const timeXaisItemInitPos = [0, 55, 114, 174, 233, 292, 351, 410, 470, 529, 588];
 const ntimeXais = 10;
-const timeXaisInterval = 5;
 const movePerTick = [1, 5.5, 5.9, 6, 5.9, 5.9, 5.9, 5.9, 6, 5.9, 5.9];
-var timeXais = [];
+//var timeXais = [];
 var nowPosXaisItem = [];
 var timeXaisBar = {};
 
-var initTimeXais = function() {
-    var tmp = 0;
-    for (var i = ntimeXais; i >= 0; i--) {
-        timeXais[i] = tmp;
-        tmp -= timeXaisInterval;
-    }
-    nowPosXaisItem = timeXaisItemInitPos.slice(0);
+timeXaisBar.endTimeVal = 0;
+timeXaisBar.timeXaisInterval = 5;
+
+timeXaisBar.initTimeXais = function() {
+    nowPosXaisItem.push(-9);
+    nowPosXaisItem = nowPosXaisItem.concat(timeXaisItemInitPos.slice(0, -1));
 };
 
 timeXaisBar.init = function() {
     $("#plotxais").empty();
-    initTimeXais();
-    $.each(timeXais, function(key, val) {
-        var showable = (val>=0?1:0);
-        $("#plotxais").append("<label class='plotXaisItem' id='plotXaisItem" + key
-            + "' style='opacity:" + showable + ";left:"+ timeXaisItemInitPos[key] + "'>" + val + "</label>")
-    });
+    this.initTimeXais();
+
+    for (var i = 0; i < ntimeXais + 1; i++) {
+        $("#plotxais").append("<label class='plotXaisItem' id='plotXaisItem" + i
+            + "' style='opacity:0;left:"+ nowPosXaisItem[i] + "'>" + -1 + "</label>");
+    }
 };
 
-timeXaisBar.update = function() {
+
+timeXaisBar.update = function(updateTimeInfo) {
     var i;
-    for (i = 0; i < ntimeXais + 1; i++) {
-        nowPosXaisItem[i] -= movePerTick[i];
+    if (updateTimeInfo) {
+        for (i = 0; i < ntimeXais + 1; i++) {
+            nowPosXaisItem[i] -= movePerTick[i] * (this.timeXaisInterval / timeInterval);
+        }
+        if (nowPosXaisItem[0] <= -10) {
+            nowPosXaisItem = timeXaisItemInitPos.slice(0);
+            timeXaisBar.endTimeVal = AllEnergyInfo["Time"].data[totalPoints - 1][1];
+        }
     }
-    if (nowPosXaisItem[0] == -10) {
-        timeXais = timeXais.slice(1);
-        timeXais.push(timeXais[timeXais.length - 1] + timeXaisInterval);
-        nowPosXaisItem = timeXaisItemInitPos.slice(0);
-    }
-    if (!isPlaying) return;
-    for (i = 0; i < ntimeXais + 1; i++) {
+};
+
+timeXaisBar.draw = function() {
+    var timeVal = timeXaisBar.endTimeVal - ntimeXais * timeInterval;
+    for (var i = 0; i < ntimeXais + 1; i++) {
         var id = "#plotXaisItem" + i;
-        $(id).css("left", nowPosXaisItem[i]);
-        var showable = nowPosXaisItem[i] >= 0 && nowPosXaisItem[i] < timeXaisItemInitPos[ntimeXais] && timeXais[i] >= 0;
-        $(id).css("opacity", showable?1:0);
-        $(id).text(timeXais[i]);
+        var showable = nowPosXaisItem[i] >= 0 && nowPosXaisItem[i] < timeXaisItemInitPos[ntimeXais] && timeVal >= 0;
+        if (isPlaying) {
+            $(id).css("left", nowPosXaisItem[i]);
+            $(id).css("opacity", showable?1:0);
+        }
+        if (isPlaying) $(id).text(timeVal);
+        timeVal = timeVal + timeInterval;
     }
 };

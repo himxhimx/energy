@@ -3,6 +3,7 @@
  * 
  */
 
+
 var choiceBox = {};
 
 choiceBox.choiceContainer = $("#plotChoices");
@@ -13,7 +14,12 @@ choiceBox.plotAccordingToChoices = function() {
     this.choiceContainer.find("input:checked").each(function () {
         var key = $(this).attr("name");
         if (key && tmpData[key]) {
-            data.push(tmpData[key]);
+            //data.push(tmpData[key]);
+            var tmptmp = {
+                label: tmpData[key].label,
+                data: tmpData[key].data.slice(totalPoints - timeInterval * 10 * 2)
+            };
+            data.push(tmptmp);
         }
     });
     if (data.length > 0) {
@@ -30,7 +36,21 @@ choiceBox.init = function() {
                 + key + "</label>" + "&nbsp;");
         }
     });
-    this.choiceContainer.find("input").click(this.plotAccordingToChoices);
+
+    var timeIntervalSelectBox = "<select id='timeIntervalSelectBox'>";
+    for (var i = 1; i <= 10; i++) {
+        var selected = (i==5?"selected='selected'":"");
+        timeIntervalSelectBox += "<option value='" + i + "'" + selected + ">" + i + "s</option>";
+    }
+    timeIntervalSelectBox += "</select>";
+    this.choiceContainer.append(timeIntervalSelectBox);
+    this.choiceContainer.find(".infoChoose").click(this.plotAccordingToChoices);
+    $("#timeIntervalSelectBox").change(function() {
+        var tmp = document.getElementById("timeIntervalSelectBox");
+        timeInterval = parseInt(tmp.options[tmp.selectedIndex].value);
+        choiceBox.plotAccordingToChoices();
+        timeXaisBar.draw();
+    });
 };
 
 

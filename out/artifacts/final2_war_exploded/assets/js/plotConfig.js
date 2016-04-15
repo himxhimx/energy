@@ -3,7 +3,7 @@
  * 
  */
 const updateInterval = 500;
-const totalPoints = 100;
+const totalPoints = 300;
 
 const pieplotOption = {
     series: {
@@ -54,7 +54,7 @@ var initEnergyInfo = function() {
        }
         $.each(val.data, function(idx, val2) {
             val2[0] = idx;
-            val2[1] = 0;
+            val2[1] = -0.5;
         });
     });
 };
@@ -75,6 +75,8 @@ function showTooltip(x, y, contents) {
     */
     
 }
+
+var timeInterval = 5;
 
 var dataWhenPause;
 

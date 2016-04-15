@@ -39,8 +39,8 @@ controlBox.connectHandler = function() {
                 $("#deviceInfoBriefStatus").text(jData.status === "device" ? "Online" : "Offline");
                 connected = true;
                 isPlaying = true;
-                $("#controlConnect").unbind("click", this.connectHandler);
-                $("#controlConnect").click(this.connectHandler);
+                $("#controlConnect").unbind("click", controlBox.connectHandler);
+                $("#controlConnect").click(controlBox.connectHandler);
                 $("#connectSpan").css("color", "white");
                 $("#controlPlay").removeAttr("disabled");
                 $("#download").removeAttr("disabled");
@@ -62,8 +62,8 @@ controlBox.disconnectHandler = function () {
     connected = false;
     isPlaying = false;
     clearTimeout(timer);
-    $("#controlConnect").unbind("click", this.disconnectHandler);
-    $("#controlConnect").click(this.connectHandler);
+    $("#controlConnect").unbind("click", controlBox.disconnectHandler);
+    $("#controlConnect").click(controlBox.connectHandler);
     $("#deviceName").text("No Device Connected");
     $(".deviceInfoBriefVal").text("Unknown");
     $("#connectSpan").css("color", "#9d9d9d");
@@ -74,12 +74,15 @@ controlBox.disconnectHandler = function () {
 };
 
 controlBox.playHandler = function() {
+    console.log("play");
     isPlaying = true;
-    $(this).click(this.stopHandler);
+    $("#controlPlay").unbind("click", controlBox.playHandler);
+    $("#controlPlay").click(controlBox.stopHandler);
     $("#playSpan").attr("class", "glyphicon glyphicon-pause");
 };
 
 controlBox.stopHandler = function () {
+    console.log("stop");
     isPlaying = false;
     dataWhenPause = {};
     $.each(AllEnergyInfo, function(key, val) {
@@ -91,7 +94,8 @@ controlBox.stopHandler = function () {
             dataWhenPause[key].data.push([val2[0], val2[1]]);
         })
     });
-    $(this).click(this.playHandler);
+    $("#controlPlay").unbind("click", controlBox.stopHandler);
+    $("#controlPlay").click(controlBox.playHandler);
     $("#playSpan").attr("class", "glyphicon glyphicon-play");
 };
 
