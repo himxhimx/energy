@@ -2,17 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c25ad7f5-cddb-49c6-96fb-f8f9098b004a" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/final2_war_exploded/WEB-INF/classes/test/SpringMVC/util/adb.class" afterPath="$PROJECT_DIR$/out/artifacts/final2_war_exploded/WEB-INF/classes/test/SpringMVC/util/adb.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/final2/test/SpringMVC/util/adb.class" afterPath="$PROJECT_DIR$/out/production/final2/test/SpringMVC/util/adb.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/final2_war_exploded/WEB-INF/jsp/index.jsp" afterPath="$PROJECT_DIR$/out/artifacts/final2_war_exploded/WEB-INF/jsp/index.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/final2_war_exploded/assets/js/plotConfig.js" afterPath="$PROJECT_DIR$/out/artifacts/final2_war_exploded/assets/js/plotConfig.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/SpringMVC/util/adb.java" afterPath="$PROJECT_DIR$/src/test/SpringMVC/util/adb.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/jsp/index.jsp" afterPath="$PROJECT_DIR$/web/WEB-INF/jsp/index.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/js/choiceBox.js" afterPath="$PROJECT_DIR$/web/assets/js/choiceBox.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/js/controlBox.js" afterPath="$PROJECT_DIR$/web/assets/js/controlBox.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/js/main.js" afterPath="$PROJECT_DIR$/web/assets/js/main.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/js/plotConfig.js" afterPath="$PROJECT_DIR$/web/assets/js/plotConfig.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/js/timeXaisBar.js" afterPath="$PROJECT_DIR$/web/assets/js/timeXaisBar.js" />
     </list>
     <ignored path="final2.iws" />
@@ -49,7 +40,7 @@
       <file leaf-file-name="main.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/assets/js/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-80">
+            <state relative-caret-position="228">
               <caret line="54" column="27" selection-start-line="54" selection-start-column="27" selection-end-line="54" selection-end-column="27" />
               <folding />
             </state>
@@ -59,8 +50,8 @@
       <file leaf-file-name="choiceBox.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/assets/js/choiceBox.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="266">
-              <caret line="44" column="41" selection-start-line="44" selection-start-column="41" selection-end-line="44" selection-end-column="41" />
+            <state relative-caret-position="209">
+              <caret line="41" column="55" selection-start-line="41" selection-start-column="55" selection-end-line="41" selection-end-column="55" />
               <folding>
                 <marker date="1460723536096" expanded="true" signature="1113:1148" placeholder="..." />
               </folding>
@@ -68,10 +59,20 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="controlBox.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/assets/js/controlBox.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="38" column="97" selection-start-line="38" selection-start-column="97" selection-end-line="38" selection-end-column="97" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="linePlot.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/assets/js/linePlot.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-308">
+            <state relative-caret-position="433">
               <caret line="23" column="12" selection-start-line="23" selection-start-column="12" selection-end-line="23" selection-end-column="12" />
               <folding />
             </state>
@@ -81,8 +82,8 @@
       <file leaf-file-name="plotConfig.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/assets/js/plotConfig.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-4">
-              <caret line="54" column="46" selection-start-line="54" selection-start-column="46" selection-end-line="54" selection-end-column="46" />
+            <state relative-caret-position="262">
+              <caret line="56" column="26" selection-start-line="56" selection-start-column="26" selection-end-line="56" selection-end-column="26" />
               <folding />
             </state>
           </provider>
@@ -91,11 +92,21 @@
       <file leaf-file-name="timeXaisBar.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web/assets/js/timeXaisBar.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-365">
-              <caret line="15" column="39" selection-start-line="15" selection-start-column="39" selection-end-line="15" selection-end-column="39" />
+            <state relative-caret-position="266">
+              <caret line="17" column="24" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="24" />
               <folding>
-                <marker date="1460724651476" expanded="true" signature="815:830" placeholder="..." />
+                <marker date="1460789758885" expanded="true" signature="806:821" placeholder="..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="adb.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/SpringMVC/util/adb.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="300">
+              <caret line="130" column="9" selection-start-line="130" selection-start-column="9" selection-end-line="130" selection-end-column="9" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -155,13 +166,13 @@
         <option value="$PROJECT_DIR$/src/test/SpringMVC/util/timeXaisBar.js" />
         <option value="$PROJECT_DIR$/web/assets/js/alertBar.js" />
         <option value="$PROJECT_DIR$/web/assets/css/main.css" />
-        <option value="$PROJECT_DIR$/web/assets/js/controlBox.js" />
         <option value="$PROJECT_DIR$/web/WEB-INF/jsp/index.jsp" />
-        <option value="$PROJECT_DIR$/src/test/SpringMVC/util/adb.java" />
         <option value="$PROJECT_DIR$/web/assets/js/linePlot.js" />
-        <option value="$PROJECT_DIR$/web/assets/js/plotConfig.js" />
         <option value="$PROJECT_DIR$/web/assets/js/main.js" />
         <option value="$PROJECT_DIR$/web/assets/js/choiceBox.js" />
+        <option value="$PROJECT_DIR$/src/test/SpringMVC/util/adb.java" />
+        <option value="$PROJECT_DIR$/web/assets/js/controlBox.js" />
+        <option value="$PROJECT_DIR$/web/assets/js/plotConfig.js" />
         <option value="$PROJECT_DIR$/web/assets/js/timeXaisBar.js" />
       </list>
     </option>
@@ -963,7 +974,7 @@
       <workItem from="1460035440024" duration="5176000" />
       <workItem from="1460044033112" duration="18115000" />
       <workItem from="1460170079875" duration="4449000" />
-      <workItem from="1460219005826" duration="117524000" />
+      <workItem from="1460219005826" duration="123577000" />
     </task>
     <task id="LOCAL-00001" summary="xais rolling">
       <created>1460565104289</created>
@@ -1000,11 +1011,18 @@
       <option name="project" value="LOCAL" />
       <updated>1460650694892</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="可控時間軸">
+      <created>1460726821351</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1460726821351</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="190246000" />
+    <option name="totallyTimeSpent" value="196299000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -1058,7 +1076,8 @@
     <MESSAGE value="重組代碼結構 again" />
     <MESSAGE value="加icon" />
     <MESSAGE value="增加各控件淡入淡出" />
-    <option name="LAST_COMMIT_MESSAGE" value="增加各控件淡入淡出" />
+    <MESSAGE value="可控時間軸" />
+    <option name="LAST_COMMIT_MESSAGE" value="可控時間軸" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1399,26 +1418,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/assets/js/controlBox.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1144">
-          <caret line="15" column="61" selection-start-line="15" selection-start-column="61" selection-end-line="15" selection-end-column="61" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/assets/css/main.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="139">
           <caret line="161" column="16" selection-start-line="161" selection-start-column="16" selection-end-line="161" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/SpringMVC/util/adb.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="129">
-          <caret line="47" column="76" selection-start-line="47" selection-start-column="49" selection-end-line="47" selection-end-column="76" />
           <folding />
         </state>
       </provider>
@@ -1431,46 +1434,62 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/assets/js/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-80">
-          <caret line="54" column="27" selection-start-line="54" selection-start-column="27" selection-end-line="54" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/assets/js/choiceBox.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="44" column="41" selection-start-line="44" selection-start-column="41" selection-end-line="44" selection-end-column="41" />
+        <state relative-caret-position="209">
+          <caret line="41" column="55" selection-start-line="41" selection-start-column="55" selection-end-line="41" selection-end-column="55" />
           <folding>
             <marker date="1460723536096" expanded="true" signature="1113:1148" placeholder="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/assets/js/linePlot.js">
+    <entry file="file://$PROJECT_DIR$/src/test/SpringMVC/util/adb.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-308">
-          <caret line="23" column="12" selection-start-line="23" selection-start-column="12" selection-end-line="23" selection-end-column="12" />
+        <state relative-caret-position="300">
+          <caret line="130" column="9" selection-start-line="130" selection-start-column="9" selection-end-line="130" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/assets/js/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="54" column="27" selection-start-line="54" selection-start-column="27" selection-end-line="54" selection-end-column="27" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/assets/js/plotConfig.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-4">
-          <caret line="54" column="46" selection-start-line="54" selection-start-column="46" selection-end-line="54" selection-end-column="46" />
+        <state relative-caret-position="262">
+          <caret line="56" column="26" selection-start-line="56" selection-start-column="26" selection-end-line="56" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/assets/js/controlBox.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="38" column="97" selection-start-line="38" selection-start-column="97" selection-end-line="38" selection-end-column="97" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/assets/js/linePlot.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="433">
+          <caret line="23" column="12" selection-start-line="23" selection-start-column="12" selection-end-line="23" selection-end-column="12" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/assets/js/timeXaisBar.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-365">
-          <caret line="15" column="39" selection-start-line="15" selection-start-column="39" selection-end-line="15" selection-end-column="39" />
+        <state relative-caret-position="266">
+          <caret line="17" column="24" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="24" />
           <folding>
-            <marker date="1460724651476" expanded="true" signature="815:830" placeholder="..." />
+            <marker date="1460789758885" expanded="true" signature="806:821" placeholder="..." />
           </folding>
         </state>
       </provider>

@@ -40,7 +40,7 @@ controlBox.connectHandler = function() {
                 connected = true;
                 isPlaying = true;
                 $("#controlConnect").unbind("click", controlBox.connectHandler);
-                $("#controlConnect").click(controlBox.connectHandler);
+                $("#controlConnect").click(controlBox.disconnectHandler);
                 $("#connectSpan").css("color", "white");
                 $("#controlPlay").removeAttr("disabled");
                 $("#download").removeAttr("disabled");
