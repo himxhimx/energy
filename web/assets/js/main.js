@@ -73,3 +73,4 @@ var update = function() {
 choiceBox.init();
 linePlot.init();
 controlBox.init();
+packageInfoBox.init();

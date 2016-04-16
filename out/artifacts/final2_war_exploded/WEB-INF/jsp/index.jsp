@@ -65,6 +65,14 @@
               </table>
             </div>
           </div>
+          <div id="packageInfoBox" class="panel panel-primary deviceStatus" style="height: 345px;">
+            <div class="panel-heading" style="font-size: 20px">Packages Running</div>
+            <div class="panel-body" style="padding: 0; height: 294px; overflow: scroll; overflow-x: hidden;">
+              <table id="packageList" class="table table-hover table-condensed">
+
+              </table>
+            </div>
+          </div>
         </div>
         <div id="p-container" class="p-container col-md-6">
           <div id="placeholder" class="placeholder"></div>
@@ -92,7 +100,7 @@
       </div>
     </div>
     <div id="footer">
-      <h6 style="text-align: center">
+      <h6 style="text-align: center; margin-bottom: 0px">
         &copy; Copyright 2016 Himx - All rights reserved.
       </h6>
     </div>
@@ -110,6 +118,7 @@
     <script language="JavaScript" type="text/javascript" src="assets/js/linePlot.js"></script>
     <script language="JavaScript" type="text/javascript" src="assets/js/controlBox.js"></script>
     <script language="JavaScript" type="text/javascript" src="assets/js/timeXaisBar.js"></script>
+    <script language="JavaScript" type="text/javascript" src="assets/js/packageInfoBox.js"></script>
     <script language="JavaScript" type="text/javascript" src="assets/js/main.js"></script>
   </body>
 </html>

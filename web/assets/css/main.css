@@ -55,13 +55,12 @@ body {
 }
 
 #container{
-    height: 620px;
+    height: 630px;
     width: 100%;
     padding-top: 20px;
 }
 
 #footer{
-    margin-top: 20px;
     width: 100%;
     color: #dddddd;
 }
@@ -75,7 +74,7 @@ body {
 .p-container {
     box-sizing: border-box;
     width: 50%;
-    height: 470px;
+    height: 100%;
     padding: 0 15px 15px 15px;
     margin: 0 auto 30px auto;
     border: 1px solid #ddd;
@@ -205,4 +204,8 @@ body {
 
 #controlBoxes {
     -webkit-animation-delay: 0.5s;
+}
+
+tr.packageListItem:hover {
+    cursor: pointer;
 }
