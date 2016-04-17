@@ -76,7 +76,7 @@
         </div>
         <div id="p-container" class="p-container col-md-6">
           <div id="placeholder" class="placeholder"></div>
-          <div id="plotxais" style="position: absolute;top:440px;left:50px"></div>
+          <div id="plotxais" style="position: absolute;top:580px;left:50px"></div>
         </div>
         <div id="container-right" class="col-md-3">
           <div class="panel panel-primary" style="height: 100px" id="selectChartBox">
@@ -100,7 +100,7 @@
       </div>
     </div>
     <div id="footer">
-      <h6 style="text-align: center; margin-bottom: 0px">
+      <h6 style="text-align: center; margin-bottom: 0">
         &copy; Copyright 2016 Himx - All rights reserved.
       </h6>
     </div>

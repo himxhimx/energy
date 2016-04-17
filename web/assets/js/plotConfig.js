@@ -23,18 +23,22 @@ const pieplotOption = {
 var AllEnergyInfo = {
     "CPU": {
         label: "CPU",
+        percent: 1,
         data: [[]]
     },
     "3G": {
         label: "3G",
+        percent: 1,
         data: [[]]
     },
     "Wifi": {
         label: "Wifi",
+        percent: 1,
         data: [[]]
     },
     "Screen": {
         label: "Screen",
+        percent: 1,
         data: [[]]
     },
     "Time": {
@@ -87,3 +91,5 @@ var isPlaying = true;
 var connected = false;
 
 var timer;
+
+var pid = 0;

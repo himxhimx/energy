@@ -1,6 +1,7 @@
 package test.SpringMVC;
 
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
@@ -34,11 +35,21 @@ public class mvcController {
         return "hello";
     }
 
-    @RequestMapping("/person1")
-    public ModelAndView toPerson(Person p) {
+    @RequestMapping("/person1/{id}")
+    public ModelAndView toPerson(@PathVariable(value="id") Integer id) {
         Person pp = new Person();
-        pp.setAge(10);
+        pp.setAge(id);
         pp.setName("helloworld");
+        ModelAndView mav = new ModelAndView("hello");
+        mav.addObject("message", pp);
+        return mav;
+    }
+
+    @RequestMapping(value="/person1/{id}", params="example")
+    public ModelAndView toPerson2(@PathVariable(value="id") Integer id) {
+        Person pp = new Person();
+        pp.setAge(id - 1);
+        pp.setName("example");
         ModelAndView mav = new ModelAndView("hello");
         mav.addObject("message", pp);
         return mav;
@@ -57,9 +68,10 @@ public class mvcController {
         return myadb.logcatInfo;
     }
 
-    @RequestMapping(value = "/getEnergyInfo", method = RequestMethod.GET)
+    @RequestMapping(value = "/getEnergyInfo/{pid}", method = RequestMethod.GET)
     @ResponseBody
-    public String getEnergyInfo() {
+    public String getEnergyInfo(@PathVariable(value="pid") Integer pid) {
+        System.out.println(pid);
         return myadb.getEnergyInfo();
     }
 

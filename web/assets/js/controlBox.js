@@ -25,9 +25,10 @@ var controlBox = {};
 controlBox.connectHandler = function() {
     console.log("connect");
     initEnergyInfo();
+    packageInfoBox.init();
     $.ajax({
         type: "GET",
-        url: "/getDevices.do",
+        url: "/getDevices",
         success: function (data) {
             var jData = JSON.parse(data);
             if (jData["deviceName"] === "") {
@@ -39,6 +40,7 @@ controlBox.connectHandler = function() {
                 $("#deviceInfoBriefStatus").text(jData.status === "device" ? "Online" : "Offline");
                 connected = true;
                 isPlaying = true;
+                pid = 0;
                 $("#controlConnect").unbind("click", controlBox.connectHandler);
                 $("#controlConnect").click(controlBox.disconnectHandler);
                 $("#connectSpan").css("color", "white");
@@ -88,6 +90,7 @@ controlBox.stopHandler = function () {
     $.each(AllEnergyInfo, function(key, val) {
         dataWhenPause[key] = {
             label: val.label,
+            percent: val.percent,
             data: [[]]
         };
         $.each(val.data, function(idx, val2) {

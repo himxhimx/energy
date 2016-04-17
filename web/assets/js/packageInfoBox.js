@@ -25,15 +25,15 @@ packageInfoBox.init = function() {
         this.container.append("" +
             "<tr class='packageListItem' id='packageListItem" + i + "'>" +
             "<td style='width: 90%'> com.example.himx.package1 </td> " +
-            "<td> <span class='glyphicon glyphicon-eye-open packageListItemSpan' style='opacity:0;'> </span> </td> " +
+            "<td> <span class='glyphicon glyphicon-eye-open packageListItemSpan' style='opacity:0;' id='" + i+ "'> </span> </td> " +
             "</tr>");
     $(".packageListItem").click(function(){
         var idx = this.id;
-        console.log(idx);
         $(".packageListItemSpan").css("opacity", 0);
         var span = "#" + idx + ">td>.packageListItemSpan";
-        console.log(span);
         $(span).css("opacity", 1);
+        pid = $(span).attr("id");
+        console.log("pid", pid);
     });
 };
 

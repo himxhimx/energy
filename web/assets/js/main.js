@@ -6,7 +6,7 @@
 var getEnergyInfo = function () {
     $.ajax({
         type: "GET",
-        url: "/getEnergyInfo.do",
+        url: "/getEnergyInfo/" + pid,
         success: function(data) {
             if (!data) return;
             data = JSON.parse(data);
@@ -15,7 +15,7 @@ var getEnergyInfo = function () {
             if (data.status == -1) {
                 $.ajax({
                     method: 'GET',
-                    url: 'getDevices.do',
+                    url: 'getDevices',
                     success: function (data) {
                         var jData = JSON.parse(data);
                         if (jData["deviceName"] === "") {
