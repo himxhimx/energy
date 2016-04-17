@@ -12,7 +12,7 @@ var getEnergyInfo = function () {
             data = JSON.parse(data);
             var totalEnergy = 0;
 
-            if (data.status == -1) {
+            if (data.Status == -1) {
                 $.ajax({
                     method: 'GET',
                     url: 'getDevices',
@@ -29,7 +29,8 @@ var getEnergyInfo = function () {
             }
 
             $.each(data, function(key){
-                if (key === 'status') return;
+                //if (key === 'status' || key === 'Percent') return;
+                if (!AllEnergyInfo[key]) return;
                 AllEnergyInfo[key].data = AllEnergyInfo[key].data.slice(1);
                 totalEnergy += data[key];
                 $.each(AllEnergyInfo[key].data, function(key2){
@@ -37,6 +38,14 @@ var getEnergyInfo = function () {
                 });
                 AllEnergyInfo[key].data.push([totalPoints - 1, data[key]]);
             });
+            
+            //get the percentage of energy
+            if (data["Percent"]) {
+                $.each(data["Percent"], function(key, val) {
+                   AllEnergyInfo[key].percent = parseFloat(val); 
+                });
+            }
+            
             //Calculate the total energy
             AllEnergyInfo.Total.data = AllEnergyInfo.Total.data.slice(1);
             $.each(AllEnergyInfo.Total.data, function(key2){

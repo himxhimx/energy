@@ -19,7 +19,7 @@ packageInfoBox.init = function() {
     this.container.append("" +
         "<tr class='packageListItem' id='packageListItem0'> " +
         "<td style='width: 90%'> All </td> <td> " +
-        "<span class='glyphicon glyphicon-eye-open packageListItemSpan'> </span> </td> " +
+        "<span class='glyphicon glyphicon-eye-open packageListItemSpan' id='0'> </span> </td> " +
         "</tr>");
     for (var i = 1; i <= 25; i++)
         this.container.append("" +

@@ -4,6 +4,9 @@ import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.util.*;
 
+import net.sf.json.JSONArray;
+import net.sf.json.JSONObject;
+
 /**
  * Created by Himx on 30/3/2016.
  *
@@ -112,28 +115,43 @@ public class adb {
     private static LinkedList<Double> EnergyWiFi = new LinkedList<>();
 
     private int index = 0;
-    public String getEnergyInfo() {
+    public String getEnergyInfo(int pid) {
         logcat();
-        Map<String, String> map = new HashMap<>();
+        Map map = new HashMap<>();
+        Map energyPercent = getEnergyPercent(pid);
         if (index >= EnergyCPU.size()) {
-            map.put("status", "-1");
+            map.put("Status", -1);
             if (index == 0) {
-                map.put("CPU", "0");
-                map.put("Screen", "0");
-                map.put("3G", "0");
-                map.put("Wifi", "0");
-                return JSON.toJSONstr(map);
+                map.put("CPU", 0);
+                map.put("Screen", 0);
+                map.put("3G", 0);
+                map.put("Wifi", 0);
+                map.put("Percent", energyPercent);
+                JSONObject json = JSONObject.fromObject(map);
+                return json.toString();
             }
             index = EnergyCPU.size() - 1;
         }
         else {
-            map.put("status", "0");
+            map.put("Status", 0);
         }
-        map.put("CPU", "" + EnergyCPU.get(index));
-        map.put("Screen", "" + EnergyScreen.get(index));
-        map.put("3G", "" + Energy3G.get(index));
-        map.put("Wifi", "" + EnergyWiFi.get(index));
+        map.put("CPU", EnergyCPU.get(index));
+        map.put("Screen", EnergyScreen.get(index));
+        map.put("3G", Energy3G.get(index));
+        map.put("Wifi", EnergyWiFi.get(index));
+        map.put("Percent", energyPercent);
         index ++;
-        return JSON.toJSONstr(map);
+        return JSONObject.fromObject(map).toString();
+    }
+
+    private Map getEnergyPercent(int pid) {
+        Map map = new HashMap<>();
+        pid++;
+        Double tmp = 1.0 / pid;
+        map.put("CPU", tmp);
+        map.put("Screen", tmp);
+        map.put("3G", tmp);
+        map.put("Wifi", tmp);
+        return map;
     }
 }

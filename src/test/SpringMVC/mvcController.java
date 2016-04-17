@@ -72,7 +72,7 @@ public class mvcController {
     @ResponseBody
     public String getEnergyInfo(@PathVariable(value="pid") Integer pid) {
         System.out.println(pid);
-        return myadb.getEnergyInfo();
+        return myadb.getEnergyInfo(pid);
     }
 
 }
