@@ -15,7 +15,7 @@ choiceBox.init = function() {
         }
     });
 
-    var timeIntervalSelectBox = "<select id='timeIntervalSelectBox' class='infoChoose' disabled>";
+    var timeIntervalSelectBox = "<select id='timeIntervalSelectBox' class='infoChoose form-control' disabled>";
     for (var i = 1; i <= 10; i++) {
         var selected = (i==5?"selected='selected'":"");
         timeIntervalSelectBox += "<option value='" + i + "'" + selected + ">" + i + "s</option>";
