@@ -36,6 +36,7 @@ linePlot.bindClick = function() {
         }
         var dataset = plot.getData();
         var piePlotData = [];
+        $("#currentInfoBoxBody").append("<h4 style='font-weight: 600'>" + PackageName[packageInfoBox.selectPid] + "</h4>");
         var updateToCurrentInfoBox = function (key, val, notAddToPie) {
             var j;
             // Find the nearest points, x-wise
@@ -107,12 +108,10 @@ linePlot.plotAccordingToChoices = function() {
                 label: tmpData[key].label,
                 data: tmpData[key].data.slice(totalPoints - timeInterval * 10 * 2)
             };
-            if (!isPlaying) console.log(totalPoints - timeInterval * 10 * 2);
-            if (!isPlaying) console.log(AllEnergyInfo[key].percent);
-
+            /*
             $.each(tmptmp.data, function(key2){
                 tmptmp.data[key2][1] *= AllEnergyInfo[key].percent;
-            });
+            });*/
 
             data.push(tmptmp);
         }

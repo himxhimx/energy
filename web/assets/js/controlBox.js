@@ -23,7 +23,6 @@
 controlBox.connectHandler = function() {
     console.log("connect");
     initEnergyInfo();
-    packageInfoBox.init();
     $.ajax({
         type: "GET",
         url: "/getDevices",
@@ -47,7 +46,15 @@ controlBox.connectHandler = function() {
                 $("#playSpan").attr("class", "glyphicon glyphicon-pause");
                 $("#plotChoices").show();
                 $(".infoChoose").removeAttr("disabled");
+                
                 timeXaisBar.init();
+                PackageName = [];
+                PackageName[0] = "All";
+                $.each(jData["packageList"], function(key, val) {
+                    PackageName[val["Pid"]] = val["Name"];
+                });
+                
+                packageInfoBox.draw();
                 update();
             }
         },
@@ -62,6 +69,7 @@ controlBox.disconnectHandler = function () {
     connected = false;
     isPlaying = false;
     clearTimeout(timer);
+    packageInfoBox.clear();
     $("#controlConnect").unbind("click", controlBox.disconnectHandler);
     $("#controlConnect").click(controlBox.connectHandler);
     $("#deviceName").text("No Device Connected");
@@ -76,6 +84,7 @@ controlBox.disconnectHandler = function () {
 controlBox.playHandler = function() {
     console.log("play");
     isPlaying = true;
+    packageInfoBox.draw();
     $("#controlPlay").unbind("click", controlBox.playHandler);
     $("#controlPlay").click(controlBox.stopHandler);
     $("#playSpan").attr("class", "glyphicon glyphicon-pause");

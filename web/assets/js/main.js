@@ -12,7 +12,7 @@ var getEnergyInfo = function () {
             data = JSON.parse(data);
             var totalEnergy = 0;
 
-            if (data.Status == -1) {
+            if (data["Status"] == -1) {
                 $.ajax({
                     method: 'GET',
                     url: 'getDevices',
@@ -60,7 +60,8 @@ var getEnergyInfo = function () {
                 AllEnergyInfo.Time.data[key2][0]--;
             });
             AllEnergyInfo.Time.data.push([totalPoints - 1, AllEnergyInfo.Time.data[AllEnergyInfo.Time.data.length - 1][1] + updateInterval / 1000.0]);
-
+            
+            packageInfoBox.update(data["ProcessChange"]);
             timeXaisBar.update(true);
             if (isPlaying) 
             {
@@ -83,4 +84,3 @@ var update = function() {
 choiceBox.init();
 linePlot.init();
 controlBox.init();
-packageInfoBox.init();

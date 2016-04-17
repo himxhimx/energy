@@ -10,6 +10,8 @@
   <head>
     <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
     <link href="assets/css/bootstrap-theme.min.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/myButton.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/fadeIn.css" rel="stylesheet" type="text/css" />
     <link href="assets/css/main.css" rel="stylesheet" type="text/css" />
     <link rel="shortcut icon" href="assets/img/favicon.png" />
     <title>$Title$</title>
@@ -28,7 +30,7 @@
         <div id="deviceInfo" class="deviceInfo col-md-3">
           <div id="controlBoxes" style="margin-right: 3%;text-align:center">
             <button id="controlConnect" class="button raised blue controlBox">
-              <span class="glyphicon glyphicon-off" aria-hidden="true" id="connectSpan"></span>
+              <span class="glyphicon glyphicon-off" aria-hidden="true" id="connectSpan" style="color: #9d9d9d;"></span>
             </button>
             <button id="controlPlay" class="button raised blue controlBox" disabled>
               <span class="glyphicon glyphicon-play" aria-hidden="true" id="playSpan"></span>
@@ -65,9 +67,9 @@
               </table>
             </div>
           </div>
-          <div id="packageInfoBox" class="panel panel-primary deviceStatus" style="height: 345px;">
+          <div id="packageInfoBox" class="panel panel-primary deviceStatus" style="height: 335px;">
             <div class="panel-heading" style="font-size: 20px">Packages Running</div>
-            <div class="panel-body" style="padding: 0; height: 294px; overflow: scroll; overflow-x: hidden;">
+            <div class="panel-body" style="padding: 0; height: 283px; overflow: scroll; overflow-x: hidden;">
               <table id="packageList" class="table table-hover table-condensed">
 
               </table>
@@ -76,7 +78,7 @@
         </div>
         <div id="p-container" class="p-container col-md-6">
           <div id="placeholder" class="placeholder"></div>
-          <div id="plotxais" style="position: absolute;top:580px;left:50px"></div>
+          <div id="plotxais" style="position: absolute;top:600px;left:50px"></div>
         </div>
         <div id="container-right" class="col-md-3">
           <div class="panel panel-primary" style="height: 100px" id="selectChartBox">
@@ -87,7 +89,7 @@
           </div>
           <div id="currentInfoBox" class="panel panel-primary">
             <div class="panel-heading" style="font-size: 20px">Instant Information</div>
-            <div class="panel-body" id="currentInfoBoxBody">
+            <div class="panel-body" id="currentInfoBoxBody" style="padding-top: 0">
             </div>
           </div>
           <div id="pie-container" class="pie-container panel panel-primary">
@@ -99,10 +101,8 @@
         </div>
       </div>
     </div>
-    <div id="footer">
-      <h6 style="text-align: center; margin-bottom: 0">
+    <div id="footer" style="text-align: center; font-size: 10px">
         &copy; Copyright 2016 Himx - All rights reserved.
-      </h6>
     </div>
 
     <script language="Javascript" type="text/javascript" src="assets/js/jquery-2.2.2.min.js"></script>

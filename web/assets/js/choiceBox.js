@@ -15,14 +15,14 @@ choiceBox.init = function() {
         }
     });
 
-    var timeIntervalSelectBox = "<select id='timeIntervalSelectBox'>";
+    var timeIntervalSelectBox = "<select id='timeIntervalSelectBox' class='infoChoose' disabled>";
     for (var i = 1; i <= 10; i++) {
         var selected = (i==5?"selected='selected'":"");
         timeIntervalSelectBox += "<option value='" + i + "'" + selected + ">" + i + "s</option>";
     }
     timeIntervalSelectBox += "</select>";
     this.choiceContainer.append(timeIntervalSelectBox);
-    this.choiceContainer.find(".infoChoose").click(linePlot.plotAccordingToChoices);
+    this.choiceContainer.find(".infoChoose>input").click(linePlot.plotAccordingToChoices);
     $("#timeIntervalSelectBox").change(function() {
         var tmp = document.getElementById("timeIntervalSelectBox");
         timeInterval = parseInt(tmp.options[tmp.selectedIndex].value);

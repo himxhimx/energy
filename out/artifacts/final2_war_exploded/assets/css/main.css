@@ -3,55 +3,11 @@ body {
     font-family: Helvetica, Helvetica Neue, Arial;
 }
 
-@-webkit-keyframes fadeIn {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-
-#controlBoxes, #deviceStatus, #p-container, #currentInfoBox, #pie-container, #selectChartBox{
-    opacity: 0;
-    -webkit-animation-name: fadeIn;
-    -webkit-animation-duration: 1.5s;
-    -webkit-animation-timing-function: linear;
-    -webkit-animation-iteration-count: 1;
-    -webkit-animation-fill-mode: forwards;
-}
-
-
 #header{
     width: 100%;
     margin-bottom: 10px;
     background-color: #337ab7;
     color: white;
-    -webkit-animation-name: fadeIn;
-    -webkit-animation-duration: 2s;
-    -webkit-animation-timing-function: linear;
-    -webkit-animation-delay: 0s;
-    -webkit-animation-iteration-count: 1;
-}
-
-#header>h1 {
-    opacity: 0;
-    -webkit-animation-name: fadeIn;
-    -webkit-animation-duration: 1s;
-    -webkit-animation-timing-function: linear;
-    -webkit-animation-delay: 2s;
-    -webkit-animation-iteration-count: 1;
-    -webkit-animation-fill-mode: forwards;
-}
-
-#header>p {
-    opacity: 0;
-    -webkit-animation-name: fadeIn; /*动画名称*/
-    -webkit-animation-duration: 1s; /*动画持续时间*/
-    -webkit-animation-delay: 3s;
-    -webkit-animation-timing-function: linear;
-    -webkit-animation-iteration-count: 1; /*动画次数*/
-    -webkit-animation-fill-mode: forwards;
 }
 
 #container{
@@ -68,15 +24,14 @@ body {
     width: 23%;
     height: 450px;
     padding-bottom: 15px;
-    margin-bottom: 30px;
 }
 
 .p-container {
     box-sizing: border-box;
     width: 50%;
-    height: 100%;
-    padding: 0 15px 15px 15px;
-    margin: 0 auto 30px auto;
+    height: 630;
+    padding: 0 5px 15px 5px;
+    margin: 0 auto 0 auto;
     border: 1px solid #ddd;
     background: #fff;
     background: linear-gradient(#f6f6f6 0, #fff 50px);
@@ -89,9 +44,6 @@ body {
     -ms-box-shadow: 0 3px 10px rgba(0,0,0,0.1);
     -moz-box-shadow: 0 3px 10px rgba(0,0,0,0.1);
     -webkit-box-shadow: 0 3px 10px rgba(0,0,0,0.1);
-
-    -webkit-animation-delay: 0.2s;
-
 }
 
 #placeholder {
@@ -121,7 +73,6 @@ body {
 .deviceStatus{
     margin-top: 20px;
     margin-right: 3%;
-    -webkit-animation-delay: 0.3s;
 }
 
 .deviceInfoBriefKey{
@@ -141,34 +92,6 @@ body {
     background-color: #9d9d9d;
 }
 
-.button {
-    display: inline-block;
-    position: relative;
-    line-height: 32px;
-    border-radius: 2px;
-}
-.blue {
-    background-color: #337ab7;
-}
-
-.button.blue:hover {
-    background-color: #2aabd2;
-}
-
-.button.blue:hover[disabled] {
-    background-color: #9d9d9d;
-}
-.button.raised {
-    transition: box-shadow 0.2s cubic-bezier(0.4, 0, 0.2, 1);
-    transition-delay: 0.2s;
-    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
-}
-
-.button.raised:active {
-    box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2);
-    transition-delay: 0s;
-}
-
 #pie-container {
     box-sizing: border-box;
     width: 100%;
@@ -176,8 +99,6 @@ body {
     padding: 0 0 15px 0;
     margin: 0 auto 0 auto;
     background: #fff;
-
-    -webkit-animation-delay: 0.4s;
 }
 
 #pie-placeholder {
@@ -187,9 +108,8 @@ body {
 }
 
 #currentInfoBox {
-    height: 200px;
+    height: 190px;
     width: 100%;
-    -webkit-animation-delay: 0.6s;
 }
 
 .downloadMenuItem{
@@ -202,10 +122,12 @@ body {
     position: absolute;
 }
 
-#controlBoxes {
-    -webkit-animation-delay: 0.5s;
-}
-
 tr.packageListItem:hover {
     cursor: pointer;
+}
+
+#timeIntervalSelectBox {
+    width: 63px;
+    float: right;
+    margin-top: -5px;
 }

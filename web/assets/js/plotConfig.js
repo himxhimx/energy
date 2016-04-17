@@ -20,25 +20,27 @@ const pieplotOption = {
     }
 };
 
+var PackageName = [];
+
 var AllEnergyInfo = {
     "CPU": {
         label: "CPU",
-        percent: 1,
+        percent: [[]],
         data: [[]]
     },
     "3G": {
         label: "3G",
-        percent: 1,
+        percent: [[]],
         data: [[]]
     },
     "Wifi": {
         label: "Wifi",
-        percent: 1,
+        percent: [[]],
         data: [[]]
     },
     "Screen": {
         label: "Screen",
-        percent: 1,
+        percent: [[]],
         data: [[]]
     },
     "Time": {

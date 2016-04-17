@@ -103,16 +103,23 @@ public class adb {
             deviceName = res.substring(tmp.length() + 1, lastSpace);
             status = res.substring(lastSpace + 1);
         }
-        Map<String, String> map= new HashMap<>();
+        Map map= new HashMap<>();
         map.put("status", status);
         map.put("deviceName", deviceName);
-        return JSON.toJSONstr(map);
+        map.put("packageList", getPackagesInfo());
+
+        List tmp3 = new ArrayList();
+        System.out.print(JSONArray.fromObject(tmp3).toString());
+        return JSONObject.fromObject(map).toString();
     }
 
     private static LinkedList<Double> EnergyCPU = new LinkedList<>();
     private static LinkedList<Double> EnergyScreen = new LinkedList<>();
     private static LinkedList<Double> Energy3G = new LinkedList<>();
     private static LinkedList<Double> EnergyWiFi = new LinkedList<>();
+
+    private static LinkedList<Package> PackageInfo = new LinkedList<>();
+    private static LinkedList<Package> PackageNameInfo = new LinkedList<>();
 
     private int index = 0;
     public String getEnergyInfo(int pid) {
@@ -140,11 +147,32 @@ public class adb {
         map.put("3G", Energy3G.get(index));
         map.put("Wifi", EnergyWiFi.get(index));
         map.put("Percent", energyPercent);
+        //map.put("ProcessChange", getPackagesChange());
         index ++;
         return JSONObject.fromObject(map).toString();
     }
 
-    private Map getEnergyPercent(int pid) {
+    private static int testT = 11;
+
+    private JSONObject getPackagesChange() {
+        Map map = new HashMap();
+        List ProcessCreate = new ArrayList();
+        List ProcessDestroy = new ArrayList();
+        Map tmp1 = new HashMap();
+        tmp1.put("Pid", 123 + testT);
+        tmp1.put("Name", "com.example.himx.package" + testT);
+        ProcessCreate.add(tmp1);
+        Map tmp2 = new HashMap();
+        tmp2.put("Pid", 123 + testT - 10);
+        tmp2.put("Name", "com.example.himx.package" + (testT - 10));
+        ProcessDestroy.add(tmp2);
+        map.put("ProcessCreate", JSONArray.fromObject(ProcessCreate));
+        map.put("ProcessDestroy", JSONArray.fromObject(ProcessDestroy));
+        testT++;
+        return JSONObject.fromObject(map);
+    }
+
+    private JSONObject getEnergyPercent(int pid) {
         Map map = new HashMap<>();
         pid++;
         Double tmp = 1.0 / pid;
@@ -152,6 +180,79 @@ public class adb {
         map.put("Screen", tmp);
         map.put("3G", tmp);
         map.put("Wifi", tmp);
-        return map;
+        return JSONObject.fromObject(map);
+    }
+
+    private JSONArray getPackagesInfo() {
+        List list = new ArrayList<>();
+        for (int i = 0; i < 10; i++) {
+            Map map = new HashMap();
+            map.put("Pid", i + 123);
+            map.put("Name", "com.example.himx.package" + i);
+            list.add(JSONObject.fromObject(map));
+        }
+        return JSONArray.fromObject(list);
+    }
+
+    private class Package {
+        public Package(int pid, double CPU, double screen, double wifi) {
+            Pid = pid;
+            this.CPU = CPU;
+            Screen = screen;
+            Wifi = wifi;
+        }
+
+        public int getPid() {
+            return Pid;
+        }
+
+        public void setPid(int pid) {
+            Pid = pid;
+        }
+
+        public double getCPU() {
+            return CPU;
+        }
+
+        public void setCPU(double CPU) {
+            this.CPU = CPU;
+        }
+
+        public double getScreen() {
+            return Screen;
+        }
+
+        public void setScreen(double screen) {
+            Screen = screen;
+        }
+
+        public double getWifi() {
+            return Wifi;
+        }
+
+        public void setWifi(double wifi) {
+            Wifi = wifi;
+        }
+        private int Pid;
+        private double CPU;
+        private double Screen;
+        private double Wifi;
+    }
+
+    private class PackageName {
+        private int Pid;
+        private String pname;
+        public PackageName(int pid, String name) {
+            this.Pid = pid;
+            this.pname = name;
+        }
+
+        public int getPid() {
+            return Pid;
+        }
+
+        public String getPname() {
+            return pname;
+        }
     }
 }
