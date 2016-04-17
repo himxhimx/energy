@@ -26,7 +26,6 @@ const plotOptions = {
     }
 };
 
-var linePlot = {};
 linePlot.bindClick = function() {
     $("#placeholder").bind("plotclick", function (event, pos, item) {
         $("#currentInfoBoxBody").empty();
@@ -86,3 +85,40 @@ linePlot.init = function() {
     this.bindHover();
 };
 
+linePlot.plotAccordingToChoices = function() {
+    var _tmpData = isPlaying? AllEnergyInfo:dataWhenPause;
+    var tmpData = {};
+    $.each(_tmpData, function(key, val) {
+        tmpData[key] = {
+            label: val.label,
+            percent: val.percent,
+            data: [[]]
+        };
+        $.each(val.data, function(idx, val2) {
+            tmpData[key].data.push([val2[0], val2[1]]);
+        })
+    });
+    var data = [];
+    choiceBox.choiceContainer.find("input:checked").each(function () {
+        var key = $(this).attr("name");
+        if (key && tmpData[key]) {
+            //data.push(tmpData[key]);
+            var tmptmp = {
+                label: tmpData[key].label,
+                data: tmpData[key].data.slice(totalPoints - timeInterval * 10 * 2)
+            };
+            if (!isPlaying) console.log(totalPoints - timeInterval * 10 * 2);
+            if (!isPlaying) console.log(AllEnergyInfo[key].percent);
+
+            $.each(tmptmp.data, function(key2){
+                tmptmp.data[key2][1] *= AllEnergyInfo[key].percent;
+            });
+
+            data.push(tmptmp);
+        }
+    });
+    if (data.length > 0) {
+        if (!isPlaying) console.log("plot");
+        plot = $.plot("#placeholder", data, plotOptions);
+    }
+};

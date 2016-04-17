@@ -7,7 +7,6 @@ const timeXaisItemInitPos = [0, 55, 114, 174, 233, 292, 351, 410, 470, 529, 588]
 const ntimeXais = 10;
 const movePerTick = [1, 5.5, 5.9, 6, 5.9, 5.9, 5.9, 5.9, 6, 5.9, 5.9];
 var nowPosXaisItem = [];
-var timeXaisBar = {};
 
 timeXaisBar.endTimeVal = 0;
 timeXaisBar.timeXaisInterval = 5;

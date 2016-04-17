@@ -42,6 +42,7 @@ var getEnergyInfo = function () {
             //get the percentage of energy
             if (data["Percent"]) {
                 $.each(data["Percent"], function(key, val) {
+                    if (!isPlaying) console.log("Percent:" + val);
                    AllEnergyInfo[key].percent = parseFloat(val); 
                 });
             }
@@ -63,14 +64,14 @@ var getEnergyInfo = function () {
             timeXaisBar.update(true);
             if (isPlaying) 
             {
-                choiceBox.plotAccordingToChoices();
+                linePlot.plotAccordingToChoices();
                 timeXaisBar.draw();
             }
         },
         error: function (err) {
             console.error(err);
         }
-    })
+    });
 };
 
 var update = function() {

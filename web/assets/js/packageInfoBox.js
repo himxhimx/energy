@@ -10,8 +10,6 @@
  * </div>
  */
 
-var packageInfoBox = {};
-
 packageInfoBox.container = $("#packageList");
 
 packageInfoBox.init = function() {
@@ -33,7 +31,7 @@ packageInfoBox.init = function() {
         var span = "#" + idx + ">td>.packageListItemSpan";
         $(span).css("opacity", 1);
         pid = $(span).attr("id");
-        console.log("pid", pid);
+        linePlot.plotAccordingToChoices();
     });
 };
 

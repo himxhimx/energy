@@ -93,3 +93,9 @@ var connected = false;
 var timer;
 
 var pid = 0;
+
+var packageInfoBox = {};
+var choiceBox = {};
+var controlBox = {};
+var linePlot = {};
+var timeXaisBar = {};

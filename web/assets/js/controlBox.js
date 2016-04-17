@@ -20,8 +20,6 @@
  * </div>
  */
 
-var controlBox = {};
-
 controlBox.connectHandler = function() {
     console.log("connect");
     initEnergyInfo();
