@@ -12,10 +12,20 @@ import net.sf.json.JSONObject;
  *
  */
 public class adb {
+    private static final String TAG_LOGCAT = "EnergyMonitor";
+    private static final String SAMPLE_SPLIT = "+T-23==53-X7-+YuRG";
+
     private Thread logcatThread = null;
     private Process process = null;
 
-    public String logcatInfo = "";
+    private HashMap<String, LinkedList<Package>> EnergyInfo = new HashMap<>();
+
+    private HashMap<String, Integer> CurrentPkgList = new HashMap<>();
+    private HashMap<String, Integer> TempPkgList = new HashMap<>();
+    private HashMap<String, Integer> CreatePkgList = new HashMap<>();
+    private HashMap<String, Integer> DestroyPkgList = new HashMap<>();
+
+    private int index = 0;
     private boolean isLogcatExecuted = false;
 
     @Override
@@ -48,12 +58,11 @@ public class adb {
         try {
             process = Runtime.getRuntime().exec("adb logcat -c"); //clear logcat
             process.waitFor();
-            process = Runtime.getRuntime().exec("adb logcat -s EnergyMonitor");
+            process = Runtime.getRuntime().exec("adb logcat -s " + TAG_LOGCAT);
 
             /*
-                "Time\tBatteryLevel\tTotalCPUUsage\tScreenBrightness\t" +
-                "TotalWifiSpeed\tTotalMobileSpeed\tProcessSpeed\tBluetoothState\tGPSState\t" +
-                "WifiState\tNetState\tVolume\tSignalStrength\t" + processCPUTimes.toString() +"\n";
+              "PkgName Pid ProcessCPUUsage ScreenBrightness ProcessNetworkSpeed"
+              "BluetoothState GPSState WifiState NetState Volume SignalStrength BatteryLevel"
             */
             String line;
             BufferedReader mReader = new BufferedReader(new InputStreamReader(process.getInputStream()));
@@ -62,11 +71,32 @@ public class adb {
                     continue;
                 }
                 String subline = line.substring(line.indexOf(": ") + 2);
+                if (subline.equals(SAMPLE_SPLIT)) {
+                    updatePackageList();
+                    continue;
+                }
+
                 String infos[] = subline.split("\\s+");
-                EnergyCPU.add(EnergyModelUtils.getCPUEnergy(Double.parseDouble(infos[3])));
-                EnergyScreen.add(EnergyModelUtils.getScreenEnergy(Double.parseDouble(infos[4])));
-                EnergyWiFi.add(EnergyModelUtils.getWiFiEnergy(Double.parseDouble(infos[5])));
-                Energy3G.add(EnergyModelUtils.get3GEnergy(Double.parseDouble(infos[6])));
+                String pkgName = infos[0];
+                int pid = Integer.parseInt(infos[1]);
+                double cpu = EnergyModelUtils.getCPUEnergy(Double.parseDouble(infos[2]));
+                double screen = EnergyModelUtils.getScreenEnergy(Double.parseDouble(infos[3]));
+                double netSpeed = Double.parseDouble(infos[4]);
+                double wifi = 0, mobileNet = 0;
+                if (infos[7].equals("On")) { //Wifi On
+                    wifi = EnergyModelUtils.getWiFiEnergy(netSpeed);
+                } else if (infos[8].equals("On")) { //3G on
+                    mobileNet = EnergyModelUtils.get3GEnergy(netSpeed);
+                }
+                if (EnergyInfo.containsKey(pkgName)) {
+                    LinkedList<Package> list = EnergyInfo.get(pkgName);
+                    list.add(new Package(pid, cpu, screen, wifi, mobileNet));
+                } else {
+                    LinkedList<Package> list = new LinkedList<>();
+                    list.add(new Package(pid, cpu, screen, wifi, mobileNet));
+                    EnergyInfo.put(pkgName, list);
+                }
+                CurrentPkgList.put(pkgName, pid);
             }
         } catch (Exception e) {
             e.printStackTrace();
@@ -103,6 +133,8 @@ public class adb {
             deviceName = res.substring(tmp.length() + 1, lastSpace);
             status = res.substring(lastSpace + 1);
         }
+
+        logcat();
         Map map= new HashMap<>();
         map.put("status", status);
         map.put("deviceName", deviceName);
@@ -113,103 +145,145 @@ public class adb {
         return JSONObject.fromObject(map).toString();
     }
 
-    private static LinkedList<Double> EnergyCPU = new LinkedList<>();
-    private static LinkedList<Double> EnergyScreen = new LinkedList<>();
-    private static LinkedList<Double> Energy3G = new LinkedList<>();
-    private static LinkedList<Double> EnergyWiFi = new LinkedList<>();
-
-    private static LinkedList<Package> PackageInfo = new LinkedList<>();
-    private static LinkedList<Package> PackageNameInfo = new LinkedList<>();
-
-    private int index = 0;
     public String getEnergyInfo(int pid) {
         logcat();
-        Map map = new HashMap<>();
-        Map energyPercent = getEnergyPercent(pid);
-        if (index >= EnergyCPU.size()) {
-            map.put("Status", -1);
-            if (index == 0) {
+
+        boolean hasNoData = false;
+
+        Iterator it = EnergyInfo.entrySet().iterator();
+        if (!it.hasNext()) {
+            hasNoData = true;
+            index = -1;
+        } else {
+            Map.Entry entry = ((Map.Entry)it.next());
+            LinkedList<Package> list = (LinkedList<Package>)entry.getValue();
+            if (index >= list.size()) {
+                hasNoData = true;
+                index = list.size() - 1;
+            }
+        }
+
+        Map infoMap = new HashMap(); //store result(Status, Energy, ProcessChange)
+        if (hasNoData) {
+            infoMap.put("Status", -1);
+            if (index == -1) {
+                Map map = new HashMap();
+                map.put("Pid", 0);
                 map.put("CPU", 0);
                 map.put("Screen", 0);
                 map.put("3G", 0);
                 map.put("Wifi", 0);
-                map.put("Percent", energyPercent);
-                JSONObject json = JSONObject.fromObject(map);
+
+                List list = new LinkedList();
+                list.add(map);
+                infoMap.put("Energy", list);
+                JSONObject json = JSONObject.fromObject(infoMap);
                 return json.toString();
             }
-            index = EnergyCPU.size() - 1;
         }
         else {
-            map.put("Status", 0);
+            infoMap.put("Status", 0);
         }
-        map.put("CPU", EnergyCPU.get(index));
-        map.put("Screen", EnergyScreen.get(index));
-        map.put("3G", Energy3G.get(index));
-        map.put("Wifi", EnergyWiFi.get(index));
-        map.put("Percent", energyPercent);
+
+        it = EnergyInfo.entrySet().iterator();
+        List energyList = new LinkedList();
+        while (it.hasNext()) {
+            Map.Entry entry = ((Map.Entry)it.next());
+            LinkedList<Package> list = (LinkedList<Package>)entry.getValue();
+            Package pkg = list.get(index);
+
+            Map map = new HashMap();
+            map.put("Pid", pkg.getPid());
+            map.put("CPU", pkg.getCPU());
+            map.put("Screen", pkg.getScreen());
+            map.put("3G", pkg.get3G());
+            map.put("Wifi", pkg.getWifi());
+
+            energyList.add(map);
+        }
+        infoMap.put("Energy", energyList);
+
         JSONObject processChange = getPackagesChange();
-        if (processChange != null) map.put("ProcessChange", processChange);
+        if (processChange != null) infoMap.put("ProcessChange", processChange);
         index ++;
-        String res = JSONObject.fromObject(map).toString();
+        String res = JSONObject.fromObject(infoMap).toString();
         System.out.println(res.length());
         return res;
     }
 
-    private static int testT = 11;
+    private void updatePackageList() {
+        findDifferentAndAddToMap(CurrentPkgList, TempPkgList, CreatePkgList);
+        findDifferentAndAddToMap(TempPkgList, CurrentPkgList, DestroyPkgList);
 
-    private JSONObject getPackagesChange() {
-        if (index % 11 != 0) return null;
-        Map map = new HashMap();
-        List ProcessCreate = new ArrayList();
-        List ProcessDestroy = new ArrayList();
-        Map tmp1 = new HashMap();
-        tmp1.put("Pid", 123 + testT);
-        tmp1.put("Name", "com.example.himx.package" + testT);
-        ProcessCreate.add(tmp1);
-        Map tmp2 = new HashMap();
-        tmp2.put("Pid", 123 + testT - 10);
-        tmp2.put("Name", "com.example.himx.package" + (testT - 10));
-        ProcessDestroy.add(tmp2);
-        map.put("ProcessCreate", JSONArray.fromObject(ProcessCreate));
-        map.put("ProcessDestroy", JSONArray.fromObject(ProcessDestroy));
-        testT++;
-        return JSONObject.fromObject(map);
+        TempPkgList = CurrentPkgList;
+        CurrentPkgList.clear();
     }
 
-    private JSONObject getEnergyPercent(int pid) {
-        Map map = new HashMap<>();
-        pid++;
-        Double tmp = 1.0 / pid;
-        map.put("CPU", tmp);
-        map.put("Screen", tmp);
-        map.put("3G", tmp);
-        map.put("Wifi", tmp);
-        return JSONObject.fromObject(map);
+    private JSONObject getPackagesChange() {
+        if (CreatePkgList.size() == 0 && DestroyPkgList.size() == 0) {
+            return null;
+        }
+
+        Map changeMap = new HashMap();
+        List createList = new ArrayList();
+        List destroyList = new ArrayList();
+
+        addPkgInfoToList(CreatePkgList, createList);
+        changeMap.put("ProcessCreate", JSONArray.fromObject(createList));
+
+        addPkgInfoToList(DestroyPkgList, destroyList);
+        changeMap.put("ProcessDestroy", JSONArray.fromObject(destroyList));
+
+        createList.clear();
+        destroyList.clear();
+        return JSONObject.fromObject(changeMap);
     }
 
     private JSONArray getPackagesInfo() {
         List list = new ArrayList<>();
-        for (int i = 0; i < 10; i++) {
-            Map map = new HashMap();
-            map.put("Pid", i + 123);
-            map.put("Name", "com.example.himx.package" + i);
-            list.add(JSONObject.fromObject(map));
-        }
+
+        addPkgInfoToList(TempPkgList, list);
         return JSONArray.fromObject(list);
     }
 
+    private void addPkgInfoToList(Map srcMap, List dstList) {
+        Iterator it = srcMap.entrySet().iterator();
+        while (it.hasNext()) {
+            Map.Entry entry = ((Map.Entry)it.next());
+            String pkgName = (String)entry.getKey();
+            Integer pid = (Integer)entry.getValue();
+
+            Map map = new HashMap();
+            map.put("Name", pkgName);
+            map.put("Pid", pid);
+            dstList.add(JSONObject.fromObject(map));
+        }
+    }
+
+    private void findDifferentAndAddToMap(Map map1, Map map2, Map dstMap) {
+        Iterator it = map1.entrySet().iterator();
+        while (it.hasNext()) {
+            Map.Entry entry = ((Map.Entry)it.next());
+            String pkgName = (String)entry.getKey();
+            Integer pid = (Integer)entry.getValue();
+            if (!map2.containsKey(pkgName)) {
+                dstMap.put(pkgName, pid);
+            }
+        }
+    }
+
     private class Package {
-        public Package(int pid, double CPU, double screen, double wifi) {
+        public Package(int pid, double cpu, double screen, double wifi, double mobilenet) {
             Pid = pid;
-            this.CPU = CPU;
+            CPU = cpu;
             Screen = screen;
             Wifi = wifi;
+            MobileNet = mobilenet;
         }
 
         public int getPid() {
             return Pid;
         }
-
         public void setPid(int pid) {
             Pid = pid;
         }
@@ -217,7 +291,6 @@ public class adb {
         public double getCPU() {
             return CPU;
         }
-
         public void setCPU(double CPU) {
             this.CPU = CPU;
         }
@@ -225,7 +298,6 @@ public class adb {
         public double getScreen() {
             return Screen;
         }
-
         public void setScreen(double screen) {
             Screen = screen;
         }
@@ -233,30 +305,21 @@ public class adb {
         public double getWifi() {
             return Wifi;
         }
-
         public void setWifi(double wifi) {
             Wifi = wifi;
         }
+
+        public double get3G() {
+            return MobileNet;
+        }
+        public void set3G(double mobilenet) {
+            MobileNet = mobilenet;
+        }
+
         private int Pid;
         private double CPU;
         private double Screen;
         private double Wifi;
-    }
-
-    private class PackageName {
-        private int Pid;
-        private String pname;
-        public PackageName(int pid, String name) {
-            this.Pid = pid;
-            this.pname = name;
-        }
-
-        public int getPid() {
-            return Pid;
-        }
-
-        public String getPname() {
-            return pname;
-        }
+        private double MobileNet;
     }
 }
