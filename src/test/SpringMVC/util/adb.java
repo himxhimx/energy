@@ -147,14 +147,18 @@ public class adb {
         map.put("3G", Energy3G.get(index));
         map.put("Wifi", EnergyWiFi.get(index));
         map.put("Percent", energyPercent);
-        //map.put("ProcessChange", getPackagesChange());
+        JSONObject processChange = getPackagesChange();
+        if (processChange != null) map.put("ProcessChange", processChange);
         index ++;
-        return JSONObject.fromObject(map).toString();
+        String res = JSONObject.fromObject(map).toString();
+        System.out.println(res.length());
+        return res;
     }
 
     private static int testT = 11;
 
     private JSONObject getPackagesChange() {
+        if (index % 11 != 0) return null;
         Map map = new HashMap();
         List ProcessCreate = new ArrayList();
         List ProcessDestroy = new ArrayList();

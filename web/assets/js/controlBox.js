@@ -54,7 +54,7 @@ controlBox.connectHandler = function() {
                     PackageName[val["Pid"]] = val["Name"];
                 });
                 
-                packageInfoBox.draw();
+                packageInfoBox.init();
                 update();
             }
         },

@@ -13,7 +13,7 @@ body {
 #container{
     height: 630px;
     width: 100%;
-    padding-top: 20px;
+    padding-top: 7px;
 }
 
 #footer{
@@ -29,7 +29,7 @@ body {
 .p-container {
     box-sizing: border-box;
     width: 50%;
-    height: 630;
+    height: 630px;
     padding: 0 5px 15px 5px;
     margin: 0 auto 0 auto;
     border: 1px solid #ddd;

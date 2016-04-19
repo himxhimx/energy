@@ -13,6 +13,19 @@
 packageInfoBox.container = $("#packageList");
 packageInfoBox.selectPid = 0;
 
+packageInfoBox.init = function(){
+    packageInfoBox.draw();
+    $(".packageListItem").click(function(){
+        var idx = this.id;
+        $(".packageListItemSpan").css("opacity", 0);
+        var span = "#" + idx + ">td>.packageListItemSpan";
+        $(span).css("opacity", 1);
+        pid = $(span).attr("id");
+        packageInfoBox.selectPid = parseInt(pid);
+        linePlot.plotAccordingToChoices();
+    });
+};
+
 packageInfoBox.draw = function() {
     this.clear();
 
@@ -25,16 +38,7 @@ packageInfoBox.draw = function() {
             "</tr>");
     });
 
-    $(".packageListItem").click(function(){
-        var idx = this.id;
-        $(".packageListItemSpan").css("opacity", 0);
-        var span = "#" + idx + ">td>.packageListItemSpan";
-        $(span).css("opacity", 1);
-        pid = $(span).attr("id");
-        packageInfoBox.selectPid = parseInt(pid);
-        console.log(packageInfoBox.selectPid);
-        linePlot.plotAccordingToChoices();
-    });
+    $("#packageListItem" + pid + ">td>span").css("opacity", 1);
 };
 
 packageInfoBox.update = function(ProcessChange) {

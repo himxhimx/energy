@@ -71,7 +71,6 @@ public class mvcController {
     @RequestMapping(value = "/getEnergyInfo/{pid}", method = RequestMethod.GET)
     @ResponseBody
     public String getEnergyInfo(@PathVariable(value="pid") Integer pid) {
-        System.out.println(pid);
         return myadb.getEnergyInfo(pid);
     }
 
