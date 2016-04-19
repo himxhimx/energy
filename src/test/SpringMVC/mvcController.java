@@ -60,13 +60,13 @@ public class mvcController {
     public String getDevices(HttpServletRequest request,HttpServletResponse response) throws IOException {
         return myadb.getDeviceInfo();
     }
-
+/*
     @RequestMapping(value = "/getLogcat", method = RequestMethod.GET)
     @ResponseBody
     public String getLogcat() throws IOException {
         myadb.logcat();
         return myadb.logcatInfo;
-    }
+    }*/
 
     @RequestMapping(value = "/getEnergyInfo/{pid}", method = RequestMethod.GET)
     @ResponseBody
