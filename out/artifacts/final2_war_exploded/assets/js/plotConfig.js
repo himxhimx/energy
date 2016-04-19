@@ -25,43 +25,51 @@ var PackageName = [];
 var AllEnergyInfo = {
     "CPU": {
         label: "CPU",
-        percent: [[]],
         data: [[]]
     },
     "3G": {
         label: "3G",
-        percent: [[]],
         data: [[]]
     },
     "Wifi": {
         label: "Wifi",
-        percent: [[]],
         data: [[]]
     },
     "Screen": {
         label: "Screen",
-        percent: [[]],
         data: [[]]
     },
     "Time": {
         label: "Time",
         data: [[]]  
-    },
-    "Total": {
-        label: "Total",
-        data: [[]]
     }
 };
 
-var initEnergyInfo = function() {
+var initEnergyInfo = function(thePid) {
     $.each(AllEnergyInfo, function(key, val) {
-       while (val.data.length < totalPoints) {
-           val.data.push([-1, 0]);
-       }
-        $.each(val.data, function(idx, val2) {
-            val2[0] = idx;
-            val2[1] = -0.5;
+        if (key === "Time") return;
+        val.data[thePid] = new Array(300);
+        $.each(val.data[thePid], function(idx) {
+            val.data[thePid][idx] = 0;
         });
+    });
+};
+
+var initEnergyTime = function() {
+    AllEnergyInfo.Time.data = [];
+    while (AllEnergyInfo.Time.data.length < totalPoints) {
+        AllEnergyInfo.Time.data.push([-1, -0.5]);
+    }
+    $.each(AllEnergyInfo.Time.data, function(idx, val2) {
+        val2[0] = idx;
+        val2[1] = -0.5;
+    });
+};
+
+var clearEnergyInfo = function(thePid) {
+    $.each(AllEnergyInfo, function(key) {
+       if (key === "Time") return;
+        AllEnergyInfo[key].data = [].concat(AllEnergyInfo[key].data.slice(0, thePid), AllEnergyInfo[key].data.slice(thePid + 1));
     });
 };
 

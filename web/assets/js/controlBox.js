@@ -22,7 +22,7 @@
 
 controlBox.connectHandler = function() {
     console.log("connect");
-    initEnergyInfo();
+    initEnergyTime();
     $.ajax({
         type: "GET",
         url: "/getDevices",
@@ -46,14 +46,17 @@ controlBox.connectHandler = function() {
                 $("#playSpan").attr("class", "glyphicon glyphicon-pause");
                 $("#plotChoices").show();
                 $(".infoChoose").removeAttr("disabled");
-                
+                console.log(AllEnergyInfo);
                 timeXaisBar.init();
                 PackageName = [];
+                initEnergyInfo(0);
                 PackageName[0] = "All";
                 $.each(jData["packageList"], function(key, val) {
                     PackageName[val["Pid"]] = val["Name"];
+                    initEnergyInfo(val["Pid"]);
                 });
-                
+
+                console.log(AllEnergyInfo);
                 packageInfoBox.init();
                 update();
             }
@@ -95,15 +98,25 @@ controlBox.stopHandler = function () {
     isPlaying = false;
     dataWhenPause = {};
     $.each(AllEnergyInfo, function(key, val) {
+        if (key === "Time") return;
         dataWhenPause[key] = {
             label: val.label,
-            percent: val.percent,
             data: [[]]
         };
-        $.each(val.data, function(idx, val2) {
-            dataWhenPause[key].data.push([val2[0], val2[1]]);
+        $.each(val.data, function(key2, val2) {
+            if (!val2) return;
+            dataWhenPause[key].data[key2] = val2.slice(0);
         })
     });
+    dataWhenPause["Time"] = {
+        label: "Time",
+        data: [[]]
+    };
+
+    $.each(AllEnergyInfo["Time"].data, function(key, val) {
+        dataWhenPause["Time"].data.push([val[0], val[1]]);
+    });
+
     $("#controlPlay").unbind("click", controlBox.stopHandler);
     $("#controlPlay").click(controlBox.playHandler);
     $("#playSpan").attr("class", "glyphicon glyphicon-play");

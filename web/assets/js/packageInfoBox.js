@@ -13,17 +13,19 @@
 packageInfoBox.container = $("#packageList");
 packageInfoBox.selectPid = 0;
 
+packageInfoBox.clickHandler = function() {
+    console.log("click");
+    var idx = this.id;
+    $(".packageListItemSpan").css("opacity", 0);
+    var span = "#" + idx + ">td>.packageListItemSpan";
+    $(span).css("opacity", 1);
+    packageInfoBox.selectPid = parseInt($(span).attr("id"));
+    pid = packageInfoBox.selectPid;
+    linePlot.plotAccordingToChoices();
+};
+
 packageInfoBox.init = function(){
     packageInfoBox.draw();
-    $(".packageListItem").click(function(){
-        var idx = this.id;
-        $(".packageListItemSpan").css("opacity", 0);
-        var span = "#" + idx + ">td>.packageListItemSpan";
-        $(span).css("opacity", 1);
-        pid = $(span).attr("id");
-        packageInfoBox.selectPid = parseInt(pid);
-        linePlot.plotAccordingToChoices();
-    });
 };
 
 packageInfoBox.draw = function() {
@@ -37,7 +39,7 @@ packageInfoBox.draw = function() {
             "<td> <span class='glyphicon glyphicon-eye-open packageListItemSpan' style='opacity:0;' id='" + key + "'> </span> </td> " +
             "</tr>");
     });
-
+    $(".packageListItem").click(packageInfoBox.clickHandler);
     $("#packageListItem" + pid + ">td>span").css("opacity", 1);
 };
 
@@ -46,6 +48,7 @@ packageInfoBox.update = function(ProcessChange) {
     console.log(ProcessChange);
     $.each(ProcessChange["ProcessCreate"], function(key, val) {
         PackageName[val["Pid"]] = val["Name"];
+        initEnergyInfo(val["Pid"]);
         if (isPlaying) {
             packageInfoBox.container.append("" +
                 "<tr class='packageListItem' id='packageListItem" + val["Pid"] + "'>" +
@@ -53,9 +56,11 @@ packageInfoBox.update = function(ProcessChange) {
                 "<td> <span class='glyphicon glyphicon-eye-open packageListItemSpan' style='opacity:0;' id='" + val["Pid"] + "'> </span> </td> " +
                 "</tr>");
         }
+        $("#packageItem" + val["Pid"]).click(packageInfoBox.clickHandler);
     });
     $.each(ProcessChange["ProcessDestroy"], function(key, val) {
-        PackageName = PackageName.concat(PackageName.slice(0, val["Pid"]) + PackageName.slice(val["Pid"] + 1));
+        PackageName = [].concat(PackageName.slice(0, val["Pid"]), PackageName.slice(val["Pid"] + 1));
+        clearEnergyInfo(val["Pid"]);
         if (isPlaying) {
             $("#packageListItem" + val["Pid"]).remove();
         }

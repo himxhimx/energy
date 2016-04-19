@@ -46,6 +46,7 @@ linePlot.bindClick = function() {
                 }
             }
             var y, p1 = val.data[j - 1], p2 = val.data[j];
+            if (key == "Time") console.log(j, p1, p2);
             if (p1 == null) {
                 y = p2[1];
             } else if (p2 == null) {
@@ -87,37 +88,24 @@ linePlot.init = function() {
 };
 
 linePlot.plotAccordingToChoices = function() {
-    var _tmpData = isPlaying? AllEnergyInfo:dataWhenPause;
-    var tmpData = {};
-    $.each(_tmpData, function(key, val) {
-        tmpData[key] = {
-            label: val.label,
-            percent: val.percent,
-            data: [[]]
-        };
-        $.each(val.data, function(idx, val2) {
-            tmpData[key].data.push([val2[0], val2[1]]);
-        })
-    });
+    var tmpData = isPlaying? AllEnergyInfo:dataWhenPause;
     var data = [];
     choiceBox.choiceContainer.find("input:checked").each(function () {
         var key = $(this).attr("name");
         if (key && tmpData[key]) {
-            //data.push(tmpData[key]);
+            var tmpd = [[]];
+            $.each(tmpData[key].data[pid].slice(totalPoints - timeInterval * 10 * 2), function(key, val) {
+                tmpd.push([totalPoints - timeInterval * 10 * 2 + key, val]);
+            });
             var tmptmp = {
                 label: tmpData[key].label,
-                data: tmpData[key].data.slice(totalPoints - timeInterval * 10 * 2)
+                data: tmpd
             };
-            /*
-            $.each(tmptmp.data, function(key2){
-                tmptmp.data[key2][1] *= AllEnergyInfo[key].percent;
-            });*/
 
             data.push(tmptmp);
         }
     });
     if (data.length > 0) {
-        if (!isPlaying) console.log("plot");
         plot = $.plot("#placeholder", data, plotOptions);
     }
 };

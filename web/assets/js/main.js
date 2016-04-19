@@ -10,7 +10,6 @@ var getEnergyInfo = function () {
         success: function(data) {
             if (!data) return;
             data = JSON.parse(data);
-            var totalEnergy = 0;
 
             if (data["Status"] == -1) {
                 $.ajax({
@@ -28,39 +27,40 @@ var getEnergyInfo = function () {
                 });
             }
 
-            $.each(data, function(key){
-                //if (key === 'status' || key === 'Percent') return;
-                if (!AllEnergyInfo[key]) return;
-                AllEnergyInfo[key].data = AllEnergyInfo[key].data.slice(1);
-                totalEnergy += data[key];
-                $.each(AllEnergyInfo[key].data, function(key2){
-                    AllEnergyInfo[key].data[key2][0]--;
+            var newAll = {
+                "CPU": 0,
+                "3G": 0,
+                "Screen": 0,
+                "Wifi": 0
+            };
+
+            $.each(data["Energy"], function(idx, pkg){
+                var newPid = pkg["Pid"];
+                $.each(pkg, function(key, val) {
+                    if (!AllEnergyInfo[key]) return;
+                    AllEnergyInfo[key].data[newPid] = AllEnergyInfo[key].data[newPid].slice(1);
+                    AllEnergyInfo[key].data[newPid].push(val);
+                    newAll[key] += val;
                 });
-                AllEnergyInfo[key].data.push([totalPoints - 1, data[key]]);
             });
-            
-            //get the percentage of energy
-            if (data["Percent"]) {
-                $.each(data["Percent"], function(key, val) {
-                    if (!isPlaying) console.log("Percent:" + val);
-                   AllEnergyInfo[key].percent = parseFloat(val); 
-                });
-            }
-            
-            //Calculate the total energy
-            AllEnergyInfo.Total.data = AllEnergyInfo.Total.data.slice(1);
-            $.each(AllEnergyInfo.Total.data, function(key2){
-                AllEnergyInfo.Total.data[key2][0]--;
+
+            $.each(newAll, function(key, val) {
+                if (!AllEnergyInfo[key]) return; 
+                AllEnergyInfo[key].data[0] = AllEnergyInfo[key].data[0].slice(1);
+                AllEnergyInfo[key].data[0].push(val);
             });
-            AllEnergyInfo.Total.data.push([totalPoints - 1, totalEnergy]);
+
+            //console.log(AllEnergyInfo);
 
             //update the time sequence
             AllEnergyInfo.Time.data = AllEnergyInfo.Time.data.slice(1);
             $.each(AllEnergyInfo.Time.data, function(key2){
                 AllEnergyInfo.Time.data[key2][0]--;
             });
-            AllEnergyInfo.Time.data.push([totalPoints - 1, AllEnergyInfo.Time.data[AllEnergyInfo.Time.data.length - 1][1] + updateInterval / 1000.0]);
-            
+            AllEnergyInfo.Time.data.push([totalPoints - 1, AllEnergyInfo.Time.data[totalPoints - 2][1] + updateInterval / 1000.0]);
+
+
+
             packageInfoBox.update(data["ProcessChange"]);
             timeXaisBar.update(true);
             if (isPlaying) 
@@ -84,3 +84,5 @@ var update = function() {
 choiceBox.init();
 linePlot.init();
 controlBox.init();
+initEnergyTime();
+console.log(AllEnergyInfo);
