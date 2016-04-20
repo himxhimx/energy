@@ -167,6 +167,7 @@ public class adb {
         if (hasNoData) {
             infoMap.put("Status", -1);
             if (index == -1) {
+                index = 0;
                 Map map = new HashMap();
                 map.put("Pid", 0);
                 map.put("CPU", 0);
