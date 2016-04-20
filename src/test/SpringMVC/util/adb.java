@@ -19,13 +19,13 @@ public class adb {
     private Process process = null;
 
     private HashMap<String, LinkedList<Package>> EnergyInfo = new HashMap<>();
+    private HashMap<String, Integer> ListIndex = new HashMap<>();
 
     private HashMap<String, Integer> CurrentPkgList = new HashMap<>();
     private HashMap<String, Integer> TempPkgList = new HashMap<>();
     private HashMap<String, Integer> CreatePkgList = new HashMap<>();
     private HashMap<String, Integer> DestroyPkgList = new HashMap<>();
 
-    private int index = 0;
     private boolean isLogcatExecuted = false;
 
     @Override
@@ -134,7 +134,7 @@ public class adb {
             status = res.substring(lastSpace + 1);
         }
 
-        logcat();
+        //logcat();
         Map map= new HashMap<>();
         map.put("status", status);
         map.put("deviceName", deviceName);
@@ -148,65 +148,66 @@ public class adb {
     public String getEnergyInfo(int pid) {
         logcat();
 
-        boolean hasNoData = false;
-
-        Iterator it = EnergyInfo.entrySet().iterator();
-        if (!it.hasNext()) {
-            hasNoData = true;
-            index = -1;
-        } else {
-            Map.Entry entry = ((Map.Entry)it.next());
-            LinkedList<Package> list = (LinkedList<Package>)entry.getValue();
-            if (index >= list.size()) {
-                hasNoData = true;
-                index = list.size() - 1;
-            }
-        }
-
         Map infoMap = new HashMap(); //store result(Status, Energy, ProcessChange)
-        if (hasNoData) {
-            infoMap.put("Status", -1);
-            if (index == -1) {
-                index = 0;
-                Map map = new HashMap();
-                map.put("Pid", 0);
-                map.put("CPU", 0);
-                map.put("Screen", 0);
-                map.put("3G", 0);
-                map.put("Wifi", 0);
 
-                List list = new LinkedList();
-                list.add(map);
-                infoMap.put("Energy", list);
-                JSONObject json = JSONObject.fromObject(infoMap);
-                return json.toString();
-            }
-        }
-        else {
-            infoMap.put("Status", 0);
-        }
+        boolean hasData = false;
 
+        Iterator it;
         it = EnergyInfo.entrySet().iterator();
         List energyList = new LinkedList();
         while (it.hasNext()) {
             Map.Entry entry = ((Map.Entry)it.next());
+            String pkgName = (String)entry.getKey();
             LinkedList<Package> list = (LinkedList<Package>)entry.getValue();
-            Package pkg = list.get(index);
 
+            if (!ListIndex.containsKey(pkgName)) {
+                System.err.println("index not found: " + pkgName);
+                continue;
+            }
+            int index = ListIndex.get(pkgName);
+            if (index == 0 && list.size() == 0) {
+                Map map = new HashMap();
+                map.put("Pid", TempPkgList.get(pkgName));
+                map.put("CPU", 0);
+                map.put("Screen", 0);
+                map.put("3G", 0);
+                map.put("Wifi", 0);
+                energyList.add(map);
+                continue;
+            } else if (index >= list.size()) {
+                Package pkg = list.get(list.size() - 1);
+                Map map = new HashMap();
+                map.put("Pid", pkg.getPid());
+                map.put("CPU", pkg.getCPU());
+                map.put("Screen", pkg.getScreen());
+                map.put("3G", pkg.get3G());
+                map.put("Wifi", pkg.getWifi());
+                energyList.add(map);
+                continue;
+            }
+
+            hasData = true;
+
+            Package pkg = list.get(index);
             Map map = new HashMap();
             map.put("Pid", pkg.getPid());
             map.put("CPU", pkg.getCPU());
             map.put("Screen", pkg.getScreen());
             map.put("3G", pkg.get3G());
             map.put("Wifi", pkg.getWifi());
-
             energyList.add(map);
+            ListIndex.put(pkgName, index + 1);
         }
         infoMap.put("Energy", energyList);
 
+        if (hasData) {
+            infoMap.put("Status", 0);
+        } else {
+            infoMap.put("Status", -1);
+        }
+
         JSONObject processChange = getPackagesChange();
         if (processChange != null) infoMap.put("ProcessChange", processChange);
-        index ++;
         String res = JSONObject.fromObject(infoMap).toString();
         System.out.println(res.length());
         return res;
@@ -215,6 +216,18 @@ public class adb {
     private void updatePackageList() {
         findDifferentAndAddToMap(CurrentPkgList, TempPkgList, CreatePkgList);
         findDifferentAndAddToMap(TempPkgList, CurrentPkgList, DestroyPkgList);
+
+        for (Object o: CreatePkgList.entrySet()) {
+            Map.Entry entry = ((Map.Entry) o);
+            String pkgName = (String) entry.getKey();
+            ListIndex.put(pkgName, 0);
+        }
+
+        for (Object o: DestroyPkgList.entrySet()) {
+            Map.Entry entry = ((Map.Entry) o);
+            String pkgName = (String) entry.getKey();
+            ListIndex.remove(pkgName);
+        }
 
         TempPkgList = CurrentPkgList;
         CurrentPkgList.clear();
@@ -241,8 +254,38 @@ public class adb {
     }
 
     private JSONArray getPackagesInfo() {
-        List list = new ArrayList<>();
+        Process process = null;
+        try {
+            process = Runtime.getRuntime().exec("adb shell ps");
+            BufferedReader mReader = new BufferedReader(new InputStreamReader(process.getInputStream()));
 
+            String line;
+            line = mReader.readLine();
+            if (line == null)
+                return JSONArray.fromObject(new ArrayList<>());
+
+            TempPkgList.clear();
+            ListIndex.clear();
+
+            String[] arrs;
+            while((line = mReader.readLine()) != null){
+                arrs = line.split("\\s+");
+                if (arrs[0].startsWith("u")) {
+                    int pid = Integer.parseInt(arrs[1]);
+                    String pkgName = arrs[8];
+                    TempPkgList.put(pkgName, pid);
+                    ListIndex.put(pkgName, 0);
+                }
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        } finally {
+            if(process != null) {
+                process.destroy();
+            }
+        }
+
+        List list = new ArrayList<>();
         addPkgInfoToList(TempPkgList, list);
         return JSONArray.fromObject(list);
     }
