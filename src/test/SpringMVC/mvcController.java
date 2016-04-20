@@ -75,10 +75,10 @@ public class mvcController {
         return myadb.logcatInfo;
     }*/
 
-    @RequestMapping(value = "/getEnergyInfo/{pid}", method = RequestMethod.GET)
+    @RequestMapping(value = "/getEnergyInfo", method = RequestMethod.GET)
     @ResponseBody
-    public String getEnergyInfo(@PathVariable(value="pid") Integer pid) {
-        return myadb.getEnergyInfo(pid);
+    public String getEnergyInfo() {
+        return myadb.getEnergyInfo();
     }
 
 }

@@ -35,8 +35,8 @@ packageInfoBox.draw = function() {
         if (!val) return;
         packageInfoBox.container.append("" +
             "<tr class='packageListItem' id='packageListItem" + (key) + "'>" +
-            "<td style='width: 90%'>"+ val + "</td> " +
             "<td> <span class='glyphicon glyphicon-eye-open packageListItemSpan' style='opacity:0;' id='" + key + "'> </span> </td> " +
+            "<td style='width: 90%'>"+ val + "</td> " +
             "</tr>");
     });
     $(".packageListItem").click(packageInfoBox.clickHandler);
@@ -53,8 +53,8 @@ packageInfoBox.update = function(ProcessChange) {
         if (isPlaying) {
             packageInfoBox.container.append("" +
                 "<tr class='packageListItem' id='packageListItem" + val["Pid"] + "'>" +
-                "<td style='width: 90%'>"+ val["Name"] + "</td> " +
                 "<td> <span class='glyphicon glyphicon-eye-open packageListItemSpan' style='opacity:0;' id='" + val["Pid"] + "'> </span> </td> " +
+                "<td style='width: 90%'>"+ val["Name"] + "</td> " +
                 "</tr>");
         }
         $("#packageListItem" + val["Pid"]).click(packageInfoBox.clickHandler);

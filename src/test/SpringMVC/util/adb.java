@@ -145,7 +145,7 @@ public class adb {
         return JSONObject.fromObject(map).toString();
     }
 
-    synchronized public String getEnergyInfo(int pid) {
+    synchronized public String getEnergyInfo() {
         logcat();
         System.out.println("getEnergyInfo");
         Map infoMap = new HashMap(); //store result(Status, Energy, ProcessChange)

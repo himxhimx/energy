@@ -94,9 +94,14 @@ linePlot.plotAccordingToChoices = function() {
         var key = $(this).attr("name");
         if (key && tmpData[key]) {
             var tmpd = [[]];
-            $.each(tmpData[key].data[pid].slice(totalPoints - timeInterval * 10 * 2), function(key, val) {
-                tmpd.push([totalPoints - timeInterval * 10 * 2 + key, val]);
-            });
+            if (!tmpData[key].data[pid]) {
+                for (var i = totalPoints - timeInterval * 10 * 2; i < 300; i++)
+                    tmpd.push([i, 0]);
+            } else {
+                $.each(tmpData[key].data[pid].slice(totalPoints - timeInterval * 10 * 2), function(key, val) {
+                    tmpd.push([totalPoints - timeInterval * 10 * 2 + key, val]);
+                });
+            }
             var tmptmp = {
                 label: tmpData[key].label,
                 data: tmpd

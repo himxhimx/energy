@@ -6,7 +6,7 @@
 var getEnergyInfo = function () {
     $.ajax({
         type: "GET",
-        url: "/getEnergyInfo/" + pid,
+        url: "/getEnergyInfo",
         success: function(data) {
             if (!data) return;
             data = JSON.parse(data);
@@ -41,6 +41,7 @@ var getEnergyInfo = function () {
                 console.log(newPid, AllEnergyInfo);
                 $.each(pkg, function(key, val) {
                     if (!AllEnergyInfo[key]) return;
+                    if (!AllEnergyInfo[key].data[newPid]) initEnergyInfo(newPid);
                     AllEnergyInfo[key].data[newPid] = AllEnergyInfo[key].data[newPid].slice(1);
                     AllEnergyInfo[key].data[newPid].push(val);
                     newAll[key] += val;
