@@ -69,7 +69,7 @@ var initEnergyTime = function() {
 var clearEnergyInfo = function(thePid) {
     $.each(AllEnergyInfo, function(key) {
        if (key === "Time") return;
-        AllEnergyInfo[key].data = [].concat(AllEnergyInfo[key].data.slice(0, thePid), AllEnergyInfo[key].data.slice(thePid + 1));
+        AllEnergyInfo[key].data[thePid] = null;
     });
 };
 

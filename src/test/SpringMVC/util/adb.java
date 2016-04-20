@@ -145,9 +145,9 @@ public class adb {
         return JSONObject.fromObject(map).toString();
     }
 
-    public String getEnergyInfo(int pid) {
+    synchronized public String getEnergyInfo(int pid) {
         logcat();
-
+        System.out.println("getEnergyInfo");
         Map infoMap = new HashMap(); //store result(Status, Energy, ProcessChange)
 
         boolean hasData = false;
@@ -229,6 +229,7 @@ public class adb {
             Map.Entry entry = ((Map.Entry) o);
             String pkgName = (String) entry.getKey();
             ListIndex.remove(pkgName);
+            EnergyInfo.remove(pkgName);
         }
 
         TempPkgList.clear();
