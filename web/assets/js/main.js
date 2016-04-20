@@ -14,7 +14,7 @@ var getEnergyInfo = function () {
             if (data["Status"] == -1) {
                 $.ajax({
                     method: 'GET',
-                    url: 'getDevices',
+                    url: 'getDevices/notfirst',
                     success: function (data) {
                         var jData = JSON.parse(data);
                         if (jData["deviceName"] === "") {
@@ -27,6 +27,8 @@ var getEnergyInfo = function () {
                 });
             }
 
+            packageInfoBox.update(data["ProcessChange"]);
+            
             var newAll = {
                 "CPU": 0,
                 "3G": 0,
@@ -36,6 +38,7 @@ var getEnergyInfo = function () {
 
             $.each(data["Energy"], function(idx, pkg){
                 var newPid = pkg["Pid"];
+                console.log(newPid, AllEnergyInfo);
                 $.each(pkg, function(key, val) {
                     if (!AllEnergyInfo[key]) return;
                     AllEnergyInfo[key].data[newPid] = AllEnergyInfo[key].data[newPid].slice(1);
@@ -43,7 +46,9 @@ var getEnergyInfo = function () {
                     newAll[key] += val;
                 });
             });
-
+            
+            //console.log(newAll);
+            
             $.each(newAll, function(key, val) {
                 if (!AllEnergyInfo[key]) return; 
                 AllEnergyInfo[key].data[0] = AllEnergyInfo[key].data[0].slice(1);
@@ -58,10 +63,7 @@ var getEnergyInfo = function () {
                 AllEnergyInfo.Time.data[key2][0]--;
             });
             AllEnergyInfo.Time.data.push([totalPoints - 1, AllEnergyInfo.Time.data[totalPoints - 2][1] + updateInterval / 1000.0]);
-
-
-
-            packageInfoBox.update(data["ProcessChange"]);
+            
             timeXaisBar.update(true);
             if (isPlaying) 
             {
@@ -84,5 +86,5 @@ var update = function() {
 choiceBox.init();
 linePlot.init();
 controlBox.init();
-initEnergyTime();
-console.log(AllEnergyInfo);
+//initEnergyTime();
+//console.log(AllEnergyInfo);

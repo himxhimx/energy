@@ -70,7 +70,7 @@
           <div id="packageInfoBox" class="panel panel-primary deviceStatus" style="height: 335px;">
             <div class="panel-heading" style="font-size: 20px">Packages Running</div>
             <div class="panel-body" style="padding: 0; height: 283px; overflow: scroll; overflow-x: hidden;">
-              <table id="packageList" class="table table-hover table-condensed">
+              <table id="packageList" class="table table-hover table-condensed" style="width: 100%">
 
               </table>
             </div>

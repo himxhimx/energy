@@ -58,8 +58,15 @@ public class mvcController {
     @RequestMapping(value = "/getDevices", method = RequestMethod.GET)
     @ResponseBody
     public String getDevices(HttpServletRequest request,HttpServletResponse response) throws IOException {
-        return myadb.getDeviceInfo();
+        return myadb.getDeviceInfo(true);
     }
+
+    @RequestMapping(value = "/getDevices/notfirst", method = RequestMethod.GET)
+    @ResponseBody
+    public String getDevicesNotFirst(HttpServletRequest request,HttpServletResponse response) throws IOException {
+        return myadb.getDeviceInfo(false);
+    }
+
 /*
     @RequestMapping(value = "/getLogcat", method = RequestMethod.GET)
     @ResponseBody

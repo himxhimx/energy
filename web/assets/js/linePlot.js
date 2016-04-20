@@ -36,7 +36,7 @@ linePlot.bindClick = function() {
         }
         var dataset = plot.getData();
         var piePlotData = [];
-        $("#currentInfoBoxBody").append("<h4 style='font-weight: 600'>" + PackageName[packageInfoBox.selectPid] + "</h4>");
+        $("#currentInfoBoxBody").append("<h4 style='font-weight: 600; word-wrap: break-word;'>" + PackageName[packageInfoBox.selectPid] + "</h4>");
         var updateToCurrentInfoBox = function (key, val, notAddToPie) {
             var j;
             // Find the nearest points, x-wise

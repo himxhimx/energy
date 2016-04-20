@@ -45,8 +45,9 @@ packageInfoBox.draw = function() {
 
 packageInfoBox.update = function(ProcessChange) {
     if (!ProcessChange) return;
-    console.log(ProcessChange);
+    console.log("PackageInfoBox.update", ProcessChange);
     $.each(ProcessChange["ProcessCreate"], function(key, val) {
+        console.log("PackageInfoBox.update-create", val["Pid"]);
         PackageName[val["Pid"]] = val["Name"];
         initEnergyInfo(val["Pid"]);
         if (isPlaying) {
@@ -56,10 +57,11 @@ packageInfoBox.update = function(ProcessChange) {
                 "<td> <span class='glyphicon glyphicon-eye-open packageListItemSpan' style='opacity:0;' id='" + val["Pid"] + "'> </span> </td> " +
                 "</tr>");
         }
-        $("#packageItem" + val["Pid"]).click(packageInfoBox.clickHandler);
+        $("#packageListItem" + val["Pid"]).click(packageInfoBox.clickHandler);
     });
     $.each(ProcessChange["ProcessDestroy"], function(key, val) {
-        PackageName = [].concat(PackageName.slice(0, val["Pid"]), PackageName.slice(val["Pid"] + 1));
+        console.log("PackageInfoBox.update-destroy", val["Pid"]);
+        PackageName[val["Pid"]] = null;
         clearEnergyInfo(val["Pid"]);
         if (isPlaying) {
             $("#packageListItem" + val["Pid"]).remove();

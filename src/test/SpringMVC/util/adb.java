@@ -123,7 +123,7 @@ public class adb {
         return res;
     }
 
-    public String getDeviceInfo() {
+    public String getDeviceInfo(boolean first) {
         String res = devices();
         int lastSpace = res.lastIndexOf(" ");
         String tmp = " List of devices attached";
@@ -138,10 +138,10 @@ public class adb {
         Map map= new HashMap<>();
         map.put("status", status);
         map.put("deviceName", deviceName);
-        map.put("packageList", getPackagesInfo());
+        if (first) map.put("packageList", getPackagesInfo());
 
-        List tmp3 = new ArrayList();
-        System.out.print(JSONArray.fromObject(tmp3).toString());
+        String ress = JSONObject.fromObject(map).toString();
+        System.out.println("GetDevice " + ress.length() + " " + ress);
         return JSONObject.fromObject(map).toString();
     }
 
@@ -155,6 +155,7 @@ public class adb {
         Iterator it;
         it = EnergyInfo.entrySet().iterator();
         List energyList = new LinkedList();
+        int _index = 0;
         while (it.hasNext()) {
             Map.Entry entry = ((Map.Entry)it.next());
             String pkgName = (String)entry.getKey();
@@ -165,6 +166,7 @@ public class adb {
                 continue;
             }
             int index = ListIndex.get(pkgName);
+            _index = index;
             if (index == 0 && list.size() == 0) {
                 Map map = new HashMap();
                 map.put("Pid", TempPkgList.get(pkgName));
@@ -209,7 +211,7 @@ public class adb {
         JSONObject processChange = getPackagesChange();
         if (processChange != null) infoMap.put("ProcessChange", processChange);
         String res = JSONObject.fromObject(infoMap).toString();
-        System.out.println(res.length());
+        System.out.println(res.length() + " " + _index + " " + res);
         return res;
     }
 
@@ -229,7 +231,8 @@ public class adb {
             ListIndex.remove(pkgName);
         }
 
-        TempPkgList = CurrentPkgList;
+        TempPkgList.clear();
+        TempPkgList.putAll(CurrentPkgList);
         CurrentPkgList.clear();
     }
 
@@ -248,8 +251,8 @@ public class adb {
         addPkgInfoToList(DestroyPkgList, destroyList);
         changeMap.put("ProcessDestroy", JSONArray.fromObject(destroyList));
 
-        createList.clear();
-        destroyList.clear();
+        CreatePkgList.clear();
+        DestroyPkgList.clear();
         return JSONObject.fromObject(changeMap);
     }
 
