@@ -1,6 +1,8 @@
 package test.SpringMVC.util;
 
 import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.*;
 
@@ -15,6 +17,9 @@ public class adb {
     private static final String TAG_LOGCAT = "EnergyMonitor";
     private static final String SAMPLE_SPLIT = "+T-23==53-X7-+YuRG";
 
+    //set path
+    private static final String API_FILE_PATH = "C:\\Users\\shenpeng\\IdeaProjects\\energy\\API_result.txt";
+
     private Thread logcatThread = null;
     private Process process = null;
 
@@ -25,6 +30,8 @@ public class adb {
     private HashMap<String, Integer> TempPkgList = new HashMap<>();
     private HashMap<String, Integer> CreatePkgList = new HashMap<>();
     private HashMap<String, Integer> DestroyPkgList = new HashMap<>();
+
+    private HashMap<String, LinkedList<String>> APIInfo = new HashMap<>();
 
     private boolean isLogcatExecuted = false;
 
@@ -44,6 +51,7 @@ public class adb {
         if (isLogcatExecuted) return;
 
         EnergyModelUtils.init();
+        loadAPIInfo();
         isLogcatExecuted = true;
         logcatThread = new Thread(new Runnable() {
             @Override
@@ -52,6 +60,43 @@ public class adb {
             }
         });
         logcatThread.start();
+    }
+
+    private void loadAPIInfo() {
+        try {
+            BufferedReader reader = new BufferedReader(new FileReader(API_FILE_PATH));
+
+            String line;
+            String event = "";
+            LinkedList<String> current = null;
+            while ((line = reader.readLine()) != null) {
+                line = line.trim();
+
+                if (line.length() == 0) {
+                    continue;
+                }
+
+                if (line.startsWith("##")) {
+                    event = line.substring(line.indexOf("##") + 3);
+                    if (APIInfo.containsKey(event)) {
+                        current = APIInfo.get(event);
+                    } else {
+                        current = new LinkedList<>();
+                        APIInfo.put(event, current);
+                    }
+                } else {
+                    String[] infos = line.split(" ");
+                    if (current == null) {
+                        current = new LinkedList<>();
+                    }
+                    current.add(infos[0]);
+                    APIInfo.put(event, current);
+                }
+            }
+            reader.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
     private void logcatThread() {
@@ -70,12 +115,30 @@ public class adb {
                 if (line.length() == 0 || !line.startsWith("V/")) {
                     continue;
                 }
+
+                // 具体事件信息
+                // TODO 需要展示到界面上
                 String subline = line.substring(line.indexOf(": ") + 2);
+                if (subline.contains(" + ")) {
+                    String event = subline.substring(subline.indexOf(" + ") + 3);
+                    System.out.println("## " + event);
+                    if (APIInfo.containsKey(event)) {
+                        LinkedList<String> list = APIInfo.get(event);
+                        for (String api : list) {
+                            System.out.println(api);
+                        }
+                    }
+                    System.out.println();
+                    continue;
+                }
+
+                // 手机端一次采样结束标志，更新进程列表
                 if (subline.equals(SAMPLE_SPLIT)) {
                     updatePackageList();
                     continue;
                 }
 
+                // 硬件资源使用信息，根据模型计算能耗
                 String infos[] = subline.split("\\s+");
                 String pkgName = infos[0];
                 int pid = Integer.parseInt(infos[1]);
@@ -141,13 +204,13 @@ public class adb {
         if (first) map.put("packageList", getPackagesInfo());
 
         String ress = JSONObject.fromObject(map).toString();
-        System.out.println("GetDevice " + ress.length() + " " + ress);
+        //System.out.println("GetDevice " + ress.length() + " " + ress);
         return JSONObject.fromObject(map).toString();
     }
 
     synchronized public String getEnergyInfo() {
         logcat();
-        System.out.println("getEnergyInfo");
+        //System.out.println("getEnergyInfo");
         Map infoMap = new HashMap(); //store result(Status, Energy, ProcessChange)
 
         boolean hasData = false;
@@ -211,7 +274,7 @@ public class adb {
         JSONObject processChange = getPackagesChange();
         if (processChange != null) infoMap.put("ProcessChange", processChange);
         String res = JSONObject.fromObject(infoMap).toString();
-        System.out.println(res.length() + " " + _index + " " + res);
+        //System.out.println(res.length() + " " + _index + " " + res);
         return res;
     }
 
