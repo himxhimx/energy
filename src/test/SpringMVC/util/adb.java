@@ -225,7 +225,7 @@ public class adb {
             LinkedList<Package> list = (LinkedList<Package>)entry.getValue();
 
             if (!ListIndex.containsKey(pkgName)) {
-                System.err.println("index not found: " + pkgName);
+                //System.err.println("index not found: " + pkgName);
                 continue;
             }
             int index = ListIndex.get(pkgName);
