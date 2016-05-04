@@ -63,10 +63,39 @@ linePlot.bindClick = function() {
     });
 };
 
-var previousPoint = null;
+linePlot.previousPoint = null;
+
+linePlot.allowTooltip = function(){
+    $("<div id='tooltip'></div>").css({
+        position: "absolute",
+        display: "none",
+        border: "1px solid #fdd",
+        padding: "2px",
+        "background-color": "#fee",
+        opacity: 0.80
+    }).appendTo("body");
+};
+
+
 linePlot.bindHover = function() {
     // 绑定提示事件
     $("#placeholder").bind("plothover", function (event, pos, item) {
+        var axes = plot.getAxes();
+        if (pos.x < axes.xaxis.min || pos.x > axes.xaxis.max ||
+            pos.y < axes.yaxis.min || pos.y > axes.yaxis.max) {
+            $("#tooltip").hide();
+            return;
+        }
+        var j = pos.x.toFixed(0);
+        var tooltipHTML = "";
+        $.each(APIInfoList[j], function(key, val) {
+            tooltipHTML += "<h5>" + val + "</h5>"
+        });
+        $("#tooltip").html(tooltipHTML)
+            .css({top: 200, left: 350})
+            .fadeIn(200);
+
+        /*
         if (item) {
             if (previousPoint != item.dataIndex) {
                 previousPoint = item.dataIndex;
@@ -78,13 +107,14 @@ linePlot.bindHover = function() {
         else {
             $("#tooltip").remove();
             previousPoint = null;
-        }
+        }*/
     });
 };
 
 linePlot.init = function() {
     this.bindClick();
     this.bindHover();
+    this.allowTooltip();
 };
 
 linePlot.plotAccordingToChoices = function() {

@@ -18,7 +18,7 @@ public class adb {
     private static final String SAMPLE_SPLIT = "+T-23==53-X7-+YuRG";
 
     //set path
-    private static final String API_FILE_PATH = "C:\\Users\\shenpeng\\IdeaProjects\\energy\\API_result.txt";
+    private static final String API_FILE_PATH = "C:\\Users\\Himx\\IdeaProjects\\final2\\API_result.txt";
 
     private Thread logcatThread = null;
     private Process process = null;
@@ -30,6 +30,7 @@ public class adb {
     private HashMap<String, Integer> TempPkgList = new HashMap<>();
     private HashMap<String, Integer> CreatePkgList = new HashMap<>();
     private HashMap<String, Integer> DestroyPkgList = new HashMap<>();
+    private LinkedList<String> APIInfoList = null;
 
     private HashMap<String, LinkedList<String>> APIInfo = new HashMap<>();
 
@@ -122,13 +123,14 @@ public class adb {
                 if (subline.contains(" + ")) {
                     String event = subline.substring(subline.indexOf(" + ") + 3);
                     System.out.println("## " + event);
+                    APIInfoList = null;
                     if (APIInfo.containsKey(event)) {
-                        LinkedList<String> list = APIInfo.get(event);
-                        for (String api : list) {
-                            System.out.println(api);
-                        }
+                        APIInfoList = APIInfo.get(event);
+                        //for (String api : list) {
+                        //    System.out.println(api);
+                        //}
                     }
-                    System.out.println();
+                    //System.out.println();
                     continue;
                 }
 
@@ -273,6 +275,7 @@ public class adb {
 
         JSONObject processChange = getPackagesChange();
         if (processChange != null) infoMap.put("ProcessChange", processChange);
+        if (APIInfoList != null) infoMap.put("APIInfoList", JSONArray.fromObject(APIInfoList));
         String res = JSONObject.fromObject(infoMap).toString();
         //System.out.println(res.length() + " " + _index + " " + res);
         return res;

@@ -26,8 +26,15 @@ var getEnergyInfo = function () {
                     }
                 });
             }
-
+            
             packageInfoBox.update(data["ProcessChange"]);
+            
+            APIInfoList = APIInfoList.slice(1);
+            if (data["APIInfoList"]) {
+                APIInfoList.push(data["APIInfoList"].slice(0));
+            } else {
+                APIInfoList.push([]);
+            }
             
             var newAll = {
                 "CPU": 0,
@@ -38,7 +45,7 @@ var getEnergyInfo = function () {
 
             $.each(data["Energy"], function(idx, pkg){
                 var newPid = pkg["Pid"];
-                console.log(newPid, AllEnergyInfo);
+                //console.log(newPid, AllEnergyInfo);
                 $.each(pkg, function(key, val) {
                     if (!AllEnergyInfo[key]) return;
                     if (!AllEnergyInfo[key].data[newPid]) initEnergyInfo(newPid);
