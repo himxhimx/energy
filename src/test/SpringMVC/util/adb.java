@@ -296,12 +296,13 @@ public class adb {
             Map.Entry entry = ((Map.Entry) o);
             Long t = (Long)entry.getKey();
             if (Math.abs(time - t) < 500) {
-                list.addAll((LinkedList<String>)entry.getValue());
                 removeList.add(t);
             }
         }
-        if (list.size() > 0) {
+        if (removeList.size() > 0) {
+            Collections.sort(removeList);
             for (Long t: removeList) {
+                list.addAll(APIInfoList.get(t));
                 APIInfoList.remove(t);
             }
             return JSONArray.fromObject(list);
