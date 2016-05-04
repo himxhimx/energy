@@ -117,6 +117,11 @@ controlBox.stopHandler = function () {
         dataWhenPause["Time"].data.push([val[0], val[1]]);
     });
 
+    APIInfoListWhenStop = [];
+    $.each(APIInfoList, function(key, val) {
+       APIInfoListWhenStop[key] = val.slice(0);
+    });
+
     $("#controlPlay").unbind("click", controlBox.stopHandler);
     $("#controlPlay").click(controlBox.playHandler);
     $("#playSpan").attr("class", "glyphicon glyphicon-play");

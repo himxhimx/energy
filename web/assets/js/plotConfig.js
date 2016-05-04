@@ -46,6 +46,7 @@ var AllEnergyInfo = {
 };
 
 var APIInfoList = [];
+var APIInfoListWhenStop = [];
 
 var initEnergyInfo = function(thePid) {
     $.each(AllEnergyInfo, function(key, val) {

@@ -88,7 +88,8 @@ linePlot.bindHover = function() {
         }
         var j = pos.x.toFixed(0);
         var tooltipHTML = "";
-        $.each(APIInfoList[j], function(key, val) {
+        var APIInfo = isPlaying?APIInfoList:APIInfoListWhenStop;
+        $.each(APIInfo[j], function(key, val) {
             tooltipHTML += "<h5>" + val + "</h5>"
         });
         $("#tooltip").html(tooltipHTML)

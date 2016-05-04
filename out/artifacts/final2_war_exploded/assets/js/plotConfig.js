@@ -45,14 +45,17 @@ var AllEnergyInfo = {
     }
 };
 
+var APIInfoList = [];
+
 var initEnergyInfo = function(thePid) {
     $.each(AllEnergyInfo, function(key, val) {
         if (key === "Time") return;
-        val.data[thePid] = new Array(300);
+        val.data[thePid] = new Array(totalPoints);
         $.each(val.data[thePid], function(idx) {
             val.data[thePid][idx] = 0;
         });
     });
+    APIInfoList = new Array(totalPoints);
 };
 
 var initEnergyTime = function() {
