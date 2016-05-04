@@ -18,7 +18,7 @@ public class adb {
     private static final String SAMPLE_SPLIT = "+T-23==53-X7-+YuRG";
 
     //set path
-    private static final String API_FILE_PATH = "C:\\Users\\Himx\\IdeaProjects\\final2\\API_result.txt";
+    private static final String API_FILE_PATH = "C:\\Users\\shenpeng\\IdeaProjects\\energy\\API_result.txt";
 
     private Thread logcatThread = null;
     private Process process = null;
@@ -30,7 +30,8 @@ public class adb {
     private HashMap<String, Integer> TempPkgList = new HashMap<>();
     private HashMap<String, Integer> CreatePkgList = new HashMap<>();
     private HashMap<String, Integer> DestroyPkgList = new HashMap<>();
-    private LinkedList<String> APIInfoList = null;
+//    private LinkedList<String> APIInfoList = null;
+    private HashMap<Long, LinkedList<String>> APIInfoList = new HashMap<>();
 
     private HashMap<String, LinkedList<String>> APIInfo = new HashMap<>();
 
@@ -107,7 +108,7 @@ public class adb {
             process = Runtime.getRuntime().exec("adb logcat -s " + TAG_LOGCAT);
 
             /*
-              "PkgName Pid ProcessCPUUsage ScreenBrightness ProcessNetworkSpeed"
+              "Time PkgName Pid ProcessCPUUsage ScreenBrightness ProcessNetworkSpeed"
               "BluetoothState GPSState WifiState NetState Volume SignalStrength BatteryLevel"
             */
             String line;
@@ -121,16 +122,16 @@ public class adb {
                 // TODO 需要展示到界面上
                 String subline = line.substring(line.indexOf(": ") + 2);
                 if (subline.contains(" + ")) {
-                    String event = subline.substring(subline.indexOf(" + ") + 3);
-                    System.out.println("## " + event);
-                    APIInfoList = null;
+                    int idx = subline.indexOf(" + ");
+                    Long time = Long.parseLong(subline.substring(0, idx));
+                    String event = subline.substring(idx + 3);
+                    LinkedList<String> info = new LinkedList<>();
+                    info.add(event);
+
                     if (APIInfo.containsKey(event)) {
-                        APIInfoList = APIInfo.get(event);
-                        //for (String api : list) {
-                        //    System.out.println(api);
-                        //}
+                        info.addAll(APIInfo.get(event));
                     }
-                    //System.out.println();
+                    APIInfoList.put(time, info);
                     continue;
                 }
 
@@ -142,23 +143,25 @@ public class adb {
 
                 // 硬件资源使用信息，根据模型计算能耗
                 String infos[] = subline.split("\\s+");
-                String pkgName = infos[0];
-                int pid = Integer.parseInt(infos[1]);
-                double cpu = EnergyModelUtils.getCPUEnergy(Double.parseDouble(infos[2]));
-                double screen = EnergyModelUtils.getScreenEnergy(Double.parseDouble(infos[3]));
-                double netSpeed = Double.parseDouble(infos[4]);
+                Long time = Long.parseLong(infos[0]);
+                String pkgName = infos[1];
+                int pid = Integer.parseInt(infos[2]);
+                double cpu = EnergyModelUtils.getCPUEnergy(Double.parseDouble(infos[3]));
+                double screen = EnergyModelUtils.getScreenEnergy(Double.parseDouble(infos[4]));
+                double netSpeed = Double.parseDouble(infos[5]);
                 double wifi = 0, mobileNet = 0;
-                if (infos[7].equals("On")) { //Wifi On
+                if (infos[8].equals("On")) { //Wifi On
                     wifi = EnergyModelUtils.getWiFiEnergy(netSpeed);
-                } else if (infos[8].equals("On")) { //3G on
+                } else if (infos[9].equals("On")) { //3G on
                     mobileNet = EnergyModelUtils.get3GEnergy(netSpeed);
                 }
+                Package pkg = new Package(time, pid, cpu + screen + wifi + mobileNet, screen + wifi + mobileNet, wifi + mobileNet, mobileNet);
                 if (EnergyInfo.containsKey(pkgName)) {
                     LinkedList<Package> list = EnergyInfo.get(pkgName);
-                    list.add(new Package(pid, cpu, screen, wifi, mobileNet));
+                    list.add(pkg);
                 } else {
                     LinkedList<Package> list = new LinkedList<>();
-                    list.add(new Package(pid, cpu, screen, wifi, mobileNet));
+                    list.add(pkg);
                     EnergyInfo.put(pkgName, list);
                 }
                 CurrentPkgList.put(pkgName, pid);
@@ -216,11 +219,11 @@ public class adb {
         Map infoMap = new HashMap(); //store result(Status, Energy, ProcessChange)
 
         boolean hasData = false;
+        Long time = 0L;
 
         Iterator it;
         it = EnergyInfo.entrySet().iterator();
         List energyList = new LinkedList();
-        int _index = 0;
         while (it.hasNext()) {
             Map.Entry entry = ((Map.Entry)it.next());
             String pkgName = (String)entry.getKey();
@@ -231,7 +234,6 @@ public class adb {
                 continue;
             }
             int index = ListIndex.get(pkgName);
-            _index = index;
             if (index == 0 && list.size() == 0) {
                 Map map = new HashMap();
                 map.put("Pid", TempPkgList.get(pkgName));
@@ -256,6 +258,8 @@ public class adb {
             hasData = true;
 
             Package pkg = list.get(index);
+            time = pkg.getTime();
+
             Map map = new HashMap();
             map.put("Pid", pkg.getPid());
             map.put("CPU", pkg.getCPU());
@@ -275,10 +279,35 @@ public class adb {
 
         JSONObject processChange = getPackagesChange();
         if (processChange != null) infoMap.put("ProcessChange", processChange);
-        if (APIInfoList != null) infoMap.put("APIInfoList", JSONArray.fromObject(APIInfoList));
+        if (hasData && APIInfoList.size() > 0) {
+            JSONArray apis = getAPIList(time);
+            if (apis != null) {
+                infoMap.put("APIInfoList", apis);
+            }
+        }
         String res = JSONObject.fromObject(infoMap).toString();
-        //System.out.println(res.length() + " " + _index + " " + res);
         return res;
+    }
+
+    private JSONArray getAPIList(long time) {
+        LinkedList<String> list = new LinkedList<>();
+        LinkedList<Long> removeList = new LinkedList<>();
+        for (Object o: APIInfoList.entrySet()) {
+            Map.Entry entry = ((Map.Entry) o);
+            Long t = (Long)entry.getKey();
+            if (Math.abs(time - t) < 500) {
+                list.addAll((LinkedList<String>)entry.getValue());
+                removeList.add(t);
+            }
+        }
+        if (list.size() > 0) {
+            for (Long t: removeList) {
+                APIInfoList.remove(t);
+            }
+            return JSONArray.fromObject(list);
+        } else {
+            return null;
+        }
     }
 
     private void updatePackageList() {
@@ -387,7 +416,8 @@ public class adb {
     }
 
     private class Package {
-        public Package(int pid, double cpu, double screen, double wifi, double mobilenet) {
+        public Package(Long time, int pid, double cpu, double screen, double wifi, double mobilenet) {
+            Time = time;
             Pid = pid;
             CPU = cpu;
             Screen = screen;
@@ -430,10 +460,18 @@ public class adb {
             MobileNet = mobilenet;
         }
 
+        public long getTime() {
+            return Time;
+        }
+        public void setTime(long time) {
+            Time = time;
+        }
+
         private int Pid;
         private double CPU;
         private double Screen;
         private double Wifi;
         private double MobileNet;
+        private long Time;
     }
 }
