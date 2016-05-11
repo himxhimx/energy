@@ -18,7 +18,7 @@ public class adb {
     private static final String SAMPLE_SPLIT = "+T-23==53-X7-+YuRG";
 
     //set path
-    private static final String API_FILE_PATH = "C:\\Users\\shenpeng\\IdeaProjects\\energy\\API_result.txt";
+    private static final String API_FILE_PATH = "C:\\Users\\Himx\\IdeaProjects\\final2\\API_result.txt";
 
     private Thread logcatThread = null;
     private Process process = null;
@@ -155,7 +155,7 @@ public class adb {
                 } else if (infos[9].equals("On")) { //3G on
                     mobileNet = EnergyModelUtils.get3GEnergy(netSpeed);
                 }
-                Package pkg = new Package(time, pid, cpu + screen + wifi + mobileNet, screen + wifi + mobileNet, wifi + mobileNet, mobileNet);
+                Package pkg = new Package(time, pid, cpu, screen, wifi, mobileNet);
                 if (EnergyInfo.containsKey(pkgName)) {
                     LinkedList<Package> list = EnergyInfo.get(pkgName);
                     list.add(pkg);

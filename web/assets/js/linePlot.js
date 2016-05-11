@@ -36,6 +36,12 @@ linePlot.bindClick = function() {
         }
         var dataset = plot.getData();
         var piePlotData = [];
+        var tmpData = {
+            "3G": 0,
+            "Wifi": 0,
+            "Screen": 0,
+            "CPU": 0,
+        };
         $("#currentInfoBoxBody").append("<h4 style='font-weight: 600; word-wrap: break-word;'>" + PackageName[packageInfoBox.selectPid] + "</h4>");
         var updateToCurrentInfoBox = function (key, val, notAddToPie) {
             var j;
@@ -46,7 +52,7 @@ linePlot.bindClick = function() {
                 }
             }
             var y, p1 = val.data[j - 1], p2 = val.data[j];
-            if (key == "Time") console.log(j, p1, p2);
+            //if (key == "Time") console.log(j, p1, p2);
             if (p1 == null) {
                 y = p2[1];
             } else if (p2 == null) {
@@ -54,11 +60,21 @@ linePlot.bindClick = function() {
             } else {
                 y = parseFloat(p1[1]) + parseFloat((p2[1] - p1[1]) * (pos.x - p1[0]) / (p2[0] - p1[0]));
             }
-            $("#currentInfoBoxBody").append("<h6>" + val.label + ":" + y.toFixed(2) + "</h6>");
-            if (!notAddToPie) piePlotData.push({label: val.label, data: y});
+            if (!notAddToPie)
+                tmpData[val.label] = y.toFixed(2);
+            else
+                $("#currentInfoBoxBody").append("<h6>" + val.label + ":" + y.toFixed(2) + "</h6>");
+            //$("#currentInfoBoxBody").append("<h6>" + val.label + ":" + y.toFixed(2) + "</h6>");
+            //if (!notAddToPie) piePlotData.push({label: val.label, data: y});
         };
         updateToCurrentInfoBox("Time", isPlaying?AllEnergyInfo.Time:dataWhenPause.Time, true);
         $.each(dataset, updateToCurrentInfoBox);
+        var k = 0;
+        $.each(tmpData, function(key, val) {
+            $("#currentInfoBoxBody").append("<h6>" + key + ":" + (val - k).toFixed(2) + "</h6>");
+            piePlotData.push({label: key, data: val - k});
+            k = val;
+        });
         piePlot = $.plot("#pie-placeholder", piePlotData, pieplotOption);
     });
 };
@@ -121,27 +137,55 @@ linePlot.init = function() {
 linePlot.plotAccordingToChoices = function() {
     var tmpData = isPlaying? AllEnergyInfo:dataWhenPause;
     var data = [];
+    var tt = {
+        "3G": [],
+        "Wifi": [],
+        "Screen": [],
+        "CPU": []
+    };
     choiceBox.choiceContainer.find("input:checked").each(function () {
         var key = $(this).attr("name");
+        var j = totalPoints - timeInterval * 10 * 2;
         if (key && tmpData[key]) {
             var tmpd = [[]];
             if (!tmpData[key].data[pid]) {
-                for (var i = totalPoints - timeInterval * 10 * 2; i < 300; i++)
+                for (var i = j; i < 300; i++)
                     tmpd.push([i, 0]);
             } else {
-                $.each(tmpData[key].data[pid].slice(totalPoints - timeInterval * 10 * 2), function(key, val) {
-                    tmpd.push([totalPoints - timeInterval * 10 * 2 + key, val]);
+                $.each(tmpData[key].data[pid].slice(j), function(key2, val) {
+                    tmpd.push([j + key2, val]);
+                    tt[key][j + key2] = val;
                 });
             }
             var tmptmp = {
                 label: tmpData[key].label,
                 data: tmpd
             };
-
             data.push(tmptmp);
         }
     });
     if (data.length > 0) {
+        var k = new Array(300);
+        $.each(k, function(key) {
+            k[key] = 0;
+        });
+        var aaa = 0;
+        $.each(tt, function(key, val) {
+            aaa++;
+            if (val.length == 0) return;
+            //console.log("k", aaa, key, k);
+            $.each(val, function(idx) {
+                tt[key][idx] += k[idx];
+            });
+            k = tt[key];
+        });
+        //console.log("tt", tt);
+        $.each(data, function(idx1, val) {
+            if (tt[val.label].length == 0) return;
+            $.each(val.data, function(key) {
+               val.data[key][1] = tt[val.label][val.data[key][0]];
+            });
+        });
         plot = $.plot("#placeholder", data, plotOptions);
     }
 };

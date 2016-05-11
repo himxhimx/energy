@@ -27,16 +27,16 @@ var AllEnergyInfo = {
         label: "CPU",
         data: [[]]
     },
-    "3G": {
-        label: "3G",
+    "Screen": {
+        label: "Screen",
         data: [[]]
     },
     "Wifi": {
         label: "Wifi",
         data: [[]]
     },
-    "Screen": {
-        label: "Screen",
+    "3G": {
+        label: "3G",
         data: [[]]
     },
     "Time": {

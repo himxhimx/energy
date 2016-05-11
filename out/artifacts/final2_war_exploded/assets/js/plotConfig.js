@@ -27,16 +27,16 @@ var AllEnergyInfo = {
         label: "CPU",
         data: [[]]
     },
-    "3G": {
-        label: "3G",
+    "Screen": {
+        label: "Screen",
         data: [[]]
     },
     "Wifi": {
         label: "Wifi",
         data: [[]]
     },
-    "Screen": {
-        label: "Screen",
+    "3G": {
+        label: "3G",
         data: [[]]
     },
     "Time": {
@@ -46,6 +46,7 @@ var AllEnergyInfo = {
 };
 
 var APIInfoList = [];
+var APIInfoListWhenStop = [];
 
 var initEnergyInfo = function(thePid) {
     $.each(AllEnergyInfo, function(key, val) {
@@ -55,7 +56,6 @@ var initEnergyInfo = function(thePid) {
             val.data[thePid][idx] = 0;
         });
     });
-    APIInfoList = new Array(totalPoints);
 };
 
 var initEnergyTime = function() {
@@ -66,6 +66,10 @@ var initEnergyTime = function() {
     $.each(AllEnergyInfo.Time.data, function(idx, val2) {
         val2[0] = idx;
         val2[1] = -0.5;
+    });
+    APIInfoList = new Array(totalPoints);
+    $.each(APIInfoList, function(key) {
+        APIInfoList[key] = [];
     });
 };
 
