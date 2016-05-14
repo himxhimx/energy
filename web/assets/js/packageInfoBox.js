@@ -28,6 +28,27 @@ packageInfoBox.init = function(){
     packageInfoBox.draw();
 };
 
+packageInfoBox.setKillProcessBox = function(thePid) {
+    var killProcess = thePid?$("#killProcess" + thePid):$(".killProcess");
+    killProcess.mouseenter(function() {
+        $(this).css("opacity", 1);
+    });
+    killProcess.mouseleave(function() {
+        $(this).css("opacity", 0.3);
+    });
+    killProcess.click(function() {
+        var theID = this.id.replace(/[^0-9]/ig,"");
+        $.ajax({
+            method: 'GET',
+            url: '/killProcess/' + theID,
+            error: function(err) {
+                console.error(err);
+            }
+        });
+        return false;
+    });
+};
+
 packageInfoBox.draw = function() {
     this.clear();
 
@@ -36,31 +57,37 @@ packageInfoBox.draw = function() {
         packageInfoBox.container.append("" +
             "<tr class='packageListItem' id='packageListItem" + (key) + "'>" +
             "<td> <span class='glyphicon glyphicon-eye-open packageListItemSpan' style='opacity:0;' id='" + key + "'> </span> </td> " +
+            "<td> <span class='glyphicon glyphicon-remove killProcess' style='opacity:0.3;' id='killProcess" + key + "'> </span> </td> " +
             "<td style='width: 90%'>"+ val + "</td> " +
             "</tr>");
     });
+    $("#killProcess0").hide();
+    $("#killProcess0").attr("disabled", true);
+    packageInfoBox.setKillProcessBox();
     $(".packageListItem").click(packageInfoBox.clickHandler);
-    $("#packageListItem" + pid + ">td>span").css("opacity", 1);
+    $("#packageListItem" + pid + ">td>span.packageListItemSpan").css("opacity", 1);
 };
 
 packageInfoBox.update = function(ProcessChange) {
     if (!ProcessChange) return;
-    console.log("PackageInfoBox.update", ProcessChange);
+    //console.log("PackageInfoBox.update", ProcessChange);
     $.each(ProcessChange["ProcessCreate"], function(key, val) {
-        console.log("PackageInfoBox.update-create", val["Pid"]);
+        //console.log("PackageInfoBox.update-create", val["Pid"]);
         PackageName[val["Pid"]] = val["Name"];
         initEnergyInfo(val["Pid"]);
         if (isPlaying) {
             packageInfoBox.container.append("" +
                 "<tr class='packageListItem' id='packageListItem" + val["Pid"] + "'>" +
                 "<td> <span class='glyphicon glyphicon-eye-open packageListItemSpan' style='opacity:0;' id='" + val["Pid"] + "'> </span> </td> " +
+                "<td> <span class='glyphicon glyphicon-remove killProcess' style='opacity:0.3;' id='killProcess" + val["Pid"] + "' title='kill'> </span> </td> " +
                 "<td style='width: 90%'>"+ val["Name"] + "</td> " +
                 "</tr>");
         }
         $("#packageListItem" + val["Pid"]).click(packageInfoBox.clickHandler);
+        packageInfoBox.setKillProcessBox(val["Pid"]);
     });
     $.each(ProcessChange["ProcessDestroy"], function(key, val) {
-        console.log("PackageInfoBox.update-destroy", val["Pid"]);
+        //console.log("PackageInfoBox.update-destroy", val["Pid"]);
         PackageName[val["Pid"]] = null;
         clearEnergyInfo(val["Pid"]);
         if (isPlaying) {

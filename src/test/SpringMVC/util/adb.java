@@ -1,9 +1,6 @@
 package test.SpringMVC.util;
 
-import java.io.BufferedReader;
-import java.io.FileReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
+import java.io.*;
 import java.util.*;
 
 import net.sf.json.JSONArray;
@@ -46,6 +43,31 @@ public class adb {
         } finally {
             if (process != null) process.destroy();
             if (logcatThread != null) logcatThread.interrupt();
+        }
+    }
+
+    public void killProcess(int Pid) {
+        Process process = null;
+        try {
+            process = Runtime.getRuntime().exec("adb shell \"su -c kill " + Pid + "\"");
+            process.waitFor();
+            /*
+            BufferedWriter mWriter = new BufferedWriter(new OutputStreamWriter(process.getOutputStream()));
+            mWriter.write("su");
+            mWriter.newLine();
+            mWriter.write("kill " + Pid);
+            mWriter.newLine();
+            Thread.sleep(100);
+
+            mWriter.write("exit");
+            mWriter.newLine();
+            mWriter.write("exit");
+            process.waitFor();
+            */
+        } catch (Exception e) {
+            e.printStackTrace();
+        } finally {
+            if (process != null) process.destroy();
         }
     }
 

@@ -19,7 +19,7 @@ const plotOptions = {
     },
     yaxis: {
         min: 0,
-        max: 1000
+        max: 100
     },
     xaxis: {
         show: false
@@ -63,7 +63,7 @@ linePlot.bindClick = function() {
             if (!notAddToPie)
                 tmpData[val.label] = y.toFixed(2);
             else
-                $("#currentInfoBoxBody").append("<h6>" + val.label + ":" + y.toFixed(2) + "</h6>");
+                $("#currentInfoBoxBody").append("<h6>" + val.label + ":" + y.toFixed(2) + "s </h6>");
             //$("#currentInfoBoxBody").append("<h6>" + val.label + ":" + y.toFixed(2) + "</h6>");
             //if (!notAddToPie) piePlotData.push({label: val.label, data: y});
         };
@@ -71,7 +71,8 @@ linePlot.bindClick = function() {
         $.each(dataset, updateToCurrentInfoBox);
         var k = 0;
         $.each(tmpData, function(key, val) {
-            $("#currentInfoBoxBody").append("<h6>" + key + ":" + (val - k).toFixed(2) + "</h6>");
+            if (val === 0) return;
+            $("#currentInfoBoxBody").append("<h6>" + key + ":" + (val - k).toFixed(2) + "mA </h6>");
             piePlotData.push({label: key, data: val - k});
             k = val;
         });

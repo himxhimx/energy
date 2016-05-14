@@ -55,6 +55,13 @@ public class mvcController {
         return mav;
     }
 
+    @RequestMapping(value = "/killProcess/{pid}")
+    @ResponseBody
+    public String killProcess(@PathVariable(value = "pid") Integer pid) {
+        myadb.killProcess(pid);
+        return "{status:0}";
+    }
+
     @RequestMapping(value = "/getDevices", method = RequestMethod.GET)
     @ResponseBody
     public String getDevices(HttpServletRequest request,HttpServletResponse response) throws IOException {

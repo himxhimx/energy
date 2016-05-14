@@ -14,12 +14,12 @@
     <link href="assets/css/fadeIn.css" rel="stylesheet" type="text/css" />
     <link href="assets/css/main.css" rel="stylesheet" type="text/css" />
     <link rel="shortcut icon" href="assets/img/favicon.png" />
-    <title>$Title$</title>
+    <title>Energy Monitor</title>
   </head>
   <body>
     <div class="alert alert-danger alert-dismissible" role="alert" hidden id="alertBar" style="position: absolute; width: 100%;">
       <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-      <strong>Warning!</strong> Better check yourself, you're not looking too good.
+      <strong>Warning!</strong> No Device connected!
     </div>
     <div id="header" class="jumbotron">
       <h1 style="margin-left: 20px">Energy Monitor</h1>
@@ -56,6 +56,7 @@
                   <td class="deviceInfoBriefKey">Status:</td>
                   <td class="deviceInfoBriefVal" id="deviceInfoBriefStatus"> Unknown </td>
                 </tr>
+                <!--
                 <tr class="deviceInfoBriefLine">
                   <td class="deviceInfoBriefKey">Battery:</td>
                   <td class="deviceInfoBriefVal" id="deviceInfoBriefBattery"> Unknown </td>
@@ -63,7 +64,7 @@
                 <tr class="deviceInfoBriefLine">
                   <td class="deviceInfoBriefKey">RAM:</td>
                   <td class="deviceInfoBriefVal" id="deviceInfoBriefRAM"> Unknown </td>
-                </tr>
+                </tr>-->
               </table>
             </div>
           </div>
