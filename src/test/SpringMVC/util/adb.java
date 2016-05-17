@@ -32,6 +32,9 @@ public class adb {
 
     private HashMap<String, LinkedList<String>> APIInfo = new HashMap<>();
 
+    private Stack<Event> EventStack = new Stack<>();
+    private LinkedList<EventEnergy> EventEnergyList = new LinkedList<>();
+
     private boolean isLogcatExecuted = false;
 
     @Override
@@ -141,14 +144,33 @@ public class adb {
                 }
 
                 // 具体事件信息
-                // TODO 需要展示到界面上
                 String subline = line.substring(line.indexOf(": ") + 2);
+                if (subline.contains(" - ")) {
+                    int idx = subline.indexOf(" - ");
+                    Long time = Long.parseLong(subline.substring(0, idx));
+                    String event = subline.substring(idx + 3);
+                    if (!EventStack.empty()) {
+                        Event e = EventStack.pop();
+                        float energy = getEventEnergy(e.time, time, "com.metek.zqWeather");
+                        EventEnergyList.add(new EventEnergy(e.time, time, e.event, energy));
+                        //System.out.println("begin:" + e.time + ", end:" + time + ", event:" + e.event + ", energy:" + energy);
+                        int apicount = 0;
+                        if (APIInfo.containsKey(e.event)) {
+                            apicount = APIInfo.get(e.event).size();
+                        }
+                        System.out.println("event:" + e.event + ", energy:" + energy + ", api:" + apicount);
+                    }
+                    continue;
+                }
+
                 if (subline.contains(" + ")) {
                     int idx = subline.indexOf(" + ");
                     Long time = Long.parseLong(subline.substring(0, idx));
                     String event = subline.substring(idx + 3);
                     LinkedList<String> info = new LinkedList<>();
                     info.add(event);
+
+                    EventStack.push(new Event(time, event));
 
                     if (APIInfo.containsKey(event)) {
                         info.addAll(APIInfo.get(event));
@@ -438,6 +460,25 @@ public class adb {
         }
     }
 
+    private float getEventEnergy(Long begin, Long end, String pkgName) {
+        if (!EnergyInfo.containsKey(pkgName)) {
+            return 0f;
+        }
+        LinkedList<Package> list = EnergyInfo.get(pkgName);
+        float energy = 0f;
+        for (Package p : list) {
+            //System.out.println("" + p.getTime() + " " + begin + " " + Math.abs(p.getTime() - begin));
+            if (Math.abs(p.getTime() - begin) < 1000) {
+                double current = p.getCPU() + p.getScreen() + p.get3G() + p.getWifi();
+                Long time = end - begin;
+                if (time <= 0) time = 1L;
+                energy = (float)(current * 0.001 * 4.2 * time * 0.001);
+                return energy;
+            }
+        }
+        return energy;
+    }
+
     private class Package {
         public Package(Long time, int pid, double cpu, double screen, double wifi, double mobilenet) {
             Time = time;
@@ -496,5 +537,34 @@ public class adb {
         private double Wifi;
         private double MobileNet;
         private long Time;
+    }
+
+    private class Event {
+        public Event(Long time, String event) {
+            this.time = time;
+            this.event = event;
+        }
+
+        public Long time;
+        public String event;
+    }
+
+    private class EventEnergy implements Comparable{
+        public EventEnergy (Long begin, Long end, String event, float energy) {
+            this.begin = begin;
+            this.end = end;
+            this.event = event;
+            this.energy = energy;
+        }
+
+        @Override
+        public int compareTo(Object o) {
+            EventEnergy e = (EventEnergy) o;
+            return this.begin.compareTo(e.begin);
+        }
+
+        public Long begin, end;
+        public String event;
+        public float energy;
     }
 }

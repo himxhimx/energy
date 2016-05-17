@@ -1,0 +1,4313 @@
+## Lcom/tencent/weibo/sdk/android/component/PublishActivity; onClick
+Landroid/location/Location;->getLatitude 1
+Ljava/io/ByteArrayOutputStream;->toByteArray 2
+Landroid/location/Location;->getLongitude 1
+Ljava/io/ByteArrayOutputStream;-><init> 2
+Landroid/net/wifi/WifiManager;->getConnectionInfo 1
+Ljava/io/File;-><init> 1
+Ljava/io/IOException;->printStackTrace 1
+Landroid/net/wifi/WifiInfo;->getIpAddress 1
+Ljava/io/File;->isFile 1
+
+## Lcom/tencent/weibo/sdk/android/component/ConversationActivity; onCreate
+Landroid/net/wifi/WifiInfo;->getIpAddress 1
+Ljava/io/File;->isFile 1
+Ljava/io/File;-><init> 1
+Landroid/net/wifi/WifiManager;->getConnectionInfo 1
+Ljava/io/IOException;->printStackTrace 1
+
+## Lcom/tencent/weibo/sdk/android/component/MainPage_Activity; onCreate
+
+## Lcom/metek/zqWeather/a/b; onClick
+Ljava/io/FileOutputStream;->write 1
+Ljava/io/InputStreamReader;-><init> 1
+Ljava/io/File;->delete 1
+Landroid/net/NetworkInfo;->getSubtypeName 1
+Ljava/io/File;->mkdirs 1
+Ljava/io/FileInputStream;->close 3
+Ljava/io/File;->length 1
+Landroid/net/NetworkInfo;->isConnectedOrConnecting 1
+Ljava/io/StringWriter;-><init> 1
+Landroid/net/NetworkInfo;->getState 2
+Ljava/io/InputStreamReader;->read 1
+Ljava/io/StringWriter;->toString 1
+Ljava/io/File;->exists 2
+Ljava/io/FileOutputStream;-><init> 1
+Ljava/io/StringWriter;->write 1
+Landroid/net/ConnectivityManager;->getNetworkInfo 2
+Ljava/io/File;-><init> 2
+Ljava/io/FileOutputStream;->close 4
+Ljava/io/FileOutputStream;->flush 1
+Landroid/net/ConnectivityManager;->getActiveNetworkInfo 1
+
+## Lcom/tencent/weibo/sdk/android/component/PublishActivity; onCreate
+Ljava/io/File;->isFile 1
+Ljava/io/File;-><init> 1
+Ljava/io/IOException;->printStackTrace 1
+
+## Lcom/metek/zqWeather/activity/AppPushWebActivity; onCreate
+Ljava/io/PrintWriter;->print 238
+Ljava/io/Writer;-><init> 1
+Ljava/io/PrintWriter;-><init> 2
+Ljava/io/PrintWriter;->println 76
+
+## Lcom/tencent/weibo/sdk/android/component/GeneralInterfaceActivity; onClick
+Landroid/net/wifi/WifiInfo;->getIpAddress 1
+Ljava/io/ByteArrayOutputStream;->toByteArray 2
+Ljava/io/ByteArrayOutputStream;-><init> 2
+Landroid/net/wifi/WifiManager;->getConnectionInfo 1
+
+## Lcom/tencent/weibo/sdk/android/component/GeneralInterfaceActivity; onCreate
+Landroid/location/Criteria;->setAltitudeRequired 1
+Landroid/location/Criteria;->setSpeedRequired 1
+Landroid/location/Location;->getLatitude 1
+Landroid/location/Criteria;-><init> 1
+Landroid/location/LocationManager;->getBestProvider 1
+Landroid/location/Location;->getLongitude 1
+Landroid/location/Criteria;->setBearingRequired 1
+Landroid/location/Criteria;->setPowerRequirement 1
+Landroid/location/Criteria;->setCostAllowed 1
+Landroid/location/Criteria;->setAccuracy 1
+Landroid/location/LocationManager;->getLastKnownLocation 1
+
+## Lcom/metek/zqWeather/activity/SettingsUpdateActivity; onClick
+
+## Lcom/sina/weibo/sdk/register/mobile/MobileRegisterActivity; onCreate
+Ljava/io/InputStream;->close 6
+Ljava/io/IOException;->printStackTrace 7
+
+## Lcom/metek/zqWeather/service/UpdateService; onStart
+Ljava/net/URL;-><init> 1
+Ljava/io/File;-><init> 2
+Landroid/net/Uri;->fromFile 1
+Ljava/io/File;->exists 1
+Ljava/io/PrintStream;->println 1
+Ljava/io/File;->mkdir 1
+Ljava/io/PrintStream;->flush 1
+
+## Lcom/metek/zqWeather/activity/fv; onItemClick
+
+## Lcom/sina/weibo/sdk/register/mobile/MobileRegisterActivity; onClick
+Landroid/net/NetworkInfo;->isConnected 1
+Landroid/net/ConnectivityManager;->getActiveNetworkInfo 1
+
+## Lcom/metek/zqUtil/view/map/e; onClick
+
+## Lcom/metek/zqWeather/App; onCreate
+Ljava/io/Closeable;->close 1
+Ljava/io/File;->mkdirs 2
+Ljava/io/File;->createNewFile 1
+Ljava/io/PrintStream;-><init> 1
+Ljava/io/PrintStream;->println 2
+Ljava/io/OutputStreamWriter;-><init> 3
+Ljava/io/IOException;->getMessage 1
+Ljava/io/File;->mkdir 3
+Ljava/io/Writer;->write 13
+Ljava/io/ByteArrayOutputStream;-><init> 1
+Ljava/io/InputStream;->read 1
+Ljava/io/File;->listFiles 1
+Ljava/io/ByteArrayOutputStream;->write 2
+Ljava/io/File;->isDirectory 1
+Ljava/io/File;-><init> 17
+Ljava/io/FileOutputStream;-><init> 4
+Ljava/io/PrintStream;->flush 1
+Ljava/io/IOException;-><init> 10
+Ljava/io/FileInputStream;-><init> 1
+Ljava/io/BufferedWriter;-><init> 3
+Ljava/io/File;->renameTo 2
+Ljava/io/File;->delete 5
+Ljava/io/File;->length 1
+Ljava/io/Writer;->flush 1
+Ljava/io/ByteArrayOutputStream;->toString 1
+Ljava/io/File;->exists 12
+Ljava/io/EOFException;-><init> 1
+Ljava/io/Writer;->append 1
+Ljava/io/Writer;->close 4
+
+## Lcom/metek/zqWeather/a/v; onClick
+Ljava/io/FileOutputStream;->write 1
+Ljava/io/InputStreamReader;-><init> 1
+Landroid/net/NetworkInfo;->getSubtypeName 1
+Ljava/io/FileOutputStream;->flush 1
+Ljava/io/ObjectInputStream;->readObject 1
+Ljava/io/PrintStream;->println 1
+Landroid/net/ConnectivityManager;->getNetworkInfo 2
+Ljava/io/StringWriter;-><init> 1
+Landroid/net/NetworkInfo;->getState 2
+Ljava/io/ObjectOutputStream;-><init> 1
+Landroid/net/NetworkInfo;->isConnectedOrConnecting 1
+Ljava/io/StringWriter;->write 1
+Ljava/io/ObjectOutputStream;->close 4
+Ljava/io/FileInputStream;->close 8
+Landroid/net/ConnectivityManager;->getActiveNetworkInfo 1
+Ljava/io/StringWriter;->toString 1
+Ljava/io/File;-><init> 1
+Ljava/io/IOException;->printStackTrace 9
+Ljava/io/PrintStream;->flush 1
+Ljava/io/ObjectInputStream;->close 5
+Ljava/io/File;->delete 1
+Ljava/io/File;->length 1
+Ljava/io/InputStreamReader;->read 1
+Ljava/io/File;->exists 1
+Ljava/io/ObjectInputStream;-><init> 1
+Ljava/io/FileOutputStream;->close 5
+Ljava/io/ObjectOutputStream;->writeObject 1
+
+## Lcom/metek/zqWeather/activity/StorageActivity; onResume
+Landroid/hardware/Sensor;->getType 1
+Lorg/apache/http/params/HttpConnectionParams;->setSoTimeout 1
+Landroid/database/sqlite/SQLiteDatabase;->query 2
+Lorg/apache/http/params/BasicHttpParams;-><init> 1
+Lorg/apache/http/impl/client/DefaultHttpClient;-><init> 1
+Ljava/io/InputStream;->close 2
+Ljava/io/StringWriter;->toString 1
+Ljava/io/ObjectInputStream;->readObject 1
+Landroid/net/wifi/WifiManager;->getConnectionInfo 1
+Landroid/database/sqlite/SQLiteOpenHelper;-><init> 1
+Landroid/net/NetworkInfo;->getExtraInfo 1
+Ljava/io/PrintStream;->println 1
+Landroid/net/NetworkInfo;->isAvailable 1
+Ljava/io/PrintWriter;->close 1
+Ljava/io/FileReader;-><init> 3
+Ljava/io/StringWriter;-><init> 1
+Landroid/hardware/SensorManager;->getSensorList 1
+Ljava/io/Writer;-><init> 1
+Ljava/io/PrintWriter;-><init> 3
+Ljava/io/InputStream;->read 2
+Ljava/io/File;->listFiles 1
+Ljava/io/PrintWriter;->println 76
+Ljava/io/FileInputStream;->close 8
+Landroid/net/ConnectivityManager;->getActiveNetworkInfo 2
+Lorg/apache/http/HttpHost;-><init> 1
+Landroid/database/sqlite/SQLiteDatabase;->insert 1
+Ljava/io/BufferedReader;-><init> 3
+Lorg/apache/http/impl/client/DefaultHttpClient;->setKeepAliveStrategy 1
+Landroid/net/NetworkInfo;->getTypeName 1
+Ljava/io/File;-><init> 3
+Ljava/io/IOException;->printStackTrace 5
+Ljava/io/File;->getPath 3
+Ljava/io/PrintStream;->flush 1
+Lorg/apache/http/params/HttpConnectionParams;->setConnectionTimeout 1
+Landroid/net/wifi/WifiInfo;->getMacAddress 1
+Ljava/io/ObjectInputStream;->close 5
+Lorg/apache/http/impl/client/DefaultHttpClient;->getParams 1
+Landroid/net/NetworkInfo;->isConnected 1
+Landroid/database/sqlite/SQLiteDatabase;->replace 1
+Landroid/database/sqlite/SQLiteDatabase;->update 1
+Ljava/io/BufferedReader;->readLine 3
+Lorg/apache/http/params/HttpParams;->setParameter 1
+Ljava/io/File;->exists 1
+Ljava/io/ObjectInputStream;-><init> 1
+Ljava/io/PrintWriter;->print 238
+Ljava/io/BufferedReader;->close 2
+Lorg/apache/http/impl/client/DefaultConnectionKeepAliveStrategy;-><init> 1
+
+## Lcom/metek/zqWeather/activity/aa; onClick
+Ljava/io/File;->mkdirs 1
+Ljava/io/File;-><init> 2
+Ljava/io/InputStream;->close 3
+Ljava/io/File;->exists 2
+Ljava/io/FileInputStream;-><init> 1
+
+## Lcom/metek/zqWeather/activity/bo; onClick
+Ljava/io/FileOutputStream;->write 1
+Ljava/io/InputStreamReader;-><init> 1
+Landroid/net/NetworkInfo;->getSubtypeName 1
+Ljava/io/FileOutputStream;->flush 1
+Ljava/io/ObjectInputStream;->readObject 1
+Ljava/io/PrintStream;->println 1
+Landroid/net/ConnectivityManager;->getNetworkInfo 2
+Ljava/io/StringWriter;-><init> 1
+Landroid/net/NetworkInfo;->getState 2
+Ljava/io/ObjectOutputStream;-><init> 1
+Landroid/net/NetworkInfo;->isConnectedOrConnecting 1
+Ljava/io/StringWriter;->write 1
+Ljava/io/ObjectOutputStream;->close 4
+Ljava/io/FileInputStream;->close 11
+Landroid/net/ConnectivityManager;->getActiveNetworkInfo 1
+Ljava/io/StringWriter;->toString 1
+Ljava/io/File;-><init> 1
+Ljava/io/IOException;->printStackTrace 9
+Ljava/io/PrintStream;->flush 1
+Ljava/io/ObjectInputStream;->close 5
+Ljava/io/File;->delete 1
+Ljava/io/File;->length 1
+Ljava/io/InputStreamReader;->read 1
+Ljava/io/File;->exists 1
+Ljava/io/ObjectInputStream;-><init> 1
+Ljava/io/FileOutputStream;->close 5
+Ljava/io/ObjectOutputStream;->writeObject 1
+
+## Lcom/metek/zqWeather/activity/da; onClick
+
+## Lcom/metek/zqWeather/activity/fw; onClick
+Ljava/io/FileOutputStream;->write 1
+Ljava/io/InputStreamReader;-><init> 1
+Landroid/net/NetworkInfo;->getSubtypeName 1
+Ljava/io/FileOutputStream;->flush 1
+Ljava/io/ObjectInputStream;->readObject 1
+Ljava/io/PrintStream;->println 1
+Landroid/net/ConnectivityManager;->getNetworkInfo 2
+Ljava/io/StringWriter;-><init> 1
+Landroid/net/NetworkInfo;->getState 2
+Ljava/io/ObjectOutputStream;-><init> 1
+Landroid/net/NetworkInfo;->isConnectedOrConnecting 1
+Ljava/io/StringWriter;->write 1
+Ljava/io/ObjectOutputStream;->close 4
+Ljava/io/FileInputStream;->close 8
+Landroid/net/ConnectivityManager;->getActiveNetworkInfo 1
+Ljava/io/StringWriter;->toString 1
+Ljava/io/File;-><init> 1
+Ljava/io/IOException;->printStackTrace 9
+Ljava/io/PrintStream;->flush 1
+Ljava/io/ObjectInputStream;->close 5
+Ljava/io/File;->delete 1
+Ljava/io/File;->length 1
+Ljava/io/InputStreamReader;->read 1
+Ljava/io/File;->exists 1
+Ljava/io/ObjectInputStream;-><init> 1
+Ljava/io/FileOutputStream;->close 5
+Ljava/io/ObjectOutputStream;->writeObject 1
+
+## Lcom/metek/zqWeather/activity/ShareEditActivity; onClick
+Ljava/io/FileOutputStream;->write 1
+Landroid/database/sqlite/SQLiteDatabase;->query 1
+Ljava/io/InputStreamReader;-><init> 1
+Landroid/net/NetworkInfo;->getSubtypeName 1
+Ljava/io/FileInputStream;->close 3
+Landroid/database/sqlite/SQLiteOpenHelper;-><init> 1
+Ljava/io/PrintStream;->println 2
+Landroid/net/ConnectivityManager;->getNetworkInfo 2
+Landroid/database/sqlite/SQLiteDatabase;->close 2
+Ljava/io/StringWriter;-><init> 1
+Landroid/net/NetworkInfo;->getState 2
+Ljava/io/ByteArrayOutputStream;-><init> 1
+Landroid/net/NetworkInfo;->isConnectedOrConnecting 1
+Ljava/io/StringWriter;->write 1
+Ljava/io/FileOutputStream;->flush 1
+Landroid/net/ConnectivityManager;->getActiveNetworkInfo 1
+Ljava/io/ByteArrayOutputStream;->close 3
+Ljava/io/StringWriter;->toString 1
+Landroid/database/sqlite/SQLiteDatabase;->insert 1
+Ljava/io/ByteArrayOutputStream;->toByteArray 1
+Ljava/io/File;-><init> 1
+Ljava/io/IOException;->printStackTrace 3
+Ljava/io/PrintStream;->flush 1
+Ljava/io/File;->delete 1
+Ljava/io/File;->length 1
+Landroid/database/sqlite/SQLiteDatabase;->update 1
+Landroid/database/sqlite/SQLiteDatabase;->rawQuery 1
+Ljava/io/InputStreamReader;->read 1
+Ljava/io/File;->exists 1
+Ljava/io/FileOutputStream;->close 1
+
+## Lcom/metek/zqWeather/activity/ft; onClick
+Ljava/io/ByteArrayOutputStream;->close 3
+Landroid/database/sqlite/SQLiteDatabase;->close 1
+Landroid/database/sqlite/SQLiteDatabase;->insert 1
+Ljava/io/ByteArrayOutputStream;->toByteArray 1
+Landroid/database/sqlite/SQLiteDatabase;->update 1
+Landroid/database/sqlite/SQLiteDatabase;->rawQuery 1
+Ljava/io/ByteArrayOutputStream;-><init> 1
+Landroid/database/sqlite/SQLiteOpenHelper;-><init> 1
+Ljava/io/PrintStream;->println 1
+Ljava/io/IOException;->printStackTrace 3
+Ljava/io/PrintStream;->flush 1
+
+## Lcom/metek/zqWeather/activity/gi; onClick
+Lorg/apache/http/params/HttpConnectionParams;->setSoTimeout 1
+Lorg/apache/http/params/BasicHttpParams;-><init> 1
+Lorg/apache/http/impl/client/DefaultHttpClient;-><init> 1
+Lorg/apache/http/protocol/SyncBasicHttpContext;-><init> 1
+Lorg/apache/http/impl/client/DefaultHttpClient;->addRequestInterceptor 1
+Lorg/apache/http/impl/client/DefaultHttpClient;->setHttpRequestRetryHandler 1
+Lorg/apache/http/impl/client/DefaultHttpClient;->addResponseInterceptor 1
+Lorg/apache/http/conn/params/ConnManagerParams;->setTimeout 1
+Lorg/apache/http/conn/scheme/PlainSocketFactory;->getSocketFactory 1
+Lorg/apache/http/conn/scheme/SchemeRegistry;->register 2
+Lorg/apache/http/conn/params/ConnManagerParams;->setMaxTotalConnections 1
+Lorg/apache/http/params/HttpConnectionParams;->setSocketBufferSize 1
+Lorg/apache/http/conn/scheme/SchemeRegistry;-><init> 1
+Lorg/apache/http/conn/ssl/SSLSocketFactory;->getSocketFactory 1
+Lorg/apache/http/client/methods/HttpGet;-><init> 1
+Lorg/apache/http/params/HttpConnectionParams;->setTcpNoDelay 1
+Lorg/apache/http/params/HttpConnectionParams;->setConnectionTimeout 1
+Lorg/apache/http/params/HttpProtocolParams;->setVersion 1
+Lorg/apache/http/impl/conn/tsccm/ThreadSafeClientConnManager;-><init> 1
+Lorg/apache/http/conn/params/ConnManagerParams;->setMaxConnectionsPerRoute 1
+Lorg/apache/http/protocol/BasicHttpContext;-><init> 1
+Lorg/apache/http/conn/params/ConnPerRouteBean;-><init> 1
+Lorg/apache/http/conn/scheme/Scheme;-><init> 2
+
+## Lcom/tencent/open/TDialog; onCreate
+Ljava/io/File;->getPath 1
+
+## Lcom/sina/weibo/sdk/component/m; onClick
+
+## Lcom/tencent/weibo/sdk/android/component/PublishActivity; onResume
+Ljava/io/File;->isFile 1
+Ljava/io/File;-><init> 1
+Ljava/io/IOException;->printStackTrace 1
+
+## Lcom/metek/zqWeather/activity/UserProfileActivity; onClick
+Ljava/io/PrintStream;->flush 1
+Ljava/io/PrintStream;->println 1
+Landroid/net/ConnectivityManager;->getActiveNetworkInfo 1
+
+## Lcom/metek/zqWeather/activity/gs; onClick
+
+## Lcom/metek/zqWeather/activity/gt; onClick
+
+## Lcom/metek/zqWeather/activity/hc; onClick
+Landroid/net/ConnectivityManager;->getActiveNetworkInfo 1
+
+## Lcom/metek/zqUtil/view/map/c; onClick
+
+## Lcom/metek/zqUtil/view/map/d; onClick
+
+## Lcom/tencent/stat/EasyActivity; onPause
+Landroid/hardware/Sensor;->getType 1
+Lorg/apache/http/params/HttpConnectionParams;->setSoTimeout 1
+Landroid/database/sqlite/SQLiteDatabase;->query 2
+Lorg/apache/http/params/BasicHttpParams;-><init> 1
+Lorg/apache/http/impl/client/DefaultHttpClient;-><init> 1
+Ljava/io/StringWriter;->toString 1
+Landroid/net/wifi/WifiManager;->getConnectionInfo 1
+Landroid/database/sqlite/SQLiteOpenHelper;-><init> 1
+Landroid/net/NetworkInfo;->getExtraInfo 1
+Landroid/net/NetworkInfo;->isAvailable 1
+Ljava/io/PrintWriter;->close 1
+Ljava/io/FileReader;-><init> 3
+Ljava/io/StringWriter;-><init> 1
+Landroid/hardware/SensorManager;->getSensorList 1
+Ljava/io/PrintWriter;-><init> 1
+Ljava/io/InputStream;->read 2
+Ljava/io/File;->listFiles 1
+Landroid/net/ConnectivityManager;->getActiveNetworkInfo 2
+Lorg/apache/http/HttpHost;-><init> 1
+Landroid/database/sqlite/SQLiteDatabase;->insert 1
+Ljava/io/BufferedReader;-><init> 3
+Lorg/apache/http/impl/client/DefaultHttpClient;->setKeepAliveStrategy 1
+Landroid/net/NetworkInfo;->getTypeName 1
+Ljava/io/File;-><init> 3
+Ljava/io/File;->getPath 3
+Lorg/apache/http/params/HttpConnectionParams;->setConnectionTimeout 1
+Landroid/net/wifi/WifiInfo;->getMacAddress 1
+Lorg/apache/http/impl/client/DefaultHttpClient;->getParams 1
+Landroid/net/NetworkInfo;->isConnected 1
+Landroid/database/sqlite/SQLiteDatabase;->replace 1
+Landroid/database/sqlite/SQLiteDatabase;->update 1
+Ljava/io/BufferedReader;->readLine 3
+Lorg/apache/http/params/HttpParams;->setParameter 1
+Ljava/io/File;->exists 1
+Ljava/io/InputStream;->close 2
+Ljava/io/BufferedReader;->close 2
+Lorg/apache/http/impl/client/DefaultConnectionKeepAliveStrategy;-><init> 1
+
+## Lcom/tencent/stat/EasyActivity; onResume
+Landroid/hardware/Sensor;->getType 1
+Lorg/apache/http/params/HttpConnectionParams;->setSoTimeout 1
+Landroid/database/sqlite/SQLiteDatabase;->query 2
+Lorg/apache/http/params/BasicHttpParams;-><init> 1
+Lorg/apache/http/impl/client/DefaultHttpClient;-><init> 1
+Ljava/io/StringWriter;->toString 1
+Landroid/net/wifi/WifiManager;->getConnectionInfo 1
+Landroid/database/sqlite/SQLiteOpenHelper;-><init> 1
+Landroid/net/NetworkInfo;->getExtraInfo 1
+Landroid/net/NetworkInfo;->isAvailable 1
+Ljava/io/PrintWriter;->close 1
+Ljava/io/FileReader;-><init> 3
+Ljava/io/StringWriter;-><init> 1
+Landroid/hardware/SensorManager;->getSensorList 1
+Ljava/io/PrintWriter;-><init> 1
+Ljava/io/InputStream;->read 2
+Ljava/io/File;->listFiles 1
+Landroid/net/ConnectivityManager;->getActiveNetworkInfo 2
+Lorg/apache/http/HttpHost;-><init> 1
+Landroid/database/sqlite/SQLiteDatabase;->insert 1
+Ljava/io/BufferedReader;-><init> 3
+Lorg/apache/http/impl/client/DefaultHttpClient;->setKeepAliveStrategy 1
+Landroid/net/NetworkInfo;->getTypeName 1
+Ljava/io/File;-><init> 3
+Ljava/io/File;->getPath 3
+Lorg/apache/http/params/HttpConnectionParams;->setConnectionTimeout 1
+Landroid/net/wifi/WifiInfo;->getMacAddress 1
+Lorg/apache/http/impl/client/DefaultHttpClient;->getParams 1
+Landroid/net/NetworkInfo;->isConnected 1
+Landroid/database/sqlite/SQLiteDatabase;->replace 1
+Landroid/database/sqlite/SQLiteDatabase;->update 1
+Ljava/io/BufferedReader;->readLine 3
+Lorg/apache/http/params/HttpParams;->setParameter 1
+Ljava/io/File;->exists 1
+Ljava/io/InputStream;->close 2
+Ljava/io/BufferedReader;->close 2
+Lorg/apache/http/impl/client/DefaultConnectionKeepAliveStrategy;-><init> 1
+
+## Lcom/tencent/stat/EasyListActivity; onPause
+Landroid/hardware/Sensor;->getType 1
+Lorg/apache/http/params/HttpConnectionParams;->setSoTimeout 1
+Landroid/database/sqlite/SQLiteDatabase;->query 2
+Lorg/apache/http/params/BasicHttpParams;-><init> 1
+Lorg/apache/http/impl/client/DefaultHttpClient;-><init> 1
+Ljava/io/StringWriter;->toString 1
+Landroid/net/wifi/WifiManager;->getConnectionInfo 1
+Landroid/database/sqlite/SQLiteOpenHelper;-><init> 1
+Landroid/net/NetworkInfo;->getExtraInfo 1
+Landroid/net/NetworkInfo;->isAvailable 1
+Ljava/io/PrintWriter;->close 1
+Ljava/io/FileReader;-><init> 3
+Ljava/io/StringWriter;-><init> 1
+Landroid/hardware/SensorManager;->getSensorList 1
+Ljava/io/PrintWriter;-><init> 1
+Ljava/io/InputStream;->read 2
+Ljava/io/File;->listFiles 1
+Landroid/net/ConnectivityManager;->getActiveNetworkInfo 2
+Lorg/apache/http/HttpHost;-><init> 1
+Landroid/database/sqlite/SQLiteDatabase;->insert 1
+Ljava/io/BufferedReader;-><init> 3
+Lorg/apache/http/impl/client/DefaultHttpClient;->setKeepAliveStrategy 1
+Landroid/net/NetworkInfo;->getTypeName 1
+Ljava/io/File;-><init> 3
+Ljava/io/File;->getPath 3
+Lorg/apache/http/params/HttpConnectionParams;->setConnectionTimeout 1
+Landroid/net/wifi/WifiInfo;->getMacAddress 1
+Lorg/apache/http/impl/client/DefaultHttpClient;->getParams 1
+Landroid/net/NetworkInfo;->isConnected 1
+Landroid/database/sqlite/SQLiteDatabase;->replace 1
+Landroid/database/sqlite/SQLiteDatabase;->update 1
+Ljava/io/BufferedReader;->readLine 3
+Lorg/apache/http/params/HttpParams;->setParameter 1
+Ljava/io/File;->exists 1
+Ljava/io/InputStream;->close 2
+Ljava/io/BufferedReader;->close 2
+Lorg/apache/http/impl/client/DefaultConnectionKeepAliveStrategy;-><init> 1
+
+## Lcom/tencent/stat/EasyListActivity; onResume
+Landroid/hardware/Sensor;->getType 1
+Lorg/apache/http/params/HttpConnectionParams;->setSoTimeout 1
+Landroid/database/sqlite/SQLiteDatabase;->query 2
+Lorg/apache/http/params/BasicHttpParams;-><init> 1
+Lorg/apache/http/impl/client/DefaultHttpClient;-><init> 1
+Ljava/io/StringWriter;->toString 1
+Landroid/net/wifi/WifiManager;->getConnectionInfo 1
+Landroid/database/sqlite/SQLiteOpenHelper;-><init> 1
+Landroid/net/NetworkInfo;->getExtraInfo 1
+Landroid/net/NetworkInfo;->isAvailable 1
+Ljava/io/PrintWriter;->close 1
+Ljava/io/FileReader;-><init> 3
+Ljava/io/StringWriter;-><init> 1
+Landroid/hardware/SensorManager;->getSensorList 1
+Ljava/io/PrintWriter;-><init> 1
+Ljava/io/InputStream;->read 2
+Ljava/io/File;->listFiles 1
+Landroid/net/ConnectivityManager;->getActiveNetworkInfo 2
+Lorg/apache/http/HttpHost;-><init> 1
+Landroid/database/sqlite/SQLiteDatabase;->insert 1
+Ljava/io/BufferedReader;-><init> 3
+Lorg/apache/http/impl/client/DefaultHttpClient;->setKeepAliveStrategy 1
+Landroid/net/NetworkInfo;->getTypeName 1
+Ljava/io/File;-><init> 3
+Ljava/io/File;->getPath 3
+Lorg/apache/http/params/HttpConnectionParams;->setConnectionTimeout 1
+Landroid/net/wifi/WifiInfo;->getMacAddress 1
+Lorg/apache/http/impl/client/DefaultHttpClient;->getParams 1
+Landroid/net/NetworkInfo;->isConnected 1
+Landroid/database/sqlite/SQLiteDatabase;->replace 1
+Landroid/database/sqlite/SQLiteDatabase;->update 1
+Ljava/io/BufferedReader;->readLine 3
+Lorg/apache/http/params/HttpParams;->setParameter 1
+Ljava/io/File;->exists 1
+Ljava/io/InputStream;->close 2
+Ljava/io/BufferedReader;->close 2
+Lorg/apache/http/impl/client/DefaultConnectionKeepAliveStrategy;-><init> 1
+
+## Lcom/taobao/newxp/view/common/UMBrowser$5; onClick
+
+## Lcom/taobao/newxp/view/common/UMBrowser$8; onDownloadStart
+
+## Lcom/metek/zqWeather/activity/s; onClick
+Landroid/net/NetworkInfo;->getState 1
+Landroid/net/ConnectivityManager;->getAllNetworkInfo 1
+
+## Lcom/tencent/weibo/sdk/android/component/Authorize; onCreate
+Landroid/net/NetworkInfo;->getState 1
+Ljava/io/File;->isFile 1
+Ljava/io/File;-><init> 1
+Landroid/net/ConnectivityManager;->getAllNetworkInfo 1
+Ljava/io/IOException;->printStackTrace 2
+
+## Lcom/tencent/weibo/sdk/android/component/FriendActivity; onCreate
+Landroid/net/wifi/WifiInfo;->getIpAddress 1
+Ljava/io/File;->isFile 1
+Ljava/io/File;-><init> 1
+Landroid/net/wifi/WifiManager;->getConnectionInfo 1
+Ljava/io/IOException;->printStackTrace 1
+
+## Lcom/tencent/weibo/sdk/android/component/ReAddActivity; onCreate
+Landroid/net/wifi/WifiInfo;->getIpAddress 1
+Ljava/io/File;->isFile 1
+Ljava/io/File;-><init> 1
+Landroid/net/wifi/WifiManager;->getConnectionInfo 1
+Ljava/io/IOException;->printStackTrace 1
+
+## Lcom/tencent/weibo/sdk/android/component/e; onClick
+Landroid/net/NetworkInfo;->getState 1
+Landroid/net/ConnectivityManager;->getAllNetworkInfo 1
+
+## Lcom/tencent/weibo/sdk/android/component/w; onClick
+
+## Lcom/taobao/newxp/view/handler/umwall/tab/TabPageIndicator$1; onClick
+
+## Lcom/baidu/location/a/a; onDestroy
+Landroid/database/sqlite/SQLiteDatabase;->isOpen 3
+Ljava/io/FileWriter;->close 1
+Landroid/net/NetworkInfo;->getState 1
+Ljava/io/BufferedReader;->readLine 1
+Ljava/io/FileWriter;->flush 1
+Ljava/io/File;->createNewFile 2
+Ljava/io/BufferedReader;-><init> 1
+Ljava/io/FileWriter;->write 1
+Landroid/database/sqlite/SQLiteDatabase;->openOrCreateDatabase 2
+Ljava/io/File;->getParent 1
+Landroid/database/sqlite/SQLiteDatabase;->execSQL 11
+Ljava/io/FileReader;->close 1
+Ljava/io/File;->mkdirs 1
+Ljava/io/File;->exists 5
+Landroid/net/ConnectivityManager;->getAllNetworkInfo 1
+Ljava/io/FileReader;-><init> 1
+Ljava/io/File;-><init> 7
+Ljava/io/File;->mkdir 1
+Ljava/io/FileWriter;-><init> 1
+Ljava/io/BufferedReader;->close 1
+
+## Lcom/metek/zqWeather/activity/SettingsGuessActivity; onClick
+
+## Lcom/metek/zqWeather/activity/ff; onClick
+Ljava/io/FileOutputStream;->write 1
+Ljava/io/InputStreamReader;-><init> 1
+Ljava/io/File;->delete 1
+Landroid/net/NetworkInfo;->getSubtypeName 1
+Landroid/net/NetworkInfo;->getState 2
+Ljava/io/FileInputStream;->close 3
+Landroid/net/NetworkInfo;->isConnectedOrConnecting 1
+Ljava/io/StringWriter;-><init> 1
+Ljava/io/File;->length 1
+Ljava/io/InputStreamReader;->read 1
+Ljava/io/StringWriter;->toString 1
+Ljava/io/File;-><init> 1
+Ljava/io/StringWriter;->write 1
+Landroid/net/ConnectivityManager;->getNetworkInfo 2
+Ljava/io/File;->exists 1
+Ljava/io/FileOutputStream;->close 1
+Ljava/io/FileOutputStream;->flush 1
+Landroid/net/ConnectivityManager;->getActiveNetworkInfo 1
+
+## Lcom/taobao/newxp/view/ExchangeViewManager$11; onClick
+Landroid/location/Location;->getTime 3
+Landroid/location/Location;->setProvider 1
+Landroid/location/Location;->getProvider 1
+Landroid/location/Location;-><init> 1
+Landroid/location/Location;->getLatitude 1
+Landroid/location/Location;->setTime 1
+Landroid/net/Uri;->getHost 1
+Landroid/location/Location;->getLongitude 1
+Landroid/location/Location;->setLatitude 1
+Landroid/location/Location;->setAccuracy 1
+Landroid/net/Uri;->parse 5
+Ljava/net/URLEncoder;->encode 3
+Ljava/io/File;-><init> 2
+Ljava/io/File;->getCanonicalPath 2
+Landroid/net/Uri;->getScheme 2
+Landroid/location/Location;->getAccuracy 1
+Ljava/io/File;->exists 1
+Landroid/location/Location;->setLongitude 1
+
+## Lcom/metek/zqWeather/activity/MainActivity; onResume
+Landroid/database/sqlite/SQLiteDatabase;->close 1
+Ljava/io/Closeable;->close 1
+Ljava/io/File;->length 1
+Ljava/io/FileInputStream;->close 3
+Landroid/database/sqlite/SQLiteDatabase;->rawQuery 1
+Landroid/database/sqlite/SQLiteOpenHelper;-><init> 1
+Ljava/io/File;->getAbsolutePath 3
+Ljava/io/PrintStream;->println 1
+Ljava/io/IOException;->printStackTrace 1
+Ljava/io/File;->exists 2
+Ljava/io/PrintStream;->flush 1
+
+## Lcom/metek/zqWeather/activity/f; onClick
+Ljava/io/File;->isDirectory 1
+Landroid/net/Uri;->parse 1
+Ljava/io/File;->mkdirs 1
+Ljava/io/File;->exists 1
+
+## Lcom/metek/zqWeather/activity/j; onClick
+Ljava/io/File;->isDirectory 1
+Landroid/net/Uri;->parse 2
+Ljava/io/File;->mkdirs 1
+Ljava/io/File;->exists 1
+
+## Lcom/taobao/newxp/view/ScreenshotDialog$1; onClick
+
+## Lcom/sina/weibo/sdk/component/view/i; onClick
+
+## Lcom/sina/weibo/sdk/register/mobile/SelectCountryActivity; onCreate
+Ljava/io/DataInputStream;->close 4
+Ljava/io/DataInputStream;->available 2
+Ljava/io/IOException;->printStackTrace 8
+Ljava/io/InputStream;->close 11
+Ljava/io/DataInputStream;-><init> 2
+Ljava/io/DataInputStream;->read 1
+Ljava/io/DataInputStream;->readShort 1
+Lorg/apache/http/util/EncodingUtils;->getString 1
+
+## Lcom/metek/zqWeather/a/l; onCreate
+
+## Lcom/metek/zqWeather/activity/n; onDownloadStart
+Lorg/apache/http/params/HttpConnectionParams;->setSoTimeout 2
+Lorg/apache/http/params/BasicHttpParams;-><init> 1
+Lorg/apache/http/impl/client/DefaultHttpClient;-><init> 1
+Lorg/apache/http/protocol/SyncBasicHttpContext;-><init> 1
+Lorg/apache/http/impl/client/DefaultHttpClient;->addRequestInterceptor 1
+Lorg/apache/http/impl/client/DefaultHttpClient;->setHttpRequestRetryHandler 1
+Lorg/apache/http/impl/client/DefaultHttpClient;->addResponseInterceptor 1
+Lorg/apache/http/conn/params/ConnManagerParams;->setTimeout 2
+Lorg/apache/http/conn/scheme/PlainSocketFactory;->getSocketFactory 1
+Lorg/apache/http/conn/scheme/SchemeRegistry;->register 2
+Lorg/apache/http/conn/params/ConnManagerParams;->setMaxTotalConnections 1
+Lorg/apache/http/params/HttpConnectionParams;->setSocketBufferSize 1
+Lorg/apache/http/conn/scheme/SchemeRegistry;-><init> 1
+Lorg/apache/http/conn/ssl/SSLSocketFactory;->getSocketFactory 1
+Ljava/net/URLDecoder;->decode 1
+Lorg/apache/http/client/methods/HttpGet;-><init> 1
+Lorg/apache/http/params/HttpConnectionParams;->setTcpNoDelay 1
+Lorg/apache/http/params/HttpConnectionParams;->setConnectionTimeout 2
+Lorg/apache/http/params/HttpProtocolParams;->setVersion 1
+Lorg/apache/http/impl/conn/tsccm/ThreadSafeClientConnManager;-><init> 1
+Lorg/apache/http/conn/params/ConnManagerParams;->setMaxConnectionsPerRoute 1
+Lorg/apache/http/impl/client/DefaultHttpClient;->getParams 1
+Lorg/apache/http/protocol/BasicHttpContext;-><init> 1
+Lorg/apache/http/conn/params/ConnPerRouteBean;-><init> 1
+Lorg/apache/http/conn/scheme/Scheme;-><init> 2
+
+## Lcom/taobao/newxp/view/UMDetail$5$1; onClick
+Landroid/location/Location;->getTime 3
+Landroid/location/Location;->setProvider 1
+Landroid/location/Location;->getProvider 1
+Landroid/location/Location;-><init> 1
+Landroid/location/Location;->getLatitude 1
+Ljava/io/File;->getCanonicalPath 2
+Landroid/net/Uri;->getHost 1
+Landroid/location/Location;->getLongitude 1
+Landroid/location/Location;->setLatitude 1
+Landroid/location/Location;->setAccuracy 1
+Landroid/net/Uri;->parse 4
+Landroid/location/Location;->setTime 1
+Ljava/net/URLEncoder;->encode 3
+Ljava/io/File;-><init> 2
+Landroid/net/Uri;->getScheme 1
+Landroid/location/Location;->getAccuracy 1
+Ljava/io/File;->exists 1
+Landroid/location/Location;->setLongitude 1
+
+## Lcom/taobao/newxp/view/a$1; onClick
+Landroid/location/Location;->getTime 3
+Landroid/location/Location;->setProvider 1
+Landroid/location/Location;->getProvider 1
+Landroid/location/Location;-><init> 1
+Landroid/location/Location;->getLatitude 1
+Ljava/io/File;->getCanonicalPath 2
+Landroid/net/Uri;->getHost 1
+Landroid/location/Location;->getLongitude 1
+Landroid/location/Location;->setLatitude 1
+Landroid/location/Location;->setAccuracy 1
+Landroid/net/Uri;->parse 4
+Landroid/location/Location;->setTime 1
+Ljava/net/URLEncoder;->encode 3
+Ljava/io/File;-><init> 2
+Landroid/net/Uri;->getScheme 1
+Landroid/location/Location;->getAccuracy 1
+Ljava/io/File;->exists 1
+Landroid/location/Location;->setLongitude 1
+
+## Lcom/taobao/newxp/view/a$2; onClick
+Landroid/location/Location;->getTime 3
+Landroid/location/Location;->setProvider 1
+Landroid/location/Location;->getProvider 1
+Landroid/location/Location;-><init> 1
+Landroid/location/Location;->getLatitude 1
+Ljava/io/File;->getCanonicalPath 2
+Landroid/net/Uri;->getHost 1
+Landroid/location/Location;->getLongitude 1
+Landroid/location/Location;->setLatitude 1
+Landroid/location/Location;->setAccuracy 1
+Landroid/net/Uri;->parse 4
+Landroid/location/Location;->setTime 1
+Ljava/net/URLEncoder;->encode 3
+Ljava/io/File;-><init> 2
+Landroid/net/Uri;->getScheme 1
+Landroid/location/Location;->getAccuracy 1
+Ljava/io/File;->exists 1
+Landroid/location/Location;->setLongitude 1
+
+## Lcom/taobao/newxp/view/handler/umwall/holder/a$1; onClick
+Landroid/location/Location;->getTime 3
+Landroid/location/Location;->setProvider 1
+Landroid/location/Location;->getProvider 1
+Landroid/location/Location;-><init> 1
+Landroid/location/Location;->getLatitude 1
+Ljava/io/File;->getCanonicalPath 2
+Landroid/net/Uri;->getHost 1
+Landroid/location/Location;->getLongitude 1
+Landroid/location/Location;->setLatitude 1
+Landroid/location/Location;->setAccuracy 1
+Landroid/net/Uri;->parse 4
+Landroid/location/Location;->setTime 1
+Ljava/net/URLEncoder;->encode 3
+Ljava/io/File;-><init> 2
+Landroid/net/Uri;->getScheme 1
+Landroid/location/Location;->getAccuracy 1
+Ljava/io/File;->exists 1
+Landroid/location/Location;->setLongitude 1
+
+## Lcom/taobao/newxp/view/handler/umwall/holder/a$2; onClick
+Landroid/location/Location;->getTime 3
+Landroid/location/Location;->setProvider 1
+Landroid/location/Location;->getProvider 1
+Landroid/location/Location;-><init> 1
+Landroid/location/Location;->getLatitude 1
+Ljava/io/File;->getCanonicalPath 2
+Landroid/net/Uri;->getHost 1
+Landroid/location/Location;->getLongitude 1
+Landroid/location/Location;->setLatitude 1
+Landroid/location/Location;->setAccuracy 1
+Landroid/net/Uri;->parse 4
+Landroid/location/Location;->setTime 1
+Ljava/net/URLEncoder;->encode 3
+Ljava/io/File;-><init> 2
+Landroid/net/Uri;->getScheme 1
+Landroid/location/Location;->getAccuracy 1
+Ljava/io/File;->exists 1
+Landroid/location/Location;->setLongitude 1
+
+## Lcom/taobao/newxp/view/handler/umwall/holder/b$1; onClick
+Landroid/location/Location;->getTime 3
+Landroid/location/Location;->setProvider 1
+Landroid/location/Location;->getProvider 1
+Landroid/location/Location;-><init> 1
+Landroid/location/Location;->getLatitude 1
+Ljava/io/File;->getCanonicalPath 2
+Landroid/net/Uri;->getHost 1
+Landroid/location/Location;->getLongitude 1
+Landroid/location/Location;->setLatitude 1
+Landroid/location/Location;->setAccuracy 1
+Landroid/net/Uri;->parse 4
+Landroid/location/Location;->setTime 1
+Ljava/net/URLEncoder;->encode 3
+Ljava/io/File;-><init> 2
+Landroid/net/Uri;->getScheme 1
+Landroid/location/Location;->getAccuracy 1
+Ljava/io/File;->exists 1
+Landroid/location/Location;->setLongitude 1
+
+## Lcom/taobao/newxp/view/handler/umwall/holder/c$1; onClick
+Landroid/location/Location;->getTime 3
+Landroid/location/Location;->setProvider 1
+Landroid/location/Location;->getProvider 1
+Landroid/location/Location;-><init> 1
+Landroid/location/Location;->getLatitude 1
+Ljava/io/File;->getCanonicalPath 2
+Landroid/net/Uri;->getHost 1
+Landroid/location/Location;->getLongitude 1
+Landroid/location/Location;->setLatitude 1
+Landroid/location/Location;->setAccuracy 1
+Landroid/net/Uri;->parse 4
+Landroid/location/Location;->setTime 1
+Ljava/net/URLEncoder;->encode 3
+Ljava/io/File;-><init> 2
+Landroid/net/Uri;->getScheme 1
+Landroid/location/Location;->getAccuracy 1
+Ljava/io/File;->exists 1
+Landroid/location/Location;->setLongitude 1
+
+## Lcom/taobao/newxp/view/handler/umwall/holder/d$1; onClick
+Landroid/location/Location;->getTime 3
+Landroid/location/Location;->setProvider 1
+Landroid/location/Location;->getProvider 1
+Landroid/location/Location;-><init> 1
+Landroid/location/Location;->getLatitude 1
+Ljava/io/File;->getCanonicalPath 2
+Landroid/net/Uri;->getHost 1
+Landroid/location/Location;->getLongitude 1
+Landroid/location/Location;->setLatitude 1
+Landroid/location/Location;->setAccuracy 1
+Landroid/net/Uri;->parse 4
+Landroid/location/Location;->setTime 1
+Ljava/net/URLEncoder;->encode 3
+Ljava/io/File;-><init> 2
+Landroid/net/Uri;->getScheme 1
+Landroid/location/Location;->getAccuracy 1
+Ljava/io/File;->exists 1
+Landroid/location/Location;->setLongitude 1
+
+## Lcom/taobao/newxp/view/handler/umwall/holder/e$1; onClick
+Landroid/location/Location;->getTime 3
+Landroid/location/Location;->setProvider 1
+Landroid/location/Location;->getProvider 1
+Landroid/location/Location;-><init> 1
+Landroid/location/Location;->getLatitude 1
+Ljava/io/File;->getCanonicalPath 2
+Landroid/net/Uri;->getHost 1
+Landroid/location/Location;->getLongitude 1
+Landroid/location/Location;->setLatitude 1
+Landroid/location/Location;->setAccuracy 1
+Landroid/net/Uri;->parse 4
+Landroid/location/Location;->setTime 1
+Ljava/net/URLEncoder;->encode 3
+Ljava/io/File;-><init> 2
+Landroid/net/Uri;->getScheme 1
+Landroid/location/Location;->getAccuracy 1
+Ljava/io/File;->exists 1
+Landroid/location/Location;->setLongitude 1
+
+## Lcom/taobao/newxp/view/handler/umwall/holder/f$1; onClick
+Landroid/location/Location;->getTime 3
+Landroid/location/Location;->setProvider 1
+Landroid/location/Location;->getProvider 1
+Landroid/location/Location;-><init> 1
+Landroid/location/Location;->getLatitude 1
+Ljava/io/File;->getCanonicalPath 2
+Landroid/net/Uri;->getHost 1
+Landroid/location/Location;->getLongitude 1
+Landroid/location/Location;->setLatitude 1
+Landroid/location/Location;->setAccuracy 1
+Landroid/net/Uri;->parse 4
+Landroid/location/Location;->setTime 1
+Ljava/net/URLEncoder;->encode 3
+Ljava/io/File;-><init> 2
+Landroid/net/Uri;->getScheme 1
+Landroid/location/Location;->getAccuracy 1
+Ljava/io/File;->exists 1
+Landroid/location/Location;->setLongitude 1
+
+## Lcom/taobao/newxp/view/handler/umwall/holder/g$1; onClick
+Landroid/location/Location;->getTime 3
+Landroid/location/Location;->setProvider 1
+Landroid/location/Location;->getProvider 1
+Landroid/location/Location;-><init> 1
+Landroid/location/Location;->getLatitude 1
+Ljava/io/File;->getCanonicalPath 2
+Landroid/net/Uri;->getHost 1
+Landroid/location/Location;->getLongitude 1
+Landroid/location/Location;->setLatitude 1
+Landroid/location/Location;->setAccuracy 1
+Landroid/net/Uri;->parse 4
+Landroid/location/Location;->setTime 1
+Ljava/net/URLEncoder;->encode 3
+Ljava/io/File;-><init> 2
+Landroid/net/Uri;->getScheme 1
+Landroid/location/Location;->getAccuracy 1
+Ljava/io/File;->exists 1
+Landroid/location/Location;->setLongitude 1
+
+## Lcom/metek/zqUtil/view/pulltorefresh/a/g; onClick
+Ljava/io/FileOutputStream;->write 1
+Ljava/io/InputStreamReader;-><init> 1
+Ljava/io/File;->delete 1
+Landroid/net/NetworkInfo;->getSubtypeName 1
+Landroid/net/NetworkInfo;->getState 2
+Ljava/io/FileInputStream;->close 3
+Landroid/net/NetworkInfo;->isConnectedOrConnecting 1
+Ljava/io/StringWriter;-><init> 1
+Ljava/io/File;->length 1
+Ljava/io/InputStreamReader;->read 1
+Ljava/io/StringWriter;->toString 1
+Ljava/io/File;-><init> 1
+Ljava/io/StringWriter;->write 1
+Landroid/net/ConnectivityManager;->getNetworkInfo 2
+Ljava/io/File;->exists 1
+Ljava/io/FileOutputStream;->close 1
+Ljava/io/FileOutputStream;->flush 1
+Landroid/net/ConnectivityManager;->getActiveNetworkInfo 1
+
+## Lcom/metek/zqWeather/WeatherChargeWarn$WarnDialog; onClick
+Ljava/io/FileOutputStream;->write 1
+Ljava/io/InputStreamReader;-><init> 1
+Landroid/net/NetworkInfo;->getSubtypeName 1
+Ljava/io/FileOutputStream;->flush 1
+Ljava/io/ObjectInputStream;->readObject 1
+Ljava/io/PrintStream;->println 1
+Landroid/net/ConnectivityManager;->getNetworkInfo 2
+Ljava/io/StringWriter;-><init> 1
+Landroid/net/NetworkInfo;->getState 2
+Ljava/io/ObjectOutputStream;-><init> 1
+Landroid/net/NetworkInfo;->isConnectedOrConnecting 1
+Ljava/io/StringWriter;->write 1
+Ljava/io/ObjectOutputStream;->close 4
+Ljava/io/FileInputStream;->close 8
+Landroid/net/ConnectivityManager;->getActiveNetworkInfo 1
+Ljava/io/StringWriter;->toString 1
+Ljava/io/File;-><init> 1
+Ljava/io/IOException;->printStackTrace 9
+Ljava/io/PrintStream;->flush 1
+Ljava/io/ObjectInputStream;->close 5
+Ljava/io/File;->delete 1
+Ljava/io/File;->length 1
+Ljava/io/InputStreamReader;->read 1
+Ljava/io/File;->exists 1
+Ljava/io/ObjectInputStream;-><init> 1
+Ljava/io/FileOutputStream;->close 5
+Ljava/io/ObjectOutputStream;->writeObject 1
+
+## Lcom/metek/zqWeather/activity/MoodLineActivity; onClick
+Ljava/io/FileOutputStream;->write 1
+Ljava/io/InputStreamReader;-><init> 1
+Ljava/io/File;->delete 1
+Landroid/net/NetworkInfo;->getSubtypeName 1
+Ljava/io/File;->mkdirs 1
+Ljava/io/FileInputStream;->close 3
+Ljava/io/File;->length 1
+Landroid/net/NetworkInfo;->isConnectedOrConnecting 1
+Ljava/io/StringWriter;-><init> 1
+Landroid/net/NetworkInfo;->getState 2
+Ljava/io/InputStreamReader;->read 1
+Ljava/io/StringWriter;->toString 1
+Ljava/io/File;->exists 2
+Ljava/io/FileOutputStream;-><init> 1
+Ljava/io/StringWriter;->write 1
+Landroid/net/ConnectivityManager;->getNetworkInfo 2
+Ljava/io/File;-><init> 2
+Ljava/io/FileOutputStream;->close 4
+Ljava/io/FileOutputStream;->flush 1
+Landroid/net/ConnectivityManager;->getActiveNetworkInfo 1
+
+## Lcom/metek/zqWeather/activity/SinaEditActivity; onClick
+Ljava/io/FileOutputStream;->write 1
+Ljava/io/InputStreamReader;-><init> 1
+Landroid/net/NetworkInfo;->getSubtypeName 1
+Ljava/io/FileOutputStream;->flush 1
+Ljava/io/PrintStream;->println 1
+Landroid/net/ConnectivityManager;->getNetworkInfo 2
+Ljava/io/StringWriter;-><init> 1
+Landroid/net/NetworkInfo;->getState 2
+Ljava/io/ByteArrayOutputStream;-><init> 1
+Landroid/net/NetworkInfo;->isConnectedOrConnecting 1
+Ljava/io/StringWriter;->write 1
+Ljava/io/FileInputStream;->close 3
+Landroid/net/ConnectivityManager;->getActiveNetworkInfo 1
+Ljava/io/ByteArrayOutputStream;->close 3
+Ljava/io/StringWriter;->toString 1
+Ljava/io/ByteArrayOutputStream;->toByteArray 1
+Ljava/io/File;-><init> 1
+Ljava/io/IOException;->printStackTrace 3
+Ljava/io/PrintStream;->flush 1
+Ljava/io/File;->delete 1
+Ljava/io/File;->length 1
+Ljava/io/InputStreamReader;->read 1
+Ljava/io/File;->exists 1
+Ljava/io/FileOutputStream;->close 1
+
+## Lcom/metek/zqWeather/activity/aw; onClick
+Ljava/io/FileOutputStream;->write 1
+Ljava/io/InputStreamReader;-><init> 1
+Landroid/net/NetworkInfo;->getSubtypeName 1
+Ljava/io/FileOutputStream;->flush 1
+Ljava/net/URLEncoder;->encode 2
+Ljava/io/PrintStream;->println 1
+Landroid/net/ConnectivityManager;->getNetworkInfo 2
+Ljava/io/UnsupportedEncodingException;->printStackTrace 1
+Ljava/io/StringWriter;-><init> 1
+Landroid/net/NetworkInfo;->getState 2
+Ljava/io/ByteArrayOutputStream;-><init> 1
+Landroid/net/NetworkInfo;->isConnectedOrConnecting 1
+Ljava/io/PrintStream;->write 3
+Ljava/io/StringWriter;->write 1
+Ljava/io/FileInputStream;->close 3
+Landroid/net/ConnectivityManager;->getActiveNetworkInfo 2
+Ljava/io/ByteArrayOutputStream;->close 1
+Ljava/io/StringWriter;->toString 1
+Ljava/io/ByteArrayOutputStream;->toByteArray 1
+Ljava/io/File;-><init> 2
+Ljava/io/PrintStream;->flush 2
+Ljava/io/File;->delete 1
+Ljava/io/File;->length 1
+Ljava/io/InputStreamReader;->read 1
+Ljava/io/File;->exists 2
+Ljava/io/FileOutputStream;->close 1
+
+## Lcom/metek/zqWeather/activity/bt; onClick
+Ljava/io/FileOutputStream;->write 1
+Ljava/io/InputStreamReader;-><init> 1
+Ljava/io/File;->delete 1
+Landroid/net/NetworkInfo;->getSubtypeName 1
+Landroid/net/NetworkInfo;->getState 2
+Ljava/io/FileInputStream;->close 3
+Landroid/net/NetworkInfo;->isConnectedOrConnecting 1
+Ljava/io/StringWriter;-><init> 1
+Ljava/io/File;->length 1
+Ljava/io/InputStreamReader;->read 1
+Ljava/io/StringWriter;->toString 1
+Ljava/io/File;-><init> 1
+Ljava/io/StringWriter;->write 1
+Landroid/net/ConnectivityManager;->getNetworkInfo 2
+Ljava/io/File;->exists 1
+Ljava/io/FileOutputStream;->close 1
+Ljava/io/FileOutputStream;->flush 1
+Landroid/net/ConnectivityManager;->getActiveNetworkInfo 1
+
+## Lcom/metek/zqWeather/activity/bw; onClick
+Ljava/io/FileOutputStream;->write 1
+Ljava/io/InputStreamReader;-><init> 1
+Landroid/net/NetworkInfo;->getSubtypeName 1
+Ljava/io/FileInputStream;->close 3
+Ljava/net/URLEncoder;->encode 1
+Ljava/io/PrintStream;->println 1
+Ljava/io/FileOutputStream;->flush 1
+Landroid/net/ConnectivityManager;->getNetworkInfo 2
+Ljava/io/StringWriter;-><init> 1
+Landroid/net/NetworkInfo;->getState 2
+Landroid/net/NetworkInfo;->isConnectedOrConnecting 1
+Ljava/io/UnsupportedEncodingException;->printStackTrace 1
+Ljava/io/StringWriter;->write 1
+Ljava/io/StringWriter;->toString 1
+Landroid/net/ConnectivityManager;->getActiveNetworkInfo 1
+Ljava/io/File;-><init> 1
+Ljava/io/PrintStream;->flush 1
+Ljava/io/File;->delete 1
+Ljava/io/File;->length 1
+Ljava/io/InputStreamReader;->read 1
+Ljava/io/File;->exists 1
+Ljava/io/FileOutputStream;->close 1
+
+## Lcom/metek/zqWeather/activity/by; onClick
+Ljava/io/FileOutputStream;->write 1
+Ljava/io/InputStreamReader;-><init> 1
+Ljava/io/File;->delete 1
+Landroid/net/NetworkInfo;->getSubtypeName 1
+Ljava/io/StringWriter;->write 1
+Landroid/net/NetworkInfo;->getState 2
+Ljava/io/FileInputStream;->close 3
+Landroid/net/NetworkInfo;->isConnectedOrConnecting 1
+Ljava/io/StringWriter;-><init> 1
+Ljava/io/File;->length 1
+Ljava/io/InputStreamReader;->read 1
+Ljava/io/StringWriter;->toString 1
+Ljava/io/PrintStream;->println 1
+Ljava/io/FileOutputStream;->flush 1
+Landroid/net/ConnectivityManager;->getNetworkInfo 2
+Ljava/io/File;-><init> 1
+Ljava/io/PrintStream;->flush 1
+Ljava/io/FileOutputStream;->close 1
+Ljava/io/File;->exists 1
+Landroid/net/ConnectivityManager;->getActiveNetworkInfo 1
+
+## Lcom/metek/zqWeather/activity/ca; onClick
+Ljava/io/FileOutputStream;->write 1
+Ljava/io/InputStreamReader;-><init> 1
+Ljava/io/File;->delete 1
+Landroid/net/NetworkInfo;->getSubtypeName 1
+Landroid/net/NetworkInfo;->getState 2
+Ljava/io/FileInputStream;->close 3
+Landroid/net/NetworkInfo;->isConnectedOrConnecting 1
+Ljava/io/StringWriter;-><init> 1
+Ljava/io/File;->length 1
+Ljava/io/InputStreamReader;->read 1
+Ljava/io/StringWriter;->toString 1
+Ljava/io/File;-><init> 1
+Ljava/io/StringWriter;->write 1
+Landroid/net/ConnectivityManager;->getNetworkInfo 2
+Ljava/io/File;->exists 1
+Ljava/io/FileOutputStream;->close 1
+Ljava/io/FileOutputStream;->flush 1
+Landroid/net/ConnectivityManager;->getActiveNetworkInfo 1
+
+## Lcom/metek/zqWeather/activity/ct; onClick
+Ljava/io/FileOutputStream;->write 1
+Ljava/io/InputStreamReader;-><init> 1
+Ljava/io/File;->delete 1
+Landroid/net/NetworkInfo;->getSubtypeName 1
+Landroid/net/NetworkInfo;->getState 2
+Ljava/io/FileInputStream;->close 3
+Landroid/net/NetworkInfo;->isConnectedOrConnecting 1
+Ljava/io/StringWriter;-><init> 1
+Ljava/io/File;->length 1
+Ljava/io/InputStreamReader;->read 1
+Ljava/io/StringWriter;->toString 1
+Ljava/io/File;-><init> 1
+Ljava/io/StringWriter;->write 1
+Landroid/net/ConnectivityManager;->getNetworkInfo 2
+Ljava/io/File;->exists 1
+Ljava/io/FileOutputStream;->close 1
+Ljava/io/FileOutputStream;->flush 1
+Landroid/net/ConnectivityManager;->getActiveNetworkInfo 1
+
+## Lcom/metek/zqWeather/activity/dc; onClick
+Ljava/io/FileOutputStream;->write 1
+Ljava/io/InputStreamReader;-><init> 1
+Ljava/io/File;->delete 1
+Landroid/net/NetworkInfo;->getSubtypeName 1
+Landroid/net/NetworkInfo;->getState 2
+Ljava/io/FileInputStream;->close 3
+Landroid/net/NetworkInfo;->isConnectedOrConnecting 1
+Ljava/io/StringWriter;-><init> 1
+Ljava/io/File;->length 1
+Ljava/io/InputStreamReader;->read 1
+Ljava/io/StringWriter;->toString 1
+Ljava/io/File;-><init> 1
+Ljava/io/StringWriter;->write 1
+Landroid/net/ConnectivityManager;->getNetworkInfo 2
+Ljava/io/File;->exists 1
+Ljava/io/FileOutputStream;->close 1
+Ljava/io/FileOutputStream;->flush 1
+Landroid/net/ConnectivityManager;->getActiveNetworkInfo 1
+
+## Lcom/metek/zqWeather/activity/dv; onClick
+Ljava/io/FileOutputStream;->write 1
+Ljava/io/InputStreamReader;-><init> 1
+Landroid/net/NetworkInfo;->getSubtypeName 1
+Ljava/io/FileInputStream;->close 3
+Landroid/database/sqlite/SQLiteOpenHelper;-><init> 1
+Ljava/io/PrintStream;->println 1
+Landroid/net/ConnectivityManager;->getNetworkInfo 2
+Landroid/database/sqlite/SQLiteDatabase;->close 1
+Ljava/io/StringWriter;-><init> 1
+Landroid/net/NetworkInfo;->getState 2
+Landroid/net/NetworkInfo;->isConnectedOrConnecting 1
+Ljava/io/StringWriter;->write 1
+Ljava/io/FileOutputStream;->flush 1
+Landroid/net/ConnectivityManager;->getActiveNetworkInfo 2
+Ljava/io/StringWriter;->toString 1
+Landroid/database/sqlite/SQLiteDatabase;->insert 1
+Ljava/io/File;-><init> 1
+Ljava/io/PrintStream;->flush 1
+Ljava/io/File;->delete 1
+Ljava/io/File;->length 1
+Landroid/database/sqlite/SQLiteDatabase;->update 1
+Landroid/database/sqlite/SQLiteDatabase;->rawQuery 1
+Ljava/io/InputStreamReader;->read 1
+Ljava/io/File;->exists 1
+Ljava/io/FileOutputStream;->close 1
+
+## Lcom/metek/zqWeather/activity/dw; onClick
+Ljava/io/FileOutputStream;->write 1
+Ljava/io/InputStreamReader;-><init> 1
+Landroid/net/NetworkInfo;->getSubtypeName 1
+Ljava/io/FileInputStream;->close 3
+Landroid/database/sqlite/SQLiteOpenHelper;-><init> 1
+Ljava/io/PrintStream;->println 1
+Landroid/net/ConnectivityManager;->getNetworkInfo 2
+Landroid/database/sqlite/SQLiteDatabase;->close 1
+Ljava/io/StringWriter;-><init> 1
+Landroid/net/NetworkInfo;->getState 2
+Landroid/net/NetworkInfo;->isConnectedOrConnecting 1
+Ljava/io/StringWriter;->write 1
+Ljava/io/FileOutputStream;->flush 1
+Landroid/net/ConnectivityManager;->getActiveNetworkInfo 2
+Ljava/io/StringWriter;->toString 1
+Landroid/database/sqlite/SQLiteDatabase;->insert 1
+Ljava/io/File;-><init> 1
+Ljava/io/PrintStream;->flush 1
+Ljava/io/File;->delete 1
+Ljava/io/File;->length 1
+Landroid/database/sqlite/SQLiteDatabase;->update 1
+Landroid/database/sqlite/SQLiteDatabase;->rawQuery 1
+Ljava/io/InputStreamReader;->read 1
+Ljava/io/File;->exists 1
+Ljava/io/FileOutputStream;->close 1
+
+## Lcom/metek/zqWeather/activity/ed; onClick
+Ljava/io/FileOutputStream;->write 1
+Landroid/database/sqlite/SQLiteDatabase;->close 1
+Ljava/io/InputStreamReader;-><init> 1
+Ljava/io/File;->delete 1
+Landroid/net/NetworkInfo;->getSubtypeName 1
+Landroid/net/NetworkInfo;->getState 2
+Ljava/io/FileInputStream;->close 3
+Landroid/database/sqlite/SQLiteDatabase;->rawQuery 1
+Landroid/net/NetworkInfo;->isConnectedOrConnecting 1
+Landroid/database/sqlite/SQLiteOpenHelper;-><init> 1
+Ljava/io/File;->length 1
+Ljava/io/InputStreamReader;->read 1
+Ljava/io/StringWriter;->toString 1
+Ljava/io/File;-><init> 1
+Ljava/io/StringWriter;->write 1
+Landroid/net/ConnectivityManager;->getNetworkInfo 2
+Ljava/io/File;->exists 1
+Ljava/io/StringWriter;-><init> 1
+Ljava/io/FileOutputStream;->close 1
+Ljava/io/FileOutputStream;->flush 1
+Landroid/net/ConnectivityManager;->getActiveNetworkInfo 1
+
+## Lcom/metek/zqWeather/activity/ez; onClick
+Ljava/io/FileOutputStream;->write 1
+Lorg/apache/http/params/HttpConnectionParams;->setSoTimeout 1
+Ljava/io/InputStreamReader;-><init> 2
+Ljava/io/OutputStreamWriter;-><init> 1
+Ljava/io/RandomAccessFile;->read 6
+Lorg/apache/http/conn/ssl/SSLSocketFactory;->getSocketFactory 2
+Ljava/io/PrintStream;->write 3
+Ljava/io/StringWriter;-><init> 1
+Ljava/net/URL;-><init> 1
+Ljava/io/ByteArrayOutputStream;-><init> 4
+Landroid/net/NetworkInfo;->isConnectedOrConnecting 1
+Lorg/apache/http/client/HttpClient;->getParams 1
+Ljava/io/ByteArrayOutputStream;->write 9
+Ljava/io/RandomAccessFile;->seek 3
+Ljava/io/File;->delete 6
+Landroid/net/NetworkInfo;->getExtraInfo 1
+Lorg/apache/http/params/HttpParams;->setParameter 1
+Ljava/io/ByteArrayInputStream;-><init> 1
+Ljava/io/InputStreamReader;->read 1
+Lorg/apache/http/HttpResponse;->getStatusLine 1
+Ljava/io/FileWriter;-><init> 1
+Ljava/io/RandomAccessFile;-><init> 1
+Ljava/io/FileOutputStream;->close 1
+Ljava/io/FileOutputStream;->flush 1
+Landroid/net/NetworkInfo;->isAvailable 1
+Ljava/io/PrintStream;->println 2
+Landroid/net/Proxy;->getDefaultHost 2
+Ljava/io/IOException;->getMessage 1
+Lorg/apache/http/HttpResponse;->getEntity 1
+Landroid/net/NetworkInfo;->getState 2
+Ljava/net/URL;->getHost 1
+Lorg/apache/http/conn/scheme/PlainSocketFactory;->getSocketFactory 1
+Landroid/net/NetworkInfo;->getType 1
+Ljava/io/OutputStreamWriter;->flush 1
+Ljava/io/File;->listFiles 4
+Lorg/apache/http/client/methods/HttpPost;->setEntity 1
+Ljava/io/File;->isFile 1
+Ljava/io/ByteArrayOutputStream;->toByteArray 4
+Ljava/io/BufferedReader;->close 3
+Landroid/net/Proxy;->getHost 1
+Lorg/apache/http/params/HttpProtocolParams;->setContentCharset 1
+Ljava/io/StringWriter;->toString 1
+Lorg/apache/http/client/methods/HttpUriRequest;->addHeader 1
+Ljava/io/RandomAccessFile;->close 3
+Ljava/io/IOException;->printStackTrace 11
+Lorg/apache/http/impl/conn/tsccm/ThreadSafeClientConnManager;-><init> 1
+Ljava/io/File;->length 3
+Ljava/io/File;->setLastModified 1
+Lorg/apache/http/impl/client/DefaultHttpClient;-><init> 1
+Landroid/net/NetworkInfo;->getSubtypeName 1
+Lorg/apache/http/entity/ByteArrayEntity;-><init> 1
+Ljava/io/FileInputStream;->close 5
+Landroid/net/Uri;->parse 1
+Ljava/net/URLEncoder;->encode 12
+Ljava/io/File;->getPath 1
+Lorg/apache/http/client/methods/HttpPost;->setHeader 2
+Ljava/io/File;->equals 1
+Lorg/apache/http/HttpResponse;->getFirstHeader 1
+Lorg/apache/http/client/methods/HttpPost;->addHeader 1
+Ljava/io/FileInputStream;-><init> 1
+Ljava/io/FileWriter;->flush 1
+Ljava/io/File;->isDirectory 1
+Lorg/apache/http/HttpHost;-><init> 1
+Landroid/net/Proxy;->getPort 1
+Lorg/apache/http/conn/scheme/SchemeRegistry;-><init> 1
+Lorg/apache/http/client/methods/HttpGet;-><init> 1
+Landroid/net/NetworkInfo;->getTypeName 1
+Ljava/io/InputStream;->close 3
+Lorg/apache/http/client/HttpClient;->execute 1
+Lorg/apache/http/params/HttpProtocolParams;->setVersion 1
+Landroid/net/Proxy;->getDefaultPort 2
+Lorg/apache/http/client/methods/HttpPost;-><init> 1
+Lorg/apache/http/conn/scheme/Scheme;-><init> 4
+Ljava/io/ByteArrayOutputStream;->close 5
+Lorg/apache/http/params/BasicHttpParams;-><init> 1
+Ljava/io/File;->mkdirs 1
+Ljava/io/FileWriter;->close 1
+Landroid/net/ConnectivityManager;->getNetworkInfo 2
+Lorg/apache/http/params/HttpProtocolParams;->setUserAgent 1
+Ljava/io/File;->getName 4
+Lorg/apache/http/conn/ssl/SSLSocketFactory;->setHostnameVerifier 1
+Ljava/io/File;->deleteOnExit 1
+Ljava/io/OutputStreamWriter;->close 1
+Ljava/io/UnsupportedEncodingException;->printStackTrace 1
+Lorg/apache/http/conn/scheme/SchemeRegistry;->register 4
+Ljava/io/InputStream;->read 1
+Ljava/io/StringWriter;->write 1
+Landroid/net/ConnectivityManager;->getActiveNetworkInfo 5
+Ljava/io/File;->toString 1
+Ljava/io/BufferedReader;-><init> 1
+Ljava/io/File;-><init> 11
+Ljava/io/PrintStream;->flush 2
+Lorg/apache/http/params/HttpConnectionParams;->setConnectionTimeout 1
+Lorg/apache/http/Header;->getValue 1
+Ljava/io/RandomAccessFile;->readFully 1
+Lorg/apache/http/conn/ssl/SSLSocketFactory;-><init> 1
+Ljava/io/BufferedReader;->readLine 1
+Ljava/io/OutputStreamWriter;->write 1
+Lorg/apache/http/HttpEntity;->getContent 1
+Ljava/io/File;->exists 5
+Ljava/io/RandomAccessFile;->length 1
+Lorg/apache/http/StatusLine;->getStatusCode 1
+
+## Lcom/sina/weibo/sdk/register/mobile/MobileRegisterActivity; onFocusChange
+
+## Lcom/sina/weibo/sdk/component/n; onClick
+
+## Lcom/umeng/fb/ContactActivity; onCreate
+
+## Lcom/umeng/fb/j; onClick
+
+## Lcom/metek/zqWeather/activity/StorageActivity; onClick
+
+## Lcom/metek/zqWeather/activity/gn; onClick
+
+## Lcom/metek/zqWeather/activity/go; onItemClick
+
+## Landroid/support/v4/view/PagerTabStrip$1; onClick
+
+## Landroid/support/v4/view/PagerTabStrip$2; onClick
+
+## Landroid/support/v4/view/ViewPager; onRestoreInstanceState
+
+## Lcom/metek/zqWeather/activity/dl; onItemClick
+Ljava/io/FileOutputStream;->write 1
+Ljava/io/InputStreamReader;-><init> 1
+Ljava/io/Closeable;->close 1
+Ljava/io/FileReader;->close 3
+Landroid/location/Location;->getLongitude 1
+Ljava/io/FileNotFoundException;->printStackTrace 1
+Ljava/io/UnsupportedEncodingException;->printStackTrace 2
+Landroid/database/sqlite/SQLiteDatabase;->close 3
+Ljava/io/StringWriter;-><init> 1
+Ljava/io/ByteArrayOutputStream;-><init> 2
+Landroid/net/NetworkInfo;->isConnectedOrConnecting 1
+Ljava/io/FileInputStream;->read 1
+Ljava/io/ByteArrayOutputStream;->write 7
+Landroid/location/Location;->setLongitude 1
+Ljava/io/ByteArrayOutputStream;->size 1
+Landroid/net/wifi/WifiInfo;->getMacAddress 1
+Ljava/io/File;->delete 5
+Landroid/database/sqlite/SQLiteDatabase;->update 2
+Ljava/io/ByteArrayInputStream;-><init> 1
+Ljava/io/InputStreamReader;->read 1
+Ljava/io/RandomAccessFile;-><init> 1
+Ljava/io/FileOutputStream;->close 5
+Ljava/io/ObjectOutputStream;->writeObject 1
+Ljava/io/FileOutputStream;->flush 1
+Ljava/io/ObjectInputStream;->readObject 2
+Landroid/location/Location;->setTime 1
+Landroid/database/sqlite/SQLiteOpenHelper;-><init> 2
+Ljava/io/BufferedOutputStream;->close 1
+Ljava/io/PrintStream;->println 1
+Ljava/io/FileReader;-><init> 1
+Landroid/location/Location;->getTime 3
+Landroid/net/NetworkInfo;->getState 2
+Landroid/net/TrafficStats;->setThreadStatsTag 1
+Ljava/io/File;->isFile 1
+Ljava/io/File;->toString 1
+Ljava/io/BufferedOutputStream;->write 1
+Ljava/io/BufferedReader;->close 3
+Landroid/database/sqlite/SQLiteDatabase;->insert 1
+Ljava/io/IOException;->printStackTrace 13
+Ljava/io/File;->getPath 1
+Ljava/io/File;->renameTo 1
+Ljava/io/File;->length 2
+Ljava/io/FileInputStream;->available 1
+Landroid/net/NetworkInfo;->getSubtypeName 1
+Ljava/io/FileInputStream;->close 9
+Ljava/io/File;->createNewFile 1
+Landroid/net/wifi/WifiManager;->getConnectionInfo 1
+Landroid/location/Location;->setProvider 1
+Landroid/net/Uri;->parse 1
+Ljava/net/URLEncoder;->encode 3
+Landroid/net/http/AndroidHttpClient;->newInstance 3
+Lorg/apache/http/client/CookieStore;->getCookies 2
+Landroid/net/Uri;->getHost 1
+Ljava/io/ObjectOutputStream;-><init> 1
+Ljava/io/File;->getParentFile 1
+Lorg/apache/http/cookie/Cookie;->isExpired 1
+Ljava/io/StringWriter;->toString 1
+Ljava/io/ByteArrayOutputStream;->close 1
+Lorg/apache/http/cookie/Cookie;->getName 1
+Ljava/io/File;->canRead 2
+Ljava/io/InputStream;->close 1
+Lorg/apache/http/protocol/BasicHttpContext;-><init> 1
+Landroid/location/Location;->getAccuracy 1
+Landroid/database/sqlite/SQLiteDatabase;->rawQuery 1
+Landroid/location/Location;->setLatitude 1
+Ljava/io/ObjectInputStream;-><init> 2
+Landroid/database/sqlite/SQLiteDatabase;->query 1
+Ljava/io/RandomAccessFile;->getChannel 1
+Ljava/io/File;->mkdirs 4
+Ljava/io/File;->list 1
+Landroid/net/ConnectivityManager;->getNetworkInfo 2
+Lorg/apache/http/protocol/HttpContext;->setAttribute 1
+Lorg/apache/http/cookie/Cookie;->getValue 1
+Landroid/location/Location;->getLatitude 1
+Ljava/io/BufferedOutputStream;-><init> 1
+Landroid/location/Location;->setAccuracy 1
+Lorg/apache/http/cookie/Cookie;->getDomain 2
+Ljava/io/InputStream;->read 1
+Ljava/io/StringWriter;->write 1
+Ljava/io/ObjectOutputStream;->close 4
+Landroid/net/ConnectivityManager;->getActiveNetworkInfo 1
+Ljava/io/File;->getAbsolutePath 7
+Ljava/io/ByteArrayOutputStream;->toByteArray 3
+Ljava/io/BufferedReader;-><init> 1
+Ljava/io/File;-><init> 13
+Ljava/io/FileOutputStream;-><init> 1
+Ljava/io/PrintStream;->flush 1
+Ljava/io/FileInputStream;-><init> 2
+Ljava/io/ObjectInputStream;->close 5
+Landroid/location/Location;->getProvider 1
+Landroid/location/Location;-><init> 1
+Ljava/io/BufferedReader;->readLine 1
+Ljava/io/File;->exists 13
+
+## Lcom/metek/zqWeather/activity/SettingsWidgetActivity; onClick
+Ljava/io/PrintStream;->flush 1
+Ljava/io/PrintStream;->println 1
+
+## Lcom/metek/zqWeather/activity/SettingsWidgetActivity; onTouch
+Ljava/io/PrintStream;->flush 1
+Ljava/io/PrintStream;->println 1
+
+## Lcom/metek/zqWeather/activity/FindbackActivity; onClick
+
+## Lcom/taobao/munion/base/download/DownloadingService; onDestroy
+Landroid/database/sqlite/SQLiteDatabase;->execSQL 1
+
+## Lcom/taobao/newxp/imagecache/utils/ImageCache$RetainFragment; onCreate
+
+## Lcom/metek/zqWeather/a/q; onClick
+
+## Lcom/taobao/munion/base/download/c$1; onServiceConnected
+
+## Lcom/taobao/munion/base/download/c$1; onServiceDisconnected
+
+## Lcom/metek/zqWeather/activity/WorkModeActivity; onClick
+Ljava/io/FileOutputStream;->write 1
+Ljava/io/InputStreamReader;-><init> 1
+Landroid/net/NetworkInfo;->getSubtypeName 1
+Ljava/io/File;->mkdirs 1
+Ljava/io/FileInputStream;->close 8
+Ljava/io/ObjectInputStream;->readObject 1
+Ljava/io/PrintStream;->println 1
+Landroid/net/ConnectivityManager;->getNetworkInfo 2
+Ljava/io/StringWriter;-><init> 1
+Landroid/net/NetworkInfo;->getState 2
+Ljava/io/ObjectOutputStream;-><init> 1
+Landroid/net/NetworkInfo;->isConnectedOrConnecting 1
+Ljava/io/StringWriter;->write 1
+Ljava/io/ObjectOutputStream;->close 4
+Ljava/io/FileOutputStream;->flush 1
+Landroid/net/ConnectivityManager;->getActiveNetworkInfo 1
+Ljava/io/StringWriter;->toString 1
+Ljava/io/File;-><init> 2
+Ljava/io/FileOutputStream;-><init> 1
+Ljava/io/IOException;->printStackTrace 9
+Ljava/io/PrintStream;->flush 1
+Ljava/io/ObjectInputStream;->close 5
+Ljava/io/File;->delete 1
+Ljava/io/File;->length 1
+Ljava/io/InputStreamReader;->read 1
+Ljava/io/File;->exists 2
+Ljava/io/ObjectInputStream;-><init> 1
+Ljava/io/FileOutputStream;->close 8
+Ljava/io/ObjectOutputStream;->writeObject 1
+
+## Lcom/metek/zqWeather/activity/he; onClick
+Ljava/io/FileOutputStream;->write 1
+Ljava/io/InputStreamReader;-><init> 1
+Landroid/net/NetworkInfo;->getSubtypeName 1
+Ljava/io/FileOutputStream;->flush 1
+Ljava/io/ObjectInputStream;->readObject 1
+Ljava/io/PrintStream;->println 1
+Landroid/net/ConnectivityManager;->getNetworkInfo 2
+Ljava/io/StringWriter;-><init> 1
+Landroid/net/NetworkInfo;->getState 2
+Ljava/io/ObjectOutputStream;-><init> 1
+Landroid/net/NetworkInfo;->isConnectedOrConnecting 1
+Ljava/io/StringWriter;->write 1
+Ljava/io/ObjectOutputStream;->close 4
+Ljava/io/FileInputStream;->close 8
+Landroid/net/ConnectivityManager;->getActiveNetworkInfo 1
+Ljava/io/StringWriter;->toString 1
+Ljava/io/File;-><init> 1
+Ljava/io/IOException;->printStackTrace 9
+Ljava/io/PrintStream;->flush 1
+Ljava/io/ObjectInputStream;->close 5
+Ljava/io/File;->delete 1
+Ljava/io/File;->length 1
+Ljava/io/InputStreamReader;->read 1
+Ljava/io/File;->exists 1
+Ljava/io/ObjectInputStream;-><init> 1
+Ljava/io/FileOutputStream;->close 5
+Ljava/io/ObjectOutputStream;->writeObject 1
+
+## Lcom/metek/zqWeather/activity/hg; onClick
+
+## Lcom/metek/zqWeather/activity/SettingsRemindActivity; onClick
+
+## Lcom/metek/zqUtil/view/dslv/a; onLongPress
+
+## Lcom/metek/zqUtil/view/dslv/a; onScroll
+
+## Lcom/metek/zqUtil/view/dslv/a; onTouch
+
+## Lcom/metek/zqWeather/service/d; onClick
+
+## Lcom/metek/zqWeather/service/e; onClick
+
+## Lcom/taobao/newxp/view/handler/pulltorefresh/PullToRefreshAdapterViewBase; onScrollStateChanged
+
+## Lcom/metek/zqWeather/a/w; onClick
+Lorg/apache/http/params/HttpConnectionParams;->setSoTimeout 1
+Ljava/io/InputStreamReader;-><init> 1
+Ljava/io/OutputStreamWriter;-><init> 1
+Ljava/io/RandomAccessFile;->read 6
+Ljava/io/PrintStream;->write 3
+Ljava/net/URL;-><init> 1
+Ljava/io/ByteArrayOutputStream;-><init> 3
+Lorg/apache/http/client/HttpClient;->getParams 1
+Ljava/io/ByteArrayOutputStream;->write 9
+Ljava/io/RandomAccessFile;->seek 3
+Ljava/io/File;->delete 3
+Landroid/net/NetworkInfo;->getExtraInfo 1
+Lorg/apache/http/params/HttpParams;->setParameter 1
+Ljava/io/ByteArrayInputStream;-><init> 1
+Lorg/apache/http/HttpResponse;->getStatusLine 1
+Ljava/io/FileWriter;-><init> 1
+Ljava/io/RandomAccessFile;-><init> 1
+Ljava/io/FileOutputStream;->close 3
+Ljava/io/ObjectOutputStream;->writeObject 1
+Ljava/io/FileWriter;->flush 1
+Ljava/io/ObjectInputStream;->readObject 1
+Ljava/io/PrintStream;->println 2
+Landroid/net/Proxy;->getDefaultHost 2
+Ljava/io/IOException;->getMessage 1
+Lorg/apache/http/Header;->getValue 1
+Ljava/net/URL;->getHost 1
+Lorg/apache/http/conn/scheme/PlainSocketFactory;->getSocketFactory 1
+Landroid/net/NetworkInfo;->getType 1
+Ljava/io/OutputStreamWriter;->flush 1
+Ljava/io/File;->listFiles 3
+Lorg/apache/http/client/methods/HttpPost;->setEntity 1
+Ljava/io/File;->isFile 1
+Lorg/apache/http/conn/ssl/SSLSocketFactory;->getSocketFactory 2
+Ljava/io/BufferedReader;->close 3
+Landroid/net/Proxy;->getHost 1
+Lorg/apache/http/params/HttpProtocolParams;->setContentCharset 1
+Lorg/apache/http/HttpResponse;->getEntity 1
+Lorg/apache/http/client/methods/HttpUriRequest;->addHeader 1
+Ljava/io/RandomAccessFile;->close 3
+Ljava/io/IOException;->printStackTrace 14
+Lorg/apache/http/impl/conn/tsccm/ThreadSafeClientConnManager;-><init> 1
+Ljava/io/File;->length 1
+Lorg/apache/http/impl/client/DefaultHttpClient;-><init> 1
+Lorg/apache/http/entity/ByteArrayEntity;-><init> 1
+Ljava/io/FileInputStream;->close 5
+Landroid/net/Uri;->parse 2
+Ljava/net/URLEncoder;->encode 12
+Landroid/net/NetworkInfo;->isAvailable 1
+Lorg/apache/http/client/methods/HttpPost;->setHeader 2
+Ljava/io/File;->equals 1
+Ljava/io/ObjectOutputStream;-><init> 1
+Lorg/apache/http/HttpResponse;->getFirstHeader 1
+Lorg/apache/http/client/methods/HttpPost;->addHeader 1
+Ljava/io/File;->isDirectory 1
+Lorg/apache/http/HttpHost;-><init> 1
+Landroid/net/Proxy;->getPort 1
+Ljava/io/ObjectInputStream;->close 3
+Lorg/apache/http/conn/scheme/SchemeRegistry;-><init> 1
+Lorg/apache/http/client/methods/HttpGet;-><init> 1
+Landroid/net/NetworkInfo;->getTypeName 1
+Ljava/io/InputStream;->close 3
+Lorg/apache/http/client/HttpClient;->execute 1
+Lorg/apache/http/params/HttpProtocolParams;->setVersion 1
+Landroid/net/Proxy;->getDefaultPort 2
+Lorg/apache/http/client/methods/HttpPost;-><init> 1
+Lorg/apache/http/conn/scheme/Scheme;-><init> 4
+Ljava/io/ObjectInputStream;-><init> 1
+Ljava/io/ByteArrayOutputStream;->close 2
+Lorg/apache/http/params/BasicHttpParams;-><init> 1
+Ljava/io/File;->mkdirs 1
+Ljava/io/FileWriter;->close 1
+Lorg/apache/http/params/HttpProtocolParams;->setUserAgent 1
+Ljava/io/File;->getName 2
+Lorg/apache/http/conn/ssl/SSLSocketFactory;->setHostnameVerifier 1
+Ljava/io/File;->deleteOnExit 1
+Ljava/io/OutputStreamWriter;->close 1
+Ljava/io/UnsupportedEncodingException;->printStackTrace 1
+Lorg/apache/http/conn/scheme/SchemeRegistry;->register 4
+Ljava/io/InputStream;->read 1
+Ljava/io/ObjectOutputStream;->close 3
+Landroid/net/ConnectivityManager;->getActiveNetworkInfo 4
+Ljava/io/ByteArrayOutputStream;->toByteArray 3
+Ljava/io/BufferedReader;-><init> 1
+Ljava/io/File;-><init> 7
+Ljava/io/PrintStream;->flush 2
+Lorg/apache/http/params/HttpConnectionParams;->setConnectionTimeout 1
+Ljava/io/FileInputStream;-><init> 1
+Ljava/io/RandomAccessFile;->readFully 1
+Lorg/apache/http/conn/ssl/SSLSocketFactory;-><init> 1
+Ljava/io/BufferedReader;->readLine 1
+Ljava/io/OutputStreamWriter;->write 1
+Lorg/apache/http/HttpEntity;->getContent 1
+Ljava/io/File;->exists 3
+Ljava/io/RandomAccessFile;->length 1
+Lorg/apache/http/StatusLine;->getStatusCode 1
+
+## Lcom/metek/zqWeather/activity/BindingActivity; onClick
+Ljava/io/ByteArrayOutputStream;->close 1
+Ljava/io/InputStream;->close 3
+Ljava/io/InputStreamReader;-><init> 1
+Lorg/apache/http/impl/client/DefaultHttpClient;-><init> 1
+Ljava/io/File;->mkdirs 1
+Ljava/io/BufferedReader;->readLine 1
+Ljava/io/FileWriter;->flush 1
+Landroid/net/NetworkInfo;->isAvailable 1
+Lorg/apache/http/params/HttpConnectionParams;->setSoTimeout 1
+Lorg/apache/http/HttpResponse;->getFirstHeader 1
+Landroid/net/NetworkInfo;->getExtraInfo 1
+Ljava/net/URLEncoder;->encode 12
+Ljava/io/PrintStream;->println 1
+Landroid/net/Proxy;->getHost 1
+Ljava/io/OutputStreamWriter;-><init> 1
+Ljava/io/RandomAccessFile;->read 6
+Landroid/net/Proxy;->getDefaultHost 2
+Ljava/io/IOException;->getMessage 1
+Lorg/apache/http/conn/scheme/Scheme;-><init> 4
+Ljava/io/File;->getName 2
+Lorg/apache/http/conn/ssl/SSLSocketFactory;->setHostnameVerifier 1
+Ljava/io/FileInputStream;->close 2
+Ljava/io/File;->deleteOnExit 1
+Lorg/apache/http/client/HttpClient;->getParams 1
+Lorg/apache/http/params/HttpProtocolParams;->setUserAgent 1
+Lorg/apache/http/client/methods/HttpPost;->setHeader 2
+Lorg/apache/http/client/methods/HttpGet;-><init> 1
+Ljava/io/File;->equals 1
+Ljava/net/URL;->getHost 1
+Ljava/net/URL;-><init> 1
+Lorg/apache/http/conn/scheme/PlainSocketFactory;->getSocketFactory 1
+Ljava/io/ByteArrayOutputStream;-><init> 2
+Landroid/net/NetworkInfo;->getType 1
+Lorg/apache/http/params/HttpProtocolParams;->setVersion 1
+Ljava/io/UnsupportedEncodingException;->printStackTrace 1
+Lorg/apache/http/client/methods/HttpPost;->addHeader 1
+Lorg/apache/http/HttpEntity;->getContent 1
+Ljava/io/OutputStreamWriter;->flush 1
+Ljava/io/File;->listFiles 3
+Lorg/apache/http/entity/ByteArrayEntity;-><init> 1
+Ljava/io/File;->isFile 1
+Ljava/io/FileInputStream;-><init> 1
+Ljava/io/ByteArrayOutputStream;->write 9
+Ljava/io/FileWriter;-><init> 1
+Ljava/io/File;->isDirectory 1
+Lorg/apache/http/HttpHost;-><init> 1
+Landroid/net/Proxy;->getPort 1
+Lorg/apache/http/params/HttpProtocolParams;->setContentCharset 1
+Lorg/apache/http/HttpResponse;->getEntity 1
+Lorg/apache/http/conn/scheme/SchemeRegistry;-><init> 1
+Ljava/io/ByteArrayOutputStream;->toByteArray 2
+Ljava/io/RandomAccessFile;->seek 3
+Ljava/io/BufferedReader;-><init> 1
+Lorg/apache/http/client/methods/HttpUriRequest;->addHeader 1
+Ljava/io/RandomAccessFile;->readFully 1
+Landroid/net/NetworkInfo;->getTypeName 1
+Ljava/io/File;-><init> 4
+Ljava/io/IOException;->printStackTrace 8
+Lorg/apache/http/client/HttpClient;->execute 1
+Ljava/io/PrintStream;->flush 1
+Lorg/apache/http/params/HttpConnectionParams;->setConnectionTimeout 1
+Ljava/io/BufferedReader;->close 3
+Lorg/apache/http/impl/conn/tsccm/ThreadSafeClientConnManager;-><init> 1
+Lorg/apache/http/Header;->getValue 1
+Lorg/apache/http/conn/ssl/SSLSocketFactory;->getSocketFactory 2
+Ljava/io/RandomAccessFile;->close 3
+Ljava/io/OutputStreamWriter;->close 1
+Landroid/net/Proxy;->getDefaultPort 2
+Ljava/io/File;->delete 3
+Lorg/apache/http/client/methods/HttpPost;-><init> 1
+Ljava/io/File;->length 1
+Lorg/apache/http/conn/ssl/SSLSocketFactory;-><init> 1
+Ljava/io/FileWriter;->close 1
+Ljava/io/InputStream;->read 1
+Lorg/apache/http/params/HttpParams;->setParameter 1
+Ljava/io/ByteArrayInputStream;-><init> 1
+Ljava/io/OutputStreamWriter;->write 1
+Lorg/apache/http/conn/scheme/SchemeRegistry;->register 4
+Lorg/apache/http/HttpResponse;->getStatusLine 1
+Ljava/io/RandomAccessFile;->length 1
+Lorg/apache/http/StatusLine;->getStatusCode 1
+Ljava/io/RandomAccessFile;-><init> 1
+Lorg/apache/http/params/BasicHttpParams;-><init> 1
+Landroid/net/ConnectivityManager;->getActiveNetworkInfo 4
+Lorg/apache/http/client/methods/HttpPost;->setEntity 1
+
+## Landroid/support/v4/app/FragmentTabHost; onRestoreInstanceState
+
+## Landroid/support/v4/app/FragmentTabHost; onSaveInstanceState
+
+## Lcom/tencent/connect/b/k; onCreate
+Ljava/io/File;->deleteOnExit 1
+Ljava/io/File;->isDirectory 1
+Ljava/io/File;->getPath 1
+Ljava/io/File;->delete 3
+Ljava/io/File;->equals 1
+Ljava/io/File;->mkdirs 1
+Ljava/io/FileWriter;->flush 1
+Ljava/io/FileWriter;->close 1
+Ljava/io/File;->length 1
+Ljava/io/File;-><init> 3
+Ljava/io/FileWriter;-><init> 1
+Ljava/io/File;->listFiles 3
+Ljava/io/IOException;->printStackTrace 1
+Ljava/io/File;->isFile 1
+Ljava/io/File;->getName 2
+
+## Lcom/taobao/munion/base/download/e$a; onCreate
+Landroid/database/sqlite/SQLiteDatabase;->execSQL 1
+
+## Lcom/taobao/munion/view/webview/MunionBrowser$3; onDownloadStart
+Landroid/net/Uri;->parse 1
+
+## Landroid/support/v4/app/LoaderManagerImpl$LoaderInfo; onLoadComplete
+Ljava/io/PrintWriter;->print 238
+Ljava/io/Writer;-><init> 1
+Ljava/io/PrintWriter;-><init> 2
+Ljava/io/PrintWriter;->println 76
+
+## Lcom/sina/weibo/sdk/component/view/d; onClick
+
+## Lcom/metek/zqUtil/view/banner/b; onTouch
+
+## Lcom/taobao/newxp/location/LocateActivity; onPause
+Ljava/io/PrintWriter;->print 238
+Ljava/io/Writer;-><init> 1
+Ljava/io/PrintWriter;-><init> 2
+Ljava/io/PrintWriter;->println 76
+
+## Lcom/taobao/newxp/view/handler/umwall/AlimamaWall; onResume
+Ljava/io/PrintWriter;->print 238
+Ljava/io/Writer;-><init> 1
+Ljava/io/PrintWriter;-><init> 2
+Ljava/io/PrintWriter;->println 76
+
+## Lcom/metek/zqWeather/activity/StorageActivity; onDestroy
+Ljava/io/PrintWriter;->print 238
+Ljava/io/Writer;-><init> 1
+Ljava/io/PrintWriter;-><init> 2
+Ljava/io/PrintWriter;->println 76
+
+## Lcom/metek/zqWeather/activity/SettingsActivity; onClick
+Ljava/io/FileOutputStream;->write 1
+Ljava/io/InputStreamReader;-><init> 1
+Landroid/net/NetworkInfo;->getSubtypeName 1
+Ljava/io/FileOutputStream;->flush 1
+Ljava/io/ObjectInputStream;->readObject 1
+Ljava/io/PrintStream;->println 1
+Landroid/net/ConnectivityManager;->getNetworkInfo 2
+Ljava/io/StringWriter;-><init> 1
+Landroid/net/NetworkInfo;->getState 2
+Ljava/io/ObjectOutputStream;-><init> 1
+Landroid/net/NetworkInfo;->isConnectedOrConnecting 1
+Ljava/io/StringWriter;->write 1
+Ljava/io/ObjectOutputStream;->close 4
+Ljava/io/FileInputStream;->close 8
+Landroid/net/ConnectivityManager;->getActiveNetworkInfo 1
+Ljava/io/StringWriter;->toString 1
+Ljava/io/File;-><init> 1
+Ljava/io/IOException;->printStackTrace 9
+Ljava/io/PrintStream;->flush 1
+Ljava/io/ObjectInputStream;->close 5
+Ljava/io/File;->delete 1
+Ljava/io/File;->length 1
+Ljava/io/InputStreamReader;->read 1
+Ljava/io/File;->exists 1
+Ljava/io/ObjectInputStream;-><init> 1
+Ljava/io/FileOutputStream;->close 5
+Ljava/io/ObjectOutputStream;->writeObject 1
+
+## Lcom/metek/zqWeather/activity/bq; onLongClick
+Ljava/io/FileOutputStream;->write 1
+Ljava/io/InputStreamReader;-><init> 1
+Landroid/net/NetworkInfo;->getSubtypeName 1
+Ljava/io/FileOutputStream;->flush 1
+Ljava/io/ObjectInputStream;->readObject 1
+Ljava/io/PrintStream;->println 1
+Landroid/net/ConnectivityManager;->getNetworkInfo 2
+Ljava/io/StringWriter;-><init> 1
+Landroid/net/NetworkInfo;->getState 2
+Ljava/io/ObjectOutputStream;-><init> 1
+Landroid/net/NetworkInfo;->isConnectedOrConnecting 1
+Ljava/io/StringWriter;->write 1
+Ljava/io/ObjectOutputStream;->close 4
+Ljava/io/FileInputStream;->close 8
+Landroid/net/ConnectivityManager;->getActiveNetworkInfo 1
+Ljava/io/StringWriter;->toString 1
+Ljava/io/File;-><init> 1
+Ljava/io/IOException;->printStackTrace 9
+Ljava/io/PrintStream;->flush 1
+Ljava/io/ObjectInputStream;->close 5
+Ljava/io/File;->delete 1
+Ljava/io/File;->length 1
+Ljava/io/InputStreamReader;->read 1
+Ljava/io/File;->exists 1
+Ljava/io/ObjectInputStream;-><init> 1
+Ljava/io/FileOutputStream;->close 5
+Ljava/io/ObjectOutputStream;->writeObject 1
+
+## Lcom/metek/zqUtil/view/pulltorefresh/PullToRefreshBase; onRestoreInstanceState
+
+## Lcom/metek/zqUtil/view/pulltorefresh/PullToRefreshBase; onSaveInstanceState
+
+## Lcom/sina/weibo/sdk/a/a/b; onServiceConnected
+Ljava/io/UnsupportedEncodingException;->printStackTrace 1
+Ljava/net/URLEncoder;->encode 2
+
+## Lcom/sina/weibo/sdk/a/a/b; onServiceDisconnected
+Ljava/io/UnsupportedEncodingException;->printStackTrace 1
+Ljava/net/URLEncoder;->encode 2
+
+## Lcom/umeng/common/net/DownloadingService; onCreate
+
+## Lcom/umeng/common/net/DownloadingService; onDestroy
+Landroid/database/sqlite/SQLiteDatabase;->execSQL 1
+
+## Lcom/umeng/common/net/DownloadingService; onStart
+Ljava/io/FileOutputStream;->write 1
+Landroid/database/sqlite/SQLiteDatabase;->query 1
+Ljava/io/File;->mkdirs 2
+Ljava/net/URL;->openConnection 1
+Ljava/io/File;->getParent 1
+Ljava/io/IOException;->getMessage 1
+Ljava/io/File;->mkdir 2
+Ljava/io/File;->getName 2
+Ljava/io/File;->getCanonicalFile 1
+Ljava/net/URL;-><init> 1
+Landroid/net/NetworkInfo;->isConnectedOrConnecting 1
+Ljava/io/FileInputStream;->read 1
+Ljava/io/InputStream;->read 1
+Ljava/io/File;->listFiles 1
+Ljava/io/File;->isFile 1
+Ljava/io/FileInputStream;->close 1
+Landroid/net/ConnectivityManager;->getActiveNetworkInfo 1
+Ljava/io/File;->isDirectory 2
+Ljava/io/File;->getAbsolutePath 5
+Landroid/database/sqlite/SQLiteDatabase;->insert 1
+Ljava/io/File;->getCanonicalPath 1
+Ljava/io/InputStream;->close 7
+Ljava/io/FileOutputStream;-><init> 1
+Ljava/io/IOException;->printStackTrace 24
+Ljava/io/FileInputStream;-><init> 1
+Ljava/io/File;->renameTo 1
+Ljava/io/File;->length 3
+Landroid/database/sqlite/SQLiteDatabase;->update 1
+Ljava/io/File;->exists 4
+Ljava/io/File;-><init> 6
+Ljava/io/FileOutputStream;->close 20
+
+## Lcom/umeng/common/net/g; onCreate
+Landroid/database/sqlite/SQLiteDatabase;->execSQL 1
+
+## Lcom/metek/zqWeather/a/l; onClick
+
+## Landroid/support/v4/content/AsyncTaskLoader; onForceLoad
+
+## Landroid/support/v4/content/CursorLoader; onReset
+
+## Lnet/tsz/afinal/a/a/a; onClick
+
+## Lnet/tsz/afinal/a/a/a; onItemClick
+
+## Lnet/tsz/afinal/a/a/a; onItemLongClick
+
+## Lnet/tsz/afinal/a/a/a; onItemSelected
+
+## Lnet/tsz/afinal/a/a/a; onLongClick
+
+## Lnet/tsz/afinal/a/a/a; onNothingSelected
+
+## Landroid/support/v4/app/ActionBarDrawerToggle; onOptionsItemSelected
+
+## Landroid/support/v4/widget/DrawerLayout; onRestoreInstanceState
+
+## Landroid/support/v4/widget/DrawerLayout; onSaveInstanceState
+
+## Lcom/metek/zqWeather/activity/LoginActivity; onClick
+Ljava/net/URLEncoder;->encode 1
+Ljava/io/PrintStream;->println 1
+Ljava/io/PrintStream;->flush 1
+Landroid/net/ConnectivityManager;->getActiveNetworkInfo 1
+
+## Landroid/support/v4/app/FragmentActivity; onStart
+Ljava/io/PrintWriter;->print 238
+Ljava/io/Writer;-><init> 1
+Ljava/io/PrintWriter;-><init> 2
+Ljava/io/PrintWriter;->println 76
+
+## Landroid/support/v4/app/FragmentActivity; onStop
+Ljava/io/PrintWriter;->print 238
+Ljava/io/Writer;-><init> 1
+Ljava/io/PrintWriter;-><init> 2
+Ljava/io/PrintWriter;->println 76
+
+## Lcom/taobao/newxp/view/handler/pulltorefresh/PullToRefreshBase; onRestoreInstanceState
+
+## Lcom/taobao/newxp/view/handler/pulltorefresh/PullToRefreshBase; onSaveInstanceState
+
+## Lcom/tencent/connect/b/f; onClick
+Landroid/net/Proxy;->getHost 1
+Lorg/apache/http/params/HttpConnectionParams;->setSoTimeout 1
+Lorg/apache/http/params/BasicHttpParams;-><init> 1
+Lorg/apache/http/impl/client/DefaultHttpClient;-><init> 1
+Ljava/io/FileWriter;->flush 1
+Lorg/apache/http/client/methods/HttpPost;->addHeader 1
+Lorg/apache/http/entity/ByteArrayEntity;-><init> 1
+Ljava/io/FileInputStream;->close 2
+Landroid/net/Proxy;->getPort 1
+Lorg/apache/http/HttpResponse;->getFirstHeader 1
+Ljava/io/File;->isDirectory 1
+Lorg/apache/http/HttpResponse;->getStatusLine 1
+Ljava/io/OutputStreamWriter;-><init> 1
+Landroid/net/NetworkInfo;->isAvailable 1
+Landroid/net/Proxy;->getDefaultHost 2
+Ljava/io/InputStreamReader;-><init> 1
+Lorg/apache/http/conn/ConnectTimeoutException;->printStackTrace 1
+Ljava/io/File;->getName 2
+Lorg/apache/http/conn/ssl/SSLSocketFactory;->setHostnameVerifier 1
+Lorg/apache/http/conn/ssl/SSLSocketFactory;->getSocketFactory 2
+Lorg/apache/http/params/HttpProtocolParams;->setUserAgent 1
+Lorg/apache/http/client/methods/HttpPost;->setHeader 2
+Ljava/io/File;->equals 1
+Lorg/apache/http/StatusLine;->getStatusCode 1
+Ljava/net/URL;-><init> 1
+Lorg/apache/http/conn/scheme/PlainSocketFactory;->getSocketFactory 1
+Ljava/io/ByteArrayOutputStream;-><init> 2
+Landroid/net/NetworkInfo;->getType 1
+Lorg/apache/http/client/HttpClient;->getParams 1
+Lorg/apache/http/conn/scheme/SchemeRegistry;->register 4
+Ljava/io/InputStream;->read 1
+Ljava/io/OutputStreamWriter;->flush 1
+Ljava/io/File;->listFiles 3
+Lorg/apache/http/client/methods/HttpPost;->setEntity 1
+Ljava/io/File;->isFile 1
+Ljava/io/FileInputStream;-><init> 1
+Ljava/io/ByteArrayOutputStream;->write 9
+Landroid/net/ConnectivityManager;->getActiveNetworkInfo 2
+Ljava/io/ByteArrayOutputStream;->close 1
+Lorg/apache/http/HttpHost;-><init> 1
+Ljava/io/File;->deleteOnExit 1
+Lorg/apache/http/params/HttpProtocolParams;->setContentCharset 1
+Lorg/apache/http/HttpResponse;->getEntity 1
+Lorg/apache/http/conn/scheme/SchemeRegistry;-><init> 1
+Ljava/io/ByteArrayOutputStream;->toByteArray 2
+Ljava/io/BufferedReader;-><init> 1
+Lorg/apache/http/client/methods/HttpUriRequest;->addHeader 1
+Lorg/apache/http/client/methods/HttpGet;-><init> 1
+Ljava/io/File;->mkdirs 1
+Ljava/io/InputStream;->close 3
+Ljava/io/IOException;->printStackTrace 8
+Lorg/apache/http/client/HttpClient;->execute 1
+Lorg/apache/http/params/HttpConnectionParams;->setConnectionTimeout 1
+Lorg/apache/http/params/HttpProtocolParams;->setVersion 1
+Lorg/apache/http/impl/conn/tsccm/ThreadSafeClientConnManager;-><init> 1
+Lorg/apache/http/Header;->getValue 1
+Ljava/io/OutputStreamWriter;->close 1
+Landroid/net/Proxy;->getDefaultPort 2
+Ljava/io/File;->delete 3
+Lorg/apache/http/client/methods/HttpPost;-><init> 1
+Ljava/io/File;->length 1
+Lorg/apache/http/conn/ssl/SSLSocketFactory;-><init> 1
+Ljava/io/BufferedReader;->readLine 1
+Ljava/io/FileWriter;->close 1
+Lorg/apache/http/params/HttpParams;->setParameter 1
+Lorg/apache/http/conn/scheme/Scheme;-><init> 4
+Ljava/io/OutputStreamWriter;->write 1
+Lorg/apache/http/HttpEntity;->getContent 1
+Ljava/net/URLEncoder;->encode 5
+Ljava/io/FileWriter;-><init> 1
+Ljava/net/URL;->getHost 1
+Ljava/io/File;-><init> 3
+Ljava/io/BufferedReader;->close 3
+
+## Lcom/tencent/connect/b/g; onClick
+
+## Lcom/metek/zqWeather/activity/MainActivity; onDestroy
+Ljava/io/PrintStream;->flush 1
+Ljava/io/PrintStream;->println 1
+
+## Lcom/metek/zqUtil/view/slidingmenu/SlidingMenu; onRestoreInstanceState
+
+## Lcom/metek/zqUtil/view/slidingmenu/SlidingMenu; onSaveInstanceState
+
+## Lcom/metek/zqWeather/activity/GuessActivity; onClick
+Ljava/io/File;->mkdirs 1
+Ljava/io/File;->exists 1
+Ljava/io/FileOutputStream;->close 3
+Ljava/io/File;-><init> 1
+Ljava/io/FileOutputStream;-><init> 1
+
+## Lcom/sina/weibo/sdk/register/mobile/k; onClick
+
+## Lcom/metek/zqWeather/activity/SettingsActivity; onResume
+
+## Lcom/metek/zqWeather/activity/ShareEditActivity; onDestroy
+
+## Lcom/metek/zqWeather/a/s; onClick
+
+## Lcom/taobao/newxp/view/handler/umwall/UMWallFragment; onCreate
+Ljava/io/File;-><init> 3
+Ljava/io/File;->getPath 4
+Landroid/net/NetworkInfo;->isConnectedOrConnecting 1
+Landroid/net/ConnectivityManager;->getActiveNetworkInfo 1
+
+## Lcom/metek/zqWeather/a/x; onClick
+Ljava/io/ByteArrayOutputStream;->close 1
+Ljava/io/PrintStream;->write 3
+Ljava/io/PrintStream;->println 1
+Ljava/io/ByteArrayOutputStream;->toByteArray 1
+Ljava/io/ByteArrayOutputStream;-><init> 1
+Ljava/io/UnsupportedEncodingException;->printStackTrace 1
+Ljava/net/URLEncoder;->encode 2
+Ljava/io/File;->exists 1
+Ljava/io/File;-><init> 1
+Ljava/io/PrintStream;->flush 2
+Landroid/net/ConnectivityManager;->getActiveNetworkInfo 1
+
+## Lcom/umeng/fb/d; onClick
+
+## Lcom/umeng/fb/e; onClick
+
+## Lcom/metek/zqWeather/activity/GuessActivity; onDestroy
+
+## Lcom/metek/zqWeather/activity/GuessActivity; onPause
+
+## Lcom/metek/zqWeather/activity/GuessActivity; onResume
+
+## Lcom/metek/zqWeather/activity/MainActivity; onPause
+Ljava/io/PrintStream;->flush 1
+Ljava/io/PrintStream;->println 1
+
+## Lcom/metek/zqWeather/activity/MoodLineActivity; onResume
+Landroid/database/sqlite/SQLiteDatabase;->close 1
+Landroid/database/sqlite/SQLiteDatabase;->query 1
+Landroid/database/sqlite/SQLiteOpenHelper;-><init> 1
+
+## Lcom/metek/zqWeather/activity/SinaEditActivity; onDestroy
+
+## Landroid/support/v4/app/ListFragment$2; onItemClick
+
+## Lcom/metek/zqWeather/activity/cc; onClick
+Ljava/io/PrintStream;->flush 1
+Ljava/io/PrintStream;->println 1
+
+## Lcom/tencent/connect/common/AssistActivity; onDestroy
+Ljava/io/File;->deleteOnExit 1
+Ljava/io/File;->isDirectory 1
+Ljava/io/File;->delete 3
+Ljava/io/File;->equals 1
+Ljava/io/File;->mkdirs 1
+Ljava/io/FileWriter;->flush 1
+Ljava/io/FileWriter;->close 1
+Ljava/io/File;->length 1
+Ljava/io/File;-><init> 3
+Ljava/io/FileWriter;-><init> 1
+Ljava/io/File;->listFiles 3
+Ljava/io/IOException;->printStackTrace 1
+Ljava/io/File;->isFile 1
+Ljava/io/File;->getName 2
+
+## Lcom/tencent/connect/common/AssistActivity; onPause
+Ljava/io/File;->deleteOnExit 1
+Ljava/io/File;->isDirectory 1
+Ljava/io/File;->delete 3
+Ljava/io/File;->equals 1
+Ljava/io/File;->mkdirs 1
+Ljava/io/FileWriter;->flush 1
+Ljava/io/FileWriter;->close 1
+Ljava/io/File;->length 1
+Ljava/io/File;-><init> 3
+Ljava/io/FileWriter;-><init> 1
+Ljava/io/File;->listFiles 3
+Ljava/io/IOException;->printStackTrace 1
+Ljava/io/File;->isFile 1
+Ljava/io/File;->getName 2
+
+## Lcom/tencent/connect/common/AssistActivity; onResume
+Ljava/io/File;->deleteOnExit 1
+Ljava/io/File;->isDirectory 1
+Ljava/io/File;->delete 3
+Ljava/io/File;->equals 1
+Ljava/io/File;->mkdirs 1
+Ljava/io/FileWriter;->flush 1
+Ljava/io/FileWriter;->close 1
+Ljava/io/File;->length 1
+Ljava/io/File;-><init> 3
+Ljava/io/FileWriter;-><init> 1
+Ljava/io/File;->listFiles 3
+Ljava/io/IOException;->printStackTrace 1
+Ljava/io/File;->isFile 1
+Ljava/io/File;->getName 2
+
+## Lcom/tencent/connect/common/AssistActivity; onSaveInstanceState
+Ljava/io/File;->deleteOnExit 1
+Ljava/io/File;->isDirectory 1
+Ljava/io/File;->delete 3
+Ljava/io/File;->equals 1
+Ljava/io/File;->mkdirs 1
+Ljava/io/FileWriter;->flush 1
+Ljava/io/FileWriter;->close 1
+Ljava/io/File;->length 1
+Ljava/io/File;-><init> 3
+Ljava/io/FileWriter;-><init> 1
+Ljava/io/File;->listFiles 3
+Ljava/io/IOException;->printStackTrace 1
+Ljava/io/File;->isFile 1
+Ljava/io/File;->getName 2
+
+## Lcom/tencent/connect/common/AssistActivity; onStart
+Ljava/io/File;->deleteOnExit 1
+Ljava/io/File;->isDirectory 1
+Ljava/io/File;->delete 3
+Ljava/io/File;->equals 1
+Ljava/io/File;->mkdirs 1
+Ljava/io/FileWriter;->flush 1
+Ljava/io/FileWriter;->close 1
+Ljava/io/File;->length 1
+Ljava/io/File;-><init> 3
+Ljava/io/FileWriter;-><init> 1
+Ljava/io/File;->listFiles 3
+Ljava/io/IOException;->printStackTrace 1
+Ljava/io/File;->isFile 1
+Ljava/io/File;->getName 2
+
+## Lcom/tencent/connect/common/AssistActivity; onStop
+Ljava/io/File;->deleteOnExit 1
+Ljava/io/File;->isDirectory 1
+Ljava/io/File;->delete 3
+Ljava/io/File;->equals 1
+Ljava/io/File;->mkdirs 1
+Ljava/io/FileWriter;->flush 1
+Ljava/io/FileWriter;->close 1
+Ljava/io/File;->length 1
+Ljava/io/File;-><init> 3
+Ljava/io/FileWriter;-><init> 1
+Ljava/io/File;->listFiles 3
+Ljava/io/IOException;->printStackTrace 1
+Ljava/io/File;->isFile 1
+Ljava/io/File;->getName 2
+
+## Lcom/tencent/weibo/sdk/android/component/k; onClick
+
+## Lcom/tencent/weibo/sdk/android/component/o; onChildClick
+
+## Lcom/tencent/weibo/sdk/android/component/p; onScroll
+
+## Lcom/metek/zqUtil/view/stickylistheaders/c; onClick
+
+## Lcom/metek/zqWeather/activity/ab; onClick
+Landroid/net/NetworkInfo;->getType 2
+Landroid/net/ConnectivityManager;->getActiveNetworkInfo 1
+
+## Lcom/metek/zqWeather/activity/ad; onClick
+
+## Lcom/metek/zqWeather/activity/ag; onClick
+
+## Lcom/metek/zqWeather/activity/ah; onClick
+
+## Lcom/metek/zqWeather/activity/ar; onClick
+
+## Lcom/metek/zqWeather/activity/at; onClick
+
+## Lcom/metek/zqWeather/activity/z; onClick
+Ljava/io/File;->mkdirs 1
+Ljava/io/File;->exists 1
+Ljava/io/FileOutputStream;->close 3
+Ljava/io/File;-><init> 1
+Ljava/io/FileOutputStream;-><init> 1
+
+## Lcom/umeng/fb/g; onClick
+
+## Lcom/baidu/location/f; onDestroy
+
+## Lcom/taobao/newxp/view/handler/umwall/d$1; onClick
+
+## Lcom/taobao/newxp/view/handler/umwall/e$2; onClick
+
+## Lcom/taobao/newxp/view/handler/BaseFragment; onDestroy
+
+## Lcom/metek/zqWeather/activity/el; onClick
+Landroid/database/sqlite/SQLiteDatabase;->execSQL 1
+Landroid/database/sqlite/SQLiteDatabase;->close 1
+Ljava/io/PrintStream;->println 1
+Ljava/io/PrintStream;->flush 1
+Landroid/database/sqlite/SQLiteOpenHelper;-><init> 1
+
+## Lcom/taobao/newxp/view/f$1; onClick
+
+## Lcom/metek/zqWeather/WeatherChargeWarn; onStart
+Landroid/net/NetworkInfo;->getState 1
+Landroid/net/NetworkInfo;->isConnected 1
+Ljava/io/PrintStream;->println 1
+Ljava/io/PrintStream;->flush 1
+Landroid/net/ConnectivityManager;->getActiveNetworkInfo 1
+
+## Lcom/sina/weibo/sdk/register/mobile/n; onItemClick
+
+## Lcom/tencent/weibo/sdk/android/component/GeneralDataShowActivity; onCreate
+
+## Lcom/metek/zqWeather/service/WidgetUpdateService; onStart
+Landroid/database/sqlite/SQLiteDatabase;->close 1
+Landroid/database/sqlite/SQLiteDatabase;->rawQuery 1
+Ljava/io/PrintStream;->flush 1
+Ljava/io/PrintStream;->println 1
+Landroid/database/sqlite/SQLiteOpenHelper;-><init> 1
+
+## Lcom/sina/weibo/sdk/component/view/a; onClick
+
+## Lcom/metek/zqUtil/view/g; onTouch
+
+## Lcom/metek/zqUtil/view/j; onLongPress
+
+## Lcom/metek/zqUtil/view/j; onScroll
+
+## Lcom/metek/zqUtil/view/j; onSingleTapConfirmed
+
+## Lcom/taobao/newxp/view/widget/SwipeView$SwipeOnTouchListener; onTouch
+
+## Lcom/taobao/newxp/view/handler/umwall/e$1; onClick
+
+## Lcom/taobao/newxp/view/handler/umwall/e$3; onClick
+
+## Lcom/metek/zqWeather/activity/GuideActivity; onPause
+Landroid/hardware/Sensor;->getType 1
+Lorg/apache/http/params/HttpConnectionParams;->setSoTimeout 1
+Landroid/database/sqlite/SQLiteDatabase;->query 2
+Lorg/apache/http/params/BasicHttpParams;-><init> 1
+Lorg/apache/http/impl/client/DefaultHttpClient;-><init> 1
+Ljava/io/InputStream;->close 2
+Ljava/io/StringWriter;->toString 1
+Landroid/net/wifi/WifiManager;->getConnectionInfo 1
+Landroid/database/sqlite/SQLiteOpenHelper;-><init> 1
+Landroid/net/NetworkInfo;->getExtraInfo 1
+Landroid/net/NetworkInfo;->isAvailable 1
+Ljava/io/PrintWriter;->close 1
+Ljava/io/FileReader;-><init> 3
+Ljava/io/StringWriter;-><init> 1
+Landroid/hardware/SensorManager;->getSensorList 1
+Ljava/io/Writer;-><init> 1
+Ljava/io/PrintWriter;-><init> 3
+Ljava/io/InputStream;->read 2
+Ljava/io/File;->listFiles 1
+Ljava/io/PrintWriter;->println 76
+Landroid/net/ConnectivityManager;->getActiveNetworkInfo 2
+Lorg/apache/http/HttpHost;-><init> 1
+Landroid/database/sqlite/SQLiteDatabase;->insert 1
+Ljava/io/BufferedReader;-><init> 3
+Lorg/apache/http/impl/client/DefaultHttpClient;->setKeepAliveStrategy 1
+Landroid/net/NetworkInfo;->getTypeName 1
+Ljava/io/File;-><init> 3
+Ljava/io/File;->getPath 3
+Lorg/apache/http/params/HttpConnectionParams;->setConnectionTimeout 1
+Landroid/net/wifi/WifiInfo;->getMacAddress 1
+Lorg/apache/http/impl/client/DefaultHttpClient;->getParams 1
+Landroid/net/NetworkInfo;->isConnected 1
+Landroid/database/sqlite/SQLiteDatabase;->replace 1
+Landroid/database/sqlite/SQLiteDatabase;->update 1
+Ljava/io/BufferedReader;->readLine 3
+Lorg/apache/http/params/HttpParams;->setParameter 1
+Ljava/io/File;->exists 1
+Ljava/io/PrintWriter;->print 238
+Ljava/io/BufferedReader;->close 2
+Lorg/apache/http/impl/client/DefaultConnectionKeepAliveStrategy;-><init> 1
+
+## Lcom/metek/zqWeather/activity/ba; onClick
+
+## Lcom/taobao/newxp/view/handler/umwall/AlimamaWall$1; onClick
+Ljava/io/ByteArrayOutputStream;->close 1
+Ljava/io/RandomAccessFile;->getChannel 1
+Ljava/io/FileInputStream;->read 1
+Ljava/io/FileReader;->close 3
+Ljava/io/File;->list 1
+Ljava/io/ObjectInputStream;->readObject 1
+Landroid/location/Location;->setTime 1
+Landroid/net/wifi/WifiManager;->getConnectionInfo 1
+Landroid/location/Location;->setProvider 1
+Landroid/net/Uri;->parse 1
+Lorg/apache/http/cookie/Cookie;->isExpired 1
+Ljava/io/FileReader;-><init> 1
+Lorg/apache/http/protocol/HttpContext;->setAttribute 1
+Lorg/apache/http/cookie/Cookie;->getValue 1
+Landroid/net/http/AndroidHttpClient;->newInstance 3
+Landroid/net/Uri;->getHost 1
+Ljava/io/UnsupportedEncodingException;->printStackTrace 2
+Landroid/location/Location;->getLatitude 1
+Ljava/io/FileInputStream;->close 1
+Ljava/io/ByteArrayOutputStream;-><init> 2
+Landroid/location/Location;->getLongitude 1
+Ljava/io/File;->mkdirs 3
+Landroid/location/Location;->setLatitude 1
+Landroid/location/Location;->setAccuracy 1
+Landroid/net/TrafficStats;->setThreadStatsTag 1
+Ljava/io/File;->isFile 1
+Ljava/io/FileInputStream;-><init> 2
+Ljava/io/ByteArrayOutputStream;->write 7
+Ljava/io/BufferedReader;->close 3
+Ljava/io/ByteArrayOutputStream;->toByteArray 3
+Landroid/location/Location;->getTime 3
+Ljava/io/File;->getAbsolutePath 4
+Lorg/apache/http/cookie/Cookie;->getDomain 2
+Ljava/io/FileNotFoundException;->printStackTrace 1
+Ljava/io/File;->toString 1
+Lorg/apache/http/cookie/Cookie;->getName 1
+Ljava/io/BufferedReader;-><init> 1
+Ljava/io/File;->canRead 2
+Ljava/io/File;-><init> 12
+Ljava/io/IOException;->printStackTrace 3
+Landroid/location/Location;->getProvider 1
+Lorg/apache/http/client/CookieStore;->getCookies 2
+Landroid/location/Location;->getAccuracy 1
+Landroid/net/wifi/WifiInfo;->getMacAddress 1
+Ljava/io/File;->delete 2
+Ljava/io/File;->renameTo 1
+Lorg/apache/http/protocol/BasicHttpContext;-><init> 1
+Ljava/io/ByteArrayOutputStream;->size 1
+Landroid/location/Location;-><init> 1
+Ljava/io/File;->getPath 1
+Ljava/io/BufferedReader;->readLine 1
+Ljava/io/ByteArrayInputStream;-><init> 1
+Ljava/net/URLEncoder;->encode 3
+Ljava/io/File;->exists 6
+Ljava/io/ObjectInputStream;-><init> 1
+Ljava/io/File;->createNewFile 1
+Ljava/io/RandomAccessFile;-><init> 1
+Landroid/location/Location;->setLongitude 1
+Ljava/io/FileInputStream;->available 1
+
+## Lcom/metek/zqWeather/activity/ey; onClick
+
+## Lcom/taobao/newxp/view/UMDetail$2; onClick
+
+## Lcom/taobao/newxp/view/common/UMBrowser$2; onClick
+
+## Lcom/taobao/newxp/view/common/UMBrowser$3; onClick
+
+## Lcom/taobao/newxp/view/common/UMBrowser$4; onClick
+
+## Landroid/support/v4/view/ViewPager; onSaveInstanceState
+
+## Lcom/metek/zqWeather/activity/MoodLineActivity; onItemClick
+
+## Lcom/metek/zqWeather/activity/ej; onTouch
+
+## Lcom/metek/zqWeather/activity/em; onClick
+
+## Lcom/taobao/newxp/view/handler/pulltorefresh/PullToRefreshAdapterViewBase; onScroll
+
+## Lcom/tencent/weibo/sdk/android/component/t; onClick
+
+## Lcom/tencent/weibo/sdk/android/component/u; onClick
+
+## Lcom/tencent/weibo/sdk/android/component/v; onClick
+
+## Lcom/tencent/weibo/sdk/android/component/x; onClick
+
+## Lcom/metek/zqWeather/activity/SkinPlugActivity; onClick
+Ljava/io/PrintStream;->flush 1
+Ljava/io/PrintStream;->println 1
+
+## Lcom/metek/zqWeather/activity/gd; onClick
+
+## Lcom/metek/zqWeather/activity/gg; onClick
+Landroid/net/Uri;->parse 1
+
+## Lcom/metek/zqWeather/activity/gh; onClick
+Ljava/io/PrintStream;->flush 1
+Ljava/io/PrintStream;->println 1
+
+## Lcom/metek/zqWeather/activity/er; onClick
+
+## Lcom/metek/zqWeather/activity/fa; onClick
+
+## Lcom/metek/zqWeather/activity/fb; onItemClick
+
+## Landroid/support/v4/widget/SlidingPaneLayout; onRestoreInstanceState
+
+## Landroid/support/v4/widget/SlidingPaneLayout; onSaveInstanceState
+
+## Lcom/tencent/weibo/sdk/android/component/ai; onClick
+
+## Lcom/tencent/weibo/sdk/android/component/aj; onClick
+Landroid/net/wifi/WifiInfo;->getIpAddress 1
+Landroid/net/wifi/WifiManager;->getConnectionInfo 1
+
+## Lcom/metek/zqWeather/a/ac; onItemClick
+
+## Lcom/metek/zqWeather/activity/SettingsConstellation; onClick
+
+## Lcom/taobao/newxp/view/common/DownloadDialog$1; onClick
+Landroid/net/Uri;->getAuthority 1
+Landroid/location/Location;->getTime 3
+Landroid/location/Location;->getProvider 1
+Landroid/location/Location;-><init> 1
+Landroid/location/Location;->getLatitude 1
+Landroid/location/Location;->setTime 1
+Landroid/location/Location;->getLongitude 1
+Landroid/location/Location;->setLatitude 1
+Landroid/location/Location;->setAccuracy 1
+Landroid/net/Uri;->parse 3
+Ljava/net/URLEncoder;->encode 2
+Landroid/net/Uri;->getHost 1
+Landroid/location/Location;->getAccuracy 1
+Landroid/location/Location;->setProvider 1
+Landroid/location/Location;->setLongitude 1
+
+## Lcom/taobao/newxp/view/common/DownloadDialog$2; onClick
+
+## Lcom/metek/zqUtil/view/slidingmenu/app/SlidingActivity; onCreate
+
+## Lcom/metek/zqUtil/view/slidingmenu/app/SlidingActivity; onSaveInstanceState
+
+## Lcom/metek/zqUtil/view/slidingmenu/app/SlidingFragmentActivity; onCreate
+Ljava/io/PrintWriter;->print 238
+Ljava/io/Writer;-><init> 1
+Ljava/io/PrintWriter;-><init> 2
+Ljava/io/PrintWriter;->println 76
+
+## Lcom/metek/zqUtil/view/slidingmenu/app/SlidingFragmentActivity; onSaveInstanceState
+Ljava/io/PrintWriter;->print 238
+Ljava/io/Writer;-><init> 1
+Ljava/io/PrintWriter;-><init> 2
+Ljava/io/PrintWriter;->println 76
+
+## Lcom/metek/zqUtil/view/slidingmenu/app/SlidingListActivity; onCreate
+
+## Lcom/metek/zqUtil/view/slidingmenu/app/SlidingListActivity; onSaveInstanceState
+
+## Lcom/metek/zqUtil/view/slidingmenu/app/SlidingPreferenceActivity; onCreate
+
+## Lcom/metek/zqUtil/view/slidingmenu/app/SlidingPreferenceActivity; onSaveInstanceState
+
+## Lcom/taobao/newxp/view/UMDetail$3; onClick
+Landroid/location/Location;->getTime 3
+Landroid/location/Location;->setProvider 1
+Landroid/location/Location;->getProvider 1
+Landroid/location/Location;-><init> 1
+Landroid/location/Location;->getLatitude 1
+Landroid/location/Location;->setTime 1
+Landroid/location/Location;->getLongitude 1
+Landroid/location/Location;->setLatitude 1
+Landroid/location/Location;->setAccuracy 1
+Landroid/net/Uri;->parse 1
+Ljava/net/URLEncoder;->encode 2
+Landroid/net/Uri;->getHost 1
+Landroid/location/Location;->getAccuracy 1
+Landroid/location/Location;->setLongitude 1
+
+## Lcom/taobao/newxp/view/UMDetail$4; onClick
+
+## Lcom/taobao/newxp/view/UMDetail; onResume
+Ljava/io/File;->getCanonicalPath 2
+Ljava/io/File;-><init> 2
+Ljava/io/File;->exists 1
+
+## Lcom/metek/zqUtil/view/pulltorefresh/PullToRefreshAdapterViewBase; onScroll
+
+## Lcom/metek/zqWeather/activity/AppPushActivity; onResume
+Landroid/hardware/Sensor;->getType 1
+Lorg/apache/http/params/HttpConnectionParams;->setSoTimeout 1
+Landroid/database/sqlite/SQLiteDatabase;->query 2
+Lorg/apache/http/params/BasicHttpParams;-><init> 1
+Lorg/apache/http/impl/client/DefaultHttpClient;-><init> 1
+Ljava/io/InputStream;->close 2
+Ljava/io/StringWriter;->toString 1
+Landroid/net/wifi/WifiManager;->getConnectionInfo 1
+Landroid/database/sqlite/SQLiteOpenHelper;-><init> 1
+Landroid/net/NetworkInfo;->getExtraInfo 1
+Landroid/net/NetworkInfo;->isAvailable 1
+Ljava/io/PrintWriter;->close 1
+Ljava/io/FileReader;-><init> 3
+Ljava/io/StringWriter;-><init> 1
+Landroid/hardware/SensorManager;->getSensorList 1
+Ljava/io/Writer;-><init> 1
+Ljava/io/PrintWriter;-><init> 3
+Ljava/io/InputStream;->read 2
+Ljava/io/File;->listFiles 1
+Ljava/io/PrintWriter;->println 76
+Landroid/net/ConnectivityManager;->getActiveNetworkInfo 2
+Lorg/apache/http/HttpHost;-><init> 1
+Landroid/database/sqlite/SQLiteDatabase;->insert 1
+Ljava/io/BufferedReader;-><init> 3
+Lorg/apache/http/impl/client/DefaultHttpClient;->setKeepAliveStrategy 1
+Landroid/net/NetworkInfo;->getTypeName 1
+Ljava/io/File;-><init> 3
+Ljava/io/File;->getPath 3
+Lorg/apache/http/params/HttpConnectionParams;->setConnectionTimeout 1
+Landroid/net/wifi/WifiInfo;->getMacAddress 1
+Lorg/apache/http/impl/client/DefaultHttpClient;->getParams 1
+Landroid/net/NetworkInfo;->isConnected 1
+Landroid/database/sqlite/SQLiteDatabase;->replace 1
+Landroid/database/sqlite/SQLiteDatabase;->update 1
+Ljava/io/BufferedReader;->readLine 3
+Lorg/apache/http/params/HttpParams;->setParameter 1
+Ljava/io/File;->exists 1
+Ljava/io/PrintWriter;->print 238
+Ljava/io/BufferedReader;->close 2
+Lorg/apache/http/impl/client/DefaultConnectionKeepAliveStrategy;-><init> 1
+
+## Lcom/baidu/location/i; onServiceConnected
+
+## Lcom/metek/zqWeather/activity/fx; onClick
+
+## Lcom/metek/zqWeather/activity/gv; onClick
+
+## Lcom/metek/zqWeather/activity/hh; onClick
+
+## Landroid/support/v4/app/Fragment; onCreateContextMenu
+
+## Landroid/support/v4/app/DialogFragment; onCreate
+
+## Landroid/support/v4/app/DialogFragment; onSaveInstanceState
+
+## Landroid/support/v4/app/DialogFragment; onStart
+
+## Landroid/support/v4/app/DialogFragment; onStop
+
+## Lcom/taobao/newxp/view/handler/umwall/UMWallFragment; onDestroy
+
+## Lcom/taobao/newxp/view/handler/umwall/UMWallFragment; onPause
+
+## Lcom/taobao/newxp/view/handler/umwall/UMWallFragment; onResume
+
+## Lcom/taobao/newxp/view/handler/umwall/UMWallFragment; onSaveInstanceState
+
+## Lcom/taobao/newxp/view/handler/umwall/UMWallFragment; onStop
+
+## Lcom/metek/zqWeather/activity/AppPushActivity; onPause
+Landroid/hardware/Sensor;->getType 1
+Lorg/apache/http/params/HttpConnectionParams;->setSoTimeout 1
+Landroid/database/sqlite/SQLiteDatabase;->query 2
+Lorg/apache/http/params/BasicHttpParams;-><init> 1
+Lorg/apache/http/impl/client/DefaultHttpClient;-><init> 1
+Ljava/io/InputStream;->close 2
+Ljava/io/StringWriter;->toString 1
+Landroid/net/wifi/WifiManager;->getConnectionInfo 1
+Landroid/database/sqlite/SQLiteOpenHelper;-><init> 1
+Landroid/net/NetworkInfo;->getExtraInfo 1
+Landroid/net/NetworkInfo;->isAvailable 1
+Ljava/io/PrintWriter;->close 1
+Ljava/io/FileReader;-><init> 3
+Ljava/io/StringWriter;-><init> 1
+Landroid/hardware/SensorManager;->getSensorList 1
+Ljava/io/Writer;-><init> 1
+Ljava/io/PrintWriter;-><init> 3
+Ljava/io/InputStream;->read 2
+Ljava/io/File;->listFiles 1
+Ljava/io/PrintWriter;->println 76
+Landroid/net/ConnectivityManager;->getActiveNetworkInfo 2
+Lorg/apache/http/HttpHost;-><init> 1
+Landroid/database/sqlite/SQLiteDatabase;->insert 1
+Ljava/io/BufferedReader;-><init> 3
+Lorg/apache/http/impl/client/DefaultHttpClient;->setKeepAliveStrategy 1
+Landroid/net/NetworkInfo;->getTypeName 1
+Ljava/io/File;-><init> 3
+Ljava/io/File;->getPath 3
+Lorg/apache/http/params/HttpConnectionParams;->setConnectionTimeout 1
+Landroid/net/wifi/WifiInfo;->getMacAddress 1
+Lorg/apache/http/impl/client/DefaultHttpClient;->getParams 1
+Landroid/net/NetworkInfo;->isConnected 1
+Landroid/database/sqlite/SQLiteDatabase;->replace 1
+Landroid/database/sqlite/SQLiteDatabase;->update 1
+Ljava/io/BufferedReader;->readLine 3
+Lorg/apache/http/params/HttpParams;->setParameter 1
+Ljava/io/File;->exists 1
+Ljava/io/PrintWriter;->print 238
+Ljava/io/BufferedReader;->close 2
+Lorg/apache/http/impl/client/DefaultConnectionKeepAliveStrategy;-><init> 1
+
+## Lcom/metek/zqWeather/activity/SettingsAboutActivity; onDestroy
+Ljava/io/PrintWriter;->print 238
+Ljava/io/Writer;-><init> 1
+Ljava/io/PrintWriter;-><init> 2
+Ljava/io/PrintWriter;->println 76
+
+## Lcom/metek/zqWeather/activity/SkinPlugActivity; onResume
+Landroid/hardware/Sensor;->getType 1
+Lorg/apache/http/params/HttpConnectionParams;->setSoTimeout 1
+Landroid/database/sqlite/SQLiteDatabase;->query 2
+Lorg/apache/http/params/BasicHttpParams;-><init> 1
+Lorg/apache/http/impl/client/DefaultHttpClient;-><init> 1
+Ljava/io/InputStream;->close 2
+Ljava/io/StringWriter;->toString 1
+Landroid/net/wifi/WifiManager;->getConnectionInfo 1
+Landroid/database/sqlite/SQLiteOpenHelper;-><init> 1
+Landroid/net/NetworkInfo;->getExtraInfo 1
+Landroid/net/NetworkInfo;->isAvailable 1
+Ljava/io/PrintWriter;->close 1
+Ljava/io/FileReader;-><init> 3
+Ljava/io/StringWriter;-><init> 1
+Landroid/hardware/SensorManager;->getSensorList 1
+Ljava/io/Writer;-><init> 1
+Ljava/io/PrintWriter;-><init> 3
+Ljava/io/InputStream;->read 2
+Ljava/io/File;->listFiles 1
+Ljava/io/PrintWriter;->println 76
+Landroid/net/ConnectivityManager;->getActiveNetworkInfo 2
+Lorg/apache/http/HttpHost;-><init> 1
+Landroid/database/sqlite/SQLiteDatabase;->insert 1
+Ljava/io/BufferedReader;-><init> 3
+Lorg/apache/http/impl/client/DefaultHttpClient;->setKeepAliveStrategy 1
+Landroid/net/NetworkInfo;->getTypeName 1
+Ljava/io/File;-><init> 3
+Ljava/io/File;->getPath 3
+Lorg/apache/http/params/HttpConnectionParams;->setConnectionTimeout 1
+Landroid/net/wifi/WifiInfo;->getMacAddress 1
+Lorg/apache/http/impl/client/DefaultHttpClient;->getParams 1
+Landroid/net/NetworkInfo;->isConnected 1
+Landroid/database/sqlite/SQLiteDatabase;->replace 1
+Landroid/database/sqlite/SQLiteDatabase;->update 1
+Ljava/io/BufferedReader;->readLine 3
+Lorg/apache/http/params/HttpParams;->setParameter 1
+Ljava/io/File;->exists 1
+Ljava/io/PrintWriter;->print 238
+Ljava/io/BufferedReader;->close 2
+Lorg/apache/http/impl/client/DefaultConnectionKeepAliveStrategy;-><init> 1
+
+## Lcom/metek/zqWeather/activity/StorageActivity; onPause
+Landroid/hardware/Sensor;->getType 1
+Lorg/apache/http/params/HttpConnectionParams;->setSoTimeout 1
+Landroid/database/sqlite/SQLiteDatabase;->query 2
+Lorg/apache/http/params/BasicHttpParams;-><init> 1
+Lorg/apache/http/impl/client/DefaultHttpClient;-><init> 1
+Ljava/io/InputStream;->close 2
+Ljava/io/StringWriter;->toString 1
+Landroid/net/wifi/WifiManager;->getConnectionInfo 1
+Landroid/database/sqlite/SQLiteOpenHelper;-><init> 1
+Landroid/net/NetworkInfo;->getExtraInfo 1
+Landroid/net/NetworkInfo;->isAvailable 1
+Ljava/io/PrintWriter;->close 1
+Ljava/io/FileReader;-><init> 3
+Ljava/io/StringWriter;-><init> 1
+Landroid/hardware/SensorManager;->getSensorList 1
+Ljava/io/Writer;-><init> 1
+Ljava/io/PrintWriter;-><init> 3
+Ljava/io/InputStream;->read 2
+Ljava/io/File;->listFiles 1
+Ljava/io/PrintWriter;->println 76
+Landroid/net/ConnectivityManager;->getActiveNetworkInfo 2
+Lorg/apache/http/HttpHost;-><init> 1
+Landroid/database/sqlite/SQLiteDatabase;->insert 1
+Ljava/io/BufferedReader;-><init> 3
+Lorg/apache/http/impl/client/DefaultHttpClient;->setKeepAliveStrategy 1
+Landroid/net/NetworkInfo;->getTypeName 1
+Ljava/io/File;-><init> 3
+Ljava/io/File;->getPath 3
+Lorg/apache/http/params/HttpConnectionParams;->setConnectionTimeout 1
+Landroid/net/wifi/WifiInfo;->getMacAddress 1
+Lorg/apache/http/impl/client/DefaultHttpClient;->getParams 1
+Landroid/net/NetworkInfo;->isConnected 1
+Landroid/database/sqlite/SQLiteDatabase;->replace 1
+Landroid/database/sqlite/SQLiteDatabase;->update 1
+Ljava/io/BufferedReader;->readLine 3
+Lorg/apache/http/params/HttpParams;->setParameter 1
+Ljava/io/File;->exists 1
+Ljava/io/PrintWriter;->print 238
+Ljava/io/BufferedReader;->close 2
+Lorg/apache/http/impl/client/DefaultConnectionKeepAliveStrategy;-><init> 1
+
+## Lcom/metek/zqWeather/activity/GuessActivity; onItemClick
+
+## Lcom/metek/zqWeather/activity/ac; onClick
+
+## Lcom/metek/zqWeather/activity/af; onKey
+
+## Lcom/metek/zqWeather/activity/ax; onClick
+
+## Lcom/metek/zqWeather/activity/dg; onClick
+
+## Lcom/metek/zqWeather/activity/e; onClick
+
+## Lcom/metek/zqUtil/a/b; onCreate
+Ljava/io/PrintStream;->flush 1
+Ljava/io/PrintStream;->println 1
+
+## Lcom/metek/zqUtil/a/e; onCreate
+Ljava/io/PrintStream;->flush 1
+Ljava/io/PrintStream;->println 1
+
+## Lcom/metek/zqWeather/achievement/TouchNotice; onStart
+Ljava/io/PrintStream;->flush 1
+Ljava/io/PrintStream;->println 1
+
+## Lcom/metek/zqWeather/activity/SettingsAboutActivity; onClick
+Ljava/io/PrintStream;->flush 1
+Ljava/io/PrintStream;->println 1
+
+## Lcom/metek/zqWeather/activity/dh; onItemClick
+Landroid/database/sqlite/SQLiteDatabase;->close 1
+Landroid/database/sqlite/SQLiteDatabase;->update 1
+Landroid/database/sqlite/SQLiteOpenHelper;-><init> 1
+Ljava/io/PrintStream;->println 1
+Ljava/io/IOException;->printStackTrace 1
+Ljava/io/PrintStream;->flush 1
+
+## Lcom/metek/zqWeather/activity/dn; onFocusChange
+Ljava/io/PrintStream;->flush 1
+Ljava/io/PrintStream;->println 1
+
+## Lcom/metek/zqWeather/activity/SettingsHelpActivity; onClick
+
+## Lcom/metek/zqWeather/activity/fg; onGroupClick
+
+## Lcom/metek/zqWeather/activity/fh; onChildClick
+
+## Lcom/tencent/open/PKDialog; onCreate
+Ljava/io/File;->getPath 1
+
+## Lcom/baidu/location/i; onServiceDisconnected
+
+## Lcom/umeng/fb/i; onClick
+
+## Lcom/umeng/fb/k; onTouch
+
+## Lcom/taobao/munion/view/webview/ActionBar; onClick
+
+## Lcom/metek/zqUtil/view/wheel/d; onScroll
+
+## Lcom/metek/zqWeather/activity/t; onClick
+
+## Lcom/taobao/newxp/view/widget/SwipeViewPointer$1; onTouch
+
+## Lcom/taobao/newxp/view/handler/umwall/UMWallFragment$4; onClick
+Ljava/io/ByteArrayOutputStream;->close 1
+Ljava/io/RandomAccessFile;->getChannel 1
+Ljava/io/FileInputStream;->read 1
+Ljava/io/FileReader;->close 3
+Ljava/io/File;->list 1
+Ljava/io/ObjectInputStream;->readObject 1
+Landroid/location/Location;->setTime 1
+Landroid/net/wifi/WifiManager;->getConnectionInfo 1
+Landroid/location/Location;->setProvider 1
+Landroid/net/Uri;->parse 1
+Lorg/apache/http/cookie/Cookie;->isExpired 1
+Ljava/io/FileReader;-><init> 1
+Lorg/apache/http/protocol/HttpContext;->setAttribute 1
+Lorg/apache/http/cookie/Cookie;->getValue 1
+Landroid/net/http/AndroidHttpClient;->newInstance 3
+Landroid/net/Uri;->getHost 1
+Ljava/io/UnsupportedEncodingException;->printStackTrace 2
+Landroid/location/Location;->getLatitude 1
+Ljava/io/FileInputStream;->close 1
+Ljava/io/ByteArrayOutputStream;-><init> 2
+Landroid/location/Location;->getLongitude 1
+Ljava/io/File;->mkdirs 3
+Landroid/location/Location;->setLatitude 1
+Landroid/location/Location;->setAccuracy 1
+Landroid/net/TrafficStats;->setThreadStatsTag 1
+Ljava/io/File;->isFile 1
+Ljava/io/FileInputStream;-><init> 2
+Ljava/io/ByteArrayOutputStream;->write 7
+Ljava/io/BufferedReader;->close 3
+Ljava/io/ByteArrayOutputStream;->toByteArray 3
+Landroid/location/Location;->getTime 3
+Ljava/io/File;->getAbsolutePath 4
+Lorg/apache/http/cookie/Cookie;->getDomain 2
+Ljava/io/FileNotFoundException;->printStackTrace 1
+Ljava/io/File;->toString 1
+Lorg/apache/http/cookie/Cookie;->getName 1
+Ljava/io/BufferedReader;-><init> 1
+Ljava/io/File;->canRead 2
+Ljava/io/File;-><init> 12
+Ljava/io/IOException;->printStackTrace 3
+Landroid/location/Location;->getProvider 1
+Lorg/apache/http/client/CookieStore;->getCookies 2
+Landroid/location/Location;->getAccuracy 1
+Landroid/net/wifi/WifiInfo;->getMacAddress 1
+Ljava/io/File;->delete 2
+Ljava/io/File;->renameTo 1
+Lorg/apache/http/protocol/BasicHttpContext;-><init> 1
+Ljava/io/ByteArrayOutputStream;->size 1
+Landroid/location/Location;-><init> 1
+Ljava/io/File;->getPath 1
+Ljava/io/BufferedReader;->readLine 1
+Ljava/io/ByteArrayInputStream;-><init> 1
+Ljava/net/URLEncoder;->encode 3
+Ljava/io/File;->exists 6
+Ljava/io/ObjectInputStream;-><init> 1
+Ljava/io/File;->createNewFile 1
+Ljava/io/RandomAccessFile;-><init> 1
+Landroid/location/Location;->setLongitude 1
+Ljava/io/FileInputStream;->available 1
+
+## Lcom/taobao/newxp/view/handler/umwall/UMWallFragment$5; onScroll
+Ljava/io/ByteArrayOutputStream;->close 1
+Ljava/io/RandomAccessFile;->getChannel 1
+Ljava/io/FileInputStream;->read 1
+Ljava/io/FileReader;->close 3
+Ljava/io/File;->list 1
+Ljava/io/ObjectInputStream;->readObject 1
+Landroid/location/Location;->setTime 1
+Landroid/net/wifi/WifiManager;->getConnectionInfo 1
+Landroid/location/Location;->setProvider 1
+Landroid/net/Uri;->parse 1
+Lorg/apache/http/cookie/Cookie;->isExpired 1
+Ljava/io/FileReader;-><init> 1
+Lorg/apache/http/protocol/HttpContext;->setAttribute 1
+Lorg/apache/http/cookie/Cookie;->getValue 1
+Landroid/net/http/AndroidHttpClient;->newInstance 3
+Landroid/net/Uri;->getHost 1
+Ljava/io/UnsupportedEncodingException;->printStackTrace 2
+Landroid/location/Location;->getLatitude 1
+Ljava/io/FileInputStream;->close 1
+Ljava/io/ByteArrayOutputStream;-><init> 2
+Landroid/location/Location;->getLongitude 1
+Ljava/io/File;->mkdirs 3
+Landroid/location/Location;->setLatitude 1
+Landroid/location/Location;->setAccuracy 1
+Landroid/net/TrafficStats;->setThreadStatsTag 1
+Ljava/io/File;->isFile 1
+Ljava/io/FileInputStream;-><init> 2
+Ljava/io/ByteArrayOutputStream;->write 7
+Ljava/io/BufferedReader;->close 3
+Ljava/io/ByteArrayOutputStream;->toByteArray 3
+Landroid/location/Location;->getTime 3
+Ljava/io/File;->getAbsolutePath 4
+Lorg/apache/http/cookie/Cookie;->getDomain 2
+Ljava/io/FileNotFoundException;->printStackTrace 1
+Ljava/io/File;->toString 1
+Lorg/apache/http/cookie/Cookie;->getName 1
+Ljava/io/BufferedReader;-><init> 1
+Ljava/io/File;->canRead 2
+Ljava/io/File;-><init> 12
+Ljava/io/IOException;->printStackTrace 3
+Landroid/location/Location;->getProvider 1
+Lorg/apache/http/client/CookieStore;->getCookies 2
+Landroid/location/Location;->getAccuracy 1
+Landroid/net/wifi/WifiInfo;->getMacAddress 1
+Ljava/io/File;->delete 2
+Ljava/io/File;->renameTo 1
+Lorg/apache/http/protocol/BasicHttpContext;-><init> 1
+Ljava/io/ByteArrayOutputStream;->size 1
+Landroid/location/Location;-><init> 1
+Ljava/io/File;->getPath 1
+Ljava/io/BufferedReader;->readLine 1
+Ljava/io/ByteArrayInputStream;-><init> 1
+Ljava/net/URLEncoder;->encode 3
+Ljava/io/File;->exists 6
+Ljava/io/ObjectInputStream;-><init> 1
+Ljava/io/File;->createNewFile 1
+Ljava/io/RandomAccessFile;-><init> 1
+Landroid/location/Location;->setLongitude 1
+Ljava/io/FileInputStream;->available 1
+
+## Lcom/taobao/newxp/view/handler/umwall/UMWallFragment$5; onScrollStateChanged
+
+## Lcom/metek/zqWeather/activity/ShopActivity; onClick
+
+## Lcom/tencent/weibo/sdk/android/component/b; onClick
+
+## Lcom/tencent/weibo/sdk/android/component/f; onClick
+
+## Lcom/metek/zqWeather/activity/bn; onTouch
+Ljava/io/PrintStream;->flush 1
+Ljava/io/PrintStream;->println 1
+
+## Lcom/metek/zqWeather/activity/cd; onClick
+
+## Lcom/metek/zqWeather/activity/ce; onClick
+
+## Lcom/metek/zqWeather/activity/ci; onClick
+
+## Lcom/metek/zqWeather/activity/cj; onClick
+
+## Lcom/metek/zqWeather/activity/ck; onClick
+Ljava/io/PrintStream;->println 1
+Landroid/database/sqlite/SQLiteDatabase;->close 2
+Ljava/io/File;->delete 2
+Ljava/io/File;->mkdirs 1
+Ljava/io/BufferedOutputStream;-><init> 1
+Landroid/database/sqlite/SQLiteDatabase;->rawQuery 2
+Ljava/io/BufferedOutputStream;->close 1
+Landroid/database/sqlite/SQLiteOpenHelper;-><init> 1
+Ljava/io/File;->getParentFile 1
+Ljava/io/InputStream;->read 1
+Ljava/io/File;->exists 4
+Ljava/io/FileOutputStream;-><init> 1
+Ljava/io/InputStream;->close 1
+Ljava/io/PrintStream;->flush 1
+Ljava/io/BufferedOutputStream;->write 1
+
+## Lcom/metek/zqWeather/activity/cl; onClick
+Ljava/io/PrintStream;->println 1
+Landroid/database/sqlite/SQLiteDatabase;->close 2
+Ljava/io/File;->delete 2
+Ljava/io/File;->mkdirs 1
+Ljava/io/BufferedOutputStream;-><init> 1
+Landroid/database/sqlite/SQLiteDatabase;->rawQuery 2
+Ljava/io/BufferedOutputStream;->close 1
+Landroid/database/sqlite/SQLiteOpenHelper;-><init> 1
+Ljava/io/File;->getParentFile 1
+Ljava/io/InputStream;->read 1
+Ljava/io/File;->exists 4
+Ljava/io/FileOutputStream;-><init> 1
+Ljava/io/InputStream;->close 1
+Ljava/io/PrintStream;->flush 1
+Ljava/io/BufferedOutputStream;->write 1
+
+## Lcom/metek/zqWeather/activity/cm; onClick
+Ljava/io/PrintStream;->println 1
+Landroid/database/sqlite/SQLiteDatabase;->close 2
+Ljava/io/File;->delete 2
+Ljava/io/File;->mkdirs 1
+Ljava/io/BufferedOutputStream;-><init> 1
+Landroid/database/sqlite/SQLiteDatabase;->rawQuery 2
+Ljava/io/BufferedOutputStream;->close 1
+Landroid/database/sqlite/SQLiteOpenHelper;-><init> 1
+Ljava/io/File;->getParentFile 1
+Ljava/io/InputStream;->read 1
+Ljava/io/File;->exists 4
+Ljava/io/FileOutputStream;-><init> 1
+Ljava/io/InputStream;->close 1
+Ljava/io/PrintStream;->flush 1
+Ljava/io/BufferedOutputStream;->write 1
+
+## Lcom/metek/zqWeather/activity/db; onClick
+
+## Lcom/metek/zqWeather/activity/do; onClick
+
+## Lcom/metek/zqWeather/activity/du; onClick
+
+## Lcom/metek/zqWeather/activity/dx; onClick
+
+## Lcom/metek/zqWeather/a/af; onClick
+
+## Lcom/tencent/weibo/sdk/android/component/i; onClick
+
+## Lcom/tencent/weibo/sdk/android/component/j; onItemClick
+
+## Lcom/metek/zqWeather/activity/ex; onClick
+
+## Lcom/metek/zqUtil/view/stickylistheaders/j; onScroll
+
+## Lcom/metek/zqUtil/view/stickylistheaders/j; onScrollStateChanged
+
+## Lcom/taobao/newxp/view/handler/actionbar/ActionBar; onClick
+
+## Landroid/support/v4/content/CursorLoader; onStartLoading
+
+## Lcom/taobao/newxp/view/HorizontalStrip$b; onFocusChange
+
+## Lcom/taobao/newxp/view/UMDetail; onDestroy
+
+## Lcom/metek/zqWeather/a/j; onCreate
+
+## Lcom/taobao/newxp/view/handler/actionbar/ActionBar$1; onClick
+
+## Lcom/umeng/fb/ConversationActivity; onCreate
+Landroid/net/wifi/WifiManager;->getConnectionInfo 1
+Landroid/net/wifi/WifiInfo;->getMacAddress 1
+
+## Lcom/tencent/tauth/AuthActivity; onCreate
+Ljava/io/File;->deleteOnExit 1
+Ljava/io/File;->isDirectory 1
+Ljava/io/File;->delete 3
+Ljava/io/File;->equals 1
+Ljava/io/File;->mkdirs 1
+Ljava/io/File;->getName 2
+Ljava/io/FileWriter;->flush 1
+Ljava/io/FileWriter;->close 1
+Ljava/net/URLDecoder;->decode 4
+Ljava/io/File;->length 1
+Ljava/net/URLEncoder;->encode 5
+Ljava/io/File;-><init> 3
+Ljava/io/FileWriter;-><init> 1
+Ljava/io/File;->listFiles 3
+Ljava/io/IOException;->printStackTrace 1
+Ljava/io/File;->isFile 1
+Landroid/net/Uri;->toString 3
+
+## Lcom/tencent/connect/common/AssistActivity; onCreate
+Ljava/io/ByteArrayOutputStream;->close 1
+Lorg/apache/http/params/HttpConnectionParams;->setSoTimeout 1
+Ljava/io/InputStreamReader;-><init> 1
+Lorg/apache/http/impl/client/DefaultHttpClient;-><init> 1
+Ljava/io/File;->mkdirs 1
+Ljava/io/BufferedReader;->readLine 1
+Ljava/io/FileWriter;->flush 1
+Landroid/net/Proxy;->getPort 1
+Lorg/apache/http/HttpResponse;->getFirstHeader 1
+Landroid/net/Uri;->parse 1
+Lorg/apache/http/HttpResponse;->getStatusLine 1
+Landroid/net/Proxy;->getHost 1
+Ljava/io/OutputStreamWriter;-><init> 1
+Landroid/net/NetworkInfo;->isAvailable 1
+Landroid/net/Proxy;->getDefaultHost 2
+Lorg/apache/http/params/BasicHttpParams;-><init> 1
+Lorg/apache/http/params/HttpProtocolParams;->setUserAgent 1
+Ljava/io/File;->getName 2
+Lorg/apache/http/conn/ssl/SSLSocketFactory;->setHostnameVerifier 1
+Ljava/io/File;->deleteOnExit 1
+Lorg/apache/http/client/methods/HttpPost;->setHeader 2
+Ljava/io/File;->equals 1
+Lorg/apache/http/StatusLine;->getStatusCode 1
+Ljava/io/FileInputStream;->close 2
+Lorg/apache/http/conn/scheme/PlainSocketFactory;->getSocketFactory 1
+Ljava/io/ByteArrayOutputStream;-><init> 2
+Landroid/net/NetworkInfo;->getType 1
+Lorg/apache/http/client/HttpClient;->getParams 1
+Lorg/apache/http/client/methods/HttpPost;->addHeader 1
+Lorg/apache/http/HttpEntity;->getContent 1
+Ljava/io/OutputStreamWriter;->flush 1
+Ljava/io/File;->listFiles 3
+Lorg/apache/http/entity/ByteArrayEntity;-><init> 1
+Ljava/io/File;->isFile 1
+Ljava/io/FileInputStream;-><init> 1
+Ljava/io/ByteArrayOutputStream;->write 9
+Landroid/net/ConnectivityManager;->getActiveNetworkInfo 2
+Ljava/io/File;->isDirectory 1
+Lorg/apache/http/HttpHost;-><init> 1
+Lorg/apache/http/params/HttpProtocolParams;->setContentCharset 1
+Lorg/apache/http/HttpResponse;->getEntity 1
+Lorg/apache/http/conn/scheme/SchemeRegistry;-><init> 1
+Ljava/io/ByteArrayOutputStream;->toByteArray 2
+Lorg/apache/http/client/methods/HttpPost;->setEntity 1
+Ljava/io/BufferedReader;-><init> 1
+Lorg/apache/http/client/methods/HttpUriRequest;->addHeader 1
+Lorg/apache/http/client/methods/HttpGet;-><init> 1
+Ljava/io/InputStream;->close 3
+Ljava/io/IOException;->printStackTrace 7
+Lorg/apache/http/client/HttpClient;->execute 1
+Lorg/apache/http/params/HttpConnectionParams;->setConnectionTimeout 1
+Lorg/apache/http/params/HttpProtocolParams;->setVersion 1
+Lorg/apache/http/impl/conn/tsccm/ThreadSafeClientConnManager;-><init> 1
+Lorg/apache/http/Header;->getValue 1
+Lorg/apache/http/conn/ssl/SSLSocketFactory;->getSocketFactory 2
+Ljava/io/OutputStreamWriter;->close 1
+Landroid/net/Proxy;->getDefaultPort 2
+Ljava/io/File;->delete 3
+Lorg/apache/http/client/methods/HttpPost;-><init> 1
+Ljava/io/File;->length 1
+Lorg/apache/http/conn/ssl/SSLSocketFactory;-><init> 1
+Ljava/io/FileWriter;->close 1
+Ljava/io/InputStream;->read 1
+Lorg/apache/http/params/HttpParams;->setParameter 1
+Lorg/apache/http/conn/scheme/Scheme;-><init> 4
+Ljava/io/OutputStreamWriter;->write 1
+Lorg/apache/http/conn/scheme/SchemeRegistry;->register 4
+Ljava/net/URLEncoder;->encode 5
+Ljava/io/FileWriter;-><init> 1
+Ljava/io/File;-><init> 3
+Ljava/io/BufferedReader;->close 3
+
+## Lcom/metek/zqWeather/activity/MainActivity; onCreate
+Ljava/io/FileOutputStream;->write 1
+Lorg/apache/http/params/HttpConnectionParams;->setSoTimeout 2
+Ljava/io/InputStreamReader;-><init> 2
+Ljava/io/Closeable;->close 1
+Ljava/io/FileReader;->close 3
+Landroid/location/Location;->getLongitude 1
+Ljava/io/FileNotFoundException;->printStackTrace 1
+Landroid/location/Location;->getProvider 1
+Ljava/io/OutputStreamWriter;-><init> 1
+Landroid/net/NetworkInfo;->isAvailable 2
+Landroid/location/Location;->setLatitude 1
+Lorg/apache/http/conn/ssl/SSLSocketFactory;->getSocketFactory 2
+Landroid/location/Location;->setAccuracy 1
+Landroid/database/sqlite/SQLiteDatabase;->close 4
+Ljava/io/StringWriter;-><init> 2
+Lorg/apache/http/conn/scheme/SchemeRegistry;->register 4
+Ljava/io/Writer;-><init> 1
+Ljava/io/ByteArrayOutputStream;-><init> 4
+Landroid/net/NetworkInfo;->isConnectedOrConnecting 1
+Lorg/apache/http/client/HttpClient;->getParams 1
+Ljava/io/FileInputStream;->read 1
+Landroid/database/sqlite/SQLiteDatabase;->delete 1
+Ljava/io/ByteArrayOutputStream;->write 16
+Landroid/location/Location;->setLongitude 1
+Lorg/apache/http/cookie/Cookie;->getDomain 2
+Landroid/net/wifi/WifiInfo;->getMacAddress 3
+Landroid/net/NetworkInfo;->isConnected 1
+Ljava/io/File;->delete 8
+Landroid/net/Uri;->parse 1
+Landroid/database/sqlite/SQLiteDatabase;->update 3
+Lorg/apache/http/params/HttpParams;->setParameter 2
+Ljava/io/ByteArrayInputStream;-><init> 1
+Ljava/io/InputStreamReader;->read 1
+Lorg/apache/http/HttpResponse;->getStatusLine 1
+Ljava/io/FileWriter;-><init> 1
+Ljava/io/RandomAccessFile;-><init> 1
+Ljava/io/FileOutputStream;->close 5
+Ljava/io/ObjectOutputStream;->writeObject 1
+Landroid/hardware/Sensor;->getType 1
+Ljava/io/StringWriter;->toString 2
+Ljava/io/ObjectInputStream;->readObject 2
+Landroid/location/Location;->setTime 1
+Landroid/database/sqlite/SQLiteOpenHelper;-><init> 3
+Ljava/io/BufferedOutputStream;->close 1
+Ljava/io/PrintStream;->println 1
+Landroid/net/Proxy;->getDefaultHost 2
+Ljava/io/FileReader;-><init> 4
+Landroid/location/Location;->getTime 3
+Landroid/hardware/SensorManager;->getSensorList 1
+Landroid/net/NetworkInfo;->getState 2
+Lorg/apache/http/StatusLine;->getStatusCode 1
+Lorg/apache/http/conn/scheme/PlainSocketFactory;->getSocketFactory 1
+Landroid/net/NetworkInfo;->getType 1
+Ljava/io/OutputStreamWriter;->flush 1
+Ljava/io/File;->listFiles 4
+Lorg/apache/http/client/methods/HttpPost;->setEntity 1
+Landroid/net/TrafficStats;->setThreadStatsTag 1
+Ljava/io/PrintWriter;->println 76
+Ljava/io/File;->isFile 2
+Ljava/io/File;->toString 1
+Ljava/io/BufferedOutputStream;->write 1
+Ljava/io/BufferedReader;->close 8
+Landroid/net/Proxy;->getHost 1
+Lorg/apache/http/Header;->getValue 1
+Lorg/apache/http/params/HttpProtocolParams;->setContentCharset 1
+Ljava/io/FileWriter;->flush 1
+Landroid/database/sqlite/SQLiteDatabase;->insert 2
+Lorg/apache/http/client/methods/HttpUriRequest;->addHeader 1
+Ljava/io/IOException;->printStackTrace 19
+Landroid/net/Uri;->getHost 1
+Lorg/apache/http/impl/conn/tsccm/ThreadSafeClientConnManager;-><init> 1
+Lorg/apache/http/HttpResponse;->getEntity 1
+Lorg/apache/http/impl/client/DefaultHttpClient;->getParams 1
+Ljava/io/File;->renameTo 1
+Ljava/io/File;->length 3
+Ljava/io/FileInputStream;->available 1
+Lorg/apache/http/impl/client/DefaultConnectionKeepAliveStrategy;-><init> 1
+Lorg/apache/http/impl/client/DefaultHttpClient;-><init> 2
+Landroid/net/NetworkInfo;->getSubtypeName 1
+Lorg/apache/http/entity/ByteArrayEntity;-><init> 1
+Ljava/io/FileInputStream;->close 14
+Ljava/io/File;->createNewFile 1
+Landroid/net/wifi/WifiManager;->getConnectionInfo 3
+Lorg/apache/http/HttpResponse;->getFirstHeader 1
+Landroid/location/Location;->setProvider 1
+Landroid/net/NetworkInfo;->getExtraInfo 1
+Ljava/net/URLEncoder;->encode 10
+Ljava/io/FileOutputStream;->flush 1
+Lorg/apache/http/params/BasicHttpParams;-><init> 2
+Landroid/net/http/AndroidHttpClient;->newInstance 3
+Lorg/apache/http/client/CookieStore;->getCookies 2
+Ljava/io/File;->getPath 4
+Lorg/apache/http/client/methods/HttpPost;->setHeader 2
+Ljava/io/File;->equals 1
+Ljava/io/ObjectOutputStream;-><init> 1
+Ljava/io/PrintWriter;-><init> 3
+Ljava/io/File;->getParentFile 1
+Ljava/io/File;->list 1
+Ljava/io/ByteArrayOutputStream;->close 2
+Lorg/apache/http/HttpHost;-><init> 2
+Landroid/net/Proxy;->getPort 1
+Ljava/io/PrintWriter;->print 238
+Lorg/apache/http/conn/scheme/SchemeRegistry;-><init> 1
+Lorg/apache/http/cookie/Cookie;->getName 1
+Lorg/apache/http/impl/client/DefaultHttpClient;->setKeepAliveStrategy 1
+Ljava/io/File;->canRead 2
+Lorg/apache/http/client/methods/HttpGet;-><init> 1
+Landroid/net/NetworkInfo;->getTypeName 1
+Ljava/io/InputStream;->close 13
+Lorg/apache/http/client/HttpClient;->execute 1
+Landroid/location/Location;->getAccuracy 1
+Lorg/apache/http/params/HttpProtocolParams;->setVersion 1
+Landroid/net/Proxy;->getDefaultPort 2
+Lorg/apache/http/client/methods/HttpPost;-><init> 1
+Landroid/database/sqlite/SQLiteDatabase;->replace 1
+Landroid/database/sqlite/SQLiteDatabase;->rawQuery 1
+Lorg/apache/http/conn/scheme/Scheme;-><init> 4
+Lorg/apache/http/cookie/Cookie;->isExpired 1
+Ljava/io/ObjectInputStream;-><init> 2
+Ljava/io/File;->isDirectory 1
+Landroid/database/sqlite/SQLiteDatabase;->query 4
+Ljava/io/RandomAccessFile;->getChannel 1
+Ljava/io/File;->mkdirs 5
+Ljava/io/FileWriter;->close 1
+Landroid/net/ConnectivityManager;->getNetworkInfo 2
+Ljava/io/IOException;->getMessage 8
+Ljava/io/PrintWriter;->close 1
+Lorg/apache/http/protocol/HttpContext;->setAttribute 1
+Lorg/apache/http/params/HttpProtocolParams;->setUserAgent 1
+Ljava/io/File;->getName 2
+Lorg/apache/http/conn/ssl/SSLSocketFactory;->setHostnameVerifier 1
+Lorg/apache/http/cookie/Cookie;->getValue 1
+Landroid/location/Location;->getLatitude 1
+Ljava/io/BufferedOutputStream;-><init> 1
+Ljava/io/OutputStreamWriter;->close 1
+Ljava/io/UnsupportedEncodingException;->printStackTrace 3
+Ljava/io/ByteArrayOutputStream;->size 1
+Ljava/io/InputStream;->read 5
+Ljava/io/StringWriter;->write 1
+Ljava/io/ObjectOutputStream;->close 4
+Landroid/net/ConnectivityManager;->getActiveNetworkInfo 5
+Ljava/io/File;->deleteOnExit 1
+Ljava/io/File;->getAbsolutePath 7
+Ljava/io/ByteArrayOutputStream;->toByteArray 5
+Ljava/io/BufferedReader;-><init> 5
+Lorg/apache/http/client/methods/HttpPost;->addHeader 1
+Ljava/io/File;-><init> 19
+Ljava/io/FileOutputStream;-><init> 1
+Ljava/io/PrintStream;->flush 1
+Lorg/apache/http/params/HttpConnectionParams;->setConnectionTimeout 2
+Ljava/io/FileInputStream;-><init> 3
+Ljava/io/ObjectInputStream;->close 5
+Lorg/apache/http/protocol/BasicHttpContext;-><init> 1
+Landroid/location/Location;-><init> 1
+Lorg/apache/http/conn/ssl/SSLSocketFactory;-><init> 1
+Ljava/io/BufferedReader;->readLine 5
+Ljava/io/OutputStreamWriter;->write 1
+Lorg/apache/http/HttpEntity;->getContent 1
+Ljava/io/File;->exists 14
+
+## Lcom/metek/zqWeather/activity/WelcomeActivity; onCreate
+Ljava/io/PrintWriter;->print 238
+Ljava/io/Writer;-><init> 1
+Ljava/io/PrintWriter;-><init> 2
+Ljava/io/PrintWriter;->println 76
+
+## Lcom/metek/zqWeather/activity/SettingsActivity; onCreate
+Ljava/io/ByteArrayOutputStream;->close 1
+Lorg/apache/http/params/HttpConnectionParams;->setSoTimeout 1
+Lorg/apache/http/HttpResponse;->getFirstHeader 1
+Ljava/io/InputStreamReader;-><init> 1
+Lorg/apache/http/impl/client/DefaultHttpClient;-><init> 1
+Lorg/apache/http/conn/scheme/PlainSocketFactory;->getSocketFactory 1
+Ljava/io/File;->mkdirs 1
+Ljava/io/BufferedReader;->readLine 1
+Ljava/io/FileWriter;->flush 1
+Landroid/net/Proxy;->getPort 1
+Ljava/io/ByteArrayOutputStream;-><init> 2
+Lorg/apache/http/HttpResponse;->getStatusLine 1
+Ljava/io/PrintStream;->println 1
+Landroid/net/Proxy;->getHost 1
+Ljava/io/OutputStreamWriter;-><init> 1
+Landroid/net/NetworkInfo;->isAvailable 1
+Landroid/net/Proxy;->getDefaultHost 2
+Ljava/io/IOException;->getMessage 8
+Lorg/apache/http/params/HttpProtocolParams;->setUserAgent 1
+Ljava/io/File;->getName 2
+Lorg/apache/http/conn/ssl/SSLSocketFactory;->setHostnameVerifier 1
+Ljava/io/File;->deleteOnExit 1
+Lorg/apache/http/client/methods/HttpPost;->setHeader 2
+Ljava/io/File;->equals 1
+Lorg/apache/http/StatusLine;->getStatusCode 1
+Ljava/io/FileInputStream;->close 2
+Ljava/io/Writer;-><init> 1
+Ljava/io/File;-><init> 3
+Ljava/io/PrintWriter;-><init> 2
+Landroid/net/NetworkInfo;->getType 1
+Lorg/apache/http/client/HttpClient;->getParams 1
+Lorg/apache/http/client/methods/HttpPost;->addHeader 1
+Ljava/io/InputStream;->read 2
+Ljava/io/OutputStreamWriter;->flush 1
+Ljava/io/File;->listFiles 3
+Lorg/apache/http/entity/ByteArrayEntity;-><init> 1
+Ljava/io/PrintWriter;->println 76
+Ljava/io/File;->isFile 1
+Ljava/io/FileInputStream;-><init> 1
+Ljava/io/ByteArrayOutputStream;->write 9
+Lorg/apache/http/HttpEntity;->getContent 1
+Ljava/io/BufferedReader;->close 3
+Ljava/io/File;->isDirectory 1
+Lorg/apache/http/HttpHost;-><init> 1
+Lorg/apache/http/params/HttpProtocolParams;->setContentCharset 1
+Lorg/apache/http/HttpResponse;->getEntity 1
+Lorg/apache/http/conn/scheme/SchemeRegistry;-><init> 1
+Ljava/io/ByteArrayOutputStream;->toByteArray 2
+Lorg/apache/http/client/methods/HttpPost;->setEntity 1
+Ljava/io/BufferedReader;-><init> 1
+Lorg/apache/http/client/methods/HttpUriRequest;->addHeader 1
+Lorg/apache/http/client/methods/HttpGet;-><init> 1
+Ljava/io/InputStream;->close 10
+Ljava/io/IOException;->printStackTrace 7
+Lorg/apache/http/client/HttpClient;->execute 1
+Ljava/io/PrintStream;->flush 1
+Lorg/apache/http/params/HttpConnectionParams;->setConnectionTimeout 1
+Lorg/apache/http/params/HttpProtocolParams;->setVersion 1
+Lorg/apache/http/impl/conn/tsccm/ThreadSafeClientConnManager;-><init> 1
+Lorg/apache/http/Header;->getValue 1
+Lorg/apache/http/conn/ssl/SSLSocketFactory;->getSocketFactory 2
+Ljava/io/OutputStreamWriter;->close 1
+Landroid/net/Proxy;->getDefaultPort 2
+Ljava/io/File;->delete 3
+Lorg/apache/http/client/methods/HttpPost;-><init> 1
+Ljava/io/File;->length 1
+Lorg/apache/http/conn/ssl/SSLSocketFactory;-><init> 1
+Ljava/io/FileWriter;->close 1
+Lorg/apache/http/params/HttpParams;->setParameter 1
+Lorg/apache/http/conn/scheme/Scheme;-><init> 4
+Ljava/io/OutputStreamWriter;->write 1
+Lorg/apache/http/conn/scheme/SchemeRegistry;->register 4
+Ljava/net/URLEncoder;->encode 5
+Ljava/io/FileWriter;-><init> 1
+Ljava/io/PrintWriter;->print 238
+Lorg/apache/http/params/BasicHttpParams;-><init> 1
+Landroid/net/ConnectivityManager;->getActiveNetworkInfo 2
+
+## Lcom/metek/zqWeather/activity/SettingsUpdateActivity; onCreate
+Ljava/io/PrintWriter;->print 238
+Ljava/io/Writer;-><init> 1
+Ljava/io/PrintWriter;-><init> 2
+Ljava/io/PrintWriter;->println 76
+
+## Lcom/metek/zqWeather/activity/SettingsRemindActivity; onCreate
+Ljava/io/PrintWriter;->print 238
+Ljava/io/Writer;-><init> 1
+Ljava/io/PrintWriter;-><init> 2
+Ljava/io/PrintWriter;->println 76
+
+## Lcom/metek/zqWeather/activity/SettingsWidgetActivity; onCreate
+Ljava/io/Writer;-><init> 1
+Ljava/io/PrintWriter;-><init> 2
+Ljava/io/PrintStream;->println 1
+Ljava/io/PrintWriter;->println 76
+Ljava/io/PrintWriter;->print 238
+Ljava/io/PrintStream;->flush 1
+
+## Lcom/metek/zqWeather/activity/SettingsConstellation; onCreate
+Ljava/io/Writer;-><init> 1
+Ljava/io/PrintWriter;-><init> 2
+Ljava/io/PrintStream;->println 1
+Ljava/io/PrintWriter;->println 76
+Ljava/io/PrintWriter;->print 238
+Ljava/io/PrintStream;->flush 1
+
+## Lcom/metek/zqWeather/activity/SettingsGuessActivity; onCreate
+Ljava/io/PrintWriter;->print 238
+Ljava/io/Writer;-><init> 1
+Ljava/io/PrintWriter;-><init> 2
+Ljava/io/PrintWriter;->println 76
+
+## Lcom/metek/zqWeather/activity/SettingsHelpActivity; onCreate
+Ljava/io/PrintWriter;->print 238
+Ljava/io/Writer;-><init> 1
+Ljava/io/PrintWriter;-><init> 2
+Ljava/io/PrintWriter;->println 76
+
+## Lcom/metek/zqWeather/activity/SettingsAboutActivity; onCreate
+Ljava/io/Writer;-><init> 1
+Ljava/io/PrintWriter;-><init> 2
+Ljava/io/PrintStream;->println 1
+Ljava/io/PrintWriter;->println 76
+Ljava/io/PrintWriter;->print 238
+Ljava/io/PrintStream;->flush 1
+
+## Lcom/metek/zqWeather/activity/SettingOpenSourceActivity; onCreate
+Ljava/io/PrintWriter;->print 238
+Ljava/io/Writer;-><init> 1
+Ljava/io/PrintWriter;-><init> 2
+Ljava/io/PrintWriter;->println 76
+
+## Lcom/metek/zqWeather/activity/SettingsFestivalActivity; onCreate
+Ljava/io/ByteArrayOutputStream;->close 1
+Lorg/apache/http/params/HttpConnectionParams;->setSoTimeout 1
+Lorg/apache/http/HttpResponse;->getFirstHeader 1
+Ljava/io/InputStreamReader;-><init> 1
+Lorg/apache/http/impl/client/DefaultHttpClient;-><init> 1
+Lorg/apache/http/conn/scheme/PlainSocketFactory;->getSocketFactory 1
+Ljava/io/File;->mkdirs 1
+Ljava/io/BufferedReader;->readLine 1
+Ljava/io/FileWriter;->flush 1
+Landroid/net/Proxy;->getPort 1
+Ljava/io/ByteArrayOutputStream;-><init> 2
+Lorg/apache/http/HttpResponse;->getStatusLine 1
+Ljava/io/PrintStream;->println 2
+Landroid/net/Proxy;->getHost 1
+Ljava/io/OutputStreamWriter;-><init> 1
+Landroid/net/NetworkInfo;->isAvailable 1
+Landroid/net/Proxy;->getDefaultHost 2
+Ljava/io/IOException;->getMessage 8
+Lorg/apache/http/params/HttpProtocolParams;->setUserAgent 1
+Ljava/io/File;->getName 2
+Lorg/apache/http/conn/ssl/SSLSocketFactory;->setHostnameVerifier 1
+Ljava/io/File;->deleteOnExit 1
+Lorg/apache/http/client/methods/HttpPost;->setHeader 2
+Ljava/io/File;->equals 1
+Lorg/apache/http/StatusLine;->getStatusCode 1
+Ljava/io/FileInputStream;->close 2
+Ljava/io/Writer;-><init> 1
+Ljava/io/File;-><init> 3
+Ljava/io/PrintWriter;-><init> 2
+Landroid/net/NetworkInfo;->getType 1
+Lorg/apache/http/client/HttpClient;->getParams 1
+Lorg/apache/http/client/methods/HttpPost;->addHeader 1
+Ljava/io/InputStream;->read 2
+Ljava/io/OutputStreamWriter;->flush 1
+Ljava/io/File;->listFiles 3
+Lorg/apache/http/entity/ByteArrayEntity;-><init> 1
+Ljava/io/PrintWriter;->println 76
+Ljava/io/File;->isFile 1
+Ljava/io/FileInputStream;-><init> 1
+Ljava/io/ByteArrayOutputStream;->write 9
+Ljava/io/BufferedReader;->close 3
+Ljava/io/File;->isDirectory 1
+Lorg/apache/http/HttpHost;-><init> 1
+Ljava/io/File;->getAbsolutePath 1
+Lorg/apache/http/params/HttpProtocolParams;->setContentCharset 1
+Lorg/apache/http/HttpResponse;->getEntity 1
+Lorg/apache/http/conn/scheme/SchemeRegistry;-><init> 1
+Ljava/io/ByteArrayOutputStream;->toByteArray 2
+Lorg/apache/http/client/methods/HttpPost;->setEntity 1
+Ljava/io/BufferedReader;-><init> 1
+Lorg/apache/http/client/methods/HttpUriRequest;->addHeader 1
+Lorg/apache/http/client/methods/HttpGet;-><init> 1
+Ljava/io/InputStream;->close 10
+Ljava/io/IOException;->printStackTrace 7
+Lorg/apache/http/client/HttpClient;->execute 1
+Lorg/apache/http/HttpEntity;->getContent 1
+Lorg/apache/http/params/HttpConnectionParams;->setConnectionTimeout 1
+Lorg/apache/http/params/HttpProtocolParams;->setVersion 1
+Lorg/apache/http/impl/conn/tsccm/ThreadSafeClientConnManager;-><init> 1
+Lorg/apache/http/Header;->getValue 1
+Lorg/apache/http/conn/ssl/SSLSocketFactory;->getSocketFactory 2
+Ljava/io/OutputStreamWriter;->close 1
+Landroid/net/Proxy;->getDefaultPort 2
+Ljava/io/File;->delete 3
+Lorg/apache/http/client/methods/HttpPost;-><init> 1
+Ljava/io/File;->length 1
+Lorg/apache/http/conn/ssl/SSLSocketFactory;-><init> 1
+Ljava/io/FileWriter;->close 1
+Lorg/apache/http/params/HttpParams;->setParameter 1
+Lorg/apache/http/conn/scheme/Scheme;-><init> 4
+Ljava/io/OutputStreamWriter;->write 1
+Lorg/apache/http/conn/scheme/SchemeRegistry;->register 4
+Ljava/net/URLEncoder;->encode 5
+Ljava/io/FileWriter;-><init> 1
+Ljava/io/PrintWriter;->print 238
+Lorg/apache/http/params/BasicHttpParams;-><init> 1
+Landroid/net/ConnectivityManager;->getActiveNetworkInfo 2
+
+## Lcom/metek/zqWeather/activity/SettingsFestivalPlayActivity; onCreate
+Landroid/database/sqlite/SQLiteDatabase;->close 1
+Ljava/io/Writer;-><init> 1
+Landroid/database/sqlite/SQLiteDatabase;->rawQuery 1
+Ljava/io/PrintWriter;-><init> 2
+Landroid/database/sqlite/SQLiteOpenHelper;-><init> 1
+Ljava/io/PrintWriter;->println 76
+Ljava/io/PrintWriter;->print 238
+
+## Lcom/metek/zqWeather/activity/StorageActivity; onCreate
+Ljava/io/FileOutputStream;->write 1
+Ljava/io/InputStreamReader;-><init> 1
+Landroid/net/NetworkInfo;->getSubtypeName 1
+Ljava/io/FileInputStream;->close 3
+Ljava/io/PrintStream;->println 1
+Landroid/net/ConnectivityManager;->getNetworkInfo 2
+Ljava/io/StringWriter;-><init> 1
+Landroid/net/NetworkInfo;->getState 2
+Ljava/io/Writer;-><init> 1
+Ljava/io/PrintWriter;-><init> 2
+Landroid/net/NetworkInfo;->isConnectedOrConnecting 1
+Ljava/io/StringWriter;->write 1
+Ljava/io/PrintWriter;->println 76
+Ljava/io/FileOutputStream;->flush 1
+Landroid/net/ConnectivityManager;->getActiveNetworkInfo 1
+Ljava/io/StringWriter;->toString 1
+Ljava/io/File;-><init> 1
+Ljava/io/PrintStream;->flush 1
+Ljava/io/File;->delete 1
+Ljava/io/File;->length 1
+Ljava/io/InputStreamReader;->read 1
+Ljava/io/File;->exists 1
+Ljava/io/PrintWriter;->print 238
+Ljava/io/FileOutputStream;->close 1
+
+## Lcom/metek/zqWeather/activity/WorkModeActivity; onCreate
+Ljava/io/ByteArrayOutputStream;->close 1
+Lorg/apache/http/params/HttpConnectionParams;->setSoTimeout 1
+Lorg/apache/http/HttpResponse;->getFirstHeader 1
+Ljava/io/InputStreamReader;-><init> 1
+Lorg/apache/http/impl/client/DefaultHttpClient;-><init> 1
+Lorg/apache/http/conn/scheme/PlainSocketFactory;->getSocketFactory 1
+Ljava/io/File;->mkdirs 1
+Ljava/io/FileWriter;->close 1
+Ljava/io/FileWriter;->flush 1
+Landroid/net/Proxy;->getPort 1
+Landroid/database/sqlite/SQLiteOpenHelper;-><init> 1
+Lorg/apache/http/HttpResponse;->getStatusLine 1
+Landroid/net/Proxy;->getHost 1
+Ljava/io/OutputStreamWriter;-><init> 1
+Landroid/net/NetworkInfo;->isAvailable 1
+Landroid/net/Proxy;->getDefaultHost 2
+Ljava/io/IOException;->getMessage 8
+Lorg/apache/http/params/HttpProtocolParams;->setUserAgent 1
+Ljava/io/File;->getName 2
+Ljava/io/ByteArrayOutputStream;-><init> 2
+Ljava/io/File;->deleteOnExit 1
+Lorg/apache/http/client/methods/HttpPost;->setHeader 2
+Ljava/io/File;->equals 1
+Lorg/apache/http/StatusLine;->getStatusCode 1
+Ljava/io/FileInputStream;->close 2
+Ljava/io/Writer;-><init> 1
+Ljava/io/File;-><init> 3
+Ljava/io/PrintWriter;-><init> 2
+Landroid/net/NetworkInfo;->getType 1
+Lorg/apache/http/conn/ssl/SSLSocketFactory;->setHostnameVerifier 1
+Lorg/apache/http/client/HttpClient;->getParams 1
+Lorg/apache/http/client/methods/HttpPost;->addHeader 1
+Ljava/io/InputStream;->read 2
+Ljava/io/OutputStreamWriter;->flush 1
+Ljava/io/File;->listFiles 3
+Lorg/apache/http/entity/ByteArrayEntity;-><init> 1
+Ljava/io/PrintWriter;->println 76
+Ljava/io/File;->isFile 1
+Ljava/io/FileInputStream;-><init> 1
+Ljava/io/ByteArrayOutputStream;->write 9
+Ljava/io/BufferedReader;->close 3
+Ljava/io/File;->isDirectory 1
+Lorg/apache/http/HttpHost;-><init> 1
+Lorg/apache/http/params/HttpProtocolParams;->setContentCharset 1
+Lorg/apache/http/HttpResponse;->getEntity 1
+Lorg/apache/http/conn/scheme/SchemeRegistry;-><init> 1
+Ljava/io/ByteArrayOutputStream;->toByteArray 2
+Lorg/apache/http/client/methods/HttpPost;->setEntity 1
+Ljava/io/BufferedReader;-><init> 1
+Lorg/apache/http/client/methods/HttpUriRequest;->addHeader 1
+Lorg/apache/http/client/methods/HttpGet;-><init> 1
+Ljava/io/InputStream;->close 10
+Ljava/io/IOException;->printStackTrace 7
+Lorg/apache/http/client/HttpClient;->execute 1
+Lorg/apache/http/HttpEntity;->getContent 1
+Lorg/apache/http/params/HttpConnectionParams;->setConnectionTimeout 1
+Lorg/apache/http/params/HttpProtocolParams;->setVersion 1
+Lorg/apache/http/impl/conn/tsccm/ThreadSafeClientConnManager;-><init> 1
+Lorg/apache/http/Header;->getValue 1
+Lorg/apache/http/conn/ssl/SSLSocketFactory;->getSocketFactory 2
+Ljava/io/OutputStreamWriter;->close 1
+Landroid/net/Proxy;->getDefaultPort 2
+Ljava/io/File;->delete 3
+Lorg/apache/http/client/methods/HttpPost;-><init> 1
+Ljava/io/File;->length 1
+Lorg/apache/http/conn/ssl/SSLSocketFactory;-><init> 1
+Ljava/io/BufferedReader;->readLine 1
+Lorg/apache/http/params/HttpParams;->setParameter 1
+Lorg/apache/http/conn/scheme/Scheme;-><init> 4
+Ljava/io/OutputStreamWriter;->write 1
+Lorg/apache/http/conn/scheme/SchemeRegistry;->register 4
+Ljava/net/URLEncoder;->encode 5
+Ljava/io/FileWriter;-><init> 1
+Ljava/io/PrintWriter;->print 238
+Lorg/apache/http/params/BasicHttpParams;-><init> 1
+Landroid/net/ConnectivityManager;->getActiveNetworkInfo 2
+
+## Lcom/metek/zqWeather/activity/BindingActivity; onCreate
+Ljava/io/ByteArrayOutputStream;->close 1
+Lorg/apache/http/params/HttpConnectionParams;->setSoTimeout 1
+Lorg/apache/http/HttpResponse;->getFirstHeader 1
+Ljava/io/InputStreamReader;-><init> 1
+Lorg/apache/http/impl/client/DefaultHttpClient;-><init> 1
+Lorg/apache/http/conn/scheme/PlainSocketFactory;->getSocketFactory 1
+Ljava/io/File;->mkdirs 1
+Ljava/io/BufferedReader;->readLine 1
+Ljava/io/FileWriter;->flush 1
+Landroid/net/Proxy;->getPort 1
+Ljava/io/ByteArrayOutputStream;-><init> 2
+Lorg/apache/http/HttpResponse;->getStatusLine 1
+Landroid/net/Proxy;->getHost 1
+Ljava/io/OutputStreamWriter;-><init> 1
+Landroid/net/NetworkInfo;->isAvailable 1
+Landroid/net/Proxy;->getDefaultHost 2
+Ljava/io/IOException;->getMessage 8
+Lorg/apache/http/params/HttpProtocolParams;->setUserAgent 1
+Ljava/io/File;->getName 2
+Lorg/apache/http/conn/ssl/SSLSocketFactory;->setHostnameVerifier 1
+Ljava/io/File;->deleteOnExit 1
+Lorg/apache/http/client/methods/HttpPost;->setHeader 2
+Ljava/io/File;->equals 1
+Lorg/apache/http/StatusLine;->getStatusCode 1
+Ljava/io/FileInputStream;->close 2
+Ljava/io/Writer;-><init> 1
+Ljava/io/File;-><init> 3
+Ljava/io/PrintWriter;-><init> 2
+Landroid/net/NetworkInfo;->getType 1
+Lorg/apache/http/client/HttpClient;->getParams 1
+Lorg/apache/http/client/methods/HttpPost;->addHeader 1
+Ljava/io/InputStream;->read 2
+Ljava/io/OutputStreamWriter;->flush 1
+Ljava/io/File;->listFiles 3
+Lorg/apache/http/entity/ByteArrayEntity;-><init> 1
+Ljava/io/PrintWriter;->println 76
+Ljava/io/File;->isFile 1
+Ljava/io/FileInputStream;-><init> 1
+Ljava/io/ByteArrayOutputStream;->write 9
+Ljava/io/BufferedReader;->close 3
+Ljava/io/File;->isDirectory 1
+Lorg/apache/http/HttpHost;-><init> 1
+Lorg/apache/http/params/HttpProtocolParams;->setContentCharset 1
+Lorg/apache/http/HttpResponse;->getEntity 1
+Lorg/apache/http/conn/scheme/SchemeRegistry;-><init> 1
+Ljava/io/ByteArrayOutputStream;->toByteArray 2
+Lorg/apache/http/client/methods/HttpPost;->setEntity 1
+Ljava/io/BufferedReader;-><init> 1
+Lorg/apache/http/client/methods/HttpUriRequest;->addHeader 1
+Lorg/apache/http/client/methods/HttpGet;-><init> 1
+Ljava/io/InputStream;->close 10
+Ljava/io/IOException;->printStackTrace 7
+Lorg/apache/http/client/HttpClient;->execute 1
+Lorg/apache/http/HttpEntity;->getContent 1
+Lorg/apache/http/params/HttpConnectionParams;->setConnectionTimeout 1
+Lorg/apache/http/params/HttpProtocolParams;->setVersion 1
+Lorg/apache/http/impl/conn/tsccm/ThreadSafeClientConnManager;-><init> 1
+Lorg/apache/http/Header;->getValue 1
+Lorg/apache/http/conn/ssl/SSLSocketFactory;->getSocketFactory 2
+Ljava/io/OutputStreamWriter;->close 1
+Landroid/net/Proxy;->getDefaultPort 2
+Ljava/io/File;->delete 3
+Lorg/apache/http/client/methods/HttpPost;-><init> 1
+Ljava/io/File;->length 1
+Lorg/apache/http/conn/ssl/SSLSocketFactory;-><init> 1
+Ljava/io/FileWriter;->close 1
+Lorg/apache/http/params/HttpParams;->setParameter 1
+Lorg/apache/http/conn/scheme/Scheme;-><init> 4
+Ljava/io/OutputStreamWriter;->write 1
+Lorg/apache/http/conn/scheme/SchemeRegistry;->register 4
+Ljava/net/URLEncoder;->encode 5
+Ljava/io/FileWriter;-><init> 1
+Ljava/io/PrintWriter;->print 238
+Lorg/apache/http/params/BasicHttpParams;-><init> 1
+Landroid/net/ConnectivityManager;->getActiveNetworkInfo 2
+
+## Lcom/metek/zqWeather/activity/FindbackActivity; onCreate
+Ljava/io/PrintWriter;->print 238
+Ljava/io/Writer;-><init> 1
+Ljava/io/PrintWriter;-><init> 2
+Ljava/io/PrintWriter;->println 76
+
+## Lcom/metek/zqWeather/activity/LoginActivity; onCreate
+Ljava/io/PrintWriter;->print 238
+Ljava/io/Writer;-><init> 1
+Ljava/io/PrintWriter;-><init> 2
+Ljava/io/PrintWriter;->println 76
+
+## Lcom/metek/zqWeather/activity/GuideActivity; onCreate
+Ljava/io/PrintWriter;->print 238
+Ljava/io/Writer;-><init> 1
+Ljava/io/PrintWriter;-><init> 2
+Ljava/io/PrintWriter;->println 76
+
+## Lcom/metek/zqWeather/activity/UserProfileActivity; onCreate
+Ljava/io/FileInputStream;->close 3
+Ljava/io/Writer;-><init> 1
+Ljava/io/PrintWriter;-><init> 2
+Ljava/io/PrintStream;->println 1
+Ljava/io/PrintWriter;->println 76
+Ljava/io/PrintWriter;->print 238
+Ljava/io/PrintStream;->flush 1
+
+## Lcom/metek/zqWeather/activity/GuessActivity; onCreate
+Ljava/io/ByteArrayOutputStream;->close 1
+Ljava/io/InputStream;->close 16
+Lorg/apache/http/HttpResponse;->getFirstHeader 1
+Ljava/io/InputStreamReader;-><init> 1
+Lorg/apache/http/impl/client/DefaultHttpClient;-><init> 1
+Ljava/io/File;->mkdirs 2
+Ljava/io/BufferedReader;->readLine 1
+Ljava/io/FileWriter;->flush 1
+Landroid/net/Proxy;->getPort 1
+Lorg/apache/http/params/HttpConnectionParams;->setSoTimeout 1
+Ljava/io/ByteArrayOutputStream;-><init> 2
+Lorg/apache/http/Header;->getValue 1
+Lorg/apache/http/HttpResponse;->getStatusLine 1
+Ljava/io/PrintStream;->println 1
+Landroid/net/Proxy;->getHost 1
+Ljava/io/OutputStreamWriter;-><init> 1
+Landroid/net/NetworkInfo;->isAvailable 1
+Landroid/net/Proxy;->getDefaultHost 2
+Ljava/io/IOException;->getMessage 8
+Lorg/apache/http/params/HttpProtocolParams;->setUserAgent 1
+Ljava/io/File;->getName 2
+Lorg/apache/http/conn/ssl/SSLSocketFactory;->setHostnameVerifier 1
+Ljava/io/File;->deleteOnExit 1
+Lorg/apache/http/client/methods/HttpPost;->setHeader 2
+Ljava/io/File;->equals 1
+Lorg/apache/http/StatusLine;->getStatusCode 1
+Ljava/io/FileInputStream;->close 2
+Ljava/io/Writer;-><init> 1
+Lorg/apache/http/conn/scheme/PlainSocketFactory;->getSocketFactory 1
+Ljava/io/PrintWriter;-><init> 2
+Landroid/net/NetworkInfo;->getType 1
+Lorg/apache/http/client/HttpClient;->getParams 1
+Lorg/apache/http/client/methods/HttpPost;->addHeader 1
+Ljava/io/InputStream;->read 2
+Ljava/io/OutputStreamWriter;->flush 1
+Ljava/io/File;->listFiles 3
+Lorg/apache/http/entity/ByteArrayEntity;-><init> 1
+Ljava/io/PrintWriter;->println 76
+Ljava/io/File;->isFile 1
+Ljava/io/ByteArrayOutputStream;->write 9
+Lorg/apache/http/HttpEntity;->getContent 1
+Ljava/io/BufferedReader;->close 3
+Ljava/io/File;->isDirectory 1
+Lorg/apache/http/HttpHost;-><init> 1
+Lorg/apache/http/params/HttpProtocolParams;->setContentCharset 1
+Lorg/apache/http/HttpResponse;->getEntity 1
+Lorg/apache/http/conn/scheme/SchemeRegistry;-><init> 1
+Ljava/io/ByteArrayOutputStream;->toByteArray 2
+Lorg/apache/http/client/methods/HttpPost;->setEntity 1
+Ljava/io/BufferedReader;-><init> 1
+Lorg/apache/http/client/methods/HttpUriRequest;->addHeader 1
+Lorg/apache/http/client/methods/HttpGet;-><init> 1
+Ljava/io/File;-><init> 5
+Ljava/io/IOException;->printStackTrace 7
+Lorg/apache/http/client/HttpClient;->execute 1
+Ljava/io/PrintStream;->flush 1
+Lorg/apache/http/params/HttpConnectionParams;->setConnectionTimeout 1
+Lorg/apache/http/params/HttpProtocolParams;->setVersion 1
+Lorg/apache/http/impl/conn/tsccm/ThreadSafeClientConnManager;-><init> 1
+Ljava/io/FileInputStream;-><init> 2
+Lorg/apache/http/conn/ssl/SSLSocketFactory;->getSocketFactory 2
+Ljava/io/OutputStreamWriter;->close 1
+Landroid/net/Proxy;->getDefaultPort 2
+Ljava/io/File;->delete 3
+Lorg/apache/http/client/methods/HttpPost;-><init> 1
+Ljava/io/File;->length 1
+Lorg/apache/http/conn/ssl/SSLSocketFactory;-><init> 1
+Ljava/io/FileWriter;->close 1
+Lorg/apache/http/params/HttpParams;->setParameter 1
+Lorg/apache/http/conn/scheme/Scheme;-><init> 4
+Ljava/io/OutputStreamWriter;->write 1
+Lorg/apache/http/conn/scheme/SchemeRegistry;->register 4
+Ljava/net/URLEncoder;->encode 5
+Ljava/io/File;->exists 2
+Ljava/io/FileWriter;-><init> 1
+Ljava/io/PrintWriter;->print 238
+Lorg/apache/http/params/BasicHttpParams;-><init> 1
+Landroid/net/ConnectivityManager;->getActiveNetworkInfo 2
+
+## Lcom/metek/zqWeather/activity/SinaEditActivity; onCreate
+Ljava/io/ByteArrayOutputStream;->close 1
+Lorg/apache/http/params/HttpConnectionParams;->setSoTimeout 1
+Lorg/apache/http/HttpResponse;->getFirstHeader 1
+Ljava/io/InputStreamReader;-><init> 1
+Lorg/apache/http/impl/client/DefaultHttpClient;-><init> 1
+Lorg/apache/http/conn/scheme/PlainSocketFactory;->getSocketFactory 1
+Ljava/io/File;->mkdirs 1
+Ljava/io/BufferedReader;->readLine 1
+Ljava/io/FileWriter;->flush 1
+Landroid/net/Proxy;->getPort 1
+Ljava/io/ByteArrayOutputStream;-><init> 2
+Lorg/apache/http/HttpResponse;->getStatusLine 1
+Landroid/net/Proxy;->getHost 1
+Ljava/io/OutputStreamWriter;-><init> 1
+Landroid/net/NetworkInfo;->isAvailable 1
+Landroid/net/Proxy;->getDefaultHost 2
+Ljava/io/IOException;->getMessage 8
+Lorg/apache/http/params/HttpProtocolParams;->setUserAgent 1
+Ljava/io/File;->getName 2
+Lorg/apache/http/conn/ssl/SSLSocketFactory;->setHostnameVerifier 1
+Ljava/io/File;->deleteOnExit 1
+Lorg/apache/http/client/methods/HttpPost;->setHeader 2
+Ljava/io/File;->equals 1
+Lorg/apache/http/StatusLine;->getStatusCode 1
+Ljava/io/FileInputStream;->close 2
+Ljava/io/Writer;-><init> 1
+Ljava/io/File;-><init> 3
+Ljava/io/PrintWriter;-><init> 2
+Landroid/net/NetworkInfo;->getType 1
+Lorg/apache/http/client/HttpClient;->getParams 1
+Lorg/apache/http/client/methods/HttpPost;->addHeader 1
+Ljava/io/InputStream;->read 2
+Ljava/io/OutputStreamWriter;->flush 1
+Ljava/io/File;->listFiles 3
+Lorg/apache/http/entity/ByteArrayEntity;-><init> 1
+Ljava/io/PrintWriter;->println 76
+Ljava/io/File;->isFile 1
+Ljava/io/FileInputStream;-><init> 1
+Ljava/io/ByteArrayOutputStream;->write 9
+Ljava/io/BufferedReader;->close 3
+Ljava/io/File;->isDirectory 1
+Lorg/apache/http/HttpHost;-><init> 1
+Lorg/apache/http/params/HttpProtocolParams;->setContentCharset 1
+Lorg/apache/http/HttpResponse;->getEntity 1
+Lorg/apache/http/conn/scheme/SchemeRegistry;-><init> 1
+Ljava/io/ByteArrayOutputStream;->toByteArray 2
+Lorg/apache/http/client/methods/HttpPost;->setEntity 1
+Ljava/io/BufferedReader;-><init> 1
+Lorg/apache/http/client/methods/HttpUriRequest;->addHeader 1
+Lorg/apache/http/client/methods/HttpGet;-><init> 1
+Ljava/io/InputStream;->close 10
+Ljava/io/IOException;->printStackTrace 7
+Lorg/apache/http/client/HttpClient;->execute 1
+Lorg/apache/http/HttpEntity;->getContent 1
+Lorg/apache/http/params/HttpConnectionParams;->setConnectionTimeout 1
+Lorg/apache/http/params/HttpProtocolParams;->setVersion 1
+Lorg/apache/http/impl/conn/tsccm/ThreadSafeClientConnManager;-><init> 1
+Lorg/apache/http/Header;->getValue 1
+Lorg/apache/http/conn/ssl/SSLSocketFactory;->getSocketFactory 2
+Ljava/io/OutputStreamWriter;->close 1
+Landroid/net/Proxy;->getDefaultPort 2
+Ljava/io/File;->delete 3
+Lorg/apache/http/client/methods/HttpPost;-><init> 1
+Ljava/io/File;->length 1
+Lorg/apache/http/conn/ssl/SSLSocketFactory;-><init> 1
+Ljava/io/FileWriter;->close 1
+Lorg/apache/http/params/HttpParams;->setParameter 1
+Lorg/apache/http/conn/scheme/Scheme;-><init> 4
+Ljava/io/OutputStreamWriter;->write 1
+Lorg/apache/http/conn/scheme/SchemeRegistry;->register 4
+Ljava/net/URLEncoder;->encode 5
+Ljava/io/FileWriter;-><init> 1
+Ljava/io/PrintWriter;->print 238
+Lorg/apache/http/params/BasicHttpParams;-><init> 1
+Landroid/net/ConnectivityManager;->getActiveNetworkInfo 2
+
+## Lcom/metek/zqWeather/activity/ShareEditActivity; onCreate
+Ljava/io/ByteArrayOutputStream;->close 1
+Lorg/apache/http/params/HttpConnectionParams;->setSoTimeout 1
+Landroid/database/sqlite/SQLiteDatabase;->query 1
+Ljava/io/InputStreamReader;-><init> 1
+Lorg/apache/http/impl/client/DefaultHttpClient;-><init> 1
+Lorg/apache/http/conn/scheme/PlainSocketFactory;->getSocketFactory 1
+Ljava/io/File;->mkdirs 1
+Ljava/io/BufferedReader;->readLine 1
+Ljava/io/FileWriter;->flush 1
+Landroid/net/Proxy;->getPort 1
+Landroid/database/sqlite/SQLiteOpenHelper;-><init> 1
+Lorg/apache/http/HttpResponse;->getStatusLine 1
+Ljava/io/PrintStream;->println 2
+Landroid/net/Proxy;->getHost 1
+Ljava/io/OutputStreamWriter;-><init> 1
+Landroid/net/NetworkInfo;->isAvailable 1
+Landroid/net/Proxy;->getDefaultHost 2
+Ljava/io/IOException;->getMessage 8
+Lorg/apache/http/params/HttpProtocolParams;->setUserAgent 1
+Ljava/io/File;->getName 2
+Ljava/io/ByteArrayOutputStream;-><init> 2
+Ljava/io/File;->deleteOnExit 1
+Landroid/database/sqlite/SQLiteDatabase;->close 1
+Lorg/apache/http/client/methods/HttpPost;->setHeader 2
+Ljava/io/File;->equals 1
+Lorg/apache/http/StatusLine;->getStatusCode 1
+Ljava/io/FileInputStream;->close 2
+Ljava/io/Writer;-><init> 1
+Ljava/io/File;-><init> 3
+Ljava/io/PrintWriter;-><init> 2
+Landroid/net/NetworkInfo;->getType 1
+Lorg/apache/http/conn/ssl/SSLSocketFactory;->setHostnameVerifier 1
+Lorg/apache/http/client/HttpClient;->getParams 1
+Lorg/apache/http/client/methods/HttpPost;->addHeader 1
+Ljava/io/InputStream;->read 2
+Lorg/apache/http/HttpResponse;->getFirstHeader 1
+Ljava/io/OutputStreamWriter;->flush 1
+Ljava/io/File;->listFiles 3
+Lorg/apache/http/entity/ByteArrayEntity;-><init> 1
+Ljava/io/PrintWriter;->println 76
+Ljava/io/File;->isFile 1
+Ljava/io/FileInputStream;-><init> 1
+Ljava/io/ByteArrayOutputStream;->write 9
+Lorg/apache/http/HttpEntity;->getContent 1
+Ljava/io/BufferedReader;->close 3
+Ljava/io/File;->isDirectory 1
+Lorg/apache/http/HttpHost;-><init> 1
+Lorg/apache/http/params/HttpProtocolParams;->setContentCharset 1
+Lorg/apache/http/HttpResponse;->getEntity 1
+Lorg/apache/http/conn/scheme/SchemeRegistry;-><init> 1
+Ljava/io/ByteArrayOutputStream;->toByteArray 2
+Lorg/apache/http/client/methods/HttpPost;->setEntity 1
+Ljava/io/BufferedReader;-><init> 1
+Lorg/apache/http/client/methods/HttpUriRequest;->addHeader 1
+Lorg/apache/http/client/methods/HttpGet;-><init> 1
+Ljava/io/InputStream;->close 10
+Ljava/io/IOException;->printStackTrace 7
+Lorg/apache/http/client/HttpClient;->execute 1
+Ljava/io/PrintStream;->flush 1
+Lorg/apache/http/params/HttpConnectionParams;->setConnectionTimeout 1
+Lorg/apache/http/params/HttpProtocolParams;->setVersion 1
+Lorg/apache/http/impl/conn/tsccm/ThreadSafeClientConnManager;-><init> 1
+Lorg/apache/http/Header;->getValue 1
+Lorg/apache/http/conn/ssl/SSLSocketFactory;->getSocketFactory 2
+Ljava/io/OutputStreamWriter;->close 1
+Landroid/net/Proxy;->getDefaultPort 2
+Ljava/io/File;->delete 3
+Lorg/apache/http/client/methods/HttpPost;-><init> 1
+Ljava/io/File;->length 1
+Lorg/apache/http/conn/ssl/SSLSocketFactory;-><init> 1
+Ljava/io/FileWriter;->close 1
+Lorg/apache/http/params/HttpParams;->setParameter 1
+Lorg/apache/http/conn/scheme/Scheme;-><init> 4
+Ljava/io/OutputStreamWriter;->write 1
+Lorg/apache/http/conn/scheme/SchemeRegistry;->register 4
+Ljava/net/URLEncoder;->encode 5
+Ljava/io/FileWriter;-><init> 1
+Ljava/io/PrintWriter;->print 238
+Lorg/apache/http/params/BasicHttpParams;-><init> 1
+Landroid/net/ConnectivityManager;->getActiveNetworkInfo 2
+
+## Lcom/metek/zqWeather/activity/MoodLineActivity; onCreate
+Ljava/io/ByteArrayOutputStream;->close 1
+Lorg/apache/http/params/HttpConnectionParams;->setSoTimeout 1
+Landroid/database/sqlite/SQLiteDatabase;->query 1
+Ljava/io/InputStreamReader;-><init> 1
+Lorg/apache/http/impl/client/DefaultHttpClient;-><init> 1
+Lorg/apache/http/conn/scheme/PlainSocketFactory;->getSocketFactory 1
+Ljava/io/File;->mkdirs 1
+Ljava/io/BufferedReader;->readLine 1
+Ljava/io/FileWriter;->flush 1
+Landroid/net/Proxy;->getPort 1
+Landroid/database/sqlite/SQLiteOpenHelper;-><init> 1
+Lorg/apache/http/HttpResponse;->getStatusLine 1
+Ljava/io/PrintStream;->println 1
+Landroid/net/Proxy;->getHost 1
+Ljava/io/OutputStreamWriter;-><init> 1
+Landroid/net/NetworkInfo;->isAvailable 1
+Landroid/net/Proxy;->getDefaultHost 2
+Ljava/io/IOException;->getMessage 8
+Lorg/apache/http/params/HttpProtocolParams;->setUserAgent 1
+Ljava/io/File;->getName 2
+Ljava/io/ByteArrayOutputStream;-><init> 2
+Ljava/io/File;->deleteOnExit 1
+Landroid/database/sqlite/SQLiteDatabase;->close 1
+Lorg/apache/http/client/methods/HttpPost;->setHeader 2
+Ljava/io/File;->equals 1
+Lorg/apache/http/StatusLine;->getStatusCode 1
+Ljava/io/FileInputStream;->close 2
+Ljava/io/Writer;-><init> 1
+Ljava/io/File;-><init> 3
+Ljava/io/PrintWriter;-><init> 2
+Landroid/net/NetworkInfo;->getType 1
+Lorg/apache/http/conn/ssl/SSLSocketFactory;->setHostnameVerifier 1
+Lorg/apache/http/client/HttpClient;->getParams 1
+Lorg/apache/http/client/methods/HttpPost;->addHeader 1
+Ljava/io/InputStream;->read 2
+Lorg/apache/http/HttpResponse;->getFirstHeader 1
+Ljava/io/OutputStreamWriter;->flush 1
+Ljava/io/File;->listFiles 3
+Lorg/apache/http/entity/ByteArrayEntity;-><init> 1
+Ljava/io/PrintWriter;->println 76
+Ljava/io/File;->isFile 1
+Ljava/io/FileInputStream;-><init> 1
+Ljava/io/ByteArrayOutputStream;->write 9
+Ljava/io/BufferedReader;->close 3
+Ljava/io/File;->isDirectory 1
+Lorg/apache/http/HttpHost;-><init> 1
+Lorg/apache/http/params/HttpProtocolParams;->setContentCharset 1
+Lorg/apache/http/HttpResponse;->getEntity 1
+Lorg/apache/http/conn/scheme/SchemeRegistry;-><init> 1
+Ljava/io/ByteArrayOutputStream;->toByteArray 2
+Lorg/apache/http/client/methods/HttpPost;->setEntity 1
+Ljava/io/BufferedReader;-><init> 1
+Lorg/apache/http/client/methods/HttpUriRequest;->addHeader 1
+Lorg/apache/http/client/methods/HttpGet;-><init> 1
+Ljava/io/InputStream;->close 10
+Ljava/io/IOException;->printStackTrace 7
+Lorg/apache/http/client/HttpClient;->execute 1
+Lorg/apache/http/HttpEntity;->getContent 1
+Lorg/apache/http/params/HttpConnectionParams;->setConnectionTimeout 1
+Lorg/apache/http/params/HttpProtocolParams;->setVersion 1
+Lorg/apache/http/impl/conn/tsccm/ThreadSafeClientConnManager;-><init> 1
+Lorg/apache/http/Header;->getValue 1
+Lorg/apache/http/conn/ssl/SSLSocketFactory;->getSocketFactory 2
+Ljava/io/OutputStreamWriter;->close 1
+Landroid/net/Proxy;->getDefaultPort 2
+Ljava/io/File;->delete 3
+Lorg/apache/http/client/methods/HttpPost;-><init> 1
+Ljava/io/File;->length 1
+Lorg/apache/http/conn/ssl/SSLSocketFactory;-><init> 1
+Ljava/io/FileWriter;->close 1
+Lorg/apache/http/params/HttpParams;->setParameter 1
+Lorg/apache/http/conn/scheme/Scheme;-><init> 4
+Ljava/io/OutputStreamWriter;->write 1
+Lorg/apache/http/conn/scheme/SchemeRegistry;->register 4
+Ljava/net/URLEncoder;->encode 5
+Ljava/io/FileWriter;-><init> 1
+Ljava/io/PrintWriter;->print 238
+Lorg/apache/http/params/BasicHttpParams;-><init> 1
+Landroid/net/ConnectivityManager;->getActiveNetworkInfo 2
+
+## Lcom/sina/weibo/sdk/component/WeiboSdkBrowser; onCreate
+Ljava/io/InputStream;->close 6
+Ljava/io/IOException;->printStackTrace 7
+
+## Lcom/metek/zqWeather/activity/SkinPlugActivity; onCreate
+Ljava/io/Closeable;->close 1
+Ljava/io/File;->mkdirs 2
+Ljava/io/File;->createNewFile 1
+Ljava/io/ByteArrayOutputStream;-><init> 1
+Ljava/io/PrintStream;->println 1
+Ljava/io/OutputStreamWriter;-><init> 3
+Ljava/io/IOException;->getMessage 1
+Ljava/io/File;->mkdir 2
+Ljava/io/Writer;-><init> 1
+Ljava/io/PrintWriter;-><init> 2
+Ljava/io/InputStream;->read 1
+Ljava/io/File;->listFiles 1
+Ljava/io/PrintWriter;->println 76
+Ljava/io/ByteArrayOutputStream;->write 2
+Ljava/io/File;->isDirectory 1
+Ljava/io/File;-><init> 15
+Ljava/io/FileOutputStream;-><init> 3
+Ljava/io/EOFException;-><init> 1
+Ljava/io/Writer;->write 13
+Ljava/io/IOException;-><init> 10
+Ljava/io/FileInputStream;-><init> 1
+Ljava/io/BufferedWriter;-><init> 3
+Ljava/io/File;->renameTo 2
+Ljava/io/File;->delete 5
+Ljava/io/File;->length 1
+Ljava/io/Writer;->flush 1
+Ljava/io/ByteArrayOutputStream;->toString 1
+Ljava/io/File;->exists 11
+Ljava/io/PrintWriter;->print 238
+Ljava/io/Writer;->append 1
+Ljava/io/Writer;->close 4
+
+## Lcom/metek/zqWeather/activity/ShopActivity; onCreate
+Ljava/io/Writer;-><init> 1
+Ljava/io/PrintWriter;-><init> 2
+Ljava/io/PrintStream;->println 1
+Ljava/io/PrintWriter;->println 76
+Ljava/io/PrintWriter;->print 238
+Ljava/io/PrintStream;->flush 1
+
+## Lcom/metek/zqWeather/activity/AdWebActivity; onCreate
+Ljava/io/File;->getAbsolutePath 1
+Ljava/io/Writer;-><init> 1
+Ljava/io/PrintWriter;-><init> 2
+Ljava/io/PrintStream;->println 2
+Ljava/io/PrintWriter;->println 76
+Ljava/io/PrintWriter;->print 238
+
+## Lcom/metek/zqWeather/activity/Widget2x1ConfigActivity; onCreate
+Ljava/io/FileOutputStream;->write 1
+Ljava/io/InputStreamReader;-><init> 1
+Ljava/io/File;->delete 1
+Landroid/net/NetworkInfo;->getSubtypeName 1
+Ljava/io/StringWriter;->write 1
+Landroid/net/NetworkInfo;->getState 2
+Ljava/io/FileInputStream;->close 3
+Landroid/net/NetworkInfo;->isConnectedOrConnecting 1
+Ljava/io/StringWriter;-><init> 1
+Ljava/io/File;->length 1
+Ljava/io/InputStreamReader;->read 1
+Ljava/io/StringWriter;->toString 1
+Ljava/io/PrintStream;->println 1
+Ljava/io/FileOutputStream;->flush 1
+Landroid/net/ConnectivityManager;->getNetworkInfo 2
+Ljava/io/File;-><init> 1
+Ljava/io/PrintStream;->flush 1
+Ljava/io/FileOutputStream;->close 1
+Ljava/io/File;->exists 1
+Landroid/net/ConnectivityManager;->getActiveNetworkInfo 1
+
+## Lcom/metek/zqWeather/activity/Widget4x1ConfigActivity; onCreate
+Ljava/io/FileOutputStream;->write 1
+Ljava/io/InputStreamReader;-><init> 1
+Ljava/io/File;->delete 1
+Landroid/net/NetworkInfo;->getSubtypeName 1
+Ljava/io/StringWriter;->write 1
+Landroid/net/NetworkInfo;->getState 2
+Ljava/io/FileInputStream;->close 3
+Landroid/net/NetworkInfo;->isConnectedOrConnecting 1
+Ljava/io/StringWriter;-><init> 1
+Ljava/io/File;->length 1
+Ljava/io/InputStreamReader;->read 1
+Ljava/io/StringWriter;->toString 1
+Ljava/io/PrintStream;->println 1
+Ljava/io/FileOutputStream;->flush 1
+Landroid/net/ConnectivityManager;->getNetworkInfo 2
+Ljava/io/File;-><init> 1
+Ljava/io/PrintStream;->flush 1
+Ljava/io/FileOutputStream;->close 1
+Ljava/io/File;->exists 1
+Landroid/net/ConnectivityManager;->getActiveNetworkInfo 1
+
+## Lcom/metek/zqWeather/activity/Widget4x2ConfigActivity; onCreate
+
+## Lcom/metek/zqWeather/activity/Widget5x2ConfigActivity; onCreate
+
+## Lcom/metek/zqWeather/WeatherChargeWarn$WarnDialog; onCreate
+
+## Lcom/metek/zqWeather/service/UpdateService$UpdateAppDialog; onCreate
+
+## Lcom/metek/zqWeather/activity/AuthorizeActivity; onCreate
+Landroid/net/NetworkInfo;->getState 1
+Ljava/io/Writer;-><init> 1
+Ljava/io/PrintWriter;-><init> 2
+Landroid/net/ConnectivityManager;->getAllNetworkInfo 1
+Ljava/io/PrintWriter;->println 76
+Ljava/io/PrintWriter;->print 238
+
+## Lcom/metek/zqWeather/wxapi/WXEntryActivity; onCreate
+
+## Lcom/metek/zqWeather/activity/AppPushActivity; onCreate
+Ljava/io/FileOutputStream;->write 1
+Ljava/io/File;->getPath 2
+Ljava/io/PrintWriter;->print 238
+Ljava/io/FileInputStream;->close 1
+Ljava/io/Writer;-><init> 1
+Ljava/io/FileNotFoundException;->printStackTrace 2
+Ljava/io/PrintWriter;-><init> 2
+Ljava/io/FileInputStream;->read 1
+Ljava/io/File;-><init> 1
+Ljava/io/FileOutputStream;-><init> 1
+Ljava/io/PrintWriter;->println 76
+Ljava/io/IOException;->printStackTrace 2
+Ljava/io/PrintStream;->println 1
+Ljava/io/PrintStream;->flush 1
+Ljava/io/FileOutputStream;->close 1
+Ljava/io/FileInputStream;-><init> 1
+
+## Lcom/taobao/newxp/view/UMDetail; onCreate
+Ljava/io/ByteArrayOutputStream;->close 1
+Ljava/io/RandomAccessFile;->getChannel 1
+Ljava/io/FileInputStream;->read 1
+Ljava/io/FileReader;->close 3
+Ljava/io/File;->list 1
+Ljava/io/ObjectInputStream;->readObject 1
+Landroid/location/Location;->setTime 1
+Landroid/net/wifi/WifiManager;->getConnectionInfo 1
+Landroid/location/Location;->setProvider 1
+Landroid/net/Uri;->parse 1
+Lorg/apache/http/cookie/Cookie;->isExpired 1
+Ljava/io/FileReader;-><init> 1
+Lorg/apache/http/protocol/HttpContext;->setAttribute 1
+Lorg/apache/http/cookie/Cookie;->getValue 1
+Landroid/net/http/AndroidHttpClient;->newInstance 3
+Landroid/net/Uri;->getHost 1
+Ljava/io/UnsupportedEncodingException;->printStackTrace 2
+Landroid/location/Location;->getLatitude 1
+Ljava/io/FileInputStream;->close 1
+Ljava/io/ByteArrayOutputStream;-><init> 2
+Ljava/io/FileNotFoundException;->printStackTrace 1
+Landroid/location/Location;->getLongitude 1
+Ljava/io/File;->mkdirs 3
+Landroid/location/Location;->setLatitude 1
+Landroid/location/Location;->setAccuracy 1
+Landroid/net/TrafficStats;->setThreadStatsTag 1
+Ljava/io/File;->isFile 1
+Ljava/io/FileInputStream;-><init> 2
+Ljava/io/ByteArrayOutputStream;->write 7
+Ljava/io/BufferedReader;->close 3
+Ljava/io/ByteArrayOutputStream;->toByteArray 3
+Landroid/location/Location;->getTime 3
+Ljava/io/File;->getAbsolutePath 4
+Lorg/apache/http/cookie/Cookie;->getDomain 2
+Ljava/io/File;->getCanonicalPath 2
+Ljava/io/File;->toString 1
+Lorg/apache/http/cookie/Cookie;->getName 1
+Ljava/io/BufferedReader;-><init> 1
+Ljava/io/File;->canRead 2
+Ljava/io/File;-><init> 14
+Ljava/io/IOException;->printStackTrace 3
+Landroid/location/Location;->getProvider 1
+Lorg/apache/http/client/CookieStore;->getCookies 2
+Landroid/location/Location;->getAccuracy 1
+Landroid/net/wifi/WifiInfo;->getMacAddress 1
+Ljava/io/File;->delete 2
+Ljava/io/File;->renameTo 1
+Lorg/apache/http/protocol/BasicHttpContext;-><init> 1
+Ljava/io/ByteArrayOutputStream;->size 1
+Landroid/location/Location;-><init> 1
+Ljava/io/File;->getPath 1
+Ljava/io/BufferedReader;->readLine 1
+Ljava/io/ByteArrayInputStream;-><init> 1
+Ljava/net/URLEncoder;->encode 3
+Ljava/io/File;->exists 7
+Ljava/io/ObjectInputStream;-><init> 1
+Ljava/io/File;->createNewFile 1
+Ljava/io/RandomAccessFile;-><init> 1
+Landroid/location/Location;->setLongitude 1
+Ljava/io/FileInputStream;->available 1
+
+## Lcom/taobao/newxp/view/handler/umwall/AlimamaWall; onCreate
+Ljava/io/ByteArrayOutputStream;->close 2
+Ljava/io/BufferedWriter;->close 3
+Ljava/io/RandomAccessFile;->getChannel 1
+Ljava/io/FileInputStream;->read 2
+Landroid/location/LocationManager;->addGpsStatusListener 1
+Ljava/io/FileReader;->close 3
+Ljava/io/File;->delete 2
+Ljava/io/File;->list 1
+Ljava/io/ObjectInputStream;->readObject 1
+Landroid/location/Location;->setTime 1
+Landroid/net/wifi/WifiManager;->getConnectionInfo 4
+Ljava/io/ByteArrayOutputStream;->flush 1
+Ljava/io/ByteArrayOutputStream;-><init> 3
+Landroid/location/Location;->setProvider 1
+Landroid/net/Uri;->parse 1
+Landroid/location/LocationManager;->getAllProviders 2
+Lorg/apache/http/cookie/Cookie;->isExpired 1
+Ljava/io/OutputStreamWriter;-><init> 1
+Ljava/io/FileReader;-><init> 1
+Lorg/apache/http/protocol/HttpContext;->setAttribute 1
+Landroid/location/Location;->setLatitude 1
+Lorg/apache/http/cookie/Cookie;->getValue 1
+Landroid/net/http/AndroidHttpClient;->newInstance 3
+Ljava/io/File;->getPath 5
+Landroid/location/Location;->getLatitude 3
+Landroid/location/LocationManager;->removeGpsStatusListener 1
+Ljava/io/FileInputStream;->close 4
+Ljava/io/Writer;-><init> 1
+Ljava/io/PrintWriter;-><init> 2
+Landroid/location/LocationManager;->addNmeaListener 1
+Ljava/io/UnsupportedEncodingException;->printStackTrace 2
+Ljava/io/File;->mkdirs 4
+Landroid/location/LocationManager;->removeNmeaListener 1
+Landroid/location/Location;->setAccuracy 1
+Landroid/net/TrafficStats;->setThreadStatsTag 1
+Ljava/io/PrintWriter;->println 76
+Ljava/io/File;->isFile 1
+Ljava/io/ByteArrayOutputStream;->write 8
+Landroid/net/Uri;->getHost 1
+Ljava/io/BufferedReader;->close 3
+Ljava/io/File;->isDirectory 1
+Landroid/location/Location;->getTime 4
+Landroid/net/wifi/WifiManager;->startScan 1
+Landroid/location/Location;->getLongitude 3
+Ljava/io/BufferedWriter;->newLine 1
+Lorg/apache/http/cookie/Cookie;->getDomain 2
+Ljava/io/FileNotFoundException;->printStackTrace 1
+Ljava/io/File;->toString 1
+Lorg/apache/http/cookie/Cookie;->getName 1
+Ljava/io/BufferedReader;-><init> 1
+Ljava/io/BufferedWriter;->write 1
+Ljava/io/IOException;->printStackTrace 3
+Ljava/io/File;->canRead 2
+Ljava/io/File;-><init> 16
+Ljava/io/FileOutputStream;-><init> 1
+Ljava/io/RandomAccessFile;-><init> 1
+Landroid/location/Location;->getProvider 2
+Lorg/apache/http/client/CookieStore;->getCookies 2
+Landroid/location/Location;->getAccuracy 2
+Landroid/net/wifi/WifiInfo;->getMacAddress 3
+Ljava/io/FileInputStream;-><init> 3
+Ljava/io/BufferedWriter;-><init> 1
+Ljava/io/File;->getAbsolutePath 4
+Ljava/io/File;->renameTo 1
+Lorg/apache/http/protocol/BasicHttpContext;-><init> 1
+Ljava/io/ByteArrayOutputStream;->size 1
+Landroid/location/Location;-><init> 1
+Ljava/io/BufferedReader;->readLine 1
+Ljava/io/ByteArrayOutputStream;->toByteArray 4
+Ljava/io/ByteArrayInputStream;-><init> 1
+Ljava/net/URLEncoder;->encode 21
+Ljava/io/File;->exists 7
+Ljava/io/ObjectInputStream;-><init> 1
+Landroid/location/LocationManager;->removeUpdates 1
+Ljava/io/File;->createNewFile 1
+Ljava/io/PrintWriter;->print 238
+Landroid/location/Location;->setLongitude 1
+Landroid/location/LocationManager;->requestLocationUpdates 1
+Ljava/io/FileInputStream;->available 1
+
+## Lcom/metek/zqWeather/achievement/TouchNotice; onCreate
+
+## Lcom/baidu/location/f; onCreate
+Ljava/io/RandomAccessFile;->readBoolean 2
+Ljava/io/File;->renameTo 1
+Ljava/io/File;->delete 1
+Ljava/io/File;->mkdirs 1
+Ljava/io/RandomAccessFile;->readInt 1
+Ljava/io/FileInputStream;->close 1
+Ljava/io/RandomAccessFile;->seek 1
+Ljava/io/RandomAccessFile;->close 1
+Ljava/io/FileInputStream;->read 1
+Ljava/io/File;->getAbsolutePath 1
+Ljava/io/File;->exists 5
+Ljava/io/RandomAccessFile;-><init> 1
+Ljava/io/RandomAccessFile;->read 1
+Ljava/io/File;-><init> 5
+Ljava/io/File;->isFile 1
+Ljava/io/FileInputStream;-><init> 1
+
+## Lcom/taobao/munion/base/download/DownloadingService; onCreate
+Landroid/net/TrafficStats;->setThreadStatsTag 1
+Landroid/net/http/AndroidHttpClient;->newInstance 1
+Ljava/io/File;-><init> 1
+
