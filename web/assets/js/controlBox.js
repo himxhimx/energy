@@ -119,7 +119,14 @@ controlBox.stopHandler = function () {
 
     APIInfoListWhenStop = [];
     $.each(APIInfoList, function(key, val) {
-       APIInfoListWhenStop[key] = val.slice(0);
+        if (val["Pid"]) {
+            APIInfoListWhenStop[key] = {
+                Pid: val["Pid"],
+                APIList: val["APIList"].slice(0)
+            }
+        } else {
+            APIInfoListWhenStop[key] = {};
+        }
     });
 
     $("#controlPlay").unbind("click", controlBox.stopHandler);

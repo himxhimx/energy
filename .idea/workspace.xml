@@ -1,14 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c25ad7f5-cddb-49c6-96fb-f8f9098b004a" name="Default" comment="添加ignore文件">
+    <list default="true" id="c25ad7f5-cddb-49c6-96fb-f8f9098b004a" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/final2_war_exploded/WEB-INF/classes/test/SpringMVC/mvcController.class" afterPath="$PROJECT_DIR$/out/artifacts/final2_war_exploded/WEB-INF/classes/test/SpringMVC/mvcController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/final2_war_exploded/WEB-INF/classes/test/SpringMVC/util/EnergyModelUtils.class" afterPath="$PROJECT_DIR$/out/artifacts/final2_war_exploded/WEB-INF/classes/test/SpringMVC/util/EnergyModelUtils.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/final2_war_exploded/WEB-INF/classes/test/SpringMVC/util/adb.class" afterPath="$PROJECT_DIR$/out/artifacts/final2_war_exploded/WEB-INF/classes/test/SpringMVC/util/adb.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/final2/test/SpringMVC/mvcController.class" afterPath="$PROJECT_DIR$/out/production/final2/test/SpringMVC/mvcController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/final2/test/SpringMVC/util/EnergyModelUtils.class" afterPath="$PROJECT_DIR$/out/production/final2/test/SpringMVC/util/EnergyModelUtils.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/final2/test/SpringMVC/util/adb.class" afterPath="$PROJECT_DIR$/out/production/final2/test/SpringMVC/util/adb.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/final2_war_exploded/assets/css/main.css" afterPath="$PROJECT_DIR$/out/artifacts/final2_war_exploded/assets/css/main.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/SpringMVC/mvcController.java" afterPath="$PROJECT_DIR$/src/test/SpringMVC/mvcController.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/SpringMVC/util/adb.java" afterPath="$PROJECT_DIR$/src/test/SpringMVC/util/adb.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/jsp/index.jsp" afterPath="$PROJECT_DIR$/web/WEB-INF/jsp/index.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/css/main.css" afterPath="$PROJECT_DIR$/web/assets/css/main.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/js/controlBox.js" afterPath="$PROJECT_DIR$/web/assets/js/controlBox.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/js/linePlot.js" afterPath="$PROJECT_DIR$/web/assets/js/linePlot.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/js/main.js" afterPath="$PROJECT_DIR$/web/assets/js/main.js" />
     </list>
     <ignored path="final2.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -25,6 +30,13 @@
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
   </component>
+  <component name="DatabaseView">
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_TABLE_DETAILS" value="true" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+  </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FavoritesManager">
     <favorites_list name="final2" />
@@ -34,8 +46,18 @@
       <file leaf-file-name="index.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/index.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-437">
-              <caret line="27" column="4" selection-start-line="27" selection-start-column="4" selection-end-line="27" selection-end-column="4" />
+            <state relative-caret-position="-209">
+              <caret line="72" column="66" selection-start-line="72" selection-start-column="66" selection-end-line="72" selection-end-column="66" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="controlBox.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/assets/js/controlBox.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="304">
+              <caret line="128" column="9" selection-start-line="128" selection-start-column="9" selection-end-line="128" selection-end-column="9" />
               <folding />
             </state>
           </provider>
@@ -54,24 +76,24 @@
       <file leaf-file-name="main.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/assets/js/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="152">
+            <state relative-caret-position="266">
               <caret line="35" column="67" selection-start-line="35" selection-start-column="67" selection-end-line="35" selection-end-column="67" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="adb.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="adb.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/SpringMVC/util/adb.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-411">
-              <caret line="343" column="22" selection-start-line="343" selection-start-column="22" selection-end-line="343" selection-end-column="22" />
+            <state relative-caret-position="-380">
+              <caret line="17" column="86" selection-start-line="17" selection-start-column="86" selection-end-line="17" selection-end-column="86" />
               <folding>
                 <element signature="method#finalize#0;class#adb#0" expanded="false" />
                 <element signature="method#killProcess#0;class#adb#0" expanded="false" />
                 <element signature="method#logcat#0;class#adb#0" expanded="false" />
-                <element signature="e#2641#2767#0" expanded="true" />
-                <element signature="e#2766#2767#0" expanded="true" />
+                <element signature="e#2637#2763#0" expanded="true" />
+                <element signature="e#2762#2763#0" expanded="true" />
                 <element signature="method#loadAPIInfo#0;class#adb#0" expanded="false" />
                 <element signature="method#logcatThread#0;class#adb#0" expanded="false" />
                 <element signature="method#devices#0;class#adb#0" expanded="false" />
@@ -93,7 +115,7 @@
       <file leaf-file-name="packageInfoBox.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/assets/js/packageInfoBox.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="418">
+            <state relative-caret-position="304">
               <caret line="30" column="34" selection-start-line="30" selection-start-column="34" selection-end-line="30" selection-end-column="34" />
               <folding>
                 <marker date="1463126425704" expanded="true" signature="1883:1893" placeholder="..." />
@@ -107,33 +129,13 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="plotConfig.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/assets/js/plotConfig.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-890">
-              <caret line="51" column="4" selection-start-line="51" selection-start-column="4" selection-end-line="51" selection-end-column="4" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="mvcController.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/SpringMVC/mvcController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-329">
-              <caret line="8" column="35" selection-start-line="8" selection-start-column="35" selection-end-line="8" selection-end-column="35" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="linePlot.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/assets/js/linePlot.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="228">
-              <caret line="112" column="31" selection-start-line="112" selection-start-column="31" selection-end-line="112" selection-end-column="31" />
+            <state relative-caret-position="-19">
+              <caret line="99" column="29" selection-start-line="99" selection-start-column="29" selection-end-line="99" selection-end-column="29" />
               <folding>
-                <marker date="1463819254392" expanded="true" signature="977:1017" placeholder="..." />
+                <marker date="1463820381512" expanded="true" signature="977:1017" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -142,8 +144,8 @@
       <file leaf-file-name="main.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/assets/css/main.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-323">
-              <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+            <state relative-caret-position="139">
+              <caret line="109" column="17" selection-start-line="109" selection-start-column="17" selection-end-line="109" selection-end-column="17" />
               <folding />
             </state>
           </provider>
@@ -195,19 +197,19 @@
         <option value="$PROJECT_DIR$/web/assets/js/timeXaisBar.js" />
         <option value="$PROJECT_DIR$/web/assets/css/myButton.css" />
         <option value="$PROJECT_DIR$/web/assets/css/fadeIn.css" />
-        <option value="$PROJECT_DIR$/web/WEB-INF/jsp/index.jsp" />
-        <option value="$PROJECT_DIR$/web/assets/css/main.css" />
         <option value="$PROJECT_DIR$/web/assets/js/choiceBox.js" />
-        <option value="$PROJECT_DIR$/web/assets/js/controlBox.js" />
         <option value="$PROJECT_DIR$/web/assets/js/packageInfoBox.js" />
         <option value="$PROJECT_DIR$/web/assets/js/plotConfig.js" />
         <option value="$PROJECT_DIR$/energy_model.ini" />
         <option value="$PROJECT_DIR$/src/test/SpringMVC/util/EnergyModelUtils.java" />
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/src/test/SpringMVC/util/adb.java" />
         <option value="$PROJECT_DIR$/web/assets/js/main.js" />
-        <option value="$PROJECT_DIR$/web/assets/js/linePlot.js" />
         <option value="$PROJECT_DIR$/src/test/SpringMVC/mvcController.java" />
+        <option value="$PROJECT_DIR$/web/assets/css/main.css" />
+        <option value="$PROJECT_DIR$/web/assets/js/linePlot.js" />
+        <option value="$PROJECT_DIR$/src/test/SpringMVC/util/adb.java" />
+        <option value="$PROJECT_DIR$/web/assets/js/controlBox.js" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/jsp/index.jsp" />
       </list>
     </option>
   </component>
@@ -1027,7 +1029,7 @@
       <workItem from="1462718302266" duration="9569000" />
       <workItem from="1463452101855" duration="502000" />
       <workItem from="1463452629098" duration="249000" />
-      <workItem from="1463813174356" duration="2815000" />
+      <workItem from="1463813174356" duration="4100000" />
     </task>
     <task id="LOCAL-00001" summary="xais rolling">
       <created>1460565104289</created>
@@ -1183,11 +1185,18 @@
       <option name="project" value="LOCAL" />
       <updated>1462352336705</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="固定placeholder寛度, 改變APIList顯示">
+      <created>1463819820665</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1463819820665</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="328365000" />
+    <option name="totallyTimeSpent" value="329650000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -1210,7 +1219,7 @@
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20726173" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1293,7 +1302,8 @@
     <MESSAGE value="关个log 模型bug 能耗计算结果保留两位小数" />
     <MESSAGE value="1 事件信息使用手机系统时间戳与能耗数据同步 2 更新手机端app 3 其他调整" />
     <MESSAGE value="事件信息显示的时候按时间排序" />
-    <option name="LAST_COMMIT_MESSAGE" value="事件信息显示的时候按时间排序" />
+    <MESSAGE value="固定placeholder寛度, 改變APIList顯示" />
+    <option name="LAST_COMMIT_MESSAGE" value="固定placeholder寛度, 改變APIList顯示" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1312,8 +1322,8 @@
             <element signature="method#finalize#0;class#adb#0" expanded="false" />
             <element signature="method#killProcess#0;class#adb#0" expanded="false" />
             <element signature="method#logcat#0;class#adb#0" expanded="false" />
-            <element signature="e#2641#2767#0" expanded="true" />
-            <element signature="e#2766#2767#0" expanded="true" />
+            <element signature="e#2637#2763#0" expanded="true" />
+            <element signature="e#2762#2763#0" expanded="true" />
             <element signature="method#loadAPIInfo#0;class#adb#0" expanded="false" />
             <element signature="method#logcatThread#0;class#adb#0" expanded="false" />
             <element signature="method#devices#0;class#adb#0" expanded="false" />
@@ -1364,8 +1374,8 @@
             <element signature="method#finalize#0;class#adb#0" expanded="false" />
             <element signature="method#killProcess#0;class#adb#0" expanded="false" />
             <element signature="method#logcat#0;class#adb#0" expanded="false" />
-            <element signature="e#2641#2767#0" expanded="true" />
-            <element signature="e#2766#2767#0" expanded="true" />
+            <element signature="e#2637#2763#0" expanded="true" />
+            <element signature="e#2762#2763#0" expanded="true" />
             <element signature="method#loadAPIInfo#0;class#adb#0" expanded="false" />
             <element signature="method#logcatThread#0;class#adb#0" expanded="false" />
             <element signature="method#devices#0;class#adb#0" expanded="false" />
@@ -1437,8 +1447,8 @@
             <element signature="method#finalize#0;class#adb#0" expanded="false" />
             <element signature="method#killProcess#0;class#adb#0" expanded="false" />
             <element signature="method#logcat#0;class#adb#0" expanded="false" />
-            <element signature="e#2641#2767#0" expanded="true" />
-            <element signature="e#2766#2767#0" expanded="true" />
+            <element signature="e#2637#2763#0" expanded="true" />
+            <element signature="e#2762#2763#0" expanded="true" />
             <element signature="method#loadAPIInfo#0;class#adb#0" expanded="false" />
             <element signature="method#logcatThread#0;class#adb#0" expanded="false" />
             <element signature="method#devices#0;class#adb#0" expanded="false" />
@@ -1496,8 +1506,8 @@
             <element signature="method#finalize#0;class#adb#0" expanded="false" />
             <element signature="method#killProcess#0;class#adb#0" expanded="false" />
             <element signature="method#logcat#0;class#adb#0" expanded="false" />
-            <element signature="e#2641#2767#0" expanded="true" />
-            <element signature="e#2766#2767#0" expanded="true" />
+            <element signature="e#2637#2763#0" expanded="true" />
+            <element signature="e#2762#2763#0" expanded="true" />
             <element signature="method#loadAPIInfo#0;class#adb#0" expanded="false" />
             <element signature="method#logcatThread#0;class#adb#0" expanded="false" />
             <element signature="method#devices#0;class#adb#0" expanded="false" />
@@ -1622,13 +1632,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/assets/js/controlBox.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="53" column="33" selection-start-line="53" selection-start-column="33" selection-end-line="53" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://D:/Java/jdk1.7.0_25/src.zip!/java/lang/Double.java" />
     <entry file="file://$PROJECT_DIR$/src/test/SpringMVC/util/JSON.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -1705,49 +1708,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-437">
-          <caret line="27" column="4" selection-start-line="27" selection-start-column="4" selection-end-line="27" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/assets/js/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="35" column="67" selection-start-line="35" selection-start-column="67" selection-end-line="35" selection-end-column="67" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/SpringMVC/util/adb.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-411">
-          <caret line="343" column="22" selection-start-line="343" selection-start-column="22" selection-end-line="343" selection-end-column="22" />
-          <folding>
-            <element signature="method#finalize#0;class#adb#0" expanded="false" />
-            <element signature="method#killProcess#0;class#adb#0" expanded="false" />
-            <element signature="method#logcat#0;class#adb#0" expanded="false" />
-            <element signature="e#2641#2767#0" expanded="true" />
-            <element signature="e#2766#2767#0" expanded="true" />
-            <element signature="method#loadAPIInfo#0;class#adb#0" expanded="false" />
-            <element signature="method#logcatThread#0;class#adb#0" expanded="false" />
-            <element signature="method#devices#0;class#adb#0" expanded="false" />
-            <element signature="method#getDeviceInfo#0;class#adb#0" expanded="false" />
-            <element signature="method#updatePackageList#0;class#adb#0" expanded="false" />
-            <element signature="method#getPackagesChange#0;class#adb#0" expanded="false" />
-            <element signature="method#getPackagesInfo#0;class#adb#0" expanded="false" />
-            <element signature="method#addPkgInfoToList#0;class#adb#0" expanded="false" />
-            <element signature="method#findDifferentAndAddToMap#0;class#adb#0" expanded="false" />
-            <element signature="class#Package#0;class#adb#0" expanded="false" />
-            <element signature="method#Package#0;class#Package#0;class#adb#0" expanded="false" />
-            <element signature="method#Event#0;class#Event#0;class#adb#0" expanded="false" />
-            <element signature="class#EventEnergy#0;class#adb#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/assets/js/plotConfig.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-890">
@@ -1756,9 +1716,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/SpringMVC/mvcController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-329">
+          <caret line="8" column="35" selection-start-line="8" selection-start-column="35" selection-end-line="8" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/web/assets/js/packageInfoBox.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
+        <state relative-caret-position="304">
           <caret line="30" column="34" selection-start-line="30" selection-start-column="34" selection-end-line="30" selection-end-column="34" />
           <folding>
             <marker date="1463126425704" expanded="true" signature="1883:1893" placeholder="..." />
@@ -1773,27 +1741,70 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web/assets/css/main.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-323">
-          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+        <state relative-caret-position="139">
+          <caret line="109" column="17" selection-start-line="109" selection-start-column="17" selection-end-line="109" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/assets/js/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="35" column="67" selection-start-line="35" selection-start-column="67" selection-end-line="35" selection-end-column="67" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/assets/js/controlBox.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="128" column="9" selection-start-line="128" selection-start-column="9" selection-end-line="128" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-209">
+          <caret line="72" column="66" selection-start-line="72" selection-start-column="66" selection-end-line="72" selection-end-column="66" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/assets/js/linePlot.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="112" column="31" selection-start-line="112" selection-start-column="31" selection-end-line="112" selection-end-column="31" />
+        <state relative-caret-position="-19">
+          <caret line="99" column="29" selection-start-line="99" selection-start-column="29" selection-end-line="99" selection-end-column="29" />
           <folding>
-            <marker date="1463819254392" expanded="true" signature="977:1017" placeholder="..." />
+            <marker date="1463820381512" expanded="true" signature="977:1017" placeholder="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/SpringMVC/mvcController.java">
+    <entry file="file://$PROJECT_DIR$/src/test/SpringMVC/util/adb.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-329">
-          <caret line="8" column="35" selection-start-line="8" selection-start-column="35" selection-end-line="8" selection-end-column="35" />
-          <folding />
+        <state relative-caret-position="-380">
+          <caret line="17" column="86" selection-start-line="17" selection-start-column="86" selection-end-line="17" selection-end-column="86" />
+          <folding>
+            <element signature="method#finalize#0;class#adb#0" expanded="false" />
+            <element signature="method#killProcess#0;class#adb#0" expanded="false" />
+            <element signature="method#logcat#0;class#adb#0" expanded="false" />
+            <element signature="e#2637#2763#0" expanded="true" />
+            <element signature="e#2762#2763#0" expanded="true" />
+            <element signature="method#loadAPIInfo#0;class#adb#0" expanded="false" />
+            <element signature="method#logcatThread#0;class#adb#0" expanded="false" />
+            <element signature="method#devices#0;class#adb#0" expanded="false" />
+            <element signature="method#getDeviceInfo#0;class#adb#0" expanded="false" />
+            <element signature="method#updatePackageList#0;class#adb#0" expanded="false" />
+            <element signature="method#getPackagesChange#0;class#adb#0" expanded="false" />
+            <element signature="method#getPackagesInfo#0;class#adb#0" expanded="false" />
+            <element signature="method#addPkgInfoToList#0;class#adb#0" expanded="false" />
+            <element signature="method#findDifferentAndAddToMap#0;class#adb#0" expanded="false" />
+            <element signature="class#Package#0;class#adb#0" expanded="false" />
+            <element signature="method#Package#0;class#Package#0;class#adb#0" expanded="false" />
+            <element signature="method#Event#0;class#Event#0;class#adb#0" expanded="false" />
+            <element signature="class#EventEnergy#0;class#adb#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>

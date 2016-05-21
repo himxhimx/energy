@@ -15,7 +15,7 @@ public class adb {
     private static final String SAMPLE_SPLIT = "+T-23==53-X7-+YuRG";
 
     //set path
-    private static final String API_FILE_PATH = "C:\\Users\\shenpeng\\IdeaProjects\\energy\\API_result.txt";
+    private static final String API_FILE_PATH = "C:\\Users\\Himx\\IdeaProjects\\final2\\API_result.txt";
 
     private Thread logcatThread = null;
     private Process process = null;

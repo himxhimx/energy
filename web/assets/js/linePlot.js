@@ -97,6 +97,7 @@ linePlot.allowTooltip = function(){
 linePlot.bindHover = function() {
     // 绑定提示事件
     $("#placeholder").bind("plothover", function (event, pos, item) {
+        $("#tooltip").hide();
         var axes = plot.getAxes();
         if (pos.x < axes.xaxis.min || pos.x > axes.xaxis.max ||
             pos.y < axes.yaxis.min || pos.y > axes.yaxis.max) {
