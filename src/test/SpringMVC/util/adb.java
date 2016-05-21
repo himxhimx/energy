@@ -15,7 +15,7 @@ public class adb {
     private static final String SAMPLE_SPLIT = "+T-23==53-X7-+YuRG";
 
     //set path
-    private static final String API_FILE_PATH = "C:\\Users\\Himx\\IdeaProjects\\final2\\API_result.txt";
+    private static final String API_FILE_PATH = "C:\\Users\\shenpeng\\IdeaProjects\\energy\\API_result.txt";
 
     private Thread logcatThread = null;
     private Process process = null;
@@ -167,7 +167,24 @@ public class adb {
                     int idx = subline.indexOf(" + ");
                     Long time = Long.parseLong(subline.substring(0, idx));
                     String event = subline.substring(idx + 3);
+
+                    String[] tmp = event.split("/");
+                    StringBuilder sb = new StringBuilder();
+                    sb.append(tmp[0].substring(1, tmp[0].length()));
+                    for (int i = 1; i < 3; i ++) {
+                        sb.append(".").append(tmp[i]);
+                    }
+                    String pkgName = sb.toString();
+                    if (!CurrentPkgList.containsKey(pkgName)) {
+                        System.out.println(subline);
+                        System.out.println("not in current " + pkgName);
+                        continue;
+                    }
+
+                    int pid = CurrentPkgList.get(pkgName);
+
                     LinkedList<String> info = new LinkedList<>();
+                    info.add(String.valueOf(pid));
                     info.add(event);
 
                     EventStack.push(new Event(time, event));
@@ -343,10 +360,15 @@ public class adb {
                 removeList.add(t);
             }
         }
+        int pid = 0;
         if (removeList.size() > 0) {
             Collections.sort(removeList);
             for (Long t: removeList) {
-                list.addAll(APIInfoList.get(t));
+                LinkedList<String> tmp = APIInfoList.get(t);
+                if (pid == 0) {
+                    pid = Integer.valueOf(tmp.get(0));
+                }
+                list.addAll(tmp.subList(1, tmp.size()));
                 APIInfoList.remove(t);
             }
             return JSONArray.fromObject(list);
