@@ -31,9 +31,12 @@ var getEnergyInfo = function () {
             
             APIInfoList = APIInfoList.slice(1);
             if (data["APIInfoList"]) {
-                APIInfoList.push(data["APIInfoList"].slice(0));
+                APIInfoList.push({
+                    Pid: data["APIInfoList"]["Pid"],
+                    APIList: data["APIInfoList"]["APIList"].slice(0)
+                });
             } else {
-                APIInfoList.push([]);
+                APIInfoList.push({});
             }
             
             var newAll = {

@@ -106,26 +106,16 @@ linePlot.bindHover = function() {
         var j = pos.x.toFixed(0);
         var tooltipHTML = "";
         var APIInfo = isPlaying?APIInfoList:APIInfoListWhenStop;
-        $.each(APIInfo[j], function(key, val) {
-            tooltipHTML += "<h5>" + val + "</h5>"
-        });
-        $("#tooltip").html(tooltipHTML)
-            .css({top: 200, left: 350})
-            .fadeIn(200);
-
-        /*
-        if (item) {
-            if (previousPoint != item.dataIndex) {
-                previousPoint = item.dataIndex;
-                $("#tooltip").remove();
-                var tip = "展现量：";
-                showTooltip(item.pageX, item.pageY,tip+item.datapoint[1]);
+        if (APIInfo[j]["Pid"] && APIInfo[j]["Pid"] == pid) {
+            $.each(APIInfo[j]["APIList"], function(key, val) {
+                tooltipHTML += "<h5>" + val + "</h5>"
+            });
+            if (tooltipHTML !== "") {
+                $("#tooltip").html(tooltipHTML)
+                    .css({top: 200, left: 350})
+                    .fadeIn(200);
             }
         }
-        else {
-            $("#tooltip").remove();
-            previousPoint = null;
-        }*/
     });
 };
 

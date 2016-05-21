@@ -341,7 +341,7 @@ public class adb {
         JSONObject processChange = getPackagesChange();
         if (processChange != null) infoMap.put("ProcessChange", processChange);
         if (hasData && APIInfoList.size() > 0) {
-            JSONArray apis = getAPIList(time);
+            JSONObject apis = getAPIList(time);
             if (apis != null) {
                 infoMap.put("APIInfoList", apis);
             }
@@ -350,7 +350,7 @@ public class adb {
         return res;
     }
 
-    private JSONArray getAPIList(long time) {
+    private JSONObject getAPIList(long time) {
         LinkedList<String> list = new LinkedList<>();
         LinkedList<Long> removeList = new LinkedList<>();
         for (Object o: APIInfoList.entrySet()) {
@@ -371,7 +371,10 @@ public class adb {
                 list.addAll(tmp.subList(1, tmp.size()));
                 APIInfoList.remove(t);
             }
-            return JSONArray.fromObject(list);
+            Map map = new HashMap();
+            map.put("Pid", pid);
+            map.put("APIList", list);
+            return JSONObject.fromObject(map);
         } else {
             return null;
         }

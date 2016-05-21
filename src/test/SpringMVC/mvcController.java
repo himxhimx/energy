@@ -7,11 +7,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.ModelAndView;
 import test.SpringMVC.Model.Person;
-import test.SpringMVC.util.JSON;
 import test.SpringMVC.util.adb;
-
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.util.List;
 
@@ -64,13 +60,13 @@ public class mvcController {
 
     @RequestMapping(value = "/getDevices", method = RequestMethod.GET)
     @ResponseBody
-    public String getDevices(HttpServletRequest request,HttpServletResponse response) throws IOException {
+    public String getDevices() throws IOException {
         return myadb.getDeviceInfo(true);
     }
 
     @RequestMapping(value = "/getDevices/notfirst", method = RequestMethod.GET)
     @ResponseBody
-    public String getDevicesNotFirst(HttpServletRequest request,HttpServletResponse response) throws IOException {
+    public String getDevicesNotFirst() throws IOException {
         return myadb.getDeviceInfo(false);
     }
 
